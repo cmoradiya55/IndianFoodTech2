@@ -4,7 +4,6 @@ export default function TextInput({ label, name, value, onChange, error, placeho
 
    const onTextChange = (e) => {
         const { value } = e.target;
-        console.log(`Input changed: ${name} = ${value}`);
         if (validateRegex && !validateRegex.test(value)) {
             return;
         }

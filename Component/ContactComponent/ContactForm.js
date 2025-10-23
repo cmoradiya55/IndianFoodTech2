@@ -13,8 +13,6 @@ const [formData, setFormData] = useState({
   });
 
     const handleInputChange = (e) => {
-    console.log("input changesss", e);
-
     const { name, value } = e.target;
 
     // Apply regex validation based on field type
@@ -43,8 +41,6 @@ const [formData, setFormData] = useState({
 
     const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
-
     const submissionData = {
       name: formData.name,
       businessName: formData.businessName,
@@ -63,9 +59,7 @@ const [formData, setFormData] = useState({
         body: JSON.stringify(submissionData),
       });
 
-      console.log("Response status:", response.status);
       const responseData = await response.json();
-      console.log("Response data:", responseData);
 
       if (!response.ok) {
         throw new Error(responseData.error || "Failed to submit form");

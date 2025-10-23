@@ -12,8 +12,6 @@ export async function POST(req) {
         return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
     }
 
-    console.log("body", body);
-    
     let emailContent;
 
     if (body.formType === 'contactUS') {

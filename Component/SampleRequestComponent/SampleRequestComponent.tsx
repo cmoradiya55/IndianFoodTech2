@@ -38,8 +38,6 @@ const SampleRequestComponent = () => {
     });
 
     const handleSubmit = async (e: any) => {
-        console.log("formData", e);
-        
         e.preventDefault();
 
         if (Object.keys(formData.selectedProducts).length === 0) {
@@ -127,8 +125,6 @@ const SampleRequestComponent = () => {
     };
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        console.log("input changesss", e);
-
         const { name, value } = e.target;
 
         setFormData(prev => ({
@@ -180,7 +176,7 @@ const SampleRequestComponent = () => {
 
             {/* Header Section */}
             <div className="mb-6 sm:mb-8 md:mb-10 lg:mb-10 flex gap-3 sm:gap-4">
-                <div className="bg-primary-500 h-30 sm:h-24 md:h-28 lg:h-30 w-1.5 sm:w-2 rounded-2xl flex-shrink-0"></div>
+                <div className="bg-primary-500 h-30 sm:h-24 md:h-28 lg:h-30 w-1.5 sm:w-2 rounded-2xl shrink-0"></div>
                 <div className='mt-1 sm:mt-2 md:mt-3 lg:mt-4'>
                     <h1 className="text-2xl sm:text-3xl md:text-[36px] lg:text-[36px] font-bold text-gray-900 mb-1 sm:mb-2">
                         Request a Sample
