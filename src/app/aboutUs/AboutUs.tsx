@@ -51,9 +51,9 @@ const AboutUs = () => {
             <div className="bg-[#00280C] py-2 px-3 sm:px-4 md:px-8 lg:px-16" style={{ fontFamily: 'NotoSerif-semibold' }}>
                 <div className='max-w-7xl mx-auto container-custom'>
                     <div className='flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 py-6 sm:py-8 md:py-10'>
-                        <h4 className='text-[#D4DBC4] text-lg sm:text-xl md:text-2xl font-semibold'>
+                        {/* <h4 className='text-[#D4DBC4] text-lg sm:text-xl md:text-2xl font-semibold'>
                             At Indian Foodtech, we don&#39;t sell under our own label
-                        </h4>
+                        </h4> */}
                         <h2 className='text-primary-500 text-2xl sm:text-3xl md:text-[57px] font-semibold'>
                             your brand is our priority
                         </h2>

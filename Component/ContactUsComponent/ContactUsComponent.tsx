@@ -86,7 +86,7 @@ const ContactUsComponent = () => {
 
             {/* Header Section */}
             <div className="mb-8 sm:mb-10 md:mb-12 flex gap-3 sm:gap-4">
-                <div className="bg-primary-500 h-45 sm:h-28 md:h-35 w-1.5 sm:w-2 rounded-2xl flex-shrink-0"></div>
+                <div className="bg-primary-500 h-45 sm:h-28 md:h-35 w-1.5 sm:w-2 rounded-2xl shrink-0"></div>
                 <div className="mt-1 sm:mt-2">
                     <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2 sm:mb-3">
                         Contact Us
@@ -246,7 +246,7 @@ const ContactUsComponent = () => {
                                         name="countryCode"
                                         value={formData.countryCode}
                                         onChange={handleChange}
-                                        className="w-[80px] sm:w-[90px] md:w-[100px] px-1 sm:px-2 py-2.5 sm:py-3 bg-gray-50 border border-gray-200 rounded-lg sm:rounded-xl focus:outline-none focus:ring-2 text-[10px] sm:text-xs text-[#5D6079] focus:ring-primary-500 focus:border-transparent"
+                                        className="w-20 sm:w-[90px] md:w-[100px] px-1 sm:px-2 py-2.5 sm:py-3 bg-gray-50 border border-gray-200 rounded-lg sm:rounded-xl focus:outline-none focus:ring-2 text-[10px] sm:text-xs text-[#5D6079] focus:ring-primary-500 focus:border-transparent"
                                         style={{ fontFamily: 'Inter_18pt-regular' }}
                                     >
                                         {countries

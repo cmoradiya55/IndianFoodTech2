@@ -10,7 +10,7 @@ const Footer = () => {
                 
                 {/* Logo and Social Media Section */}
                 <div className='py-8 sm:py-10 lg:py-12 flex flex-col sm:flex-row justify-between items-center sm:items-start gap-6 sm:gap-4'>
-                    <div className="flex-shrink-0">
+                    <div className="shrink-0">
                         <Image
                             src="/logoWhite.png"
                             alt="Indian Food Tech"
@@ -132,9 +132,6 @@ const Footer = () => {
                             <span className="opacity-75 hidden sm:inline">)</span>
                         </p>
                         <p className="opacity-80 text-xs sm:text-sm leading-relaxed" style={{ fontFamily: 'Inter_18pt-regular' }}>
-                            Design by <span className="font-semibold">Rushita Kumbhani</span>
-                            <span className="hidden sm:inline"> & </span>
-                            <br className="sm:hidden" />
                             <span className="sm:hidden">& </span>Developed and managed by <span className="font-semibold">Infinius Tech</span>
                         </p>
                     </div>
