@@ -18,7 +18,7 @@ const Products = () => {
             const categoryMap: { [key: string]: string } = {
                 'peanut-butter': 'Peanut Butter',
                 'nut-butters': 'Nut Butters',
-                'roasted-butter': 'Rosted Peanuts',
+                'roasted-peanuts': 'Roasted Peanuts',
                 'spread': 'Spread'
             };
             
@@ -40,7 +40,7 @@ const Products = () => {
 
                 {/* Header Section */}
                 <div className="mb-8 sm:mb-10 md:mb-12 lg:mb-12 flex gap-3 sm:gap-4">
-                    <div className="bg-primary-500 h-20 sm:h-24 md:h-28 w-2 rounded-2xl flex-shrink-0"></div>
+                    <div className="bg-primary-500 h-20 sm:h-24 md:h-28 w-2 rounded-2xl shrink-0"></div>
                     <div className='mt-1 sm:mt-2'>
                         <h1 className="text-2xl sm:text-3xl md:text-[36px] lg:text-4xl font-bold text-gray-900 mb-1 sm:mb-2">
                             Discover Our Product
@@ -73,7 +73,7 @@ const Products = () => {
                                 {categoryItem.products.map((product) => (
                                     <div
                                         key={product.id}
-                                        className="bg-white rounded-2xl sm:rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border-[1px] border-[#D2D1D6] flex flex-col"
+                                        className="bg-white rounded-2xl sm:rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-[#D2D1D6] flex flex-col"
                                     >
                                         {/* Product Image */}
                                         <div className="relative overflow-hidden w-[180px] sm:w-[200px] md:w-[216px] h-[180px] sm:h-[200px] md:h-[216px] rounded-xl sm:rounded-2xl mx-auto mt-4 sm:mt-6 md:mt-8">
@@ -86,15 +86,15 @@ const Products = () => {
                                         </div>
 
                                         {/* Product Content */}
-                                        <div className="p-4 sm:p-6 md:p-8 flex flex-col flex-grow">
+                                        <div className="p-4 sm:p-6 md:p-8 flex flex-col grow">
                                             {/* Header with fixed min-height for 2 lines */}
-                                            <div className="min-h-[2.5rem] sm:min-h-[3.5rem] md:min-h-[4.5rem] flex items-center justify-center mb-2 sm:mb-3">
+                                            <div className="min-h-10 sm:min-h-14 md:min-h-18 flex items-center justify-center mb-2 sm:mb-3">
                                                 <h3 className="text-lg sm:text-xl font-bold text-gray-900 text-center leading-tight">
                                                     {product.name}
                                                 </h3>
                                             </div>
 
-                                            <p className="text-[#5D6079] text-xs sm:text-sm leading-relaxed mb-4 sm:mb-5 md:mb-6 text-center flex-grow" style={{ fontFamily: 'Inter_18pt-medium' }}>
+                                            <p className="text-[#5D6079] text-xs sm:text-sm leading-relaxed mb-4 sm:mb-5 md:mb-6 text-center grow" style={{ fontFamily: 'Inter_18pt-medium' }}>
                                                 {product.description}
                                             </p>
 

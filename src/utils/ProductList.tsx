@@ -16,9 +16,9 @@ export const AllProductsList = [
                 certifications: certificatList,
                 sizes: packingSizes,
                 recommended: true,
-                cardImage: "/productsImage/natural_creamy_peanut_butter_bg.jpg",
+                cardImage: "/productsImage/Natural Creamy Peanut Butter.webp",
                 otherImages: [
-                    "/productsImage/natural_creamy_peanut_butter.png",
+                    "/productsImage/Classic Creamy Peanut Butter extended.jpeg",
                 ]
             },
             {
@@ -31,9 +31,9 @@ export const AllProductsList = [
                 certifications: certificatList,
                 sizes: packingSizes,
                 recommended: true,
-                cardImage: "/productsImage/natural_crunchy_peanut_butter_bg.jpg",
+                cardImage: "/productsImage/Natural Crunch Peanut Butter.webp",
                 otherImages: [
-                    "/productsImage/natural_crunchy_peanut_butter.png",
+                    "/productsImage/Natural Crunch Peanut Butter.webp",
                 ]
             },
             {
@@ -46,9 +46,9 @@ export const AllProductsList = [
                 certifications: certificatList,
                 sizes: packingSizes,
                 recommended: false,
-                cardImage: "/productsImage/crunchy.jpg",
+                cardImage: "/productsImage/Classic Creamy Peanut Butter.webp",
                  otherImages: [
-                    "/productsImage/natural_creamy_peanut_butter.png",
+                    "/productsImage/Classic Creamy Peanut Butter.webp",
                 ]
             },
             {
@@ -61,9 +61,9 @@ export const AllProductsList = [
                 certifications: certificatList,
                 sizes: packingSizes,
                 recommended: false,
-                cardImage: "/productsImage/crunchy.jpg",
+                cardImage: "/productsImage/Classic Crunch Peanut Butter.webp",
                  otherImages: [
-                    "/productsImage/natural_creamy_peanut_butter.png",
+                    "/productsImage/Classic Crunch Peanut Butter.webp",
                 ]
             },
             {
@@ -76,9 +76,9 @@ export const AllProductsList = [
                 certifications: certificatList,
                 sizes: packingSizes,
                 recommended: false,
-                cardImage: "/productsImage/honey.jpg",
+                cardImage: "/productsImage/Chocolate Creamy Peanut Butter.webp",
                  otherImages: [
-                    "/productsImage/natural_creamy_peanut_butter.png",
+                    "/productsImage/Chocolate Creamy Peanut Butter.webp",
                 ]
             },
             {
@@ -91,9 +91,9 @@ export const AllProductsList = [
                 certifications: certificatList,
                 sizes: packingSizes,
                 recommended: false,
-                cardImage: "/productsImage/honey.jpg",
+                cardImage: "/productsImage/Chocolate Crunch Peanut Butter.webp",
                  otherImages: [
-                    "/productsImage/natural_creamy_peanut_butter.png",
+                    "/productsImage/Chocolate Crunch Peanut Butter.webp",
                 ]
             },
             {
@@ -106,9 +106,9 @@ export const AllProductsList = [
                 certifications: certificatList,
                 sizes: packingSizes,
                 recommended: false,
-                cardImage: "/productsImage/elaichi_crunchy_peanut_butter.png",
+                cardImage: "/productsImage/Cardamom Creamy Peanut Butter.webp",
                  otherImages: [
-                    "/productsImage/elaichi_crunchy_peanut_butter.png",
+                    "/productsImage/Cardamom Creamy Peanut Butter.webp",
                 ]
             },
             {
@@ -121,9 +121,9 @@ export const AllProductsList = [
                 certifications: certificatList,
                 sizes: packingSizes,
                 recommended: false,
-                cardImage: "/productsImage/unsaulted.jpg",
+                cardImage: "/productsImage/Cardamom Crunch Peanut Butter.webp",
                  otherImages: [
-                    "/productsImage/elaichi_crunchy_peanut_butter.png",
+                    "/productsImage/Cardamom Crunch Peanut Butter.webp",
                 ]
             },
             {

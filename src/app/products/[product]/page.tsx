@@ -69,173 +69,22 @@ const ProductDetailPage = () => {
     };
 
     return (
-        <div className='bg-[#e9e8ed] min-h-screen py-6 sm:py-6 px-3 md:py-16 sm:px-4 md:px-8 lg:py-20'>
-            <div className='max-w-7xl mx-auto px-3 sm:px-4 md:px-8 lg:px-16 relative' style={{ fontFamily: 'NotoSerif-semibold' }}>
+        <div className='bg-[#e9e8ed] min-h-screen px-3 py-6 sm:py-6 sm:px-4 md:px-8 md:py-8 lg:py-16'>
+            <div className='max-w-7xl mx-auto px-1 relative' style={{ fontFamily: 'NotoSerif-semibold' }}>
 
                 {/* Full Image and Details Container */}
-                <div className='relative mb-8 sm:mb-12 md:mb-16 lg:mb-20'>
+                <div className='relative mb-8 sm:mb-12'>
                     {/* Mobile/Tablet Layout - Stacked */}
                     <div className="block lg:hidden">
                         {/* Product Image */}
                         <div className="flex justify-center mb-6 sm:mb-8">
-                            <div className="relative w-[250px] sm:w-[300px] md:w-[350px] h-[350px] sm:h-[400px] md:h-[450px] rounded-3xl sm:rounded-[40px] border-4 sm:border-6 border-black overflow-hidden">
+                            <div className="relative w-[250px] h-[350px] sm:w-[300px] sm:h-[400px] md:w-[350px] md:h-[450px] rounded-3xl sm:rounded-[40px] overflow-hidden">
                                 <Image
                                     src={product.cardImage}
                                     alt={product.name}
                                     className="w-full h-full object-cover"
                                     fill
                                 />
-                            </div>
-                        </div>
-
-                        {/* Product Info */}
-                        <div className="bg-white rounded-2xl sm:rounded-3xl shadow-lg p-4 sm:p-6 md:p-8">
-                            {/* Product Name */}
-                            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary-500 mb-3 sm:mb-4 text-center">
-                                {product.name}
-                            </h1>
-
-                            {/* Detailed Description */}
-                            <div className="mb-3 sm:mb-4">
-                                <p className="text-gray-700 text-xs sm:text-sm md:text-base text-center leading-relaxed" style={{ fontFamily: 'Inter_18pt-medium' }}>
-                                    {product.detailedDescription}
-                                </p>
-                            </div>
-
-                            {/* Ingredients */}
-                            <div className="mb-3 flex flex-col items-start bg-[#EDEDED] border border-[#D2D1D6] rounded-lg p-2 sm:p-3 gap-2 sm:gap-3">
-                                <h2 className="text-xs sm:text-sm md:text-base font-semibold text-[#00280C] bg-[#D4DBC4] rounded-lg px-2 sm:px-3 py-1 sm:py-2">
-                                    Ingredients:
-                                </h2>
-                                <p
-                                    className="text-black font-semibold text-xs sm:text-sm leading-relaxed"
-                                    style={{ fontFamily: 'Inter_18pt-medium' }}
-                                >
-                                    {product.ingredients}
-                                </p>
-                            </div>
-
-                            {/* Nutrition */}
-                            <div className="mb-3">
-                                <div className="bg-[#EDEDED] border border-[#D2D1D6] rounded-lg p-2 sm:p-3">
-                                    {/* Nutrition Header */}
-                                    <div className="flex items-center mb-2 sm:mb-3">
-                                        <h2 className="text-xs sm:text-sm font-semibold text-[#00280C] bg-[#D4DBC4] rounded-lg px-2 sm:px-3 py-1 sm:py-2">
-                                            Nutrition (per 2 tbsp – 32 g):
-                                        </h2>
-                                    </div>
-
-                                    {/* Nutrition Values */}
-                                    <div className="bg-white rounded-lg p-2 sm:p-3 shadow-sm">
-                                        <div className="grid grid-cols-2 gap-2 sm:gap-3">
-                                            {product.nutrition.includes('Calories') && (
-                                                <div className="text-center">
-                                                    <div className="text-sm sm:text-base md:text-lg font-bold text-primary-500">
-                                                        {product.nutrition.match(/Calories (\d+)/)?.[1] || 'N/A'}
-                                                    </div>
-                                                    <div className="text-xs text-gray-600">Calories</div>
-                                                </div>
-                                            )}
-
-                                            {product.nutrition.includes('Fat') && (
-                                                <div className="text-center">
-                                                    <div className="text-sm sm:text-base md:text-lg font-bold text-primary-500">
-                                                        {product.nutrition.match(/Fat (\d+g)/)?.[1] || 'N/A'}
-                                                    </div>
-                                                    <div className="text-xs text-gray-600">Fat</div>
-                                                </div>
-                                            )}
-
-                                            {product.nutrition.includes('Carbs') && (
-                                                <div className="text-center">
-                                                    <div className="text-sm sm:text-base md:text-lg font-bold text-primary-500">
-                                                        {product.nutrition.match(/Carbs (\d+g)/)?.[1] || 'N/A'}
-                                                    </div>
-                                                    <div className="text-xs text-gray-600">Carbs</div>
-                                                </div>
-                                            )}
-
-                                            {product.nutrition.includes('Protein') && (
-                                                <div className="text-center">
-                                                    <div className="text-sm sm:text-base md:text-lg font-bold text-primary-500">
-                                                        {product.nutrition.match(/Protein (\d+g)/)?.[1] || 'N/A'}
-                                                    </div>
-                                                    <div className="text-xs text-gray-600">Protein</div>
-                                                </div>
-                                            )}
-                                        </div>
-
-                                        {/* Full nutrition text */}
-                                        <div className="mt-2 sm:mt-3 pt-2 sm:pt-3 border-t border-gray-200">
-                                            <p className="text-black font-medium text-center text-xs sm:text-sm" style={{ fontFamily: 'Inter_18pt-medium' }}>
-                                                {product.nutrition}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Available Sizes */}
-                            {product.sizes && product.sizes.length > 0 && (
-                                <div className="mb-3">
-                                    <div className="bg-[#EDEDED] border border-[#D2D1D6] rounded-lg p-2 sm:p-3">
-                                        <div className="flex flex-col items-start gap-2 sm:gap-3">
-                                            <div className="bg-[#D4DBC4] rounded-lg px-2 sm:px-3 py-1 sm:py-2">
-                                                <h2 className="text-xs sm:text-sm font-semibold text-[#00280C]">
-                                                    Available Sizes
-                                                </h2>
-                                            </div>
-                                            <div className="w-full">
-                                                <div className="grid grid-cols-2 sm:grid-cols-3 gap-1">
-                                                    {product.sizes.map((size, index) => (
-                                                        <div key={index} className="text-black font-semibold text-xs sm:text-sm" style={{ fontFamily: 'Inter_18pt-medium' }}>
-                                                            {size}
-                                                        </div>
-                                                    ))}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            )}
-
-                            {/* Certifications */}
-                            {product.certifications && product.certifications.length > 0 && (
-                                <div className="mb-3">
-                                    <div className="bg-[#EDEDED] border border-[#D2D1D6] rounded-lg p-2 sm:p-3">
-                                        <div className="flex flex-col items-start gap-2 sm:gap-3">
-                                            <div className="bg-[#D4DBC4] rounded-lg px-2 sm:px-3 py-1 sm:py-2">
-                                                <h2 className="text-xs sm:text-sm font-semibold text-[#00280C]">
-                                                    Certifications
-                                                </h2>
-                                            </div>
-                                            <div className="w-full">
-                                                <div className="space-y-1">
-                                                    {product.certifications.map((cert, index) => (
-                                                        <div key={index} className="text-primary-500 font-semibold text-xs sm:text-sm" style={{ fontFamily: 'Inter_18pt-medium' }}>
-                                                            {cert}
-                                                        </div>
-                                                    ))}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            )}
-
-                            {/* Action Buttons */}
-                            <div className="mt-4 sm:mt-5 space-y-2 sm:space-y-3">
-                                <button
-                                    className="w-full bg-[#7FB432] hover:bg-[#6fa028] text-white font-normal py-2.5 sm:py-3 px-4 rounded-full transition-colors duration-300 text-xs sm:text-sm"
-                                    style={{ boxShadow: '0 4px 12px rgba(127, 180, 50, 0.3)', fontFamily: 'Inter_18pt-medium' }}>
-                                    Request Sample
-                                </button>
-
-                                <button
-                                    className="w-full bg-black text-white font-normal py-2.5 sm:py-3 px-4 rounded-full transition-colors duration-300 text-xs sm:text-sm"
-                                    style={{ boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)', fontFamily: 'Inter_18pt-medium' }}>
-                                    Get a Quote
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -243,8 +92,8 @@ const ProductDetailPage = () => {
                     {/* Desktop Layout - Side by Side (lg+) - UNCHANGED */}
                     <div className="hidden lg:block">
                         {/* Left Side - Image (Absolute positioned) */}
-                        <div className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10">
-                            <div className="relative w-[300px] sm:w-[400px] lg:w-[577px] h-[450px] sm:h-[600px] lg:h-[872px] rounded-[56px] border-8 border-black overflow-hidden">
+                        <div className="absolute left-[30px] top-0 z-10 w-full">
+                            <div className="relative producPageMainImage rounded-l-[56px] overflow-hidden">
                                 <Image
                                     src={product.cardImage}
                                     alt={product.name}
@@ -253,161 +102,160 @@ const ProductDetailPage = () => {
                                 />
                             </div>
                         </div>
+                    </div>
+                    {/* Right Side - Product Info */}
+                    <div className="relative ml-auto producPageRightSection bg-white rounded-[56px] shadow-lg z-30">
 
-                        {/* Right Side - Product Info */}
-                        <div className="relative ml-auto w-full max-w-[500px] lg:max-w-[686px] bg-white rounded-[56px] shadow-lg p-6 md:p-8 lg:p-12 z-30">
+                        {/* Product Name */}
+                        <h1 className="text-3xl lg:text-4xl   font-bold text-primary-500 mb-4">
+                            {product.name}
+                        </h1>
 
-                            {/* Product Name */}
-                            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-500 mb-4">
-                                {product.name}
-                            </h1>
+                        {/* Ingredients */}
+                        <div className="mb-3 flex flex-col sm:flex-row items-start sm:items-center bg-[#EDEDED] border border-[#D2D1D6] rounded-lg p-3 gap-3">
+                            <h2 className="text-[16px] font-semibold text-[#00280C] bg-[#D4DBC4] rounded-lg px-3 py-2 flex-shrink-0">
+                                Ingredients:
+                            </h2>
+                            <p
+                                className="text-black font-semibold text-[12px] sm:text-[14px] md:text-[16px]"
+                                style={{ fontFamily: 'Inter_18pt-medium' }}
+                            >
+                                {product.ingredients}
+                            </p>
+                        </div>
 
-                            {/* Detailed Description */}
-                            <div className="mb-4">
-                                <p className="text-gray-700 text-[14px] md:text-[16px]" style={{ fontFamily: 'Inter_18pt-medium' }}>
-                                    {product.detailedDescription}
-                                </p>
+                        {/* Nutrition */}
+                        <div className="mb-3">
+                            <div className="bg-[#EDEDED] border border-[#D2D1D6] rounded-lg p-3">
+                                {/* Nutrition Header */}
+                                <div className="flex items-center mb-3">
+                                    <h2 className="text-[12px] sm:text-[14px] md:text-[16px] font-semibold text-[#00280C] bg-[#D4DBC4] rounded-lg px-3 py-2">
+                                        Nutrition (per 2 tbsp – 32 g):
+                                    </h2>
+                                </div>
+
+                                {/* Nutrition Values */}
+                                <div className="bg-white rounded-lg p-3 shadow-sm">
+                                    <div className="grid grid-cols-2 gap-3">
+                                        {product.nutrition.includes('Calories') && (
+                                            <div className="text-center">
+                                                <div className="text-[16px] md:text-[18px] font-bold text-primary-500">
+                                                    {product.nutrition.match(/Calories (\d+)/)?.[1] || 'N/A'}
+                                                </div>
+                                                <div className="text-xs md:text-sm text-gray-600">Calories</div>
+                                            </div>
+                                        )}
+
+                                        {product.nutrition.includes('Fat') && (
+                                            <div className="text-center">
+                                                <div className="text-[16px] md:text-[18px] font-bold text-primary-500">
+                                                    {product.nutrition.match(/Fat (\d+g)/)?.[1] || 'N/A'}
+                                                </div>
+                                                <div className="text-xs md:text-sm text-gray-600">Fat</div>
+                                            </div>
+                                        )}
+
+                                        {product.nutrition.includes('Carbs') && (
+                                            <div className="text-center">
+                                                <div className="text-[16px] md:text-[18px] font-bold text-primary-500">
+                                                    {product.nutrition.match(/Carbs (\d+g)/)?.[1] || 'N/A'}
+                                                </div>
+                                                <div className="text-xs md:text-sm text-gray-600">Carbs</div>
+                                            </div>
+                                        )}
+
+                                        {product.nutrition.includes('Protein') && (
+                                            <div className="text-center">
+                                                <div className="text-[16px] md:text-[18px] font-bold text-primary-500">
+                                                    {product.nutrition.match(/Protein (\d+g)/)?.[1] || 'N/A'}
+                                                </div>
+                                                <div className="text-xs md:text-sm text-gray-600">Protein</div>
+                                            </div>
+                                        )}
+                                    </div>
+
+                                    {/* Full nutrition text */}
+                                    <div className="mt-3 pt-3 border-t border-gray-200">
+                                        <p className="text-black font-medium text-center text-[12px] md:text-[14px]" style={{ fontFamily: 'Inter_18pt-medium' }}>
+                                            {product.nutrition}
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
 
-                            {/* Ingredients */}
-                            <div className="mb-3 flex flex-col sm:flex-row items-start sm:items-center bg-[#EDEDED] border border-[#D2D1D6] rounded-lg p-3 gap-3">
-                                <h2 className="text-[14px] md:text-[16px] font-semibold text-[#00280C] bg-[#D4DBC4] rounded-lg px-3 py-2 flex-shrink-0">
-                                    Ingredients:
-                                </h2>
-                                <p
-                                    className="text-black font-semibold text-[12px] sm:text-[14px] md:text-[16px]"
-                                    style={{ fontFamily: 'Inter_18pt-medium' }}
-                                >
-                                    {product.ingredients}
-                                </p>
-                            </div>
-
-                            {/* Nutrition */}
+                        {/* Available Sizes */}
+                        {product.sizes && product.sizes.length > 0 && (
                             <div className="mb-3">
                                 <div className="bg-[#EDEDED] border border-[#D2D1D6] rounded-lg p-3">
-                                    {/* Nutrition Header */}
-                                    <div className="flex items-center mb-3">
-                                        <h2 className="text-[12px] sm:text-[14px] md:text-[16px] font-semibold text-[#00280C] bg-[#D4DBC4] rounded-lg px-3 py-2">
-                                            Nutrition (per 2 tbsp – 32 g):
-                                        </h2>
-                                    </div>
-
-                                    {/* Nutrition Values */}
-                                    <div className="bg-white rounded-lg p-3 shadow-sm">
-                                        <div className="grid grid-cols-2 gap-3">
-                                            {product.nutrition.includes('Calories') && (
-                                                <div className="text-center">
-                                                    <div className="text-[16px] md:text-[18px] font-bold text-primary-500">
-                                                        {product.nutrition.match(/Calories (\d+)/)?.[1] || 'N/A'}
-                                                    </div>
-                                                    <div className="text-xs md:text-sm text-gray-600">Calories</div>
-                                                </div>
-                                            )}
-
-                                            {product.nutrition.includes('Fat') && (
-                                                <div className="text-center">
-                                                    <div className="text-[16px] md:text-[18px] font-bold text-primary-500">
-                                                        {product.nutrition.match(/Fat (\d+g)/)?.[1] || 'N/A'}
-                                                    </div>
-                                                    <div className="text-xs md:text-sm text-gray-600">Fat</div>
-                                                </div>
-                                            )}
-
-                                            {product.nutrition.includes('Carbs') && (
-                                                <div className="text-center">
-                                                    <div className="text-[16px] md:text-[18px] font-bold text-primary-500">
-                                                        {product.nutrition.match(/Carbs (\d+g)/)?.[1] || 'N/A'}
-                                                    </div>
-                                                    <div className="text-xs md:text-sm text-gray-600">Carbs</div>
-                                                </div>
-                                            )}
-
-                                            {product.nutrition.includes('Protein') && (
-                                                <div className="text-center">
-                                                    <div className="text-[16px] md:text-[18px] font-bold text-primary-500">
-                                                        {product.nutrition.match(/Protein (\d+g)/)?.[1] || 'N/A'}
-                                                    </div>
-                                                    <div className="text-xs md:text-sm text-gray-600">Protein</div>
-                                                </div>
-                                            )}
+                                    <div className="flex flex-col sm:flex-row items-start gap-3">
+                                        <div className="bg-[#D4DBC4] rounded-lg px-3 py-2 flex-shrink-0">
+                                            <h2 className="text-[14px] md:text-[16px] font-semibold text-[#00280C]">
+                                                Available Sizes
+                                            </h2>
                                         </div>
-
-                                        {/* Full nutrition text */}
-                                        <div className="mt-3 pt-3 border-t border-gray-200">
-                                            <p className="text-black font-medium text-center text-[12px] md:text-[14px]" style={{ fontFamily: 'Inter_18pt-medium' }}>
-                                                {product.nutrition}
-                                            </p>
+                                        <div className="flex-1">
+                                            <div className="grid grid-cols-2 sm:grid-cols-3 gap-1">
+                                                {product.sizes.map((size, index) => (
+                                                    <div key={index} className="text-black font-semibold text-[12px] md:text-[14px]" style={{ fontFamily: 'Inter_18pt-medium' }}>
+                                                        {size}
+                                                    </div>
+                                                ))}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        )}
 
-                            {/* Available Sizes */}
-                            {product.sizes && product.sizes.length > 0 && (
-                                <div className="mb-3">
-                                    <div className="bg-[#EDEDED] border border-[#D2D1D6] rounded-lg p-3">
-                                        <div className="flex flex-col sm:flex-row items-start gap-3">
-                                            <div className="bg-[#D4DBC4] rounded-lg px-3 py-2 flex-shrink-0">
-                                                <h2 className="text-[14px] md:text-[16px] font-semibold text-[#00280C]">
-                                                    Available Sizes
-                                                </h2>
-                                            </div>
-                                            <div className="flex-1">
-                                                <div className="grid grid-cols-2 sm:grid-cols-3 gap-1">
-                                                    {product.sizes.map((size, index) => (
-                                                        <div key={index} className="text-black font-semibold text-[12px] md:text-[14px]" style={{ fontFamily: 'Inter_18pt-medium' }}>
-                                                            {size}
-                                                        </div>
-                                                    ))}
-                                                </div>
+                        {/* Certifications */}
+                        {product.certifications && product.certifications.length > 0 && (
+                            <div className="mb-3">
+                                <div className="bg-[#EDEDED] border border-[#D2D1D6] rounded-lg p-3">
+                                    <div className="flex flex-col sm:flex-row items-start gap-3">
+                                        <div className="bg-[#D4DBC4] rounded-lg px-3 py-2 flex-shrink-0">
+                                            <h2 className="text-[14px] md:text-[16px] font-semibold text-[#00280C]">
+                                                Certifications
+                                            </h2>
+                                        </div>
+                                        <div className="flex-1">
+                                            <div className="space-y-1">
+                                                {product.certifications.map((cert, index) => (
+                                                    <div key={index} className="text-primary-500 font-semibold text-[12px] md:text-[14px]" style={{ fontFamily: 'Inter_18pt-medium' }}>
+                                                        {cert}
+                                                    </div>
+                                                ))}
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            )}
-
-                            {/* Certifications */}
-                            {product.certifications && product.certifications.length > 0 && (
-                                <div className="mb-3">
-                                    <div className="bg-[#EDEDED] border border-[#D2D1D6] rounded-lg p-3">
-                                        <div className="flex flex-col sm:flex-row items-start gap-3">
-                                            <div className="bg-[#D4DBC4] rounded-lg px-3 py-2 flex-shrink-0">
-                                                <h2 className="text-[14px] md:text-[16px] font-semibold text-[#00280C]">
-                                                    Certifications
-                                                </h2>
-                                            </div>
-                                            <div className="flex-1">
-                                                <div className="space-y-1">
-                                                    {product.certifications.map((cert, index) => (
-                                                        <div key={index} className="text-primary-500 font-semibold text-[12px] md:text-[14px]" style={{ fontFamily: 'Inter_18pt-medium' }}>
-                                                            {cert}
-                                                        </div>
-                                                    ))}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            )}
-
-                            {/* Action Buttons */}
-                            <div className="mt-5 space-y-3">
-                                <button
-                                    className="w-full bg-[#7FB432] hover:bg-[#6fa028] text-white font-normal py-3 md:py-4 px-4 rounded-full transition-colors duration-300 text-sm md:text-base"
-                                    style={{ boxShadow: '0 4px 12px rgba(127, 180, 50, 0.3)', fontFamily: 'Inter_18pt-medium' }}>
-                                    Request Sample
-                                </button>
-
-                                <button
-                                    className="w-full bg-black text-white font-normal py-3 md:py-4 px-4 rounded-full transition-colors duration-300 text-sm md:text-base"
-                                    style={{ boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)', fontFamily: 'Inter_18pt-medium' }}>
-                                    Get a Quote
-                                </button>
                             </div>
+                        )}
 
+                        {/* Action Buttons */}
+                        <div className="mt-5 space-y-3">
+                            <button
+                                className="w-full bg-[#7FB432] hover:bg-[#6fa028] text-white font-normal py-3 md:py-4 px-4 rounded-full transition-colors duration-300 text-sm md:text-base"
+                                style={{ boxShadow: '0 4px 12px rgba(127, 180, 50, 0.3)', fontFamily: 'Inter_18pt-medium' }}>
+                                Request Sample
+                            </button>
+
+                            <button
+                                className="w-full bg-black text-white font-normal py-3 md:py-4 px-4 rounded-full transition-colors duration-300 text-sm md:text-base"
+                                style={{ boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)', fontFamily: 'Inter_18pt-medium' }}>
+                                Get a Quote
+                            </button>
                         </div>
-                    </div>
 
+                    </div>
+                </div>
+
+                {/* Detailed Description */}
+                <div className="p-4 bg-white mb-12 rounded-2xl">
+                    <h2 className='text-[30px] text-black text-center mb-4'>Product Discription</h2>
+                    <p className="text-gray-700 text-[14px] md:text-[16px] px-4 pb-4" style={{ fontFamily: 'Inter_18pt-medium' }}>
+                        {product.detailedDescription}
+                    </p>
                 </div>
 
                 {/* Packaging Details Section */}
@@ -536,7 +384,7 @@ const ProductDetailPage = () => {
 
                 {/* Recommended Products */}
                 <div>
-                    
+
                     {/* Title */}
                     <div className="flex items-center justify-center mb-8 sm:mb-10 md:mb-12">
                         <div
