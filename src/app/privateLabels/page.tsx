@@ -3,8 +3,9 @@ import React from 'react'
 import PrivateLabels from "./PrivateLabels";
 
 export const metadata: Metadata = {
-  title: 'Private Labels | Indian FoodTech',
-  description: 'This is the Private Labels Page of Indian FoodTech',
+  title: "Private Labels",
+  description:
+    "Partner with Indian Food Tech for premium B2B private label peanut butter manufacturing and flexible packaging solutions tailored for your brand.",
 };
 
 export default function PrivateLabelsPage() {

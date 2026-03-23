@@ -56,7 +56,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[638px] xl:h-[700px] overflow-hidden rounded-xl sm:rounded-2xl lg:rounded-3xl">
+    <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] xl:h-[600px] overflow-hidden rounded-xl sm:rounded-2xl lg:rounded-3xl">
       {/* Slides Container */}
       <div
         className="flex transition-transform h-full duration-700 ease-in-out"
@@ -78,16 +78,16 @@ const Slider = () => {
 
             {/* Content - Responsive positioning */}
             <div className="absolute inset-0 flex items-center justify-center z-10 px-4 sm:px-6 md:px-8 lg:px-10">
-              <div className="bg-black/70 sm:bg-black/62 backdrop-blur-sm rounded-2xl sm:rounded-3xl px-4 sm:px-6 md:px-8 lg:px-10 py-8 sm:py-10 md:py-12 lg:py-10 text-center shadow-2xl max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-5xl w-full">
-                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-[32px] xl:text-4xl font-bold text-white mb-3 sm:mb-4 md:mb-4 lg:mb-4 leading-tight px-2">
+              <div className="bg-black/70 sm:bg-black/62 backdrop-blur-sm rounded-2xl sm:rounded-3xl px-4 sm:px-6 md:px-8 lg:px-10 py-4 sm:py-3 md:py-4 lg:py-4 text-center shadow-2xl max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-5xl w-full">
+                <h1 className="text-lg sm:text-base md:text-lg lg:text-xl xl:text-lg font-bold text-white mb-2 sm:mb-2 md:mb-3 lg:mb-3 leading-tight px-2">
                   {slide.title}
                 </h1>
-                <p className="text-xs sm:text-sm md:text-base lg:text-[16px] xl:text-lg text-[#d4dbc4] mb-4 sm:mb-5 md:mb-6 lg:mb-6 leading-relaxed px-1 sm:px-2 md:px-4">
+                <p className="text-[11px] sm:text-xs md:text-sm lg:text-sm xl:text-base text-[#d4dbc4] mb-3 sm:mb-3 md:mb-4 lg:mb-4 leading-relaxed px-1 sm:px-2 md:px-4">
                   {slide.description}
                 </p>
                 <button
                   onClick={handleSubmit}
-                  className="bg-primary-500 hover:bg-primary-600 active:bg-primary-700 text-white px-4 sm:px-5 md:px-6 lg:px-8 py-2 sm:py-2 md:py-2 lg:py-2 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg active:scale-95 text-xs sm:text-sm md:text-base lg:text-base"
+                  className="bg-primary-500 hover:bg-primary-600 active:bg-primary-700 text-white px-3 sm:px-4 md:px-5 lg:px-6 py-1.5 sm:py-2 md:py-2 lg:py-2 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg active:scale-95 text-[11px] sm:text-xs md:text-sm lg:text-sm"
                   style={{ fontFamily: "Inter_18pt-regular" }}
                 >
                   <span className="hidden sm:inline">{slide.buttonText}</span>

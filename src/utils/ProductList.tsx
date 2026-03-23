@@ -276,7 +276,7 @@ export const AllProductsList = [
           "Per 2 tbsp (32g): Calories 191kcal, Fat 17g, Carbs 7g, Protein 5g",
         certifications: certificatList,
         sizes: packingSizes,
-        cardImage: "/productsImage/honey.jpg",
+        cardImage: "/productsImage/Tahini.webp",
         recommended: false,
       },
     ],
@@ -285,21 +285,21 @@ export const AllProductsList = [
     id: 3,
     categoryName: "Rosted Peanuts",
     products: [
-      {
-        id: "C3P1",
-        name: "Roasted Split Peanut",
-        description:
-          "Crunchy roasted split peanuts—high in protein, fiber & healthy fats. Perfect for snacking, toppings & food processing",
-        detailedDescription:
-          "Our Roasted Split Peanuts are made from premium-quality peanuts, perfectly roasted to bring out their natural flavor and crunch. Rich in plant-based protein, fiber, and essential nutrients, they are a healthy and tasty choice for both snacking and industrial use. Ideal as a standalone snack, salad topping, peanut butter, protein bar, or bakery ingredient, these roasted splits are widely used in confectionery, snack foods, trail mixes, and more. With consistent quality, crunch, and flavor, our roasted split peanuts are the go-to choice for food businesses and health-conscious consumers alike.",
-        ingredients: "100% Roasted Peanut",
-        nutrition:
-          "Per 2 tbsp (32g): Calories 200, Fat 17g, Carbs 7g, Protein 9g",
-        certifications: ["USDA Organic", "Non-GMO Project Verified"],
-        sizes: ["40 kg bag"],
-        cardImage: "/productsImage/creamy.jpg",
-        recommended: false,
-      },
+      // {
+      //   id: "C3P1",
+      //   name: "Roasted Split Peanut",
+      //   description:
+      //     "Crunchy roasted split peanuts—high in protein, fiber & healthy fats. Perfect for snacking, toppings & food processing",
+      //   detailedDescription:
+      //     "Our Roasted Split Peanuts are made from premium-quality peanuts, perfectly roasted to bring out their natural flavor and crunch. Rich in plant-based protein, fiber, and essential nutrients, they are a healthy and tasty choice for both snacking and industrial use. Ideal as a standalone snack, salad topping, peanut butter, protein bar, or bakery ingredient, these roasted splits are widely used in confectionery, snack foods, trail mixes, and more. With consistent quality, crunch, and flavor, our roasted split peanuts are the go-to choice for food businesses and health-conscious consumers alike.",
+      //   ingredients: "100% Roasted Peanut",
+      //   nutrition:
+      //     "Per 2 tbsp (32g): Calories 200, Fat 17g, Carbs 7g, Protein 9g",
+      //   certifications: ["USDA Organic", "Non-GMO Project Verified"],
+      //   sizes: ["40 kg bag"],
+      //   cardImage: "/productsImage/creamy.jpg",
+      //   recommended: false,
+      // },
       {
         id: "C3P2",
         name: "Roasted Peanut Dices",
@@ -313,7 +313,7 @@ export const AllProductsList = [
           "Per 2 tbsp (32g): Calories 200, Fat 17g, Carbs 7g, Protein 9g",
         certifications: ["USDA Organic", "Non-GMO Project Verified"],
         sizes: ["5 lb tub", "25 lb pail", "50 lb drum"],
-        cardImage: "/productsImage/crunchy.jpg",
+        cardImage: "/productsImage/RoastedPeanutDices.webp",
         recommended: false,
       },
     ],
@@ -335,7 +335,7 @@ export const AllProductsList = [
           "Per 2 tbsp (32g): Calories 190, Fat 16g, Carbs 7g, Protein 8g",
         certifications: certificatList,
         sizes: packingSizes,
-        cardImage: "/productsImage/creamy.jpg",
+        cardImage: "/productsImage/HazealnutChocolateSpread.webp",
         recommended: false,
       },
     ],

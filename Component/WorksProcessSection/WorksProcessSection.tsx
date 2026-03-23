@@ -41,11 +41,11 @@ const WorksProcessSection = () => {
     ];
 
     return (
-        <div className="py-8 sm:py-12 md:py-16 lg:py-16">
+        <div className="py-8 sm:py-6 md:py-8 lg:py-8">
 
             {/* Section Header */}
-            <div className="flex justify-center mb-8 sm:mb-12 md:mb-16 lg:mb-20">
-                <div className="bg-[#1D2C00] text-white mt-6 sm:mt-8 md:mt-10 lg:mt-10 px-6 sm:px-12 md:px-18 lg:px-24 py-3 sm:py-4 md:py-5 lg:py-6 rounded-full text-base sm:text-xl md:text-2xl lg:text-[28px] font-normal text-center" style={{ fontFamily: 'Inter_18pt-regular' }}>
+            <div className="flex justify-center mb-8 sm:mb-6 md:mb-8 lg:mb-10">
+                <div className="bg-[#1D2C00] text-white mt-6 sm:mt-8 md:mt-10 lg:mt-10 px-6 sm:px-12 md:px-18 lg:px-12 py-3 sm:py-4 md:py-5 lg:py-6 rounded-full text-base sm:text-xl md:text-lg lg:text-[28px] font-normal text-center" style={{ fontFamily: 'Inter_18pt-regular' }}>
                     How It Works – Our Process
                 </div>
             </div>
@@ -77,7 +77,7 @@ const WorksProcessSection = () => {
 
                                 {/* Content */}
                                 <div className="flex-1 text-center sm:text-left">
-                                    <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-black mb-2 sm:mb-3" style={{ fontFamily: 'NotoSerif-semibold' }}>
+                                    <h3 className="text-lg sm:text-xl md:text-lg font-medium text-black mb-2 sm:mb-3" style={{ fontFamily: 'NotoSerif-semibold' }}>
                                         {process.title}
                                     </h3>
                                     <p className="text-gray-600 text-sm sm:text-base leading-relaxed" style={{ fontFamily: 'Inter_18pt-regular' }}>
@@ -107,7 +107,7 @@ const WorksProcessSection = () => {
                         {processes.map((process, index) => (
                             <div key={index} className="flex items-start gap-[58px] relative">
                                 {/* Icon Circle */}
-                                <div className="bg-primary-500 h-[122px] w-[122px] mt-20 flex items-center justify-center rounded-full">
+                                <div className="bg-primary-500 h-[122px] w-[122px] mt-10 flex items-center justify-center rounded-full">
                                     <div className="flex-shrink-0 bg-[#F6F6F6] w-[91px] h-[91px] rounded-full flex items-center justify-center shadow-2xl shadow-black relative z-10">
                                         {process.icon}
                                     </div>
@@ -115,7 +115,7 @@ const WorksProcessSection = () => {
 
                                 {/* Content Card */}
                                 <div className="flex-1 bg-white rounded-3xl h-[280px] w-[858px] shadow-2xl shadow-[#d4dbc4] p-10 space-y-6">
-                                    <h3 className="text-[36px] font-medium text-black" style={{ fontFamily: 'NotoSerif-semibold' }}>
+                                    <h3 className="text-[26px] font-medium text-black" style={{ fontFamily: 'NotoSerif-semibold' }}>
                                         {process.title}
                                     </h3>
                                     <p className="text-[#5D6079] text-[22px] leading-relaxed" style={{ fontFamily: 'Inter_18pt-regular' }}>

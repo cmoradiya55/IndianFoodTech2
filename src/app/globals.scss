@@ -884,71 +884,69 @@ body {
 }
 
 .producPageMainImage{
-  width: 46%;
-  height: 600px;
+  width: 42%;
+  height: 500px;
 }
 
 .producPageRightSection{
-  width: 700px;
-  padding: 2.5rem 3rem;
+  width: 600px;
+  padding: 1.5rem 2rem;
 }
 
 
 @media (max-width: 1350px) {
  .producPageMainImage{
-    height: 550px;
+    height: 450px;
   }
   .producPageRightSection{
-    width: 670px;
-    padding: 2rem 2.5rem;
+    width: 580px;
+    padding: 1.5rem 2rem;
   }
 }
 
 @media (max-width: 1260px) {
   .producPageMainImage{
-    width: 44%;
+    width: 40%;
   }
   .producPageRightSection{
-    width: 670px;
-    padding: 2rem 2.5rem;
+    width: 550px;
   }
 }
 
 @media (max-width: 1185px) {
   .producPageRightSection{
-    width: 625px;
-    padding: 2rem 2.5rem;
+    width: 520px;
   }
 }
 
 @media (max-width: 1135px) {
   .producPageMainImage{
-    width: 42%;
+    width: 38%;
   }
 }
 
 @media (max-width: 1090px) {
  .producPageMainImage{
-  width: 40%;
-    height: 500px;
+  width: 36%;
+    height: 400px;
   }
   .producPageRightSection{
-    width: 615px;
+    width: 500px;
     h1{
-      font-size: 32px;
+      font-size: 28px;
     }
   }
 }
 
 @media (max-width: 1040px) {
   .producPageMainImage{
-    width: 39%;
+    width: 35%;
   }
 }
 
 @media (max-width: 1030px) {
   .producPageRightSection{
-    width: 600px;
+    width: 480px;
   }
 }
 

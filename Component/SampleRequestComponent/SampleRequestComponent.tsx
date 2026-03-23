@@ -178,7 +178,7 @@ const SampleRequestComponent = () => {
             <div className="mb-6 sm:mb-8 md:mb-10 lg:mb-10 flex gap-3 sm:gap-4">
                 <div className="bg-primary-500 h-30 sm:h-24 md:h-28 lg:h-30 w-1.5 sm:w-2 rounded-2xl shrink-0"></div>
                 <div className='mt-1 sm:mt-2 md:mt-3 lg:mt-4'>
-                    <h1 className="text-2xl sm:text-3xl md:text-[36px] lg:text-[36px] font-bold text-gray-900 mb-1 sm:mb-2">
+                    <h1 className="text-lg sm:text-xl md:text-[26px] lg:text-[26px] font-bold text-gray-900 mb-1 sm:mb-2">
                         Request a Sample
                     </h1>
                     <p className="text-base sm:text-lg md:text-xl lg:text-[24px] text-primary-500 font-medium leading-relaxed" style={{ fontFamily: 'Inter_18pt-medium' }}>
@@ -191,7 +191,7 @@ const SampleRequestComponent = () => {
 
                 {/* Title Bar */}
                 <div className="bg-primary-500 py-3 sm:py-4 md:py-4 lg:py-4 px-3 sm:px-4 md:px-6 lg:px-6 rounded-t-2xl sm:rounded-t-3xl">
-                    <h1 className="text-lg sm:text-xl md:text-2xl lg:text-2xl font-bold text-white">Product Sample Request</h1>
+                    <h1 className="text-lg sm:text-xl md:text-lg lg:text-lg font-bold text-white">Product Sample Request</h1>
                     <p className="text-xs sm:text-sm md:text-base lg:text-base text-primary-50">Select products from our categories to request samples</p>
                 </div>
 
@@ -274,7 +274,7 @@ const SampleRequestComponent = () => {
                         {/* Title */}
                         <div className="flex items-center justify-center mb-4 sm:mb-5 lg:mb-5">
                             <div
-                                className="bg-[#1D2C00] text-white mt-6 sm:mt-8 md:mt-10 lg:mt-10 px-6 sm:px-12 md:px-24 lg:px-50 py-3 sm:py-4 md:py-5 lg:py-6 rounded-full text-base sm:text-xl md:text-2xl lg:text-[28px] font-normal text-center"
+                                className="bg-[#1D2C00] text-white mt-6 sm:mt-8 md:mt-10 lg:mt-10 px-6 sm:px-12 md:px-12 lg:px-50 py-3 sm:py-4 md:py-5 lg:py-6 rounded-full text-base sm:text-xl md:text-lg lg:text-[28px] font-normal text-center"
                                 style={{ fontFamily: 'Inter_18pt-regular' }}
                             >
                                 Select Products for Sample

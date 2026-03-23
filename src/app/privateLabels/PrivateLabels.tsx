@@ -4,14 +4,14 @@ import WorksProcessSection from '../../../Component/WorksProcessSection/WorksPro
 
 const PrivateLabels = () => {
     return (
-        <div className='bg-[#e9e8ed] py-6 sm:py-8 md:py-10 lg:py-10 px-3 sm:px-4 md:px-8 lg:px-16'>
+        <div className='bg-[#e9e8ed] py-6 sm:py-8 md:py-5 lg:py-5 px-3 sm:px-4 md:px-8 lg:px-8'>
             <div className='max-w-7xl mx-auto container-custom' style={{ fontFamily: 'NotoSerif-semibold' }}>
 
                 {/* Header Section */}
                 <div className="mb-8 sm:mb-10 lg:mb-10 flex gap-3 sm:gap-4">
                     <div className="bg-primary-500 h-20 sm:h-28 md:h-35 lg:h-35 w-2 rounded-2xl flex-shrink-0"></div>
                     <div className='mt-1 sm:mt-2'>
-                        <h1 className="text-2xl sm:text-3xl md:text-[36px] lg:text-[36px] font-bold text-gray-900 mb-2 sm:mb-2">
+                        <h1 className="text-lg sm:text-xl md:text-[26px] lg:text-[26px] font-bold text-gray-900 mb-2 sm:mb-2">
                             Private Label, Your Brand Our Expertise
                         </h1>
                         <p className="text-base sm:text-lg md:text-[24px] lg:text-[24px] text-primary-500 font-medium leading-relaxed" style={{ fontFamily: 'Inter_18pt-medium' }}>
@@ -26,7 +26,7 @@ const PrivateLabels = () => {
                 <div>
                     {/* Mobile/Tablet Layout - Stacked */}
                     <div className="block lg:hidden">
-                        <div className='bg-white p-4 sm:p-6 md:p-8 mt-6 sm:mt-8 mb-8 sm:mb-12 rounded-2xl sm:rounded-3xl shadow-lg'>
+                        <div className='bg-white p-4 sm:p-6 md:p-8 mt-6 sm:mt-8 mb-8 sm:mb-6 rounded-2xl sm:rounded-3xl shadow-lg'>
                             {/* Image Section */}
                             <div className="flex justify-center mb-6 sm:mb-8">
                                 <div className="relative w-[250px] sm:w-[300px] md:w-[350px] h-[250px] sm:h-[300px] md:h-[350px] rounded-3xl sm:rounded-[40px] border-4 sm:border-6 border-black overflow-hidden">
@@ -41,7 +41,7 @@ const PrivateLabels = () => {
 
                             {/* Content Section */}
                             <div className='flex flex-col text-center'>
-                                <h2 className="text-xl sm:text-2xl md:text-3xl font-medium text-black mb-3 sm:mb-4">
+                                <h2 className="text-xl sm:text-lg md:text-xl font-medium text-black mb-3 sm:mb-4">
                                     About Private Label
                                 </h2>
                                 <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-4 sm:mb-6" style={{ fontFamily: 'Inter_18pt-regular' }}>
@@ -58,7 +58,7 @@ const PrivateLabels = () => {
 
                     {/* Desktop Layout - Side by Side (lg+) - UNCHANGED */}
                     <div className="hidden lg:block">
-                        <div className='bg-white px-4 sm:px-8 lg:px-16 mt-30 mb-20 rounded-3xl items-center shadow-xl flex h-[396px] relative'>
+                        <div className='bg-white px-4 sm:px-8 lg:px-8 mt-30 mb-10 rounded-3xl items-center shadow-xl flex h-[396px] relative'>
                             <div className='w-[60%] absolute left-1/8'>
                                 <div className="relative w-[458px] h-[458px] rounded-[56px] border-12 border-black overflow-hidden z-10">
                                     <Image
@@ -77,7 +77,7 @@ const PrivateLabels = () => {
                                 <div className="absolute -top-7 left-10 w-[33px] h-[33px] bg-[#d4dbc4] rounded-full"></div>
                             </div>
                             <div className='w-[40%] ml-168 flex flex-col'>
-                                <h2 className="text-3xl md:text-4xl font-medium text-black mb-4">
+                                <h2 className="text-xl md:text-lg font-medium text-black mb-4">
                                     About Private Label
                                 </h2>
                                 <p className="text-gray-600 text-base mb-4" style={{ fontFamily: 'Inter_18pt-regular' }}>

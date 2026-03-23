@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='container-custom mb-6 sm:mb-8 lg:mb-10 px-4 sm:px-6 lg:px-8'>
                 
                 {/* Logo and Social Media Section */}
-                <div className='py-8 sm:py-10 lg:py-12 flex flex-col sm:flex-row justify-between items-center sm:items-start gap-6 sm:gap-4'>
+                <div className='py-8 sm:py-5 lg:py-6 flex flex-col sm:flex-row justify-between items-center sm:items-start gap-6 sm:gap-4'>
                     <div className="shrink-0">
                         <Image
                             src="/logoWhite.png"
@@ -46,7 +46,7 @@ const Footer = () => {
                 </div>
 
                 {/* Main Content Section */}
-                <div className='flex flex-col lg:flex-row gap-8 lg:gap-0'>
+                <div className='flex flex-col lg:flex-row gap-4 lg:gap-0'>
                     
                     {/* Company Description */}
                     <div className='w-full lg:w-1/3 lg:pr-8'>
@@ -56,7 +56,7 @@ const Footer = () => {
                     </div>
 
                     {/* Links and Contact Section */}
-                    <div className='w-full lg:w-2/3 flex flex-col md:flex-row gap-8 md:gap-6 lg:pl-16 xl:pl-24'>
+                    <div className='w-full lg:w-2/3 flex flex-col md:flex-row gap-4 md:gap-6 lg:pl-16 xl:pl-24'>
                         
                         {/* Quick Links */}
                         <div className='w-full md:w-1/2 lg:w-1/3'>

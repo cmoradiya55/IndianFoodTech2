@@ -3,7 +3,7 @@ import ContactUsComponent from '../../../Component/ContactUsComponent/ContactUsC
 
 const ContactUs = () => {
     return (
-        <div className='bg-[#e9e8ed] py-10 px-4 sm:px-8 lg:px-16'>
+        <div className='bg-[#e9e8ed] py-5 px-4 sm:px-8 lg:px-8'>
             <div className='min-h-screen'>
                 <div className='max-w-7xl mx-auto container-custom' style={{ fontFamily: 'NotoSerif-semibold' }}>
                     <ContactUsComponent />

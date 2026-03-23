@@ -15,9 +15,42 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Indian Food Tech - Fresh & Authentic Indian Cuisine",
-  description: "Experience the finest Indian cuisine with authentic flavors and fresh ingredients delivered to your doorstep.",
-  keywords: "Indian food, authentic cuisine, food delivery, Mumbai, Indian restaurant",
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
+  ),
+  title: {
+    default: "Indian Food Tech - Fresh & Authentic Indian Cuisine",
+    template: "%s | Indian Food Tech",
+  },
+  description:
+    "Indian Food Tech is a premium manufacturer of high-quality peanut butter, nut butters, and spreads. We specialize in private labeling, flexible packaging, and large-scale bulk production for brands worldwide.",
+  keywords: [
+    "peanut butter manufacturer",
+    "nut butter",
+    "private label peanut butter",
+    "bulk peanut butter",
+    "creamy peanut butter",
+    "crunchy peanut butter",
+    "food manufacturing",
+  ],
+  authors: [{ name: "Indian Food Tech" }],
+  creator: "Indian Food Tech",
+  publisher: "Indian Food Tech",
+  openGraph: {
+    title: "Indian Food Tech - Premium Peanut Butter Manufacturer",
+    description:
+      "High-quality peanut butter, nut butters, and spreads. Specializing in private labeling and large-scale supply.",
+    url: "/",
+    siteName: "Indian Food Tech",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Indian Food Tech",
+    description: "Premium manufacturer of peanut butter and nut butters.",
+    creator: "@indianfoodtech",
+  },
 };
 
 export default function RootLayout({

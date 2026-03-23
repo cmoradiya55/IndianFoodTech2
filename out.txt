@@ -1,0 +1,2 @@
+﻿Component/CreateYourBrand/CreateYourBrand.tsx(93,1): error TS1127: Invalid character.
+Component/CreateYourBrand/CreateYourBrand.tsx(93,2): error TS1435: Unknown keyword or identifier. Did you mean 'const'?
