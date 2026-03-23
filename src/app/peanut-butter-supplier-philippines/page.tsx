@@ -1,5 +1,5 @@
-import PeanutButterSuppliearPhilippines from "./PeanutButterSuppliearPhilippines";
 import { Metadata } from "next";
+import PeanutButterSuppliearPhilippines from "./PeanutButterSuppliearPhilippines";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier in Philippines | Bulk Exporter from India",
