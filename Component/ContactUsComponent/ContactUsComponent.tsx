@@ -94,9 +94,9 @@ const ContactUsComponent = () => {
     <div className="max-w-7xl mx-auto">
       {/* Header Section */}
       <div className="mb-8 sm:mb-10 md:mb-6 flex gap-3 sm:gap-4">
-        <div className="bg-primary-500 h-40 sm:h-28 md:h-35 lg:h-28 w-1 sm:w-1.5 lg:w-1.5 rounded-2xl shrink-0"></div>
+        <div className="bg-primary-500 h-30 sm:h-28 md:h-35 lg:h-25 w-1 sm:w-1.5 lg:w-1.5 rounded-2xl shrink-0"></div>
         <div className="mt-1 sm:mt-2">
-          <h1 className="text-base sm:text-base md:text-lg lg:text-base font-bold text-gray-900 mb-2 sm:mb-2">
+          <h1 className="text-base sm:text-base md:text-lg lg:text-xl font-bold text-gray-900 mb-2 sm:mb-2">
             Contact Us
           </h1>
           <p
@@ -229,7 +229,7 @@ const ContactUsComponent = () => {
             </div>
 
             {/* Map */}
-            <div className="mt-4 sm:mt-6 rounded-xl sm:rounded-2xl overflow-hidden">
+            <div className="mt-4 sm:mt-10 rounded-xl sm:rounded-2xl overflow-hidden">
               <iframe
                 src="https://www.google.com/maps?q=21.20460098512739, 72.990028915698&hl=es;z=14&output=embed"
                 width="100%"
@@ -247,7 +247,7 @@ const ContactUsComponent = () => {
               onClick={() =>
                 window.open("https://wa.me/919714899711", "_blank")
               }
-              className="w-full bg-primary-500 hover:bg-primary-600 text-white shadow-xl shadow-primary-500/50 font-semibold py-2 sm:py-3 rounded-full transition-colors duration-200 text-xs sm:text-sm"
+              className="w-full bg-primary-500 hover:bg-primary-600 text-white shadow-xl shadow-primary-500/50 font-semibold py-2 sm:py-3 rounded-full transition-colors duration-200 text-xs sm:text-sm mt-1 sm:mt-6"
             >
               Send a WhatsApp Message
             </button>

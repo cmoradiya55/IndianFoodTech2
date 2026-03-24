@@ -79,7 +79,7 @@ const Slider = () => {
             {/* Content - Responsive positioning */}
             <div className="absolute inset-0 flex items-center justify-center z-10 px-4 sm:px-6 md:px-8 lg:px-10">
               <div className="bg-black/70 sm:bg-black/62 backdrop-blur-sm rounded-2xl sm:rounded-3xl px-4 sm:px-6 md:px-8 lg:px-10 py-4 sm:py-3 md:py-4 lg:py-4 text-center shadow-2xl max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-5xl w-full">
-                <h1 className="text-lg sm:text-base md:text-lg lg:text-xl xl:text-lg font-bold text-white mb-2 sm:mb-2 md:mb-3 lg:mb-3 leading-tight px-2">
+                <h1 className="text-2xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white mb-2 sm:mb-2 md:mb-3 lg:mb-3 leading-tight px-2">
                   {slide.title}
                 </h1>
                 <p className="text-[11px] sm:text-xs md:text-sm lg:text-sm xl:text-base text-[#d4dbc4] mb-3 sm:mb-3 md:mb-4 lg:mb-4 leading-relaxed px-1 sm:px-2 md:px-4">
@@ -102,18 +102,18 @@ const Slider = () => {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-2 sm:left-4 md:left-6 top-1/2 transform -translate-y-1/2 bg-white/60 hover:bg-white text-gray-700 w-8 h-8 sm:w-10 sm:h-10 md:w-10 md:h-10 lg:w-10 lg:h-10 rounded-full transition-all duration-300 z-20 flex items-center justify-center shadow-lg hover:shadow-xl touch-manipulation"
+        className="absolute left-2 sm:left-4 md:left-6 top-1/2 transform -translate-y-1/2 bg-white/60 hover:bg-white text-gray-700 w-7 h-7 sm:w-9 sm:h-9 md:w-9 md:h-9 lg:w-9 lg:h-9 rounded-full transition-all duration-300 z-20 flex items-center justify-center shadow-lg hover:shadow-xl touch-manipulation"
         aria-label="Previous slide"
       >
-        <ChevronLeft className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
+        <ChevronLeft className="w-5 h-5 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
       </button>
 
       <button
         onClick={nextSlide}
-        className="absolute right-2 sm:right-4 md:right-6 top-1/2 transform -translate-y-1/2 bg-white/60 hover:bg-white text-gray-700 w-8 h-8 sm:w-10 sm:h-10 md:w-10 md:h-10 lg:w-10 lg:h-10 rounded-full transition-all duration-300 z-20 flex items-center justify-center shadow-lg hover:shadow-xl touch-manipulation"
+        className="absolute right-2 sm:right-4 md:right-6 top-1/2 transform -translate-y-1/2 bg-white/60 hover:bg-white text-gray-700 w-7 h-7 sm:w-9 sm:h-9 md:w-9 md:h-9 lg:w-9 lg:h-9 rounded-full transition-all duration-300 z-20 flex items-center justify-center shadow-lg hover:shadow-xl touch-manipulation"
         aria-label="Next slide"
       >
-        <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
+        <ChevronRight className="w-5 h-5 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
       </button>
 
       {/* Dots Indicator */}

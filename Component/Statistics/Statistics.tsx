@@ -30,9 +30,9 @@ const Statistics = () => {
     <div>
       {/* Header Section */}
       <div className="mb-4 sm:mb-4 md:mb-6 lg:mb-8 flex gap-3 sm:gap-4 lg:gap-5">
-        <div className="bg-primary-500 h-40 sm:h-28 md:h-35 lg:h-28 w-1 sm:w-1.5 lg:w-1.5 rounded-2xl flex-shrink-0"></div>
+        <div className="bg-primary-500 h-20 sm:h-28 md:h-35 lg:h-25 w-1 sm:w-1.5 lg:w-1.5 rounded-2xl flex-shrink-0"></div>
         <div className="mt-1 sm:mt-1 lg:mt-2">
-          <h1 className="text-base sm:text-base md:text-lg lg:text-base font-bold text-gray-900 mb-2 leading-tight">
+          <h1 className="text-base sm:text-base md:text-lg lg:text-xl font-bold text-gray-900 mb-2 leading-tight">
             Spreading Health and Happiness
             <br />
             Since 2019

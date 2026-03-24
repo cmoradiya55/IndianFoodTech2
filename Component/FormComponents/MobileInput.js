@@ -30,7 +30,7 @@ export default function MobileInput({
 
   const onMobileNumberChange = (e) => {
     const { value } = e.target;
-    if (/^\d{0,15}$/.test(value)) {
+    if (/^\d{0,10}$/.test(value)) {
       setMobileNumber(value);
       onChange({ target: { name, value: selectedCountryCode + '-' + value } });
     }

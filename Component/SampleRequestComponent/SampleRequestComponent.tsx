@@ -1,365 +1,425 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useState } from 'react'
-import TextInput from '../FormComponents/TextInput';
-import MobileInput from '../FormComponents/MobileInput';
-import { AllProductsList } from '@/utils/ProductList';
+import React, { useState } from "react";
+import TextInput from "../FormComponents/TextInput";
+import MobileInput from "../FormComponents/MobileInput";
+import { AllProductsList } from "@/utils/ProductList";
+import { Mail } from "lucide-react";
 
 const SampleRequestComponent = () => {
+  const [productSelectionError, setProductSelectionError] = useState("");
+  const [formData, setFormData] = useState<{
+    name: string;
+    businessName: string;
+    email: string;
+    mobile: string;
+    website: string;
+    address: string;
+    message: string;
+    selectedProducts: { [productId: string]: boolean };
+  }>({
+    name: "",
+    businessName: "",
+    email: "",
+    mobile: "",
+    website: "",
+    address: "",
+    message: "",
+    selectedProducts: {},
+  });
 
-    const [productSelectionError, setProductSelectionError] = useState('');
-    const [formData, setFormData] = useState<{
-        name: string;
-        businessName: string;
-        email: string;
-        mobile: string;
-        website: string;
-        address: string;
-        message: string;
-        selectedProducts: { [productId: string]: boolean };
-    }>({
-        name: '',
-        businessName: '',
-        email: '',
-        mobile: '',
-        website: '',
-        address: '',
-        message: '',
-        selectedProducts: {},
-    });
+  // Validation errors state
+  const [errors, setErrors] = useState({
+    name: "",
+    businessName: "",
+    email: "",
+    mobile: "",
+    website: "",
+    address: "",
+  });
 
-    // Validation errors state
-    const [errors, setErrors] = useState({
-        name: '',
-        businessName: '',
-        email: '',
-        mobile: '',
-        website: '',
-        address: ''
-    });
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
 
-    const handleSubmit = async (e: any) => {
-        e.preventDefault();
-
-        if (Object.keys(formData.selectedProducts).length === 0) {
-            setProductSelectionError('Please select at least one product');
-            return;
-        }
-
-        const selectedProductIds = Object.keys(formData.selectedProducts);
-        const selectedItems: any = [];
-
-        AllProductsList.forEach(category => {
-            category.products.forEach(product => {
-                if (selectedProductIds.includes(product.id)) {
-                    selectedItems.push(`${product.name} (${category.categoryName})`);
-                }
-            });
-        });
-
-        const submissionData = {
-            name: formData.name,
-            businessName: formData.businessName,
-            email: formData.email,
-            mobile: formData.mobile,
-            website: formData.website,
-            address: formData.address,
-            message: formData.message,
-            selectedProducts: selectedItems,
-            formType: 'sampleRequest'
-        };
-
-        try {
-            const response = await fetch('/api/sendEmail', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(submissionData),
-            });
-
-            const responseData = await response.json();
-
-            if (!response.ok) {
-                throw new Error(responseData.error || 'Failed to submit form');
-            }
-
-            // First show success alert (before any state updates)
-            alert("Your sample request has been submitted successfully ✅");
-
-            // Reset form data and errors
-            setFormData({
-                name: '',
-                businessName: '',
-                email: '',
-                mobile: '',
-                website: '',
-                address: '',
-                message: '',
-                selectedProducts: {},
-            });
-
-            setErrors({
-                name: '',
-                businessName: '',
-                email: '',
-                mobile: '',
-                website: '',
-                address: ''
-            });
-
-            setProductSelectionError('');
-
-            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-                (checkbox as HTMLInputElement).checked = false;
-            });
-
-            setTimeout(() => {
-                // closeModal();
-            }, 1500);
-
-        } catch (error) {
-            console.error('Error submitting form:', error);
-            alert('Error submitting form: ' + (error instanceof Error ? error.message : String(error)));
-            return;
-        }
-    };
-
-    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        const { name, value } = e.target;
-
-        setFormData(prev => ({
-            ...prev,
-            [name]: value
-        }));
-
-        // Clear error when field is edited and valid
-        if (errors[name as keyof typeof errors]) {
-            setErrors(prev => ({
-                ...prev,
-                [name]: ''
-            }));
-        }
-    };
-
-    interface ProductSelection {
-        [productId: string]: boolean;
+    if (Object.keys(formData.selectedProducts).length === 0) {
+      setProductSelectionError("Please select at least one product");
+      return;
     }
 
-    const handleProductSelection = (
-        productId: string,
-        checked: boolean
-    ): void => {
-        setFormData(prev => {
-            const updatedProducts: ProductSelection = { ...prev.selectedProducts };
+    const selectedProductIds = Object.keys(formData.selectedProducts);
+    const selectedItems: any = [];
 
-            if (checked) {
-                updatedProducts[productId] = true;
-                // Clear product selection error if at least one product is selected
-                setProductSelectionError('');
-            } else {
-                delete updatedProducts[productId];
-                // Check if there are no products selected after deletion
-                if (Object.keys(updatedProducts).length === 0) {
-                    setProductSelectionError('Please select at least one product');
-                }
-            }
+    AllProductsList.forEach((category) => {
+      category.products.forEach((product) => {
+        if (selectedProductIds.includes(product.id)) {
+          selectedItems.push(`${product.name} (${category.categoryName})`);
+        }
+      });
+    });
 
-            return {
-                ...prev,
-                selectedProducts: updatedProducts
-            };
-        });
+    const submissionData = {
+      name: formData.name,
+      businessName: formData.businessName,
+      email: formData.email,
+      mobile: formData.mobile,
+      website: formData.website,
+      address: formData.address,
+      message: formData.message,
+      selectedProducts: selectedItems,
+      formType: "sampleRequest",
     };
 
-    return (
-        <div className='p-4 sm:p-6 md:p-8 lg:p-[50px]' style={{ fontFamily: 'NotoSerif-semibold' }}>
+    try {
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(submissionData),
+      });
 
-            {/* Header Section */}
-            <div className="mb-6 sm:mb-8 md:mb-10 lg:mb-10 flex gap-3 sm:gap-4">
-                <div className="bg-primary-500 h-30 sm:h-24 md:h-28 lg:h-30 w-1.5 sm:w-2 rounded-2xl shrink-0"></div>
-                <div className='mt-1 sm:mt-2 md:mt-3 lg:mt-4'>
-                    <h1 className="text-lg sm:text-xl md:text-[26px] lg:text-[26px] font-bold text-gray-900 mb-1 sm:mb-2">
-                        Request a Sample
-                    </h1>
-                    <p className="text-base sm:text-lg md:text-xl lg:text-[24px] text-primary-500 font-medium leading-relaxed" style={{ fontFamily: 'Inter_18pt-medium' }}>
-                        Choose the products you would like to receive as samples.
-                    </p>
-                </div>
-            </div>
+      const responseData = await response.json();
 
-            <div className="rounded-2xl sm:rounded-3xl border border-primary-600 shadow-lg">
+      if (!response.ok) {
+        throw new Error(responseData.error || "Failed to submit form");
+      }
 
-                {/* Title Bar */}
-                <div className="bg-primary-500 py-3 sm:py-4 md:py-4 lg:py-4 px-3 sm:px-4 md:px-6 lg:px-6 rounded-t-2xl sm:rounded-t-3xl">
-                    <h1 className="text-lg sm:text-xl md:text-lg lg:text-lg font-bold text-white">Product Sample Request</h1>
-                    <p className="text-xs sm:text-sm md:text-base lg:text-base text-primary-50">Select products from our categories to request samples</p>
-                </div>
+      // First show success alert (before any state updates)
+      alert("Your sample request has been submitted successfully ✅");
 
-                {/* Form Section */}
-                <form onSubmit={handleSubmit} className="p-3 sm:p-4 md:p-6 lg:p-6">
-                    {/* Contact Information */}
-                    <div className="mb-4 sm:mb-6 md:mb-8 lg:mb-8">
-                        <h3 className="text-base sm:text-lg md:text-xl lg:text-xl font-semibold text-primary-800 mb-3 sm:mb-4 md:mb-4 lg:mb-4 border-b pb-2">Company Information</h3>
+      // Reset form data and errors
+      setFormData({
+        name: "",
+        businessName: "",
+        email: "",
+        mobile: "",
+        website: "",
+        address: "",
+        message: "",
+        selectedProducts: {},
+      });
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-6">
-                            <TextInput
-                                label="Name"
-                                name="name"
-                                value={formData.name}
-                                onChange={handleInputChange}
-                                placeholder="John Doe"
-                                type="text"
-                                error={errors.name}
-                                validateRegex={/^[a-zA-Z\s]+$/}
-                            />
+      setErrors({
+        name: "",
+        businessName: "",
+        email: "",
+        mobile: "",
+        website: "",
+        address: "",
+      });
 
-                            <TextInput
-                                label="Business Name"
-                                name="businessName"
-                                value={formData.businessName}
-                                onChange={handleInputChange}
-                                placeholder="Your Business Name"
-                                type="text"
-                                error={errors.businessName}
-                                validateRegex={/^.+$/} // At least one character
-                            />
+      setProductSelectionError("");
 
-                            <TextInput
-                                label="Email Address"
-                                name="email"
-                                value={formData.email}
-                                onChange={handleInputChange}
-                                placeholder="your@email.com"
-                                type="email"
-                                error={errors.email}
-                                validateRegex={/^[^\s@]+@[^\s@]+\.[^\s@]+$/} // Email pattern
-                            />
+      document
+        .querySelectorAll('input[type="checkbox"]')
+        .forEach((checkbox) => {
+          (checkbox as HTMLInputElement).checked = false;
+        });
 
-                            <MobileInput
-                                label="WhatsApp Number"
-                                name="mobile"
-                                value={formData.mobile}
-                                onChange={handleInputChange}
-                                placeholder="123-456-7890"
-                                error={errors.mobile}
-                            />
+      setTimeout(() => {
+        // closeModal();
+      }, 1500);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert(
+        "Error submitting form: " +
+          (error instanceof Error ? error.message : String(error)),
+      );
+      return;
+    }
+  };
 
-                            <TextInput
-                                label="Website"
-                                name="website"
-                                value={formData.website}
-                                onChange={handleInputChange}
-                                placeholder="www.yourwebsite.com"
-                                type="text"
-                                error={errors.website}
-                                validateRegex={/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/} // URL pattern
-                            />
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    const { name, value } = e.target;
 
-                            <TextInput
-                                label="Address"
-                                name="address"
-                                value={formData.address}
-                                onChange={handleInputChange}
-                                placeholder="123 Main St, City, Country"
-                                type="text"
-                                error={errors.address}
-                                validateRegex={/^.+$/} // At least one character
-                            />
-                        </div>
-                    </div>
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
 
-                    {/* Product Selection */}
-                    <div className="mb-4 sm:mb-6 md:mb-8 lg:mb-8">
+    // Clear error when field is edited and valid
+    if (errors[name as keyof typeof errors]) {
+      setErrors((prev) => ({
+        ...prev,
+        [name]: "",
+      }));
+    }
+  };
 
-                        {/* Title */}
-                        <div className="flex items-center justify-center mb-4 sm:mb-5 lg:mb-5">
-                            <div
-                                className="bg-[#1D2C00] text-white mt-6 sm:mt-8 md:mt-10 lg:mt-10 px-6 sm:px-12 md:px-12 lg:px-50 py-3 sm:py-4 md:py-5 lg:py-6 rounded-full text-base sm:text-xl md:text-lg lg:text-[28px] font-normal text-center"
-                                style={{ fontFamily: 'Inter_18pt-regular' }}
-                            >
-                                Select Products for Sample
-                            </div>
-                        </div>
-                        
-                        {/* Instructions */}
-                        <p className="text-xs sm:text-sm md:text-sm lg:text-sm text-gray-600 mb-3 sm:mb-4 md:mb-6 lg:mb-6 text-center" style={{ fontFamily: 'Inter_18pt-regular' }}>Choose products you&apos;re interested in sampling:</p>
-                        {productSelectionError && <p className="text-red-600 text-xs sm:text-sm md:text-sm lg:text-sm mb-2">{productSelectionError}</p>}
+  interface ProductSelection {
+    [productId: string]: boolean;
+  }
 
-                        <div className="space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-6">
-                            {AllProductsList.map(category => (
-                                <div key={category.id} className="border border-primary-500 rounded-lg p-2 sm:p-3 md:p-5 lg:p-5 bg-[#d4dbc4]">
-                                    <h4 className="font-medium text-sm sm:text-base md:text-lg lg:text-lg text-primary-600 mb-2 sm:mb-3 md:mb-4 lg:mb-4 flex items-center">
-                                        <svg className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-5 lg:h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fillRule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clipRule="evenodd" />
-                                        </svg>
-                                        {category.categoryName}
-                                    </h4>
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-2 md:gap-3 lg:gap-3">
-                                        {category.products.map(product => (
-                                            <div key={product.id} className="flex items-center bg-white p-2 sm:p-2 md:p-3 lg:p-3 rounded border border-primary-100">
-                                                <input
-                                                    id={`product-${product.id}`}
-                                                    type="checkbox"
-                                                    onChange={(e) => handleProductSelection(product.id, e.target.checked)}
-                                                    className="h-3 w-3 sm:h-4 sm:w-4 md:w-4 md:h-4 lg:h-4 lg:w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded"
-                                                />
-                                                <label htmlFor={`product-${product.id}`} className="ml-2 sm:ml-2 md:ml-3 lg:ml-3 text-xs sm:text-sm md:text-base lg:text-base text-gray-700" style={{ fontFamily: 'Inter_18pt-regular' }}>
-                                                    {product.name}
-                                                </label>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+  const handleProductSelection = (
+    productId: string,
+    checked: boolean,
+  ): void => {
+    setFormData((prev) => {
+      const updatedProducts: ProductSelection = { ...prev.selectedProducts };
 
-                    {/* Message */}
-                    <div className="mb-4 sm:mb-6 md:mb-8 lg:mb-8">
-                        <label className="block text-gray-700 text-xs sm:text-sm md:text-sm lg:text-sm font-bold mb-2" htmlFor="message">
-                            Additional Information
-                        </label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows={4}
-                            value={formData.message}
-                            onChange={handleInputChange}
-                            style={{ fontFamily: 'Inter_18pt-regular' }}
-                            className="shadow appearance-none border rounded w-full py-2 sm:py-2 md:py-3 lg:py-3 px-3 sm:px-3 md:px-4 lg:px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-primary-500 text-xs sm:text-sm md:text-base lg:text-base"
-                            placeholder="Tell us about your specific needs, target market, or any questions you have about our products..."
-                        ></textarea>
-                        <p className="text-xs sm:text-xs md:text-sm lg:text-sm text-gray-500 mt-1" style={{ fontFamily: 'Inter_18pt-regular' }}>Please provide any specific requirements or questions you may have.</p>
-                    </div>
+      if (checked) {
+        updatedProducts[productId] = true;
+        // Clear product selection error if at least one product is selected
+        setProductSelectionError("");
+      } else {
+        delete updatedProducts[productId];
+        // Check if there are no products selected after deletion
+        if (Object.keys(updatedProducts).length === 0) {
+          setProductSelectionError("Please select at least one product");
+        }
+      }
 
-                    {/* Submit Button */}
-                    <div className="flex items-center justify-center">
-                        <button
-                            type="submit"
-                            style={{ fontFamily: 'Inter_18pt-regular' }}
-                            className="bg-primary-500 hover:bg-primary-700 text-white font-bold py-2 sm:py-3 md:py-3 lg:py-3 px-6 sm:px-6 md:px-8 lg:px-8 rounded-full focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 transition duration-150 ease-in-out flex items-center text-sm sm:text-sm md:text-base lg:text-base shadow-lg shadow-primary-500/50"
-                        >
-                            <svg className="w-4 h-4 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-5 lg:h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                            </svg>
-                            Submit
-                        </button>
-                    </div>
-                </form>
+      return {
+        ...prev,
+        selectedProducts: updatedProducts,
+      };
+    });
+  };
 
-                <div className='flex flex-col justify-center items-center gap-1 sm:gap-2 lg:gap-2 mb-2 sm:mb-3 lg:mb-3 px-2 sm:px-4' style={{ fontFamily: 'Inter_18pt-regular' }}>
-                    <p className='text-xs sm:text-xs md:text-sm lg:text-[12px] font-medium text-gray-600 text-center'>
-                        We will get back to you within 24 hours to confirm your sample request.
-                    </p>
-                    <p className='text-xs sm:text-sm md:text-sm lg:text-[14px] font-semibold text-black text-center'>
-                        If you need urgent assistance, please call us at +91 9714890711
-                    </p>
-                </div>
-
-            </div>
-
+  return (
+    <div className="p-4 sm:p-6 md:p-8 lg:p-6 mx-auto max-w-[900px] w-full font-sans">
+      {/* Header Section */}
+      <div className="flex flex-col items-center text-center mb-8 md:mb-5">
+        <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-4">
+          <svg
+            className="w-8 h-8 text-primary-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
+            />
+          </svg>
         </div>
-    )
-}
+        <h1
+          className="text-2xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-2"
+          style={{ fontFamily: "NotoSerif-semibold" }}
+        >
+          Request a Sample
+        </h1>
+        <p
+          className="text-sm sm:text-base text-gray-500 max-w-lg"
+          style={{ fontFamily: "Inter_18pt-regular" }}
+        >
+          Discover the authentic taste of our premium exports. Tell us your
+          requirements and we'll prepare a curated sample package.
+        </p>
+      </div>
 
-export default SampleRequestComponent
+      <form onSubmit={handleSubmit} className="space-y-6 md:space-y-6">
+        {/* Section 1: Company Details */}
+        <div className="bg-white rounded-3xl p-5 md:p-5 shadow-[0_4px_20px_rgb(0,0,0,0.04)] border border-gray-100 relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-2 h-full bg-primary-500 rounded-l-3xl"></div>
+
+          <h3
+            className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3 ml-2 md:ml-4"
+            style={{ fontFamily: "NotoSerif-semibold" }}
+          >
+            <span className="bg-primary-100 text-primary-700 w-8 h-8 rounded-full flex items-center justify-center text-sm">
+              1
+            </span>
+            Company Information
+          </h3>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-5 ml-2 md:ml-12">
+            <TextInput
+              label="Name"
+              name="name"
+              value={formData.name}
+              onChange={handleInputChange}
+              placeholder="John Doe"
+              type="text"
+              error={errors.name}
+              validateRegex={/^[a-zA-Z\s]+$/}
+            />
+
+            <TextInput
+              label="Business Name"
+              name="businessName"
+              value={formData.businessName}
+              onChange={handleInputChange}
+              placeholder="Your Business Name"
+              type="text"
+              error={errors.businessName}
+              validateRegex={/^.+$/}
+            />
+
+            <TextInput
+              label="Email Address"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
+              placeholder="your@email.com"
+              type="email"
+              error={errors.email}
+              validateRegex={/^[^\s@]+@[^\s@]+\.[^\s@]+$/}
+            />
+
+            <MobileInput
+              label="WhatsApp Number"
+              name="mobile"
+              value={formData.mobile}
+              onChange={handleInputChange}
+              placeholder="123-456-7890"
+              error={errors.mobile}
+            />
+
+            <TextInput
+              label="Website"
+              name="website"
+              value={formData.website}
+              onChange={handleInputChange}
+              placeholder="www.yourwebsite.com"
+              type="text"
+              error={errors.website}
+              validateRegex={
+                /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
+              }
+            />
+
+            <TextInput
+              label="Address"
+              name="address"
+              value={formData.address}
+              onChange={handleInputChange}
+              placeholder="123 Main St, City, Country"
+              type="text"
+              error={errors.address}
+              validateRegex={/^.+$/}
+            />
+          </div>
+        </div>
+
+        {/* Section 2: Product Selection */}
+        <div className="bg-white rounded-3xl p-5 md:p-5 shadow-[0_4px_20px_rgb(0,0,0,0.04)] border border-gray-100 relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-2 h-full bg-primary-500 rounded-l-3xl"></div>
+
+          <h3
+            className="text-xl font-bold text-gray-800 mb-2 flex items-center gap-3 ml-2 md:ml-4"
+            style={{ fontFamily: "NotoSerif-semibold" }}
+          >
+            <span className="bg-primary-100 text-primary-700 w-8 h-8 rounded-full flex items-center justify-center text-sm">
+              2
+            </span>
+            Select Products
+          </h3>
+          <p
+            className="text-sm text-gray-500 mb-6 ml-2 md:ml-15"
+            style={{ fontFamily: "Inter_18pt-regular" }}
+          >
+            Choose the products you are interested in sampling.
+          </p>
+
+          {productSelectionError && (
+            <p className="text-red-500 text-sm mb-4 ml-2 md:ml-15 font-medium">
+              {productSelectionError}
+            </p>
+          )}
+
+          <div className="ml-2 md:ml-15 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+            {AllProductsList.map((category) => (
+              <div
+                key={category.id}
+                className="bg-[#fcfdfa] border border-[#e5eadb] p-4 rounded-2xl hover:border-primary-300 transition-colors shadow-sm"
+              >
+                <h4 className="font-semibold text-primary-800 mb-3 text-sm md:text-base border-b border-[#e5eadb] pb-2 flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary-500"></div>
+                  {category.categoryName}
+                </h4>
+                <div className="flex flex-col gap-3">
+                  {category.products.map((product) => (
+                    <label
+                      key={product.id}
+                      className="flex items-start gap-3 cursor-pointer group"
+                    >
+                      <div className="pt-0.5 relative flex items-center justify-center">
+                        <input
+                          id={`product-${product.id}`}
+                          type="checkbox"
+                          onChange={(e) =>
+                            handleProductSelection(product.id, e.target.checked)
+                          }
+                          className="w-4 h-4 md:w-5 md:h-5 text-primary-600 border-gray-300 rounded focus:ring-primary-500 cursor-pointer transition-all"
+                        />
+                      </div>
+                      <span
+                        className="text-sm text-gray-700 group-hover:text-primary-700 transition-colors select-none leading-tight"
+                        style={{ fontFamily: "Inter_18pt-regular" }}
+                      >
+                        {product.name}
+                      </span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Section 3: Messages & Submit */}
+        <div className="bg-white rounded-3xl p-5 md:p-4 shadow-[0_4px_20px_rgb(0,0,0,0.04)] border border-gray-100 relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-2 h-full bg-primary-500 rounded-l-3xl"></div>
+
+          <h3
+            className="text-xl font-bold text-gray-800 mb-6 flex items-center gap-3 ml-2 md:ml-4"
+            style={{ fontFamily: "NotoSerif-semibold" }}
+          >
+            <span className="bg-primary-100 text-primary-700 w-8 h-8 rounded-full flex items-center justify-center text-sm">
+              3
+            </span>
+            Additional Notes
+          </h3>
+
+          <div className="ml-2 md:ml-15 mb-8">
+            <label
+              className="block text-gray-700 text-sm font-bold mb-2 focus-within:text-primary-600 transition-colors"
+              htmlFor="message"
+            >
+              Tell us more about your needs
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows={3}
+              value={formData.message}
+              onChange={handleInputChange}
+              className="w-full border border-gray-200 rounded-2xl p-4 focus:ring-2 focus:ring-primary-500 outline-none text-sm md:text-base transition-all resize-none shadow-sm focus:border-primary-500 text-gray-700"
+              placeholder="Specific requirements, target market, export destination..."
+              style={{ fontFamily: "Inter_18pt-regular" }}
+            ></textarea>
+          </div>
+
+          <div className="mt-8 pt-6 border-t border-gray-100 flex flex-col items-center">
+            <button
+              type="submit"
+              className="bg-primary-500 hover:bg-primary-600 text-white px-8 py-2.5 md:px-8 md:py-2 rounded-full font-semibold text-sm md:text-base shadow-[0_8px_20px_rgb(29,44,0,0.2)] transition-all transform hover:-translate-y-1 w-full sm:w-auto flex items-center justify-center gap-2"
+              style={{ fontFamily: "Inter_18pt-regular" }}
+            >
+              <Mail className="w-5 h-5 mr-1" />
+              Submit Request
+            </button>
+            <div className="text-center mt-4 text-gray-500">
+              <p className="text-xs md:text-sm font-medium">
+                We will review your request and contact you within 24 hours.
+              </p>
+              <p className="text-xs md:text-sm mt-1">
+                Need urgent assistance? Call us at{" "}
+                <span className="font-semibold text-gray-700">
+                  +91 9714890711
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  );
+};
+
+export default SampleRequestComponent;

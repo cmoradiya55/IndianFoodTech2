@@ -105,7 +105,7 @@ const ProductDetailPage = () => {
   };
 
   return (
-    <div className="bg-[#e9e8ed] min-h-screen px-3 sm:px-4 md:px-28 md:py-8 lg:py-5">
+    <div className="bg-[#e9e8ed] min-h-screen px-3 sm:px-4 md:px-28 py-8 md:py-8 lg:py-5">
       <div
         className="max-w-7xl mx-auto px-1 relative"
         style={{ fontFamily: "NotoSerif-semibold" }}
@@ -141,20 +141,21 @@ const ProductDetailPage = () => {
               </div>
             </div>
           </div>
+
           {/* Right Side - Product Info */}
           <div className="relative ml-auto producPageRightSection bg-white rounded-[40px] shadow-lg z-30">
             {/* Product Name */}
-            <h1 className="text-xl lg:text-lg font-bold text-primary-500 mb-4">
+            <h1 className="text-sm md:text-lg lg:text-xl font-bold text-primary-500 mb-4">
               {product.name}
             </h1>
 
             {/* Ingredients */}
-            <div className="mb-3 flex flex-col sm:flex-row items-start sm:items-center bg-[#EDEDED] border border-[#D2D1D6] rounded-lg p-3 gap-3">
-              <h2 className="text-[12px] font-semibold text-[#00280C] bg-[#D4DBC4] rounded-lg px-3 py-1 flex-shrink-0">
+            <div className="mb-3 flex flex-col sm:flex-row items-start sm:items-center bg-[#EDEDED] border border-[#D2D1D6] rounded-lg p-2 lg:p-3 gap-3">
+              <h2 className="text-[14px] font-semibold text-[#00280C] bg-[#D4DBC4] rounded-lg px-3 py-1 flex-shrink-0">
                 Ingredients:
               </h2>
               <p
-                className="text-black font-semibold text-[11px] sm:text-[12px] md:text-[13px]"
+                className="text-black font-semibold text-[12px] sm:text-[12px] md:text-[13px]"
                 style={{ fontFamily: "Inter_18pt-medium" }}
               >
                 {product.ingredients}
@@ -317,8 +318,8 @@ const ProductDetailPage = () => {
         </div>
 
         {/* Detailed Description */}
-        <div className="p-4 bg-white mb-8 rounded-2xl">
-          <h2 className="text-xl text-black text-center mb-4">
+        <div className="p-2 sm:p-4 bg-white mb-8 rounded-2xl">
+          <h2 className="text-xl text-black text-center mb-2">
             Product Discription
           </h2>
           <p
@@ -331,7 +332,7 @@ const ProductDetailPage = () => {
 
         {/* Packaging Details Section */}
         <div className="mb-4 sm:mb-6 md:mb-8 lg:mb-10 flex gap-3 sm:gap-4">
-          <div className="bg-primary-500 h-16 sm:h-22 md:h-24 w-1.5 rounded-2xl flex-shrink-0"></div>
+          <div className="bg-primary-500 h-24 sm:h-22 md:h-25 w-1.5 rounded-2xl flex-shrink-0"></div>
           <div className="mt-1 sm:mt-2">
             <h1 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-gray-900 mb-2">
               Packaging Details
@@ -439,13 +440,13 @@ const ProductDetailPage = () => {
         </div>
 
         {/* Stats Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 px-0 sm:px-4 md:px-8 lg:px-8 mt-4 sm:mt-6 md:mt-8 lg:mt-10 mb-6 sm:mb-8 md:mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-6 px-0 sm:px-4 md:px-8 lg:px-8 mt-4 sm:mt-6 md:mt-8 lg:mt-10 mb-6 sm:mb-8 md:mb-10">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="bg-[#F6F6F6] border-[#D2D1D6] border rounded-xl sm:rounded-2xl shadow-lg py-3 sm:py-4 md:py-6 px-4 sm:px-6 hover:shadow-2xl transition-shadow duration-300"
+              className="bg-[#F6F6F6] border-[#D2D1D6] border rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg py-3 sm:py-4 md:py-6 px-3 min-[400px]:px-4 sm:px-6 hover:shadow-2xl transition-shadow duration-300"
             >
-              <div className="gap-3 sm:gap-4 flex flex-col items-center justify-center">
+              <div className="gap-3 sm:gap-4 flex flex-row sm:flex-col items-center justify-start sm:justify-center">
                 {/* Green Circle Icon */}
                 <div className="w-12 sm:w-16 md:w-[72px] h-12 sm:h-16 md:h-[72px] bg-gradient-to-b from-primary-400 to-primary-600 rounded-xl sm:rounded-2xl flex-shrink-0 shadow-md flex items-center justify-center">
                   <div className="w-6 sm:w-8 md:w-10 h-6 sm:h-8 md:h-10">
@@ -464,8 +465,8 @@ const ProductDetailPage = () => {
                 </div>
 
                 {/* Text Content */}
-                <div className="flex-1 text-center mt-1 sm:mt-2">
-                  <div className="text-xs sm:text-sm font-semibold text-black mb-1 sm:mb-2">
+                <div className="flex-1 text-left sm:text-center mt-0 sm:mt-2">
+                  <div className="text-xs sm:text-sm font-semibold text-black mb-0.5 sm:mb-2">
                     {stat.title}
                   </div>
                   <div
@@ -493,7 +494,7 @@ const ProductDetailPage = () => {
           </div>
 
           {/* Products Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 md:gap-6">
             {(() => {
               // Find the current product's category
               const currentCategory = AllProductsList.find((category) =>
@@ -510,10 +511,10 @@ const ProductDetailPage = () => {
               return similarProducts.map((product) => (
                 <div
                   key={product.id}
-                  className="bg-white rounded-2xl sm:rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border-[1px] border-[#D2D1D6] flex flex-col"
+                  className="bg-white rounded-2xl sm:rounded-3xl shadow-md sm:shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border-[1px] border-[#D2D1D6] flex flex-row sm:flex-col items-center sm:items-stretch h-auto sm:h-full p-2 sm:p-0"
                 >
                   {/* Product Image */}
-                  <div className="relative overflow-hidden w-[180px] sm:w-[200px] md:w-[216px] h-[180px] sm:h-[200px] md:h-[216px] rounded-xl sm:rounded-2xl mx-auto mt-4 sm:mt-6 md:mt-8">
+                  <div className="relative shrink-0 overflow-hidden w-28 h-28 min-[400px]:w-32 min-[400px]:h-32 sm:w-[200px] md:w-[216px] sm:h-[180px] md:h-[180px] rounded-xl sm:rounded-2xl ml-2 sm:mx-auto mt-0 sm:mt-6 md:mt-8 border border-gray-100 sm:border-none">
                     <Image
                       src={product.cardImage}
                       alt={product.name}
@@ -523,16 +524,16 @@ const ProductDetailPage = () => {
                   </div>
 
                   {/* Product Content */}
-                  <div className="p-4 sm:p-6 md:p-8 flex flex-col flex-grow">
+                  <div className="px-3 sm:px-6 md:px-8 py-3 sm:py-4 md:py-6 flex flex-col grow h-full justify-center sm:justify-start">
                     {/* Header with fixed min-height for 2 lines */}
-                    <div className="min-h-[2rem] sm:min-h-[2.2rem] md:min-h-[2rem] flex items-center justify-center mb-2 sm:mb-3">
-                      <h3 className="text-sm sm:text-base font-bold text-gray-900 text-center leading-tight">
+                    <div className="min-h-0 sm:min-h-14 md:min-h-18 flex items-center justify-start sm:justify-center mb-1 sm:mb-1.5">
+                      <h3 className="text-sm min-[400px]:text-base sm:text-xl font-bold text-gray-900 text-left sm:text-center leading-tight line-clamp-2 sm:line-clamp-none">
                         {product.name}
                       </h3>
                     </div>
 
                     <p
-                      className="text-[#5D6079] text-[10px] sm:text-xs leading-relaxed mb-4 sm:mb-5 md:mb-6 text-center flex-grow"
+                      className="text-[#5D6079] text-[10px] min-[400px]:text-[11px] sm:text-sm leading-relaxed mb-2.5 sm:mb-5 md:mb-6 text-left sm:text-center grow line-clamp-2 sm:line-clamp-none"
                       style={{ fontFamily: "Inter_18pt-medium" }}
                     >
                       {product.description}
@@ -541,7 +542,7 @@ const ProductDetailPage = () => {
                     {/* Explore Button */}
                     <button
                       onClick={() => router.push(`/products/${product.id}`)}
-                      className="w-full bg-[#7FB432] hover:bg-[#6fa028] text-white font-normal py-2 sm:py-2 px-4 sm:px-4 rounded-full transition-colors duration-300 mt-auto text-[12px] sm:text-[14px]"
+                      className="w-[120px] min-[400px]:w-[130px] sm:w-full bg-[#7FB432] hover:bg-[#6fa028] shadow-md sm:shadow-lg text-white font-normal py-1.5 sm:py-2 px-3 sm:px-6 rounded-full transition-colors duration-300 mt-auto text-[10px] min-[400px]:text-[11px] sm:text-base self-start sm:self-auto"
                       style={{
                         boxShadow: "0 4px 12px rgba(127, 180, 50, 0.3)",
                         fontFamily: "Inter_18pt-medium",

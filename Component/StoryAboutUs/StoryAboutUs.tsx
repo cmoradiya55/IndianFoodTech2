@@ -12,12 +12,12 @@ const StoryAboutUs = () => {
   };
 
   return (
-    <div className="pb-15">
+    <div className="sm:pb-15">
       {/* Header Section */}
       <div className="mb-8 sm:mb-10 flex gap-3 sm:gap-4">
-        <div className="bg-primary-500 h-40 sm:h-28 md:h-35 lg:h-28 w-1 sm:w-1.5 lg:w-1.5 rounded-2xl flex-shrink-0"></div>
+        <div className="bg-primary-500 h-22 sm:h-28 md:h-35 lg:h-25 w-1 sm:w-1.5 lg:w-1.5 rounded-2xl flex-shrink-0"></div>
         <div className="mt-1 sm:mt-2">
-          <h1 className="text-base sm:text-base md:text-lg lg:text-base font-bold text-gray-900 mb-2 leading-tight">
+          <h1 className="text-base sm:text-base md:text-lg lg:text-xl font-bold text-gray-900 mb-2 leading-tight">
             The Story About Us
           </h1>
           <p
@@ -33,7 +33,7 @@ const StoryAboutUs = () => {
       </div>
 
       {/* Content Section */}
-      <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6 lg:gap-4 mt-8 sm:mt-8 lg:mt-30 max-w-7xl mx-auto relative">
+      <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6 lg:gap-4 mt-8 sm:mt-8 lg:mt-10 max-w-7xl mx-auto relative">
         {/* Left Side - Image */}
         <div className="relative flex-shrink-0 w-full lg:w-auto flex justify-center lg:justify-start lg:ml-20">
           {/* Main circular image */}
@@ -56,7 +56,7 @@ const StoryAboutUs = () => {
         </div>
 
         {/* Right Side - Content */}
-        <div className="flex-1 bg-white w-full lg:w-[568px] lg:absolute lg:right-25 rounded-2xl sm:rounded-3xl shadow-lg p-3 sm:p-4 md:p-6 lg:p-8 z-20 mt-6 lg:mt-0">
+        <div className="flex-1 bg-white w-full lg:w-[568px] lg:absolute lg:right-25 rounded-2xl sm:rounded-3xl shadow-lg p-4 sm:p-4 md:p-6 lg:p-8 z-20 mt-6 lg:mt-0">
           {/* Introduction Text */}
           <p
             className="text-gray-800 text-[11px] sm:text-xs md:text-sm lg:text-base mb-2 sm:mb-3 leading-relaxed"

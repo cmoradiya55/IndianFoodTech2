@@ -41,14 +41,14 @@ const Products = () => {
         style={{ fontFamily: "NotoSerif-semibold" }}
       >
         {/* Header Section */}
-        <div className="mb-8 sm:mb-10 md:mb-6 lg:mb-6 flex gap-3 sm:gap-4">
-          <div className="bg-primary-500 h-20 sm:h-24 md:h-20 w-1.5 rounded-2xl shrink-0"></div>
+        <div className="mb-6 sm:mb-10 md:mb-6 lg:mb-6 flex gap-3 sm:gap-4">
+          <div className="bg-primary-500 h-22 sm:h-24 md:h-20 w-1 sm:w-1.5 rounded-2xl shrink-0"></div>
           <div className="mt-1 sm:mt-2">
-            <h1 className="text-lg sm:text-xl md:text-lg lg:text-xl font-bold text-gray-900 mb-1 sm:mb-1">
+            <h1 className="text-xl sm:text-xl md:text-lg lg:text-xl font-bold text-gray-900 mb-1 sm:mb-1">
               Discover Our Product
             </h1>
             <p
-              className="text-base sm:text-lg md:text-lg text-primary-500 font-medium leading-relaxed"
+              className="text-sm sm:text-lg md:text-lg text-primary-500 font-medium leading-relaxed"
               style={{ fontFamily: "Inter_18pt-medium" }}
             >
               Explore how our product brings ideas to life and adds real value.
@@ -66,9 +66,9 @@ const Products = () => {
           return (
             <div key={categoryItem.id} id={`category-${categorySlug}`}>
               {/* Category Title */}
-              <div className="flex items-center justify-center mb-8 sm:mb-6 md:mb-8 lg:mb-10">
+              <div className="flex items-center justify-center mb-4 sm:mb-6 md:mb-8 lg:mb-10">
                 <div
-                  className="bg-[#1D2C00] text-white mt-4 sm:mt-6 md:mt-8 lg:mt-10 px-6 sm:px-12 md:px-12 lg:px-30 py-3 sm:py-4 md:py-4 lg:py-3 rounded-full text-base sm:text-xl md:text-xl lg:text-xl font-normal text-center"
+                  className="bg-[#1D2C00] text-white mt-4 sm:mt-6 md:mt-8 lg:mt-10 px-8 sm:px-12 md:px-12 lg:px-30 py-2.5 sm:py-4 md:py-4 lg:py-3 rounded-full text-sm sm:text-xl md:text-xl lg:text-xl font-normal text-center shadow-md"
                   style={{ fontFamily: "Inter_18pt-regular" }}
                 >
                   {categoryItem.categoryName}
@@ -77,15 +77,15 @@ const Products = () => {
 
               {/* Products Grid */}
               <div
-                className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 ${index < AllProductsList.length - 1 ? "mb-4 sm:mb-4 md:mb-4" : ""}`}
+                className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 md:gap-6 ${index < AllProductsList.length - 1 ? "mb-6 sm:mb-4 md:mb-4" : ""}`}
               >
                 {categoryItem.products.map((product) => (
                   <div
                     key={product.id}
-                    className="bg-white rounded-2xl sm:rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-[#D2D1D6] flex flex-col"
+                    className="bg-white rounded-2xl sm:rounded-3xl shadow-md sm:shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-[#D2D1D6] flex flex-row sm:flex-col items-center sm:items-stretch h-auto sm:h-full p-2 sm:p-0"
                   >
                     {/* Product Image */}
-                    <div className="relative overflow-hidden w-[180px] sm:w-[200px] md:w-[216px] h-[180px] sm:h-[180px] md:h-[180px] rounded-xl sm:rounded-2xl mx-auto mt-4 sm:mt-6 md:mt-8">
+                    <div className="relative shrink-0 overflow-hidden w-28 h-28 min-[400px]:w-32 min-[400px]:h-32 sm:w-[200px] md:w-[216px] sm:h-[180px] md:h-[180px] rounded-xl sm:rounded-2xl ml-2 sm:mx-auto mt-0 sm:mt-6 md:mt-8 border border-gray-100 sm:border-none">
                       <Image
                         src={product.cardImage}
                         alt={product.name}
@@ -95,16 +95,16 @@ const Products = () => {
                     </div>
 
                     {/* Product Content */}
-                    <div className="px-4 sm:px-6 md:px-8 py-4 sm:py-4 md:py-6 flex flex-col grow">
+                    <div className="px-3 sm:px-6 md:px-8 py-3 sm:py-4 md:py-6 flex flex-col grow h-full justify-center sm:justify-start">
                       {/* Header with fixed min-height for 2 lines */}
-                      <div className="min-h-10 sm:min-h-14 md:min-h-18 flex items-center justify-center mb-2 sm:mb-1.5">
-                        <h3 className="text-lg sm:text-xl font-bold text-gray-900 text-center leading-tight">
+                      <div className="min-h-0 sm:min-h-14 md:min-h-18 flex items-center justify-start sm:justify-center mb-1 sm:mb-1.5">
+                        <h3 className="text-sm min-[400px]:text-base sm:text-xl font-bold text-gray-900 text-left sm:text-center leading-tight line-clamp-2 sm:line-clamp-none">
                           {product.name}
                         </h3>
                       </div>
 
                       <p
-                        className="text-[#5D6079] text-xs sm:text-sm leading-relaxed mb-4 sm:mb-5 md:mb-6 text-center grow"
+                        className="text-[#5D6079] text-[10px] min-[400px]:text-[11px] sm:text-sm leading-relaxed mb-2.5 sm:mb-5 md:mb-6 text-left sm:text-center grow line-clamp-2 sm:line-clamp-none"
                         style={{ fontFamily: "Inter_18pt-medium" }}
                       >
                         {product.description}
@@ -113,7 +113,7 @@ const Products = () => {
                       {/* Explore Button */}
                       <button
                         onClick={() => handleExploreDetails(product.id)}
-                        className="w-full bg-primary-500 hover:bg-primary-600 shadow-lg shadow-primary-500 text-white font-normal py-2.5 sm:py-2 px-4 sm:px-6 rounded-full transition-colors duration-300 mt-auto text-sm sm:text-base"
+                        className="w-[120px] min-[400px]:w-[130px] sm:w-full bg-primary-500 hover:bg-primary-600 text-white font-normal py-1.5 sm:py-2 px-3 sm:px-6 rounded-full transition-colors duration-300 mt-auto text-[10px] min-[400px]:text-[11px] sm:text-base self-start sm:self-auto shadow-md sm:shadow-none"
                         style={{
                           boxShadow: "0 4px 12px rgba(127, 180, 50, 0.3)",
                           fontFamily: "Inter_18pt-medium",

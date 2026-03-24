@@ -63,7 +63,7 @@ const AboutUs = () => {
             {/* <h4 className='text-[#D4DBC4] text-lg sm:text-xl md:text-lg font-semibold'>
                             At Indian Foodtech, we don&#39;t sell under our own label
                         </h4> */}
-            <h2 className="text-primary-500 text-lg sm:text-xl md:text-xl font-semibold">
+            <h2 className="text-primary-500 text-xl sm:text-2xl md:text-3xl font-semibold">
               your brand is our priority
             </h2>
             <p
