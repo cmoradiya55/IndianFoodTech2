@@ -208,7 +208,7 @@ const SampleRequestComponent = () => {
           style={{ fontFamily: "Inter_18pt-regular" }}
         >
           Discover the authentic taste of our premium exports. Tell us your
-          requirements and we'll prepare a curated sample package.
+          requirements and we&apos;ll prepare a curated sample package.
         </p>
       </div>
 

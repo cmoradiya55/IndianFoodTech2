@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { countries } from "@/utils/CountryList";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
-import AllIconComponent from "../../public/AllIconComponent";
 
 const ContactUsComponent = () => {
   const [formData, setFormData] = useState({

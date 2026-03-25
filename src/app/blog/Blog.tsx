@@ -16,8 +16,8 @@ import { BlogList } from "@/utils/BlogList";
 const blogPosts = BlogList.map((post) => ({
   ...post,
   excerpt: post.description,
-  readTime: `${Math.max(3, Math.ceil(((post as any).content?.length || post.description.length) / 1000))} min read`,
-  featured: (post as any).featured || false,
+  readTime: `${Math.max(3, Math.ceil(((post as unknown as { content?: string }).content?.length || post.description.length) / 1000))} min read`,
+  featured: (post as unknown as { featured?: boolean }).featured || false,
 }));
 
 const categories = [

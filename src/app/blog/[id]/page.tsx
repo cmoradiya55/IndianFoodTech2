@@ -7,7 +7,6 @@ import {
   Calendar, 
   Clock, 
   User, 
-  Tag, 
   Share2, 
   ChevronRight,
   CheckCircle2,
@@ -121,7 +120,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ id: string 
     return (
       <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-white">
         <h1 className="text-6xl font-black text-gray-100 mb-4 animate-pulse">404</h1>
-        <p className="text-gray-500 mb-8 text-center text-lg">We couldn't find the article you're seeking.</p>
+        <p className="text-gray-500 mb-8 text-center text-lg">We couldn&apos;t find the article you&apos;re seeking.</p>
         <Link href="/blog" className="px-10 py-4 bg-primary-600 text-white rounded-full font-bold shadow-xl hover:bg-primary-700 transition-all hover:scale-105 active:scale-95">
           Return to Blog
         </Link>
@@ -133,7 +132,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ id: string 
     .filter(p => p.id !== post.id && (p.category === post.category || p.id % 2 === post.id % 2))
     .slice(0, 3);
 
-  const readTime = `${Math.max(3, Math.ceil(((post as any).content?.length || post.description.length) / 1000))} min read`;
+  const readTime = `${Math.max(3, Math.ceil(((post as unknown as { content: string }).content?.length || post.description.length) / 1000))} min read`;
 
   return (
     <div className="min-h-screen bg-white selection:bg-primary-100 selection:text-primary-900">
