@@ -11,7 +11,7 @@ const Slider = () => {
   const slides = [
     {
       id: 1,
-      image: "/slider1.png",
+      image: "/slider1.webp",
       title: "Pure. Healthy. Delicious.",
       description:
         "Crafted from the finest peanuts, our butters are rich in taste, natural in goodness, and made to keep you healthy every day.",
@@ -19,7 +19,7 @@ const Slider = () => {
     },
     {
       id: 2,
-      image: "/slider2.png",
+      image: "/slider2.webp",
       title: "A Healthy Spread of Happiness",
       description:
         "Smooth and flavorful peanut butter crafted to keep your heart healthy and your taste buds satisfied, every single bite.",
@@ -27,7 +27,7 @@ const Slider = () => {
     },
     {
       id: 3,
-      image: "/slider2.png",
+      image: "/slider3.webp",
       title: "Nature's Nutty Treasure",
       description:
         "Packed with protein, free from preservatives, and made with 100% organic peanuts to give you pure nourishment with every spoonful.",
@@ -56,7 +56,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] xl:h-[600px] overflow-hidden rounded-xl sm:rounded-2xl lg:rounded-3xl">
+    <div className="relative w-full h-[450px] sm:h-[400px] md:h-[500px] lg:h-[calc(100dvh-8.5rem)] xl:h-[calc(100dvh-8.5rem)] overflow-hidden rounded-xl sm:rounded-2xl lg:rounded-3xl">
       {/* Slides Container */}
       <div
         className="flex transition-transform h-full duration-700 ease-in-out"
@@ -77,12 +77,12 @@ const Slider = () => {
             </div>
 
             {/* Content - Responsive positioning */}
-            <div className="absolute inset-0 flex items-center justify-center z-10 px-4 sm:px-6 md:px-8 lg:px-10">
-              <div className="bg-black/70 sm:bg-black/62 backdrop-blur-sm rounded-2xl sm:rounded-3xl px-4 sm:px-6 md:px-8 lg:px-10 py-4 sm:py-3 md:py-4 lg:py-4 text-center shadow-2xl max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-5xl w-full">
+            <div className="absolute inset-0 flex items-center sm:items-end justify-center z-10 px-4 sm:px-6 md:px-8 lg:px-10 sm:mb-20">
+              <div className="bg-black/50 sm:bg-black/30 backdrop-blur-sm rounded-2xl sm:rounded-3xl px-4 sm:px-6 md:px-8 lg:px-10 py-4 sm:py-3 md:py-4 lg:py-4 text-center shadow-2xl max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-5xl w-full">
                 <h1 className="text-2xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white mb-2 sm:mb-2 md:mb-3 lg:mb-3 leading-tight px-2">
                   {slide.title}
                 </h1>
-                <p className="text-[11px] sm:text-xs md:text-sm lg:text-sm xl:text-base text-[#d4dbc4] mb-3 sm:mb-3 md:mb-4 lg:mb-4 leading-relaxed px-1 sm:px-2 md:px-4">
+                <p className="text-[11px] sm:text-xs md:text-sm lg:text-sm xl:text-base text-white mb-3 sm:mb-3 md:mb-4 lg:mb-4 leading-relaxed px-1 sm:px-2 md:px-4">
                   {slide.description}
                 </p>
                 <button

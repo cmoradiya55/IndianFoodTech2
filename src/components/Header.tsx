@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import SampleRequestComponent from "../../Component/SampleRequestComponent/SampleRequestComponent";
-import { ChevronDown, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -220,6 +220,12 @@ const Header = () => {
                 Private Labels
               </Link>
               <Link
+                href="/blog"
+                className={navLinkClass(isRouteActive("/blog"))}
+              >
+                Blog
+              </Link>
+              <Link
                 href="/contactUs"
                 className={navLinkClass(isRouteActive("/contactUs"))}
               >
@@ -241,23 +247,7 @@ const Header = () => {
                 className="text-gray-700 hover:text-primary-500 transition-colors p-1"
                 onClick={toggleMenu}
               >
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d={
-                      isMenuOpen
-                        ? "M6 18L18 6M6 6l12 12"
-                        : "M4 6h16M4 12h16M4 18h16"
-                    }
-                  />
-                </svg>
+                <Menu className="w-6 h-6" />
               </button>
             </div>
           </div>
