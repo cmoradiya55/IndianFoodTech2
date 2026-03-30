@@ -1,0 +1,100 @@
+﻿
+> peanut-butter-next@0.1.0 build
+> next build
+
+   Γû▓ Next.js 15.5.7
+
+   Creating an optimized production build ...
+node.exe :  ΓÜá Compiled with 
+warnings in 1684ms
+At line:1 char:1
++ & "C:\nvm4w\nodejs/node.exe" "C:
+\nvm4w\nodejs/node_modules/npm/bin
+/np ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
+    + CategoryInfo          : Not 
+   Specified: ( ΓÜá Compiled wit  
+  h warnings in 1684ms:String)    
+ [], RemoteException
+    + FullyQualifiedErrorId : Nat 
+   iveCommandError
+ 
+
+./src/app/globals.scss.webpack[jav
+ascript/auto]!=!./node_modules/nex
+t/dist/build/webpack/loaders/css-l
+oader/src/index.js??ruleSet[1].rul
+es[14].oneOf[11].use[2]!./node_mod
+ules/next/dist/build/webpack/loade
+rs/postcss-loader/src/index.js??ru
+leSet[1].rules[14].oneOf[11].use[3
+]!./node_modules/next/dist/build/w
+ebpack/loaders/resolve-url-loader/
+index.js??ruleSet[1].rules[14].one
+Of[11].use[4]!./node_modules/next/
+dist/compiled/sass-loader/cjs.js??
+ruleSet[1].rules[14].oneOf[11].use
+[5]!./src/app/globals.scss
+Deprecation Warning on line 0, 
+column 8 of file:///D:/IndianFoodT
+ech2/src/app/globals.scss:0:8:
+Sass @import rules are deprecated 
+and will be removed in Dart Sass 
+3.0.0.
+
+More info and automated migrator: 
+https://sass-lang.com/d/import
+
+0 | @import "tailwindcss";
+
+src\app\globals.scss 1:9  root 
+stylesheet
+
+Import trace for requested module:
+./src/app/globals.scss.webpack[jav
+ascript/auto]!=!./node_modules/nex
+t/dist/build/webpack/loaders/css-l
+oader/src/index.js??ruleSet[1].rul
+es[14].oneOf[11].use[2]!./node_mod
+ules/next/dist/build/webpack/loade
+rs/postcss-loader/src/index.js??ru
+leSet[1].rules[14].oneOf[11].use[3
+]!./node_modules/next/dist/build/w
+ebpack/loaders/resolve-url-loader/
+index.js??ruleSet[1].rules[14].one
+Of[11].use[4]!./node_modules/next/
+dist/compiled/sass-loader/cjs.js??
+ruleSet[1].rules[14].oneOf[11].use
+[5]!./src/app/globals.scss
+./src/app/globals.scss
+
+ Γ£ô Compiled successfully in 4.6s
+   Linting and checking validity of types ...
+
+Failed to compile.
+
+./src/app/blog/[id]/page.tsx
+15:3  Warning: 'Quote' is defined 
+but never used.  
+@typescript-eslint/no-unused-vars
+
+./src/app/peanut-butter-import-mal
+ta/PeanutButterImportMalta.tsx
+37:54  Error: `'` can be escaped 
+with `&apos;`, `&lsquo;`, 
+`&#39;`, `&rsquo;`.  
+react/no-unescaped-entities
+
+./src/app/peanut-butter-import-swe
+den/PeanutButterImportSweden.tsx
+40:50  Error: `'` can be escaped 
+with `&apos;`, `&lsquo;`, 
+`&#39;`, `&rsquo;`.  
+react/no-unescaped-entities
+
+info  - Need to disable some 
+ESLint rules? Learn more here: htt
+ps://nextjs.org/docs/app/api-refer
+ence/config/eslint#disabling-rules

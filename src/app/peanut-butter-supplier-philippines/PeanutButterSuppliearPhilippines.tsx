@@ -18,56 +18,59 @@ import React from "react";
 const PeanutButterSuppliearPhilippines = () => {
   return (
     <div className="min-h-screen bg-white font-sans text-gray-900 overflow-x-hidden">
-      {/* Hero Section */}
-      <section className="relative bg-[#f8fcf0] py-6 sm:py-6 lg:py-6 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-64 h-64 sm:w-96 sm:h-96 bg-primary-100 rounded-full blur-3xl opacity-50"></div>
-        <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-64 h-64 sm:w-96 sm:h-96 bg-primary-50 rounded-full blur-3xl opacity-50"></div>
+      {/* Hero Section - Compact & Elegant */}
+      <section className="relative bg-[#f8fcf0] py-10 sm:py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-72 h-72 bg-primary-100 rounded-full blur-3xl opacity-30"></div>
+        <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-72 h-72 bg-primary-50 rounded-full blur-3xl opacity-30"></div>
 
         <div className="max-w-7xl mx-auto relative">
-          <div className="flex flex-col lg:flex-row gap-6 items-center text-center lg:text-left">
-            <div className="flex-1 space-y-6 sm:space-y-6 animate-slide-up">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-100 text-primary-700 text-sm font-semibold tracking-wide uppercase">
+          <div className="flex flex-col lg:flex-row gap-8 items-center text-center lg:text-left">
+            <div className="flex-1 space-y-5 animate-slide-up">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-100 text-primary-800 text-xs font-bold tracking-wide uppercase">
                 <Globe className="w-4 h-4" />
                 Philippines Supply Specialist
               </div>
-              <h1 className="text-xl sm:text-lg lg:text-3xl font-black text-gray-900 leading-[1.1] tracking-tight">
-                Peanut Butter Supplier <br className="hidden sm:block" />
-                <span className="text-primary-600">in Philippines</span>
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-950 leading-[1.1] tracking-tighter">
+                Premium na{" "}
+                <span className="text-primary-700 font-black">
+                  Peanut Butter
+                </span>{" "}
+                <br />
+                Supplier sa Pilipinas
               </h1>
-              <p className="text-base text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium">
-                Indian Foodtech is your trusted manufacturing and export
-                partner, delivering premium, high-quality peanut butter directly
-                from India to distributors and brands across the Philippines.
+              <p className="text-base sm:text-lg text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
+                Indian Foodtech is your manufacturing partner supplying premium
+                peanut butter directly from India to distributors and brands
+                across Philippines.
               </p>
-              <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+              <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
                 <Link
                   href="https://wa.me/919714899711"
-                  className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-9 py-3 rounded-full text-base font-semibold shadow-lg shadow-primary-200 transition-all transform hover:-translate-y-1"
+                  className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-full text-base font-bold shadow-md shadow-primary-200 transition-all transform hover:-translate-y-0.5"
                 >
                   <MessageSquare className="w-4.5 h-4.5" />
-                  Get Quote for Philippines
+                  Get a Quote
                 </Link>
                 <Link
                   href="/products"
-                  className="inline-flex items-center gap-2 bg-white border-2 border-gray-200 hover:border-primary-500 text-gray-700 px-8 py-2 rounded-full text-base font-semibold transition-all"
+                  className="inline-flex items-center gap-2 bg-white border border-gray-200 hover:border-primary-500 text-gray-700 px-6 py-3 rounded-full text-base font-bold transition-all"
                 >
-                  Explore Products
-                  <ArrowRight className="w-5 h-5 hover:translate-x-1 transition-all" />
+                  Products
+                  <ArrowRight className="w-4 h-4 hover:translate-x-1 transition-all" />
                 </Link>
               </div>
             </div>
 
-            {/* Visual Element (Could be an image artifact later) */}
-            <div className="flex-1 w-full max-w-lg lg:max-w-none animate-fade-in">
+            <div className="flex-1 w-full max-w-md lg:max-w-none animate-fade-in">
               <div className="relative group">
-                <div className="absolute inset-0 bg-primary-500 rounded-3xl rotate-3 group-hover:rotate-1 transition-transform opacity-10"></div>
-                <div className="relative bg-primary-600/50 rounded-3xl shadow-strong p-2 overflow-hidden border border-gray-100">
-                  <div className="relative aspect-[4/3] bg-[#f0f4ea] rounded-2xl flex items-center justify-center overflow-hidden">
+                <div className="absolute inset-0 bg-primary-500 rounded-[2rem] rotate-2 group-hover:rotate-1 transition-transform opacity-10"></div>
+                <div className="relative bg-white rounded-[2rem] shadow-strong p-2 overflow-hidden border border-gray-100">
+                  <div className="relative aspect-[16/10] bg-primary-50 rounded-[1.8rem] flex items-center justify-center overflow-hidden">
                     <Image
-                      src="/exportPhillipines.webp"
+                      src="/country/supplier-philippines.webp"
                       alt="Export Peanut Butter to Philippines"
                       fill
-                      className="object-cover"
+                      className="object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
@@ -137,7 +140,7 @@ const PeanutButterSuppliearPhilippines = () => {
       {/* Product Specs */}
       <section className="py-8 sm:py-8 bg-gray-50 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-10 flex flex gap-4">
+          <div className="mb-10 flex gap-4">
             <div className="h-20 w-1.5 bg-primary-500 rounded-full"></div>
             <div className="space-y-2">
               <h2 className="text-xl sm:text-2xl font-black mt-2 text-gray-900">
@@ -411,7 +414,7 @@ const PeanutButterSuppliearPhilippines = () => {
                   icon: <ShieldCheck className="w-7 h-7" />,
                 },
               ].map((step, idx) => (
-                <div key={idx} className="text-center space-y-6">
+                <div key={idx} className="text-center space-y-6 group">
                   <div className="w-16 h-16 bg-primary-500 text-white rounded-full mx-auto flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-primary-600 group-hover:text-white transition-transform">
                     {step.icon}
                   </div>
@@ -447,10 +450,7 @@ const PeanutButterSuppliearPhilippines = () => {
               real-time pricing and sample requests.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
-              <Link
-                href="https://wa.me/919714899711"
-                className="inline-flex items-center justify-center gap-3 bg-primary-500 hover:bg-primary-600 text-white px-10 py-2 rounded-full text-base font-semibold transition-all shadow-lg hover:-translate-y-1"
-              >
+              <Link href="https://wa.me/919714899711" className="inline-flex items-center justify-center gap-3 bg-primary-500 hover:bg-primary-600 text-white px-10 py-2 rounded-full text-base font-semibold transition-all shadow-lg hover:-translate-y-1">
                 <div className="w-7 h-7 bg-white/20 rounded-full flex items-center justify-center">
                   <MessageSquare className="w-3.5 h-3.5 fill-white" />
                 </div>
@@ -467,9 +467,9 @@ const PeanutButterSuppliearPhilippines = () => {
               <span className="text-gray-400 font-bold uppercase tracking-[0.2em] text-xs">
                 Official Partner
               </span>
-              <span className="text-lg font-black text-gray-900 tracking-tight">
+              <div className="text-lg font-black text-gray-900 tracking-tight">
                 INDIAN <span className="text-primary-600">FOODTECH</span>
-              </span>
+              </div>
             </div>
           </div>
         </div>

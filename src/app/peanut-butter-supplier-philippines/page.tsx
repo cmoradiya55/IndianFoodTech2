@@ -2,40 +2,34 @@ import { Metadata } from "next";
 import PeanutButterSuppliearPhilippines from "./PeanutButterSuppliearPhilippines";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Supplier in Philippines | Bulk Exporter from India",
-
+  title: "Peanut Butter Supplier Philippines | Supplier sa Pilipinas",
   description:
-    "Looking for a peanut butter supplier in Philippines? Indian Foodtech is a trusted manufacturer & exporter from India offering bulk supply, private label, OEM services & competitive pricing.",
-
+    "Reliable peanut butter supplier in the Philippines. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Philippine market. Exporting top-tier nut butter to Manila.",
   keywords: [
     "peanut butter supplier philippines",
-    "peanut butter exporter india to philippines",
     "bulk peanut butter philippines",
     "private label peanut butter philippines",
+    "supplier ng peanut butter",
+    "peanut butter wholesale philippines",
     "import peanut butter philippines",
+    "peanut butter supplier manila",
+    "filipino food importers",
+    "asian peanut butter supply",
   ],
-
   openGraph: {
-    title: "Peanut Butter Supplier in Philippines | Indian Foodtech",
+    title: "Peanut Butter Supplier Philippines | Indian Foodtech",
     description:
-      "Trusted peanut butter manufacturer & exporter to Philippines. Bulk supply, private label & OEM services available.",
+      "High-quality peanut butter exported from India to the Philippines. Premium bulk supply and customized private label solutions for Philippine distributors.",
     url: "https://www.indianfoodtech.in/peanut-butter-supplier-philippines",
     siteName: "Indian Foodtech",
     type: "website",
+    locale: "en_PH",
   },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Peanut Butter Supplier in Philippines",
-    description:
-      "Bulk peanut butter exporter from India to Philippines. Private label & OEM available.",
-  },
-
   alternates: {
-    canonical:
-      "https://www.indianfoodtech.in/peanut-butter-supplier-philippines",
+    canonical: "https://www.indianfoodtech.in/peanut-butter-supplier-philippines",
   },
 };
+
 
 const PeanutButterSuppliearPhilippinesPage = () => {
   return <PeanutButterSuppliearPhilippines />;

@@ -19,11 +19,8 @@ export default function Home() {
     <div className="min-h-screen overflow-x-hidden">
       <main className="w-full">
         {/* Slider Section */}
-        <section className="bg-[#e9e8ed] py-8 sm:py-6 md:py-6 lg:py-8 xl:py-5 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-8">
-          <div
-            className="max-w-7xl mx-auto container-custom"
-            style={{ fontFamily: "NotoSerif-semibold" }}
-          >
+        <section className="bg-[#e9e8ed]">
+          <div className="mx-auto" style={{ fontFamily: "NotoSerif-semibold" }}>
             <Slider />
           </div>
         </section>
