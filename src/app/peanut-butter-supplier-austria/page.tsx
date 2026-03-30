@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterSupplierAustria from "./PeanutButterSupplierAustria";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier Austria | Erdnussbutter-Lieferant",
@@ -31,7 +32,17 @@ export const metadata: Metadata = {
 };
 
 const PeanutButterSupplierAustriaPage = () => {
-  return <PeanutButterSupplierAustria />;
+  return (
+    <>
+      <MarketSchema
+        country="Austria"
+        type="Supplier"
+        description="Reliable peanut butter supplier in Austria. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Austrian market."
+        url="https://www.indianfoodtech.in/peanut-butter-supplier-austria"
+      />
+      <PeanutButterSupplierAustria />
+    </>
+  );
 };
 
 export default PeanutButterSupplierAustriaPage;

@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterSupplierBulgaria from "./PeanutButterSupplierBulgaria";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier Bulgaria | Доставчик на Фъстъчено Масло",
@@ -31,7 +32,17 @@ export const metadata: Metadata = {
 };
 
 const PeanutButterSupplierBulgariaPage = () => {
-  return <PeanutButterSupplierBulgaria />;
+  return (
+    <>
+      <MarketSchema
+        country="Bulgaria"
+        type="Supplier"
+        description="Reliable peanut butter supplier in Bulgaria. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Bulgarian market."
+        url="https://www.indianfoodtech.in/peanut-butter-supplier-bulgaria"
+      />
+      <PeanutButterSupplierBulgaria />
+    </>
+  );
 };
 
 export default PeanutButterSupplierBulgariaPage;

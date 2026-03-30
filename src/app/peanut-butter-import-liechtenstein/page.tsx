@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterImportLiechtenstein from "./PeanutButterImportLiechtenstein";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Liechtenstein | Erdnussbutter-Importeur",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterImportLiechtenstein />;
+  return (
+    <>
+      <MarketSchema
+        country="Liechtenstein"
+        type="Importer"
+        description="Reliable peanut butter importer in Liechtenstein. Indian Foodtech offers premium bulk supply, private label, and industrial solutions."
+        url="https://www.indianfoodtech.in/peanut-butter-import-liechtenstein"
+      />
+      <PeanutButterImportLiechtenstein />
+    </>
+  );
 }

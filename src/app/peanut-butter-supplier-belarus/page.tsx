@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterSupplierBelarus from "./PeanutButterSupplierBelarus";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier Belarus | Поставщик Арахисового Масла",
@@ -31,7 +32,17 @@ export const metadata: Metadata = {
 };
 
 const PeanutButterSupplierBelarusPage = () => {
-  return <PeanutButterSupplierBelarus />;
+  return (
+    <>
+      <MarketSchema
+        country="Belarus"
+        type="Supplier"
+        description="Reliable peanut butter supplier in Belarus. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Belarusian market."
+        url="https://www.indianfoodtech.in/peanut-butter-supplier-belarus"
+      />
+      <PeanutButterSupplierBelarus />
+    </>
+  );
 };
 
 export default PeanutButterSupplierBelarusPage;

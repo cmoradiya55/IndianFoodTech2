@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterImportVaticanCity from "./PeanutButterImportVaticanCity";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Vatican City | Importatore di Burro d'Arachidi",
@@ -29,5 +30,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterImportVaticanCity />;
+  return (
+    <>
+      <MarketSchema
+        country="Vatican City"
+        type="Importer"
+        description="Reliable peanut butter importer in Vatican City. Indian Foodtech offers premium bulk supply, private label, and industrial solutions."
+        url="https://www.indianfoodtech.in/peanut-butter-import-vatican-city"
+      />
+      <PeanutButterImportVaticanCity />
+    </>
+  );
 }

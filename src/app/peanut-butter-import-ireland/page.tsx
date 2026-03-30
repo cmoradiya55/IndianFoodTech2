@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterImportIreland from "./PeanutButterImportIreland";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Ireland | Allmhaireoir im cnónna talún in Éirinn",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterImportIreland />;
+  return (
+    <>
+      <MarketSchema
+        country="Ireland"
+        type="Importer"
+        description="Premium peanut butter exported from India to Ireland. Indian Foodtech offers bulk supply and private label solutions for distributors in Dublin and beyond."
+        url="https://www.indianfoodtech.in/peanut-butter-import-ireland"
+      />
+      <PeanutButterImportIreland />
+    </>
+  );
 }

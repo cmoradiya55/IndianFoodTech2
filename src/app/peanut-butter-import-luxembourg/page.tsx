@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterImportLuxembourg from "./PeanutButterImportLuxembourg";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Luxembourg | Importateur de Beurre d'Arachide",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterImportLuxembourg />;
+  return (
+    <>
+      <MarketSchema
+        country="Luxembourg"
+        type="Importer"
+        description="Reliable peanut butter importer in Luxembourg. Indian Foodtech offers premium bulk supply, private label, and industrial solutions."
+        url="https://www.indianfoodtech.in/peanut-butter-import-luxembourg"
+      />
+      <PeanutButterImportLuxembourg />
+    </>
+  );
 }

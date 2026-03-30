@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterImportCzechRepublic from "./PeanutButterImportCzechRepublic";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Czech Republic | Dodavatel Arašídového Másla",
@@ -32,5 +33,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterImportCzechRepublic />;
+  return (
+    <>
+      <MarketSchema
+        country="Czech Republic"
+        type="Importer"
+        description="Reliable peanut butter importer in Czech Republic. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Czech market."
+        url="https://www.indianfoodtech.in/peanut-butter-import-czech-republic"
+      />
+      <PeanutButterImportCzechRepublic />
+    </>
+  );
 }

@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterSupplierPortugal from "./PeanutButterSupplierPortugal";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier Portugal | Fornecedor de Manteiga de Amendoim",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterSupplierPortugal />;
+  return (
+    <>
+      <MarketSchema
+        country="Portugal"
+        type="Supplier"
+        description="Reliable peanut butter supplier in Portugal. Indian Foodtech offers premium bulk supply and private label solutions for the Portuguese market."
+        url="https://www.indianfoodtech.in/peanut-butter-supplier-portugal"
+      />
+      <PeanutButterSupplierPortugal />
+    </>
+  );
 }

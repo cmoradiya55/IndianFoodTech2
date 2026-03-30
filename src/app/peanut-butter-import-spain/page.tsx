@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterImportSpain from "./PeanutButterImportSpain";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Spain | Importador de Mantequilla de Cacahuete",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterImportSpain />;
+  return (
+    <>
+      <MarketSchema
+        country="Spain"
+        type="Importer"
+        description="Reliable peanut butter importer in Spain. Indian Foodtech provides high-quality bulk supply and private label services for the Spanish market."
+        url="https://www.indianfoodtech.in/peanut-butter-import-spain"
+      />
+      <PeanutButterImportSpain />
+    </>
+  );
 }

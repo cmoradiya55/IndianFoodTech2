@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterImportLithuania from "./PeanutButterImportLithuania";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Lithuania | Zemės riešutų sviesto importuotojas Lietuvoje",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterImportLithuania />;
+  return (
+    <>
+      <MarketSchema
+        country="Lithuania"
+        type="Importer"
+        description="Premium peanut butter exported from India to Lithuania. Indian Foodtech offers bulk supply and private label solutions for distributors in Vilnius."
+        url="https://www.indianfoodtech.in/peanut-butter-import-lithuania"
+      />
+      <PeanutButterImportLithuania />
+    </>
+  );
 }

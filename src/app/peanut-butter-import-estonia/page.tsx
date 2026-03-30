@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterImportEstonia from "./PeanutButterImportEstonia";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Estonia | Maapähklivõi maaletooja Eestis",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterImportEstonia />;
+  return (
+    <>
+      <MarketSchema
+        country="Estonia"
+        type="Importer"
+        description="Premium peanut butter exported from India to Estonia. Indian Foodtech offers bulk supply and private label solutions for distributors in Tallinn."
+        url="https://www.indianfoodtech.in/peanut-butter-import-estonia"
+      />
+      <PeanutButterImportEstonia />
+    </>
+  );
 }

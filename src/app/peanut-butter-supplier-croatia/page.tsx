@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterSupplierCroatia from "./PeanutButterSupplierCroatia";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier Croatia | Dobavljač Kikiriki Maslaca",
@@ -31,7 +32,17 @@ export const metadata: Metadata = {
 };
 
 const PeanutButterSupplierCroatiaPage = () => {
-  return <PeanutButterSupplierCroatia />;
+  return (
+    <>
+      <MarketSchema
+        country="Croatia"
+        type="Supplier"
+        description="Reliable peanut butter supplier in Croatia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Croatian market."
+        url="https://www.indianfoodtech.in/peanut-butter-supplier-croatia"
+      />
+      <PeanutButterSupplierCroatia />
+    </>
+  );
 };
 
 export default PeanutButterSupplierCroatiaPage;

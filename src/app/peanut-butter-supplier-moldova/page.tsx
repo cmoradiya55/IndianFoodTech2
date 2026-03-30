@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterSupplierMoldova from "./PeanutButterSupplierMoldova";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier Moldova | Furnizor de Unt de Arahide",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterSupplierMoldova />;
+  return (
+    <>
+      <MarketSchema
+        country="Moldova"
+        type="Supplier"
+        description="Reliable peanut butter supplier in Moldova. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Moldovan market."
+        url="https://www.indianfoodtech.in/peanut-butter-supplier-moldova"
+      />
+      <PeanutButterSupplierMoldova />
+    </>
+  );
 }

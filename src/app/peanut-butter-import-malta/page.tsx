@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterImportMalta from "./PeanutButterImportMalta";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer in Malta | Mediterranean Quality Export from India",
@@ -51,5 +52,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterImportMalta />;
+  return (
+    <>
+      <MarketSchema
+        country="Malta"
+        type="Importer"
+        description="High-quality peanut butter export from India to Malta. Premium bulk supply and customized private label solutions for Mediterranean distributors."
+        url="https://www.indianfoodtech.in/peanut-butter-import-malta"
+      />
+      <PeanutButterImportMalta />
+    </>
+  );
 }

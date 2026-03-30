@@ -7,6 +7,7 @@ const QUICK_LINKS = [
   { href: "/contactUs", label: "Contact Us" },
   { href: "/privateLabels", label: "Private Labels" },
   { href: "/products", label: "Products" },
+  { href: "/international", label: "International Hub" },
 ];
 
 const Footer = () => {

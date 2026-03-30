@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterImportGermany from "./PeanutButterImportGermany";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Germany | Erdnussbutter-Importeur",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterImportGermany />;
+  return (
+    <>
+      <MarketSchema
+        country="Germany"
+        type="Importer"
+        description="Premium peanut butter exported from India to Germany. Indian Foodtech offers bulk supply and private label solutions for distributors in Berlin and Hamburg."
+        url="https://www.indianfoodtech.in/peanut-butter-import-germany"
+      />
+      <PeanutButterImportGermany />
+    </>
+  );
 }

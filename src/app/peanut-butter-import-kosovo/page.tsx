@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterImportKosovo from "./PeanutButterImportKosovo";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Kosovo | Importues i gjalpit të kikirikut në Kosovë",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterImportKosovo />;
+  return (
+    <>
+      <MarketSchema
+        country="Kosovo"
+        type="Importer"
+        description="Reliable peanut butter importer in Kosovo. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Kosovo market."
+        url="https://www.indianfoodtech.in/peanut-butter-import-kosovo"
+      />
+      <PeanutButterImportKosovo />
+    </>
+  );
 }

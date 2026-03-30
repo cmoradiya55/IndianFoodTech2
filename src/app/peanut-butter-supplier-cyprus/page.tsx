@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterSupplierCyprus from "./PeanutButterSupplierCyprus";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier Cyprus | Προμηθευτής Φυστικοβούτυρου",
@@ -31,7 +32,17 @@ export const metadata: Metadata = {
 };
 
 const PeanutButterSupplierCyprusPage = () => {
-  return <PeanutButterSupplierCyprus />;
+  return (
+    <>
+      <MarketSchema
+        country="Cyprus"
+        type="Supplier"
+        description="Reliable peanut butter supplier in Cyprus. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Cypriot market."
+        url="https://www.indianfoodtech.in/peanut-butter-supplier-cyprus"
+      />
+      <PeanutButterSupplierCyprus />
+    </>
+  );
 };
 
 export default PeanutButterSupplierCyprusPage;

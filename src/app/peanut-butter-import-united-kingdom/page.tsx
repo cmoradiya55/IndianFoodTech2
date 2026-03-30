@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterImportUnitedKingdom from "./PeanutButterImportUnitedKingdom";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer UK | Premium India Export Supply",
@@ -30,5 +31,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterImportUnitedKingdom />;
+  return (
+    <>
+      <MarketSchema
+        country="United Kingdom"
+        type="Importer"
+        description="Reliable peanut butter importer in United Kingdom. Indian Foodtech offers premium bulk supply, private label, and industrial solutions."
+        url="https://www.indianfoodtech.in/peanut-butter-import-united-kingdom"
+      />
+      <PeanutButterImportUnitedKingdom />
+    </>
+  );
 }

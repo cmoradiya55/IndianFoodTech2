@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterSuppliearPhilippines from "./PeanutButterSuppliearPhilippines";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier Philippines | Supplier sa Pilipinas",
@@ -30,9 +31,18 @@ export const metadata: Metadata = {
   },
 };
 
-
 const PeanutButterSuppliearPhilippinesPage = () => {
-  return <PeanutButterSuppliearPhilippines />;
+  return (
+    <>
+      <MarketSchema
+        country="Philippines"
+        type="Supplier"
+        description="Reliable peanut butter supplier in Philippines. Indian Foodtech offers premium bulk supply and private label solutions for the Filipino market."
+        url="https://www.indianfoodtech.in/peanut-butter-supplier-philippines"
+      />
+      <PeanutButterSuppliearPhilippines />
+    </>
+  );
 };
 
 export default PeanutButterSuppliearPhilippinesPage;

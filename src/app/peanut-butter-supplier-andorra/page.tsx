@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterSupplierAndorra from "./PeanutButterSupplierAndorra";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier Andorra | Proveïdor de Mantega de Cacauet",
@@ -31,7 +32,17 @@ export const metadata: Metadata = {
 };
 
 const PeanutButterSupplierAndorraPage = () => {
-  return <PeanutButterSupplierAndorra />;
+  return (
+    <>
+      <MarketSchema
+        country="Andorra"
+        type="Supplier"
+        description="Reliable peanut butter supplier in Andorra. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Andorran market."
+        url="https://www.indianfoodtech.in/peanut-butter-supplier-andorra"
+      />
+      <PeanutButterSupplierAndorra />
+    </>
+  );
 };
 
 export default PeanutButterSupplierAndorraPage;

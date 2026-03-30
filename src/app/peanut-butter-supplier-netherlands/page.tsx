@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterSupplierNetherlands from "./PeanutButterSupplierNetherlands";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier Netherlands | Pindakaas Leverancier",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterSupplierNetherlands />;
+  return (
+    <>
+      <MarketSchema
+        country="Netherlands"
+        type="Supplier"
+        description="Reliable peanut butter supplier in the Netherlands. Indian Foodtech offers premium bulk supply and private label solutions for the Dutch market."
+        url="https://www.indianfoodtech.in/peanut-butter-supplier-netherlands"
+      />
+      <PeanutButterSupplierNetherlands />
+    </>
+  );
 }

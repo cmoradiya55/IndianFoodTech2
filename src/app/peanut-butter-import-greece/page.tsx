@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterImportGreece from "./PeanutButterImportGreece";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Greece | Εισαγωγέας φυστικοβούτυρου στo Ελλάδα",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterImportGreece />;
+  return (
+    <>
+      <MarketSchema
+        country="Greece"
+        type="Importer"
+        description="Reliable peanut butter importer in Greece. Indian Foodtech provides high-quality bulk supply and private label services for the Greek market."
+        url="https://www.indianfoodtech.in/peanut-butter-import-greece"
+      />
+      <PeanutButterImportGreece />
+    </>
+  );
 }

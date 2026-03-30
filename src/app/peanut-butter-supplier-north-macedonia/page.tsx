@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterSupplierNorthMacedonia from "./PeanutButterSupplierNorthMacedonia";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier North Macedonia | Добавувач на Путер од Кикирики",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterSupplierNorthMacedonia />;
+  return (
+    <>
+      <MarketSchema
+        country="North Macedonia"
+        type="Supplier"
+        description="Reliable peanut butter supplier in North Macedonia. Indian Foodtech offers premium bulk supply and private label solutions."
+        url="https://www.indianfoodtech.in/peanut-butter-supplier-north-macedonia"
+      />
+      <PeanutButterSupplierNorthMacedonia />
+    </>
+  );
 }

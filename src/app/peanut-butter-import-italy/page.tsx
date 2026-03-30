@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterImportItaly from "./PeanutButterImportItaly";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Italy | Importatore di Burro di Arachidi in Italia",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterImportItaly />;
+  return (
+    <>
+      <MarketSchema
+        country="Italy"
+        type="Importer"
+        description="Reliable peanut butter importer in Italy. Indian Foodtech provides high-quality bulk supply and private label services for the Italian market."
+        url="https://www.indianfoodtech.in/peanut-butter-import-italy"
+      />
+      <PeanutButterImportItaly />
+    </>
+  );
 }

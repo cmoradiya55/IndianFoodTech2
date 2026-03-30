@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterSupplierBosniaHerzegovina from "./PeanutButterSupplierBosniaHerzegovina";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier Bosnia & Herzegovina | Dobavljač Kikiriki Putera",
@@ -31,7 +32,17 @@ export const metadata: Metadata = {
 };
 
 const PeanutButterSupplierBosniaHerzegovinaPage = () => {
-  return <PeanutButterSupplierBosniaHerzegovina />;
+  return (
+    <>
+      <MarketSchema
+        country="Bosnia Herzegovina"
+        type="Supplier"
+        description="Reliable peanut butter supplier in Bosnia Herzegovina. Indian Foodtech offers premium bulk supply, private label, and industrial solutions."
+        url="https://www.indianfoodtech.in/peanut-butter-supplier-bosnia-herzegovina"
+      />
+      <PeanutButterSupplierBosniaHerzegovina />
+    </>
+  );
 };
 
 export default PeanutButterSupplierBosniaHerzegovinaPage;

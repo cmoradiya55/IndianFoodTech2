@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterSupplierMonaco from "./PeanutButterSupplierMonaco";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier Monaco | Fournisseur de Beurre de Cacahuète",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterSupplierMonaco />;
+  return (
+    <>
+      <MarketSchema
+        country="Monaco"
+        type="Supplier"
+        description="Reliable peanut butter supplier in Monaco. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Monegasque market."
+        url="https://www.indianfoodtech.in/peanut-butter-supplier-monaco"
+      />
+      <PeanutButterSupplierMonaco />
+    </>
+  );
 }

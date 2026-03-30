@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterSupplierSanMarino from "./PeanutButterSupplierSanMarino";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier San Marino | Fornitore di Burro d'Arachidi",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterSupplierSanMarino />;
+  return (
+    <>
+      <MarketSchema
+        country="San Marino"
+        type="Supplier"
+        description="Reliable peanut butter supplier in San Marino. Indian Foodtech offers premium bulk supply and private label solutions."
+        url="https://www.indianfoodtech.in/peanut-butter-supplier-san-marino"
+      />
+      <PeanutButterSupplierSanMarino />
+    </>
+  );
 }

@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterImportSwitzerland from "./PeanutButterImportSwitzerland";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Switzerland | Importeur von Erdnussbutter",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterImportSwitzerland />;
+  return (
+    <>
+      <MarketSchema
+        country="Switzerland"
+        type="Importer"
+        description="Reliable peanut butter importer in Switzerland. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Swiss market."
+        url="https://www.indianfoodtech.in/peanut-butter-import-switzerland"
+      />
+      <PeanutButterImportSwitzerland />
+    </>
+  );
 }

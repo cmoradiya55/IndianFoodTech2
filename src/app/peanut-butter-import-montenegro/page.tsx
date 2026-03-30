@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterImportMontenegro from "./PeanutButterImportMontenegro";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Montenegro | Uvoznik kikiriki putera u Crnoj Gori",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterImportMontenegro />;
+  return (
+    <>
+      <MarketSchema
+        country="Montenegro"
+        type="Importer"
+        description="Reliable peanut butter importer in Montenegro. Indian Foodtech offers premium bulk supply, private label, and industrial solutions."
+        url="https://www.indianfoodtech.in/peanut-butter-import-montenegro"
+      />
+      <PeanutButterImportMontenegro />
+    </>
+  );
 }

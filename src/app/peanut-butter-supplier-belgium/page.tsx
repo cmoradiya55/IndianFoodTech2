@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterSupplierBelgium from "./PeanutButterSupplierBelgium";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier Belgium | Leverancier van Pindakaas",
@@ -31,7 +32,17 @@ export const metadata: Metadata = {
 };
 
 const PeanutButterSupplierBelgiumPage = () => {
-  return <PeanutButterSupplierBelgium />;
+  return (
+    <>
+      <MarketSchema
+        country="Belgium"
+        type="Supplier"
+        description="Reliable peanut butter supplier in Belgium. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Belgian market."
+        url="https://www.indianfoodtech.in/peanut-butter-supplier-belgium"
+      />
+      <PeanutButterSupplierBelgium />
+    </>
+  );
 };
 
 export default PeanutButterSupplierBelgiumPage;

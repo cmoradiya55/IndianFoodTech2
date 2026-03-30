@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterImportLatvia from "./PeanutButterImportLatvia";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Latvia | Zemesriekstu sviesta importētājs Latvijā",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterImportLatvia />;
+  return (
+    <>
+      <MarketSchema
+        country="Latvia"
+        type="Importer"
+        description="High-quality peanut butter export from India to Latvia. Premium bulk supply and customized private label solutions for Baltic distributors."
+        url="https://www.indianfoodtech.in/peanut-butter-import-latvia"
+      />
+      <PeanutButterImportLatvia />
+    </>
+  );
 }

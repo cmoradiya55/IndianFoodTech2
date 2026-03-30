@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterImportSweden from "./PeanutButterImportSweden";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Sweden | Jordnötssmör Importör i Sverige",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterImportSweden />;
+  return (
+    <>
+      <MarketSchema
+        country="Sweden"
+        type="Importer"
+        description="High-quality peanut butter export from India to Sweden. Premium bulk supply and customized private label solutions for Scandinavian distributors."
+        url="https://www.indianfoodtech.in/peanut-butter-import-sweden"
+      />
+      <PeanutButterImportSweden />
+    </>
+  );
 }

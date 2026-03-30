@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterImportIceland from "./PeanutButterImportIceland";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Iceland | Innflutningsaðili hnetusmjörs á Íslandi",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterImportIceland />;
+  return (
+    <>
+      <MarketSchema
+        country="Iceland"
+        type="Importer"
+        description="Reliable peanut butter importer in Iceland. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Icelandic market."
+        url="https://www.indianfoodtech.in/peanut-butter-import-iceland"
+      />
+      <PeanutButterImportIceland />
+    </>
+  );
 }

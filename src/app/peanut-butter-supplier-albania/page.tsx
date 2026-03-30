@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterSupplierAlbania from "./PeanutButterSupplierAlbania";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier Albania | Furnizues i Gjalpit të Kikirikut",
@@ -31,7 +32,17 @@ export const metadata: Metadata = {
 };
 
 const PeanutButterSupplierAlbaniaPage = () => {
-  return <PeanutButterSupplierAlbania />;
+  return (
+    <>
+      <MarketSchema
+        country="Albania"
+        type="Supplier"
+        description="Reliable peanut butter supplier in Albania. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Albanian market. Exporting top-tier nut butter to Tirana."
+        url="https://www.indianfoodtech.in/peanut-butter-supplier-albania"
+      />
+      <PeanutButterSupplierAlbania />
+    </>
+  );
 };
 
 export default PeanutButterSupplierAlbaniaPage;

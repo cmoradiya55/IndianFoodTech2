@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterImportUkraine from "./PeanutButterImportUkraine";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Ukraine | Імпортер арахісового масла в Україні",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterImportUkraine />;
+  return (
+    <>
+      <MarketSchema
+        country="Ukraine"
+        type="Importer"
+        description="High-quality peanut butter export from India to Ukraine. Premium bulk supply and customized private label solutions for Eastern European distributors."
+        url="https://www.indianfoodtech.in/peanut-butter-import-ukraine"
+      />
+      <PeanutButterImportUkraine />
+    </>
+  );
 }

@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterSupplierSlovakia from "./PeanutButterSupplierSlovakia";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier Slovakia | Dodávateľ Arašidového Masla",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterSupplierSlovakia />;
+  return (
+    <>
+      <MarketSchema
+        country="Slovakia"
+        type="Supplier"
+        description="Reliable peanut butter supplier in Slovakia. Indian Foodtech offers premium bulk supply and private label solutions for the Slovakian market."
+        url="https://www.indianfoodtech.in/peanut-butter-supplier-slovakia"
+      />
+      <PeanutButterSupplierSlovakia />
+    </>
+  );
 }

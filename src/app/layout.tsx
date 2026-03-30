@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.scss";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Schema from "@/components/Schema";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -79,7 +81,40 @@ export default function RootLayout({
         className={`${geistSans.variable}${geistMono.variable} antialiased`}
       >
         <div className="min-h-screen flex flex-col">
+          <Schema
+            type="Organization"
+            data={{
+              name: "Indian Foodtech",
+              url: "https://www.indianfoodtech.in",
+              logo: "https://5.imimg.com/data5/SELLER/Logo/2022/3/II/GP/LH/149763079/2-120x120.png",
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+91-97148-99711",
+                contactType: "customer service",
+                email: "office@indianfoodtech.in",
+                areaServed: "IN",
+                availableLanguage: ["en", "hi", "gu"],
+              },
+              sameAs: [
+                "https://www.facebook.com/p/Indian-foodtech-100083285323445/",
+                "https://in.linkedin.com/in/indian-foodtech-b5633829a",
+              ],
+            }}
+          />
+          <Schema
+            type="WebSite"
+            data={{
+              name: "Indian Foodtech",
+              url: "https://www.indianfoodtech.in",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: "https://www.indianfoodtech.in/products?q={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }}
+          />
           <Header />
+          <Breadcrumbs />
           <main className="grow">{children}</main>
           <Footer />
         </div>

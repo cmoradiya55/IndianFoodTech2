@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterSupplierPoland from "./PeanutButterSupplierPoland";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier Poland | Dostawca Masła Orzechowego",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterSupplierPoland />;
+  return (
+    <>
+      <MarketSchema
+        country="Poland"
+        type="Supplier"
+        description="Reliable peanut butter supplier in Poland. Indian Foodtech offers premium bulk supply and private label solutions for the Polish market."
+        url="https://www.indianfoodtech.in/peanut-butter-supplier-poland"
+      />
+      <PeanutButterSupplierPoland />
+    </>
+  );
 }

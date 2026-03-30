@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PeanutButterImportHungary from "./PeanutButterImportHungary";
+import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Hungary | Mogyoróvaj importőr Magyarországon",
@@ -31,5 +32,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PeanutButterImportHungary />;
+  return (
+    <>
+      <MarketSchema
+        country="Hungary"
+        type="Importer"
+        description="High-quality peanut butter export from India to Hungary. Premium bulk supply and customized private label solutions for Eastern European distributors."
+        url="https://www.indianfoodtech.in/peanut-butter-import-hungary"
+      />
+      <PeanutButterImportHungary />
+    </>
+  );
 }
