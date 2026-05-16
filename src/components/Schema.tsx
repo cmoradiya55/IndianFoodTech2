@@ -2,7 +2,7 @@ import React from "react";
 
 interface SchemaProps {
   type: "Organization" | "WebSite" | "LocalBusiness" | "Product";
-  data: any;
+  data: Record<string, unknown>;
 }
 
 const Schema = ({ type, data }: SchemaProps) => {
