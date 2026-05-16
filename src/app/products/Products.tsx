@@ -25,11 +25,19 @@ const Products = () => {
       const categoryName = categoryMap[category];
       if (categoryName) {
         setTimeout(() => {
-          const element = document.getElementById(`category-${category}`);
-          if (element) {
-            element.scrollIntoView({ behavior: "smooth", block: "start" });
-          }
-        }, 100);
+          requestAnimationFrame(() => {
+            const element = document.getElementById(`category-${category}`);
+            if (element) {
+              const headerHeight =
+                document.querySelector("header")?.offsetHeight ?? 80;
+              const top =
+                element.getBoundingClientRect().top +
+                window.scrollY -
+                headerHeight;
+              window.scrollTo({ top, behavior: "smooth" });
+            }
+          });
+        }, 400);
       }
     }
   }, [category]);
@@ -60,8 +68,7 @@ const Products = () => {
         {AllProductsList.map((categoryItem, index) => {
           const categorySlug = categoryItem.categoryName
             .toLowerCase()
-            .replace(/\s+/g, "-")
-            .replace("rosted-peanuts", "roasted-butter");
+            .replace(/\s+/g, "-");
 
           return (
             <div key={categoryItem.id} id={`category-${categorySlug}`}>

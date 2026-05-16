@@ -4,7 +4,6 @@ import "./globals.scss";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Schema from "@/components/Schema";
-import Breadcrumbs from "@/components/Breadcrumbs";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
+    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
   ),
   title:
     "Indian Foodtech, Surat - Manufacturer of Peanut Butter and Tahini Paste",
@@ -108,13 +107,13 @@ export default function RootLayout({
               url: "https://www.indianfoodtech.in",
               potentialAction: {
                 "@type": "SearchAction",
-                target: "https://www.indianfoodtech.in/products?q={search_term_string}",
+                target:
+                  "https://www.indianfoodtech.in/products?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
             }}
           />
           <Header />
-          <Breadcrumbs />
           <main className="grow">{children}</main>
           <Footer />
         </div>
