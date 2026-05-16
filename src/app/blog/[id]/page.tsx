@@ -12,7 +12,6 @@ import {
   CheckCircle2,
   AlertCircle,
   ArrowRight,
-  Quote,
 } from "lucide-react";
 import { BlogList } from "@/utils/BlogList";
 
