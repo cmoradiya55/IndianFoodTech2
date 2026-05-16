@@ -55,14 +55,6 @@ const CreateYourBrand = () => {
       <div className="flex flex-col md:grid lg:grid-cols-2 gap-6 sm:gap-4 items-start mb-8 sm:mb-10 md:mb-6">
         {/* Left Side - Info Cards */}
         <div className="flex flex-col items-center w-full">
-          {/* Get In Touch Button */}
-          <button
-            className="w-full max-w-[640px] bg-[#1D2C00] hover:bg-primary-900 text-white text-lg sm:text-xl font-semibold py-2 sm:py-4 px-6 sm:px-8 rounded-full transition-colors"
-            style={{ fontFamily: "Inter_18pt-medium" }}
-          >
-            Get In Touch
-          </button>
-
           {/* Info Cards Container */}
           <div className="bg-[#d4dbc4] w-full max-w-[530px] sm:rounded-t-3xl rounded-b-3xl px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 space-y-2 sm:space-y-3">
             {/* Packaging Options */}
@@ -111,7 +103,7 @@ const CreateYourBrand = () => {
 
         {/* Right Side - Circular Badge */}
         <div className="flex justify-center items-center sm:-mt-13 w-full">
-          <div className="relative w-[240px] h-[240px] sm:w-[300px] sm:h-[300px] md:w-[380px] md:h-[380px]">
+          <div className="relative top-[-50px] w-[240px] h-[240px] sm:w-[300px] sm:h-[300px] md:w-[380px] md:h-[380px]">
             <div className="absolute inset-0 rounded-full flex items-center justify-center bg-[#d4dbc4]">
               {/* Central Image */}
               <div className="relative w-[160px] h-[160px] sm:w-[200px] sm:h-[200px] md:w-[260px] md:h-[260px] rounded-full border-4 sm:border-6 md:border-10 border-primary-500 shadow-xl shadow-primary-300 overflow-hidden z-10">

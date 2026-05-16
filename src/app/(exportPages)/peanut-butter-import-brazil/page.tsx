@@ -1,0 +1,43 @@
+import { Metadata } from "next";
+import PeanutButterImportBrazil from "./PeanutButterImportBrazil";
+import MarketSchema from "@/components/MarketSchema";
+
+export const metadata: Metadata = {
+  title: "Peanut Butter Importer Brazil | Importador de Manteiga de Amendoim",
+  description:
+    "Reliable peanut butter importer in Brazil. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Brazilian market. Exporting top-tier nut butter to São Paulo.",
+  keywords: [
+    "peanut butter importer brazil",
+    "importador manteiga amendoim brasil",
+    "bulk peanut butter sao paulo",
+    "private label peanut butter brazil",
+    "peanut butter supplier rio de janeiro",
+    "brazilian food importers",
+  ],
+  openGraph: {
+    title: "Peanut Butter Importer Brazil | Indian Foodtech",
+    description:
+      "High-quality peanut butter exported from India to Brazil. Premium bulk supply and customized private label solutions for South American distributors.",
+    url: "https://www.indianfoodtech.in/peanut-butter-import-brazil",
+    siteName: "Indian Foodtech",
+    type: "website",
+    locale: "pt_BR",
+  },
+  alternates: {
+    canonical: "https://www.indianfoodtech.in/peanut-butter-import-brazil",
+  },
+};
+
+export default function Page() {
+  return (
+    <>
+      <MarketSchema
+        country="Brazil"
+        type="Importer"
+        description="Reliable peanut butter importer in Brazil. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Brazilian market."
+        url="https://www.indianfoodtech.in/peanut-butter-import-brazil"
+      />
+      <PeanutButterImportBrazil />
+    </>
+  );
+}

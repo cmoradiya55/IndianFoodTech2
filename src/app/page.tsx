@@ -16,11 +16,14 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="min-h-screen overflow-x-hidden">
+    <div className="overflow-x-hidden">
       <main className="w-full">
         {/* Slider Section */}
-        <section className="bg-[#e9e8ed]">
-          <div className="mx-auto" style={{ fontFamily: "NotoSerif-semibold" }}>
+        <section className="bg-[#e9e8ed] h-[calc(100vh-94px)] max-h-[945px] overflow-hidden">
+          <div
+            className="mx-auto h-full overflow-hidden scrollbar-hide"
+            style={{ fontFamily: "NotoSerif-semibold" }}
+          >
             <Slider />
           </div>
         </section>

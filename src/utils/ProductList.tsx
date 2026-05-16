@@ -283,7 +283,7 @@ export const AllProductsList = [
   },
   {
     id: 3,
-    categoryName: "Rosted Peanuts",
+    categoryName: "Roasted Peanuts",
     products: [
       // {
       //   id: "C3P1",

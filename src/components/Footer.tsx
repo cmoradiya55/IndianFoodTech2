@@ -17,58 +17,54 @@ const Footer = () => {
       style={{ fontFamily: "NotoSerif-semibold" }}
     >
       {/* Main Footer Content */}
-      <div className="container-custom mb-6 sm:mb-8 lg:mb-10 px-4 sm:px-6 lg:px-8">
-        {/* Logo and Social Media Section */}
-        <div className="py-8 sm:py-5 lg:py-6 flex flex-col sm:flex-row justify-between items-center sm:items-start gap-6 sm:gap-4">
-          <div className="shrink-0">
-            <Image
-              src="/logoWhite.png"
-              alt="Indian Food Tech"
-              width={270}
-              height={55}
-              className="object-contain w-48 sm:w-56 md:w-64 lg:w-[270px] h-auto"
-            />
-          </div>
-          <div className="flex space-x-3 sm:space-x-4">
-            <Link
-              href="https://in.linkedin.com/in/indian-foodtech-b5633829a"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:scale-110 transition-transform duration-200"
-            >
-              {/* LinkedIn */}
-              <AllIconComponent
-                icon="linkedinIcon"
-                className="sm:w-7 sm:h-7"
-                width="28"
-                height="28"
-              />
-            </Link>
-            <Link
-              href="https://www.facebook.com/p/Indian-foodtech-100083285323445/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:scale-110 transition-transform duration-200"
-            >
-              {/* Facebook */}
-              <AllIconComponent
-                icon="facebookIcon"
-                className="sm:w-7 sm:h-7"
-                width="28"
-                height="28"
-              />
-            </Link>
-          </div>
-        </div>
-
+      <div className="container-custom mb-6 sm:mb-8 lg:mb-10 pt-8 px-4 sm:px-6 lg:px-8">
         {/* Main Content Section */}
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-0">
           {/* Company Description */}
           <div className="w-full lg:w-1/3 lg:pr-8">
+            <div className="shrink-0 pb-4">
+              <Image
+                src="/logoWhite.png"
+                alt="Indian Food Tech"
+                width={270}
+                height={55}
+                className="object-contain w-48 sm:w-56 md:w-64 lg:w-[270px] h-auto"
+              />
+            </div>
             <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
               Supplying premium quality peanut butter to families and brands
               worldwide, since 2019.
             </p>
+            <div className="flex space-x-3 sm:space-x-4 pt-8">
+              <Link
+                href="https://in.linkedin.com/in/indian-foodtech-b5633829a"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:scale-110 transition-transform duration-200"
+              >
+                {/* LinkedIn */}
+                <AllIconComponent
+                  icon="linkedinIcon"
+                  className="sm:w-7 sm:h-7"
+                  width="28"
+                  height="28"
+                />
+              </Link>
+              <Link
+                href="https://www.facebook.com/p/Indian-foodtech-100083285323445/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:scale-110 transition-transform duration-200"
+              >
+                {/* Facebook */}
+                <AllIconComponent
+                  icon="facebookIcon"
+                  className="sm:w-7 sm:h-7"
+                  width="28"
+                  height="28"
+                />
+              </Link>
+            </div>
           </div>
 
           {/* Links and Contact Section */}
@@ -151,9 +147,9 @@ const Footer = () => {
 
       {/* Bottom Bar (Green) */}
       <div className="bg-primary-500">
-        <div className="container-custom py-4 sm:py-5 px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center justify-center text-white text-center gap-2 sm:gap-3">
-            <p className="text-white text-sm sm:text-base font-semibold">
+        <div className="container-custom py-2 px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col items-center justify-center text-white text-center gap-1">
+            <p className="text-white text-[12px] font-semibold">
               ©2025 Indian Foodtech. All Rights Reserved
               <span className="opacity-75 hidden sm:inline"> (</span>
               <Link
@@ -165,7 +161,7 @@ const Footer = () => {
               <span className="opacity-75 hidden sm:inline">)</span>
             </p>
             <p
-              className="opacity-80 text-xs sm:text-sm leading-relaxed"
+              className="opacity-80 text-[12px] leading-relaxed"
               style={{ fontFamily: "Inter_18pt-regular" }}
             >
               <span className="sm:hidden">& </span>Developed and managed by{" "}

@@ -39,7 +39,7 @@ const StoryAboutUs = () => {
           {/* Main circular image */}
           <div className="relative w-[240px] h-[240px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] rounded-full border-4 sm:border-6 lg:border-10 border-black overflow-hidden z-10">
             <Image
-              src="/slider1.png"
+              src="/discoverProduct2.png"
               alt="Peanut butter being poured"
               className="w-full h-full object-cover"
               fill

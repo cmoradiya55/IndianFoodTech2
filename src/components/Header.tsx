@@ -42,7 +42,7 @@ const Header = () => {
     <header className="bg-white sticky top-0 z-50">
       {/* Top Bar */}
       <div
-        className="bg-primary-500 text-white py-2 sm:py-3"
+        className="bg-primary-500 text-white py-[5px]"
         style={{ fontFamily: "Inter_18pt-regular" }}
       >
         <div className="container-custom px-4">
@@ -138,7 +138,7 @@ const Header = () => {
 
       {/* Main Header */}
       <div
-        className="bg-[#F6F6F6] py-3 sm:py-5 shadow-lg"
+        className="bg-[#F6F6F6] py-2 shadow-lg"
         style={{ fontFamily: "NotoSerif-semibold" }}
       >
         <div className="container-custom px-4">
@@ -188,24 +188,28 @@ const Header = () => {
                   <div className="absolute top-8 left-0 w-58 bg-white rounded-lg shadow-xl shadow-black/10 border border-gray-200 py-4 z-50">
                     <Link
                       href="/products?category=peanut-butter"
+                      scroll={false}
                       className="block px-6 py-4 text-sm text-gray-700 hover:bg-gray-50"
                     >
                       Peanut Butter
                     </Link>
                     <Link
                       href="/products?category=nut-butters"
+                      scroll={false}
                       className="block px-6 py-4 text-sm text-gray-700 hover:bg-gray-50"
                     >
                       Nut Butters
                     </Link>
                     <Link
                       href="/products?category=roasted-peanuts"
+                      scroll={false}
                       className="block px-6 py-4 text-sm text-gray-700 hover:bg-gray-50"
                     >
                       Roasted Peanuts
                     </Link>
                     <Link
                       href="/products?category=spread"
+                      scroll={false}
                       className="block px-6 py-4 text-sm text-gray-700 hover:bg-gray-50"
                     >
                       Spread
@@ -307,6 +311,7 @@ const Header = () => {
                     <div className="pl-4 space-y-2 bg-gray-50 rounded-lg py-2">
                       <Link
                         href="/products?category=peanut-butter"
+                        scroll={false}
                         className="block text-gray-600 hover:text-primary-500 transition-colors py-2 px-4"
                         onClick={() => setIsMenuOpen(false)}
                       >
@@ -314,6 +319,7 @@ const Header = () => {
                       </Link>
                       <Link
                         href="/products?category=nut-butters"
+                        scroll={false}
                         className="block text-gray-600 hover:text-primary-500 transition-colors py-2 px-4"
                         onClick={() => setIsMenuOpen(false)}
                       >
@@ -321,6 +327,7 @@ const Header = () => {
                       </Link>
                       <Link
                         href="/products?category=roasted-peanuts"
+                        scroll={false}
                         className="block text-gray-600 hover:text-primary-500 transition-colors py-2 px-4"
                         onClick={() => setIsMenuOpen(false)}
                       >
@@ -328,6 +335,7 @@ const Header = () => {
                       </Link>
                       <Link
                         href="/products?category=spread"
+                        scroll={false}
                         className="block text-gray-600 hover:text-primary-500 transition-colors py-2 px-4"
                         onClick={() => setIsMenuOpen(false)}
                       >
