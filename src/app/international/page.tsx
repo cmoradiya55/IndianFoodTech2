@@ -1,6 +1,13 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { Globe, ArrowRight, ShieldCheck, Truck, Package, Star } from "lucide-react";
+import {
+  Globe,
+  ArrowRight,
+  ShieldCheck,
+  Truck,
+  Package,
+  Star,
+} from "lucide-react";
 import React from "react";
 
 export const metadata: Metadata = {
@@ -44,6 +51,38 @@ const importers = [
   { name: "Ukraine", slug: "peanut-butter-import-ukraine" },
   { name: "United Kingdom", slug: "peanut-butter-import-united-kingdom" },
   { name: "Vatican City", slug: "peanut-butter-import-vatican-city" },
+  { name: "United States", slug: "peanut-butter-import-united-states" },
+  { name: "Canada", slug: "peanut-butter-import-canada" },
+  { name: "Mexico", slug: "peanut-butter-import-mexico" },
+  { name: "Brazil", slug: "peanut-butter-import-brazil" },
+  { name: "Argentina", slug: "peanut-butter-import-argentina" },
+  { name: "Chile", slug: "peanut-butter-import-chile" },
+  { name: "Colombia", slug: "peanut-butter-import-colombia" },
+  { name: "China", slug: "peanut-butter-import-china" },
+  { name: "India", slug: "peanut-butter-import-india" },
+  { name: "Japan", slug: "peanut-butter-import-japan" },
+  { name: "South Korea", slug: "peanut-butter-import-south-korea" },
+  { name: "Indonesia", slug: "peanut-butter-import-indonesia" },
+  { name: "Thailand", slug: "peanut-butter-import-thailand" },
+  { name: "Malaysia", slug: "peanut-butter-import-malaysia" },
+  { name: "Vietnam", slug: "peanut-butter-import-vietnam" },
+  { name: "Singapore", slug: "peanut-butter-import-singapore" },
+  {
+    name: "United Arab Emirates",
+    slug: "peanut-butter-import-united-arab-emirates",
+  },
+  { name: "Saudi Arabia", slug: "peanut-butter-import-saudi-arabia" },
+  { name: "Qatar", slug: "peanut-butter-import-qatar" },
+  { name: "Kuwait", slug: "peanut-butter-import-kuwait" },
+  { name: "Nigeria", slug: "peanut-butter-import-nigeria" },
+  { name: "South Africa", slug: "peanut-butter-import-south-africa" },
+  { name: "Kenya", slug: "peanut-butter-import-kenya" },
+  { name: "Ghana", slug: "peanut-butter-import-ghana" },
+  { name: "Egypt", slug: "peanut-butter-import-egypt" },
+  { name: "Ethiopia", slug: "peanut-butter-import-ethiopia" },
+  { name: "Tanzania", slug: "peanut-butter-import-tanzania" },
+  { name: "Australia", slug: "peanut-butter-import-australia" },
+  { name: "New Zealand", slug: "peanut-butter-import-new-zealand" },
 ];
 
 const suppliers = [
@@ -52,7 +91,10 @@ const suppliers = [
   { name: "Austria", slug: "peanut-butter-supplier-austria" },
   { name: "Belarus", slug: "peanut-butter-supplier-belarus" },
   { name: "Belgium", slug: "peanut-butter-supplier-belgium" },
-  { name: "Bosnia Herzegovina", slug: "peanut-butter-supplier-bosnia-herzegovina" },
+  {
+    name: "Bosnia Herzegovina",
+    slug: "peanut-butter-supplier-bosnia-herzegovina",
+  },
   { name: "Bulgaria", slug: "peanut-butter-supplier-bulgaria" },
   { name: "Croatia", slug: "peanut-butter-supplier-croatia" },
   { name: "Cyprus", slug: "peanut-butter-supplier-cyprus" },
@@ -95,18 +137,23 @@ export default function InternationalHub() {
             Our International <span className="text-primary-700">Markets</span>
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-medium mb-12">
-            Indian Foodtech proudly serves 47 international markets with premium, 
-            factory-fresh peanut butter. Discover our localized supply chain solutions 
-            and import expertise in your region.
+            Indian Foodtech proudly serves 47 international markets with
+            premium, factory-fresh peanut butter. Discover our localized supply
+            chain solutions and import expertise in your region.
           </p>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
             {features.map((item, idx) => (
-              <div key={idx} className="flex flex-col items-center gap-2 p-4 bg-white/50 rounded-2xl border border-white">
+              <div
+                key={idx}
+                className="flex flex-col items-center gap-2 p-4 bg-white/50 rounded-2xl border border-white"
+              >
                 <div className="p-3 bg-primary-100 text-primary-700 rounded-xl">
                   <item.icon className="w-6 h-6" />
                 </div>
-                <span className="text-sm font-bold text-gray-900">{item.label}</span>
+                <span className="text-sm font-bold text-gray-900">
+                  {item.label}
+                </span>
               </div>
             ))}
           </div>
@@ -116,8 +163,7 @@ export default function InternationalHub() {
       {/* Markets Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16">
-            
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-16">
             {/* Importers Column */}
             <div className="space-y-8">
               <div className="flex items-center gap-4 border-b-2 border-primary-500 pb-4">
@@ -127,19 +173,20 @@ export default function InternationalHub() {
                 </h2>
               </div>
               <p className="text-gray-600 font-medium leading-relaxed">
-                Localized import solutions and distribution networks across these major regions.
+                Localized import solutions and distribution networks across
+                these major regions.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div className="grid grid-cols-2 gap-3">
                 {importers.map((market) => (
-                  <Link 
-                    key={market.slug} 
+                  <Link
+                    key={market.slug}
                     href={`/${market.slug}`}
-                    className="group flex items-center justify-between p-4 bg-gray-50 rounded-2xl border border-gray-100 hover:bg-primary-600 hover:border-primary-500 transition-all duration-300"
+                    className="group flex items-center justify-center sm:justify-between p-4 bg-gray-50 rounded-2xl border border-gray-100 hover:bg-primary-600 hover:border-primary-500 transition-all duration-300"
                   >
                     <span className="text-gray-800 font-bold group-hover:text-white transition-colors">
                       {market.name}
                     </span>
-                    <ArrowRight className="w-4 h-4 text-primary-500 group-hover:text-white group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="w-4 h-4 text-primary-500 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 hidden sm:block" />
                   </Link>
                 ))}
               </div>
@@ -154,24 +201,24 @@ export default function InternationalHub() {
                 </h2>
               </div>
               <p className="text-gray-600 font-medium leading-relaxed">
-                Premium manufacturing and bulk supply services for international partners.
+                Premium manufacturing and bulk supply services for international
+                partners.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-2 gap-3">
                 {suppliers.map((market) => (
-                  <Link 
-                    key={market.slug} 
+                  <Link
+                    key={market.slug}
                     href={`/${market.slug}`}
-                    className="group flex items-center justify-between p-4 bg-gray-50 rounded-2xl border border-gray-100 hover:bg-primary-600 hover:border-primary-500 transition-all duration-300"
+                    className="group flex items-center justify-center sm:justify-between p-4 bg-gray-50 rounded-2xl border border-gray-100 hover:bg-primary-600 hover:border-primary-500 transition-all duration-300"
                   >
                     <span className="text-gray-800 font-bold group-hover:text-white transition-colors">
                       {market.name}
                     </span>
-                    <ArrowRight className="w-4 h-4 text-primary-500 group-hover:text-white group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="w-4 h-4 text-primary-500 group-hover:text-white group-hover:translate-x-1 transition-all hidden sm:block" />
                   </Link>
                 ))}
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -183,18 +230,18 @@ export default function InternationalHub() {
             Ready to Partner with India&apos;s Leading Manufacturer?
           </h2>
           <p className="text-xl opacity-80 font-medium">
-            Join our global network of distributors and experience premium quality 
-            peanut butter delivered anywhere in the world.
+            Join our global network of distributors and experience premium
+            quality peanut butter delivered anywhere in the world.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Link 
-              href="/contactUs" 
+            <Link
+              href="/contactUs"
               className="px-10 py-4 bg-primary-500 hover:bg-primary-600 text-white rounded-full font-bold text-lg shadow-xl transition-all hover:-translate-y-1"
             >
               Contact Our Export Team
             </Link>
-            <Link 
-              href="/products" 
+            <Link
+              href="/products"
               className="px-10 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/20 rounded-full font-bold text-lg backdrop-blur-sm transition-all"
             >
               Browse Products

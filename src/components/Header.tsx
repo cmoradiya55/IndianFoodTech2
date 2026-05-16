@@ -42,7 +42,7 @@ const Header = () => {
     <header className="bg-white sticky top-0 z-50">
       {/* Top Bar */}
       <div
-        className="bg-primary-500 text-white py-2 sm:py-3"
+        className="bg-primary-500 text-white py-[5px]"
         style={{ fontFamily: "Inter_18pt-regular" }}
       >
         <div className="container-custom px-4">
@@ -138,7 +138,7 @@ const Header = () => {
 
       {/* Main Header */}
       <div
-        className="bg-[#F6F6F6] py-3 sm:py-5 shadow-lg"
+        className="bg-[#F6F6F6] py-2 shadow-lg"
         style={{ fontFamily: "NotoSerif-semibold" }}
       >
         <div className="container-custom px-4">

@@ -50,6 +50,9 @@
   
   --radius-4xl: 2rem;
   
+  --breakpoint-xl2: 1300px;
+  --breakpoint-3xl: 1550px;
+
   --shadow-soft: 0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04);
   --shadow-medium: 0 4px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   --shadow-strong: 0 10px 40px -10px rgba(0, 0, 0, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -66,10 +69,62 @@
   }
 }
 
-body {
+/* Slider animations */
+@keyframes sliderFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sliderLineExpand {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes sliderNumReveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slider-item-anim {
+  animation: sliderFadeUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.slider-line-anim {
+  animation: sliderLineExpand 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.slider-num-anim {
+  animation: sliderNumReveal 0.9s ease-out both;
+}
+
+html, body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
 }
 
 @font-face {
