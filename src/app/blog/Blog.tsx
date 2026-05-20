@@ -1,9 +1,8 @@
 "use client";
-import { ArrowRight, Calendar, Clock, Search, Tag, User } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
+import { Search } from "lucide-react";
 import React, { useState } from "react";
 import BlogList from "@/data/BlogList.json";
+import BlogCard from "@/components/BlogCard";
 
 const blogPosts = BlogList.map((post) => ({
   ...post,
@@ -32,12 +31,12 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-[#e9e8ed] font-sans text-gray-900 pb-20">
-      {/* HERO & HEADER SECTION */}
+      {/* HERO SECTION */}
       <section className="pt-12 sm:pt-16 pb-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="mb-10 sm:mb-12">
           {/* Header */}
           <div className="flex gap-3 sm:gap-4">
-            <div className="bg-primary-500 h-24 sm:h-28 md:h-32 lg:h-[104px] w-1 sm:w-1.5 lg:w-1.5 rounded-2xl flex-shrink-0"></div>
+            <div className="bg-primary-500 h-24 sm:h-28 md:h-32 lg:h-[104px] w-1 sm:w-1.5 lg:w-1.5 rounded-2xl shrink-0"></div>
             <div className="mt-1 sm:mt-2">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-2xl font-bold text-gray-900 mb-2 sm:mb-3 leading-tight tracking-tight">
                 The Nutty Knowledge Hub
@@ -62,11 +61,10 @@ const Blog = () => {
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`relative px-4 py-2 rounded-2xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all duration-300 flex-shrink-0 ${
-                  selectedCategory === category
+                className={`relative px-4 py-2 rounded-2xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all duration-300 shrink-0 ${selectedCategory === category
                     ? "bg-primary-500 text-white shadow-md"
                     : "bg-white text-gray-500 hover:text-primary-600 hover:bg-primary-50 shadow-md border border-gray-100/50"
-                }`}
+                  }`}
                 style={{ fontFamily: "Inter_18pt-bold" }}
               >
                 <span className="relative z-10 flex items-center gap-2">
@@ -80,9 +78,9 @@ const Blog = () => {
           </div>
 
           {/* Search Bar */}
-          <div className="w-full lg:w-auto relative group sm:max-w-md lg:min-w-[360px] flex-shrink-0">
+          <div className="w-full lg:w-auto relative group sm:max-w-md lg:min-w-[360px] shrink-0">
             <div className="relative flex items-center bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-gray-100 p-1 sm:p-1.5 focus-within:border-primary-300 focus-within:ring-4 focus-within:ring-primary-500/10 transition-all duration-500">
-              <div className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0 rounded-full bg-gray-50 flex items-center justify-center ml-1 group-focus-within:bg-primary-50 transition-colors duration-300">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 shrink-0 rounded-full bg-gray-50 flex items-center justify-center ml-1 group-focus-within:bg-primary-50 transition-colors duration-300">
                 <Search className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gray-400 group-focus-within:text-primary-500 transition-colors" />
               </div>
               <input
@@ -95,7 +93,7 @@ const Blog = () => {
               />
               <button
                 onClick={() => setSearchQuery(searchQuery)}
-                className="bg-primary-500 text-white px-4 sm:px-7 py-2 sm:py-1.5 rounded-xl sm:rounded-2xl font-bold text-xs sm:text-sm hover:bg-primary-600 shadow-[0_4px_12px_rgba(111,158,18,0.2)] hover:shadow-[0_6px_20px_rgba(111,158,18,0.3)] transition-all duration-300 transform active:scale-95 flex-shrink-0"
+                className="bg-primary-500 text-white px-4 sm:px-7 py-2 sm:py-1.5 rounded-xl sm:rounded-2xl font-bold text-xs sm:text-sm hover:bg-primary-600 shadow-[0_4px_12px_rgba(111,158,18,0.2)] hover:shadow-[0_6px_20px_rgba(111,158,18,0.3)] transition-all duration-300 transform active:scale-95 shrink-0"
                 style={{ fontFamily: "Inter_18pt-bold" }}
               >
                 Search
@@ -124,84 +122,18 @@ const Blog = () => {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-              {filteredPosts.map((post, index) => (
-                <Link
+              {filteredPosts.map((post) => (
+                <BlogCard
                   key={post.id}
-                  href={`/blog/${post.id}`}
-                  className="group flex flex-col bg-white rounded-[2rem] p-4 shadow-lg transition-all duration-500 border border-gray-100/80 hover:border-primary-300 hover:-translate-y-2 relative overflow-hidden h-full"
-                  style={{ animationDelay: `${index * 50}ms` }}
-                >
-                  {/* Card Image Container */}
-                  <div className="relative aspect-[16/10] bg-gradient-to-br from-gray-50 to-gray-100/50 rounded-[1.5rem] overflow-hidden mb-6 flex-shrink-0 border border-gray-100/50 group-hover:border-primary-200/50 transition-colors duration-500">
-                    <div className="absolute inset-0 bg-primary-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 mix-blend-overlay"></div>
-                    <Image
-                      src={post.image}
-                      alt={post.title}
-                      fill
-                      className="object-contain transition-all duration-700"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    />
-                    {/* Category Label Over Image */}
-                    <div
-                      className="absolute top-4 left-4 z-20"
-                      style={{ fontFamily: "Inter_18pt-medium" }}
-                    >
-                      <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/90 backdrop-blur-md text-primary-600 text-[10px] font-black uppercase tracking-widest shadow-[0_4px_12px_rgba(0,0,0,0.08)] border border-white/50 group-hover:bg-primary-500 group-hover:text-white transition-colors duration-500">
-                        <Tag className="w-3 h-3" />
-                        {post.category}
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Card Text Content */}
-                  <div className="flex flex-col flex-grow relative z-10 px-2 sm:px-3 pb-2">
-                    {/* Meta Data */}
-                    <div
-                      className="flex items-center gap-4 text-[10px] font-semibold text-gray-400 uppercase tracking-widest mb-4"
-                      style={{ fontFamily: "Inter_18pt-semibold" }}
-                    >
-                      <span className="flex items-center gap-2 bg-gray-50 px-2.5 py-1 rounded-lg group-hover:text-primary-500 transition-colors duration-300">
-                        <Calendar className="w-3.5 h-3.5 text-primary-500" />
-                        {post.date}
-                      </span>
-                      <span className="flex items-center gap-2 bg-gray-50 px-2.5 py-1 rounded-lg group-hover:text-primary-500 transition-colors duration-300">
-                        <Clock className="w-3.5 h-3.5 text-primary-500" />
-                        {post.readTime}
-                      </span>
-                    </div>
-
-                    {/* Title */}
-                    <h3 className="text-lg sm:text-xl font-semibold text-gray-900 leading-[1.4] transition-colors duration-300 line-clamp-2 mb-3">
-                      {post.title}
-                    </h3>
-
-                    {/* Excerpt */}
-                    <p
-                      className="text-gray-500 text-sm leading-[1.7] line-clamp-2 mb-6 flex-grow"
-                      style={{ fontFamily: "Inter_18pt-medium" }}
-                    >
-                      {post.excerpt}
-                    </p>
-
-                    {/* Footer / Author */}
-                    <div className="pt-5 flex items-center justify-between border-t border-gray-100/80 mt-auto group-hover:border-primary-100 transition-colors duration-300">
-                      <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 bg-gray-50 rounded-full flex items-center justify-center group-hover:bg-primary-500 transition-colors duration-500 shadow-sm border border-gray-100 group-hover:border-primary-500">
-                          <User className="w-4 h-4 text-gray-400 group-hover:text-white transition-colors duration-500" />
-                        </div>
-                        <span
-                          className="text-sm font-bold text-gray-700 group-hover:text-primary-700 transition-colors duration-300"
-                          style={{ fontFamily: "Inter_18pt-bold" }}
-                        >
-                          {post.author}
-                        </span>
-                      </div>
-                      <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary-50 group-hover:bg-primary-500 transition-all duration-500 group-hover:shadow-[0_4px_12px_rgba(111,158,18,0.3)]">
-                        <ArrowRight className="w-4 h-4 text-primary-600 group-hover:text-white group-hover:-rotate-45 transition-all duration-500" />
-                      </div>
-                    </div>
-                  </div>
-                </Link>
+                  id={post.id}
+                  title={post.title}
+                  description={post.excerpt}
+                  image={post.image}
+                  date={post.date}
+                  author={post.author}
+                  category={post.category}
+                  readTime={post.readTime}
+                />
               ))}
             </div>
           )}
@@ -219,7 +151,7 @@ const Blog = () => {
             <div className="relative z-10 w-full md:max-w-lg">
               <div className="flex gap-3 sm:gap-4">
                 {/* Theme-wise vertical bar */}
-                <div className="bg-primary-500 w-1.5 rounded-full flex-shrink-0"></div>
+                <div className="bg-primary-500 w-1.5 rounded-full shrink-0"></div>
                 <div>
                   <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 leading-tight mb-2">
                     Stay in the Nutty Loop
@@ -235,7 +167,7 @@ const Blog = () => {
               </div>
             </div>
 
-            <div className="relative z-10 w-full lg:w-auto flex-shrink-0">
+            <div className="relative z-10 w-full lg:w-auto shrink-0">
               {/* Premium Pill-shaped Input Container */}
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-1.5 bg-transparent sm:bg-gray-50/80 p-0 sm:p-1.5 rounded-2xl sm:rounded-full sm:border border-gray-100 sm:shadow-inner sm:backdrop-blur-sm focus-within:ring-4 focus-within:ring-primary-500/10 focus-within:border-primary-300 transition-all duration-300">
                 <input
