@@ -1,30 +1,46 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { AllProductsList } from "@/utils/ProductList";
 import { useRouter } from "next/navigation";
 
+interface Product {
+  id: string;
+  name: string;
+  description: string;
+  cardImage: string;
+  [key: string]: any;
+}
+
 const DiscoverProduct = () => {
   const router = useRouter();
 
-  // Get 3 random products from all categories
-  const getRandomProducts = () => {
+  // Get stable products for identical server and initial client renders
+  const getStableProducts = (): Product[] => {
     const allProducts = AllProductsList.flatMap(
       (category) => category.products,
     );
-    const shuffled = allProducts.sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, 3);
+    return allProducts.slice(0, 3) as Product[];
   };
 
-  const products = getRandomProducts();
+  const [products, setProducts] = useState<Product[]>(getStableProducts());
+
+  useEffect(() => {
+    const allProducts = AllProductsList.flatMap(
+      (category) => category.products,
+    );
+    // Shuffle only on client-side after mount to prevent hydration mismatch
+    const shuffled = [...allProducts].sort(() => 0.5 - Math.random());
+    setProducts(shuffled.slice(0, 3) as Product[]);
+  }, []);
 
   return (
     <div className="max-w-7xl mx-auto">
       {/* Header Section */}
-      <div className="mb-8 sm:mb-10 md:mb-6 flex gap-3 sm:gap-4">
+      <div className="mb-8 sm:mb-10 md:mb-12 flex gap-3 sm:gap-4">
         <div className="bg-primary-500 h-21 sm:h-28 md:h-35 lg:h-20 w-1 sm:w-1.5 lg:w-1.5 rounded-2xl"></div>
         <div className="mt-1 sm:mt-2">
-          <h1 className="text-base sm:text-base md:text-lg lg:text-xl font-bold text-gray-900 mb-1 sm:mb-1.5">
+          <h1 className="text-base sm:text-base md:text-lg lg:text-2xl font-bold text-gray-900 mb-1 sm:mb-1.5">
             Discover Our Product
           </h1>
           <p
@@ -64,7 +80,7 @@ const DiscoverProduct = () => {
 
               {/* Product Description with flex-grow to fill space */}
               <p
-                className="text-[#5D6079] text-[10px] min-[400px]:text-[11px] sm:text-xs leading-relaxed mb-2 sm:mb-5 md:mb-6 text-left sm:text-center flex-grow line-clamp-2 sm:line-clamp-none"
+                className="text-[#5D6079] text-[10px] min-[400px]:text-[11px] sm:text-sm leading-relaxed mb-2 sm:mb-5 md:mb-6 text-left sm:text-center flex-grow line-clamp-2 sm:line-clamp-none"
                 style={{ fontFamily: "Inter_18pt-medium" }}
               >
                 {product.description}

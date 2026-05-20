@@ -12,7 +12,7 @@ const AboutUs = () => {
 
   return (
     <div className="bg-[#e9e8ed]">
-      <div className="bg-[#e9e8ed] py-3 sm:py-4 md:py-4 px-3 sm:px-4 md:px-8 lg:px-8">
+      <div className="bg-[#e9e8ed] py-3 sm:py-4 md:py-12 px-3 sm:px-4 md:px-8 lg:px-8">
         <div
           className="max-w-7xl mx-auto container-custom"
           style={{ fontFamily: "NotoSerif-semibold" }}
@@ -21,7 +21,7 @@ const AboutUs = () => {
           <StoryAboutUs />
 
           {/* Why Partner with Us Section */}
-          <div className="mt-4 sm:mt-4 md:mt-4">
+          <div className="mt-4 sm:mt-4 md:mt-12">
             {/* Header */}
             <div className="flex justify-center mb-4 sm:mb-6 md:mb-6">
               <div
@@ -60,9 +60,6 @@ const AboutUs = () => {
       >
         <div className="max-w-7xl mx-auto container-custom">
           <div className="flex flex-col items-center text-center gap-2 sm:gap-3 md:gap-4 py-3 sm:py-4 md:py-3">
-            {/* <h4 className='text-[#D4DBC4] text-lg sm:text-xl md:text-lg font-semibold'>
-                            At Indian Foodtech, we don&#39;t sell under our own label
-                        </h4> */}
             <h2 className="text-primary-500 text-xl sm:text-2xl md:text-3xl font-semibold">
               your brand is our priority
             </h2>

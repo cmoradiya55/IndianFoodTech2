@@ -1,4 +1,6 @@
-export const BlogList = [
+import fs from 'fs';
+
+const BlogList = [
   {
     id: 1,
     title:
@@ -1395,3 +1397,7 @@ Looking for a reliable nut butter manufacturing partner?
 📧 sales@indianfoodtech.in`,
   },
 ];
+
+
+fs.writeFileSync('src/data/BlogList.json', JSON.stringify(BlogList, null, 2));
+console.log('Converted successfully');

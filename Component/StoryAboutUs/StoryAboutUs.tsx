@@ -15,9 +15,9 @@ const StoryAboutUs = () => {
     <div className="sm:pb-15">
       {/* Header Section */}
       <div className="mb-8 sm:mb-10 flex gap-3 sm:gap-4">
-        <div className="bg-primary-500 h-22 sm:h-28 md:h-35 lg:h-25 w-1 sm:w-1.5 lg:w-1.5 rounded-2xl flex-shrink-0"></div>
+        <div className="bg-primary-500 h-22 sm:h-28 md:h-35 lg:h-26 w-1 sm:w-1.5 lg:w-1.5 rounded-2xl flex-shrink-0"></div>
         <div className="mt-1 sm:mt-2">
-          <h1 className="text-base sm:text-base md:text-lg lg:text-xl font-bold text-gray-900 mb-2 leading-tight">
+          <h1 className="text-base sm:text-base md:text-lg lg:text-2xl font-bold text-gray-900 mb-2 leading-tight">
             The Story About Us
           </h1>
           <p

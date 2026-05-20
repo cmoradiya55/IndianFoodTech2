@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "FSSAI Certification",
+    "logo": "/certificate/fssai.webp",
+    "certificate": "/certificate/FssaiCertificate.webp"
+  },
+  {
+    "id": 2,
+    "name": "Jamiyat Halal Certification",
+    "logo": "/certificate/jamiyat-halal.webp",
+    "certificate": "/certificate/HalalCertificate1.webp"
+  },
+  {
+    "id": 3,
+    "name": "Halal Certification",
+    "logo": "/certificate/halal.webp",
+    "certificate": "/certificate/HalalCertificate2.webp"
+  },
+  {
+    "id": 4,
+    "name": "Import Export Certificate",
+    "logo": "/certificate/IEC.webp",
+    "certificate": "/certificate/ImportExportCertificate.webp"
+  },
+  {
+    "id": 5,
+    "name": "ISO Certification",
+    "logo": "/certificate/QRO.webp",
+    "certificate": "/certificate/ISOCertificate.webp"
+  }
+]

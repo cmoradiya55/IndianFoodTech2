@@ -7,7 +7,7 @@ const QUICK_LINKS = [
   { href: "/contactUs", label: "Contact Us" },
   { href: "/privateLabels", label: "Private Labels" },
   { href: "/products", label: "Products" },
-  { href: "/international", label: "International Hub" },
+  // { href: "/international", label: "International Hub" },
 ];
 
 const Footer = () => {
@@ -17,12 +17,12 @@ const Footer = () => {
       style={{ fontFamily: "NotoSerif-semibold" }}
     >
       {/* Main Footer Content */}
-      <div className="container-custom mb-6 sm:mb-8 lg:mb-10 pt-8 px-4 sm:px-6 lg:px-8">
+      <div className="container-custom mb-6 sm:mb-8 lg:mb-10 pt-16 pb-4 px-4 sm:px-6 lg:px-8">
         {/* Main Content Section */}
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-0">
           {/* Company Description */}
           <div className="w-full lg:w-1/3 lg:pr-8">
-            <div className="shrink-0 pb-4">
+            <div className="shrink-0 pb-4 lg:mb-3">
               <Image
                 src="/logoWhite.png"
                 alt="Indian Food Tech"
@@ -31,9 +31,9 @@ const Footer = () => {
                 className="object-contain w-48 sm:w-56 md:w-64 lg:w-[270px] h-auto"
               />
             </div>
-            <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
+            <p className="text-gray-400 text-sm sm:text-sm leading-relaxed">
               Supplying premium quality peanut butter to families and brands
-              worldwide, since 2019.
+              worldwide.
             </p>
             <div className="flex space-x-3 sm:space-x-4 pt-8">
               <Link
@@ -82,7 +82,7 @@ const Footer = () => {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-white hover:text-primary-500 hover:underline transition-colors text-sm sm:text-base"
+                      className="text-white hover:text-primary-500 hover:underline transition-colors text-sm sm:text-sm"
                     >
                       {link.label}
                     </Link>
@@ -100,10 +100,10 @@ const Footer = () => {
               {/* Address */}
               <div className="mb-4 sm:mb-6">
                 <p
-                  className="text-white text-sm sm:text-base font-medium leading-relaxed"
+                  className="text-white text-sm sm:text-sm font-medium leading-relaxed"
                   style={{ fontFamily: "Inter_18pt-regular" }}
                 >
-                  <span className="text-primary-500">Address:</span>
+                  <span className="text-primary-500 text-base">Address:</span>
                   <br />
                   Ground Floor, Plot No. 198, 197, 198
                   <br />
@@ -116,10 +116,10 @@ const Footer = () => {
               {/* Contact Details */}
               <div className="space-y-2 sm:space-y-3">
                 <p
-                  className="text-white text-sm sm:text-base font-medium"
+                  className="text-white text-sm sm:text-sm font-medium"
                   style={{ fontFamily: "Inter_18pt-regular" }}
                 >
-                  <span className="text-primary-500">Email:</span>
+                  <span className="text-primary-500 text-base">Email:</span>
                   <Link
                     href="mailto:office@indianfoodtech.in"
                     className="ml-2 hover:text-primary-500 transition-colors hover:underline"
@@ -128,10 +128,10 @@ const Footer = () => {
                   </Link>
                 </p>
                 <p
-                  className="text-white text-sm sm:text-base font-medium"
+                  className="text-white text-sm sm:text-sm font-medium"
                   style={{ fontFamily: "Inter_18pt-regular" }}
                 >
-                  <span className="text-primary-500">Phone:</span>
+                  <span className="text-primary-500 text-base">Phone:</span>
                   <Link
                     href="tel:+919714899711"
                     className="ml-2 hover:text-primary-500 transition-colors hover:underline"
@@ -147,9 +147,9 @@ const Footer = () => {
 
       {/* Bottom Bar (Green) */}
       <div className="bg-primary-500">
-        <div className="container-custom py-2 px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center justify-center text-white text-center gap-1">
-            <p className="text-white text-[12px] font-semibold">
+        <div className="container-custom py-3 px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col items-center justify-center text-white text-center">
+            <p className="text-white text-sm font-semibold">
               ©2025 Indian Foodtech. All Rights Reserved
               <span className="opacity-75 hidden sm:inline"> (</span>
               <Link
@@ -161,7 +161,7 @@ const Footer = () => {
               <span className="opacity-75 hidden sm:inline">)</span>
             </p>
             <p
-              className="opacity-80 text-[12px] leading-relaxed"
+              className="opacity-80 text-xs leading-relaxed"
               style={{ fontFamily: "Inter_18pt-regular" }}
             >
               <span className="sm:hidden">& </span>Developed and managed by{" "}
