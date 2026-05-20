@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import AllIconComponent from "../../public/AllIconComponent";
+import { Package, ShieldCheck, Factory } from "lucide-react";
 
 const features = [
   {
@@ -29,14 +30,32 @@ const features = [
   },
 ];
 
+const brandInfoItems = [
+  {
+    title: "Packaging Options",
+    description:
+      "Choose from a variety of jar sizes made from durable PET material.",
+  },
+  {
+    title: "Long Shelf Life",
+    description:
+      "Our peanut butter stays fresh for up to two years from the production date.",
+  },
+  {
+    title: "Own Production Facility",
+    description:
+      "We manufacture the jars ourselves, so we can ship to customers all over the world.",
+  },
+];
+
 const CreateYourBrand = () => {
   return (
     <div>
       {/* Header Section */}
       <div className="mb-8 sm:mb-10 flex gap-3 sm:gap-4">
-        <div className="bg-primary-500 h-27 sm:h-28 md:h-35 lg:h-25 w-1 sm:w-1.5 lg:w-1.5 rounded-2xl flex-shrink-0"></div>
+        <div className="bg-primary-500 h-27 sm:h-28 md:h-35 lg:h-27 w-1 sm:w-1.5 lg:w-1.5 rounded-2xl flex-shrink-0"></div>
         <div className="mt-1 sm:mt-2">
-          <h1 className="text-base sm:text-base md:text-lg lg:text-xl font-bold text-gray-900 mb-2 leading-tight">
+          <h1 className="text-base sm:text-base md:text-lg lg:text-2xl font-bold text-gray-900 mb-2 leading-tight">
             Create Your Own Peanut Butter Brand
           </h1>
           <p
@@ -52,89 +71,44 @@ const CreateYourBrand = () => {
       </div>
 
       {/* Main Content Section */}
-      <div className="flex flex-col md:grid lg:grid-cols-2 gap-6 sm:gap-4 items-start mb-8 sm:mb-10 md:mb-6">
-        {/* Left Side - Info Cards */}
-        <div className="flex flex-col items-center w-full">
-          {/* Info Cards Container */}
-          <div className="bg-[#d4dbc4] w-full max-w-[530px] sm:rounded-t-3xl rounded-b-3xl px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 space-y-2 sm:space-y-3">
-            {/* Packaging Options */}
-            <div>
-              <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-900">
-                Packaging Options
-              </h3>
-              <p
-                className="text-gray-700 text-xs sm:text-sm md:text-sm leading-relaxed"
-                style={{ fontFamily: "Inter_18pt-medium" }}
-              >
-                Choose from a variety of jar sizes made from durable PET
-                material.
-              </p>
-            </div>
-
-            {/* Long Shelf Life */}
-            <div>
-              <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-900">
-                Long Shelf Life
-              </h3>
-              <p
-                className="text-gray-700 text-xs sm:text-sm md:text-sm leading-relaxed"
-                style={{ fontFamily: "Inter_18pt-medium" }}
-              >
-                Our peanut butter stays fresh for up to two years from the
-                production date.
-              </p>
-            </div>
-
-            {/* Own Production Facility */}
-            <div>
-              <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-900">
-                Own Production Facility
-              </h3>
-              <p
-                className="text-gray-700 text-xs sm:text-sm md:text-sm leading-relaxed"
-                style={{ fontFamily: "Inter_18pt-medium" }}
-              >
-                We manufacture the jars ourselves, so we can ship to customers
-                all over the world.
-              </p>
-            </div>
+      <div className="flex flex-col lg:flex-row-reverse items-center gap-4 sm:gap-6 lg:gap-4 mt-8 sm:mt-8 lg:mt-10 max-w-7xl mx-auto relative mb-8 sm:mb-10 md:mb-16">
+        {/* Right Side - Image */}
+        <div className="relative flex-shrink-0 w-full lg:w-auto flex justify-center lg:justify-end lg:mr-20">
+          {/* Main circular image */}
+          <div className="relative w-[240px] h-[240px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px] rounded-full border-4 sm:border-6 lg:border-10 border-primary-500 shadow-xl shadow-primary-300 overflow-hidden z-10">
+            <Image
+              src="/privateLabel/ChocolatePeanutButter.png"
+              alt="Chocolate Peanut Butter"
+              className="w-full h-full object-cover"
+              fill
+              sizes="(max-width: 640px) 240px, (max-width: 768px) 300px, (max-width: 1024px) 400px, 500px"
+            />
           </div>
         </div>
 
-        {/* Right Side - Circular Badge */}
-        <div className="flex justify-center items-center sm:-mt-13 w-full">
-          <div className="relative top-[-50px] w-[240px] h-[240px] sm:w-[300px] sm:h-[300px] md:w-[380px] md:h-[380px]">
-            <div className="absolute inset-0 rounded-full flex items-center justify-center bg-[#d4dbc4]">
-              {/* Central Image */}
-              <div className="relative w-[160px] h-[160px] sm:w-[200px] sm:h-[200px] md:w-[260px] md:h-[260px] rounded-full border-4 sm:border-6 md:border-10 border-primary-500 shadow-xl shadow-primary-300 overflow-hidden z-10">
-                <Image
-                  src="/privateLabel/ChocolatePeanutButter.png"
-                  alt="Chocolate Peanut Butter"
-                  className="w-full h-full object-cover"
-                  fill
-                  sizes="(max-width: 640px) 160px, (max-width: 768px) 200px, 260px"
-                />
-              </div>
-            </div>
-            {/* Circular Text */}
-            <svg
-              className="absolute inset-0 w-full h-full"
-              viewBox="0 0 485 485"
-            >
-              <defs>
-                <path
-                  id="circlePath"
-                  d="M 242, 242 m -200, 0 a 200,200 0 1,1 400,0 a 200,200 0 1,1 -400,0"
-                  fill="none"
-                />
-              </defs>
-              <text className="text-lg text-[32.5px] font-bold fill-gray-800">
-                <textPath href="#circlePath" startOffset="0%">
-                  Your brand name, our trusted quality. • our brand name, our
-                  trusted quality •
-                </textPath>
-              </text>
-            </svg>
+        {/* Left Side - Content */}
+        <div className="flex-1 bg-[#d4dbc4] w-full lg:w-[568px] lg:absolute lg:left-28 rounded-2xl sm:rounded-3xl shadow-lg p-4 sm:p-5 md:p-6 lg:p-8 z-20 mt-6 lg:mt-0">
+          <div className="space-y-4">
+            {brandInfoItems.map((item, index) => {
+              return (
+                <div
+                  key={index}
+                  className="flex gap-4 items-start p-2.5 sm:p-3 rounded-2xl hover:bg-white/30 transition-all duration-300 cursor-default group"
+                >
+                  <div>
+                    <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-900 mb-1 leading-snug">
+                      {item.title}
+                    </h3>
+                    <p
+                      className="text-gray-700 text-xs sm:text-sm leading-relaxed"
+                      style={{ fontFamily: "Inter_18pt-medium" }}
+                    >
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -161,11 +135,11 @@ const CreateYourBrand = () => {
                 )}
               </div>
             </div>
-            <h4 className="text-sm sm:text-base font-bold text-gray-900 mb-2">
+            <h4 className="text-sm sm:text-base font-bold text-gray-900 mb-1">
               {feature.title}
             </h4>
             <p
-              className="text-gray-700 text-xs"
+              className="text-gray-700 text-sm"
               style={{ fontFamily: "Inter_18pt-medium" }}
             >
               {feature.description}

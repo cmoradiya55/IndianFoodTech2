@@ -28,10 +28,10 @@ const ProductQuality = () => {
   return (
     <div className="max-w-7xl mx-auto">
       {/* Header Section */}
-      <div className="mb-8 sm:mb-10 md:mb-6 flex gap-3 sm:gap-4">
+      <div className="mb-8 sm:mb-10 md:mb-12 flex gap-3 sm:gap-4">
         <div className="bg-primary-500 h-33 sm:h-28 md:h-35 lg:h-28 w-1 sm:w-1.5 lg:w-1.5 rounded-2xl flex-shrink-0"></div>
         <div className="mt-1 sm:mt-2">
-          <h1 className="text-base sm:text-base md:text-lg lg:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
+          <h1 className="text-base sm:text-base md:text-lg lg:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">
             Why We Stand Out
           </h1>
           <p
@@ -73,7 +73,7 @@ const ProductQuality = () => {
                     {feature.title}
                   </h3>
                   <p
-                    className="text-gray-600 text-[9px] sm:text-xs leading-relaxed flex-grow"
+                    className="text-gray-600 text-[9px] sm:text-sm leading-relaxed flex-grow"
                     style={{
                       fontFamily: "Inter_18pt-medium",
                       letterSpacing: "0.2px",
@@ -89,7 +89,7 @@ const ProductQuality = () => {
       </div>
 
       {/* Quality Assurance Section */}
-      <div className="mt-8 sm:mt-10 md:mt-6 bg-[#00280C] px-6 sm:px-6 md:px-20 py-6 sm:py-5 md:py-5 rounded-2xl sm:rounded-3xl md:rounded-3xl flex flex-col gap-4 sm:gap-6 md:gap-4 text-center items-center">
+      <div className="mt-8 sm:mt-10 md:mt-12 bg-[#00280C] px-6 sm:px-6 md:px-20 py-6 sm:py-5 md:py-5 rounded-2xl sm:rounded-3xl md:rounded-3xl flex flex-col gap-4 sm:gap-6 md:gap-4 text-center items-center">
         <h2 className="text-2xl sm:text-2xl md:text-3xl font-bold text-primary-500">
           Quality Assurance
         </h2>

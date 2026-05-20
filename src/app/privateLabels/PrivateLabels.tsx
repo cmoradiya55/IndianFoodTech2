@@ -11,13 +11,13 @@ const PrivateLabels = () => {
       >
         {/* Header Section */}
         <div className="mb-6 sm:mb-10 lg:mb-10 flex gap-3 sm:gap-4">
-          <div className="bg-primary-500 h-30 sm:h-28 md:h-35 lg:h-30 w-1 sm:w-1.5 rounded-2xl flex-shrink-0"></div>
+          <div className="bg-primary-500 h-30 sm:h-28 md:h-35 lg:h-28 w-1 sm:w-1.5 rounded-2xl flex-shrink-0"></div>
           <div className="mt-1 sm:mt-2">
             <h1 className="text-lg sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-1 sm:mb-2">
               Private Label, Your Brand Our Expertise
             </h1>
             <p
-              className="text-sm sm:text-base md:text-lg lg:text-xl text-primary-500 font-medium leading-relaxed"
+              className="text-sm sm:text-base md:text-lg lg:text-lg text-primary-500 font-medium leading-relaxed"
               style={{ fontFamily: "Inter_18pt-medium" }}
             >
               Bring your ideas to life with custom-made food products crafted
@@ -50,7 +50,7 @@ const PrivateLabels = () => {
                   About Private Label
                 </h2>
                 <p
-                  className="text-gray-600 text-[11px] min-[400px]:text-sm sm:text-base leading-relaxed mb-4 sm:mb-6"
+                  className="text-gray-600 text-[11px] min-[400px]:text-sm sm:text-sm leading-relaxed mb-4 sm:mb-6"
                   style={{ fontFamily: "Inter_18pt-regular" }}
                 >
                   At Indian Foodtech, we make it simple for you to launch your

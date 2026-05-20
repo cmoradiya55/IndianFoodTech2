@@ -15,7 +15,12 @@ import ProductionDeliveryIcon from "./icon/ProductionDeliveryIcon";
 import LinkedInIcon from "./icon/LinkedInIcon";
 import FacebookIcon from "./icon/FacebookIcon";
 import WhatsAppIcon from "./icon/WhatsAppIcon";
+import PackagingSpecIcon from "./icon/PackagingSpecIcon";
+import ContainerLoadingIcon from "./icon/ContainerLoadingIcon";
+import WeightConsiderationIcon from "./icon/WeightConsiderationIcon";
 import { ClockIcon } from "lucide-react";
+import XIcon from "./icon/XIcon";
+import SimpleLinkedInIcon from "./icon/SimpleLinkedInIcon";
 
 interface AllIconComponentProps {
   width?: number | string;
@@ -146,6 +151,41 @@ const AllIconComponent = ({
       )}
       {icon === "whatsAppIcon" && (
         <WhatsAppIcon
+          width={width as any}
+          height={height as any}
+          className={className}
+        />
+      )}
+      {icon === "packagingSpecIcon" && (
+        <PackagingSpecIcon
+          width={width as any}
+          height={height as any}
+          className={className}
+        />
+      )}
+      {icon === "containerLoadingIcon" && (
+        <ContainerLoadingIcon
+          width={width as any}
+          height={height as any}
+          className={className}
+        />
+      )}
+      {icon === "weightConsiderationIcon" && (
+        <WeightConsiderationIcon
+          width={width as any}
+          height={height as any}
+          className={className}
+        />
+      )}
+      {icon === "xIcon" && (
+        <XIcon
+          width={width as any}
+          height={height as any}
+          className={className}
+        />
+      )}
+      {icon === "simpleLinkedinIcon" && (
+        <SimpleLinkedInIcon
           width={width as any}
           height={height as any}
           className={className}
