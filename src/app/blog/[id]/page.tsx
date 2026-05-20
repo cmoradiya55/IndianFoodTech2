@@ -23,7 +23,7 @@ export async function generateMetadata({
     if (post.date) {
       publishedTime = new Date(post.date).toISOString();
     }
-  } catch (e) {
+  } catch {
     // fallback if parsing fails
   }
 

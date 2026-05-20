@@ -118,7 +118,7 @@ const Blog = () => {
                 No articles found
               </h3>
               <p className="text-gray-500 text-sm font-medium">
-                Try a different category or search term to find what you're
+                Try a different category or search term to find what you&apos;re
                 looking for.
               </p>
             </div>
