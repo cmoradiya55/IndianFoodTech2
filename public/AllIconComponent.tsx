@@ -21,6 +21,7 @@ import WeightConsiderationIcon from "./icon/WeightConsiderationIcon";
 import { ClockIcon } from "lucide-react";
 import XIcon from "./icon/XIcon";
 import SimpleLinkedInIcon from "./icon/SimpleLinkedInIcon";
+import ViberIcon from "./icon/ViberIcon";
 
 interface AllIconComponentProps {
   width?: number | string;
@@ -186,6 +187,13 @@ const AllIconComponent = ({
       )}
       {icon === "simpleLinkedinIcon" && (
         <SimpleLinkedInIcon
+          width={width as any}
+          height={height as any}
+          className={className}
+        />
+      )}
+      {icon === "viberIcon" && (
+        <ViberIcon
           width={width as any}
           height={height as any}
           className={className}

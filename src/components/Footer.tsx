@@ -64,6 +64,20 @@ const Footer = () => {
                   height="28"
                 />
               </Link>
+              <Link
+                href="viber://chat?number=%2B919714899711"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:scale-110 transition-transform duration-200"
+              >
+                {/* Viber */}
+                <AllIconComponent
+                  icon="viberIcon"
+                  className="sm:w-7 sm:h-7 text-primary-500"
+                  width="28"
+                  height="28"
+                />
+              </Link>
             </div>
           </div>
 
