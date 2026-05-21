@@ -62,7 +62,7 @@ const OurCertification = () => {
           </h1>
           <p
             className="text-sm sm:text-sm md:text-sm lg:text-base text-primary-500 font-medium leading-relaxed"
-            style={{ fontFamily: "Inter_18pt-medium" }}
+            style={{ fontFamily: "Poppins-medium" }}
           >
             We are proud to hold certifications that reflect our commitment to
             quality, safety,

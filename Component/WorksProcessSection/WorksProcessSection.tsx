@@ -35,7 +35,7 @@ const WorksProcessSection = () => {
       <div className="flex justify-center mb-6 sm:mb-6 md:mb-8 lg:mb-10">
         <div
           className="bg-[#1D2C00] text-white mt-4 sm:mt-8 md:mt-10 lg:mt-10 px-8 sm:px-12 md:px-18 lg:px-12 py-2 sm:py-2 md:py-2 lg:py-3 rounded-full text-sm sm:text-xl md:text-lg lg:text-lg font-normal text-center shadow-md"
-          style={{ fontFamily: "Inter_18pt-regular" }}
+          style={{ fontFamily: "Poppins-regular" }}
         >
           How It Works – Our Process
         </div>
@@ -83,7 +83,7 @@ const WorksProcessSection = () => {
                   </h3>
                   <p
                     className="text-[#5D6079] text-xs min-[400px]:text-sm md:text-base leading-relaxed"
-                    style={{ fontFamily: "Inter_18pt-regular" }}
+                    style={{ fontFamily: "Poppins-regular" }}
                   >
                     {process.description}
                   </p>

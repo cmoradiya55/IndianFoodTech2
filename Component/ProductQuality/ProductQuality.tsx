@@ -36,7 +36,7 @@ const ProductQuality = () => {
           </h1>
           <p
             className="text-sm sm:text-sm md:text-sm lg:text-base text-primary-500 font-medium leading-relaxed"
-            style={{ fontFamily: "Inter_18pt-medium" }}
+            style={{ fontFamily: "Poppins-medium" }}
           >
             We deliver unmatched quality, innovative solutions, and dedicated
             support to help
@@ -75,7 +75,7 @@ const ProductQuality = () => {
                   <p
                     className="text-gray-600 text-[9px] sm:text-sm leading-relaxed flex-grow"
                     style={{
-                      fontFamily: "Inter_18pt-medium",
+                      fontFamily: "Poppins-medium",
                       letterSpacing: "0.2px",
                     }}
                   >
@@ -95,7 +95,7 @@ const ProductQuality = () => {
         </h2>
         <p
           className="text-xs sm:text-sm md:text-base text-white leading-relaxed"
-          style={{ fontFamily: "Inter_18pt-medium" }}
+          style={{ fontFamily: "Poppins-medium" }}
         >
           Our peanut butter is crafted with the highest standards, ensuring
           every jar delivers pure taste, safety, and premium quality you can

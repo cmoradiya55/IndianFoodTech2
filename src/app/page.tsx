@@ -7,13 +7,6 @@ import ProductQuality from "../../Component/ProductQuality/ProductQuality";
 import Slider from "../../Component/Slider/Slider";
 import Statistics from "../../Component/Statistics/Statistics";
 import StoryAboutUs from "../../Component/StoryAboutUs/StoryAboutUs";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Home",
-  description:
-    "Welcome to Indian Food Tech. We are a trusted manufacturer of premium peanut butter, nut butters, and spreads offering customized private level solutions.",
-};
 
 export default function Home() {
   return (

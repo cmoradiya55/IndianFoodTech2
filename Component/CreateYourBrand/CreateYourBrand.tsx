@@ -60,7 +60,7 @@ const CreateYourBrand = () => {
           </h1>
           <p
             className="text-sm sm:text-sm md:text-sm lg:text-base text-primary-500 font-medium leading-relaxed"
-            style={{ fontFamily: "Inter_18pt-medium" }}
+            style={{ fontFamily: "Poppins-medium" }}
           >
             We specialize in making top-quality peanut butter in India using
             <br className="hidden sm:block" />
@@ -71,29 +71,36 @@ const CreateYourBrand = () => {
       </div>
 
       {/* Main Content Section */}
-      <div className="flex flex-col lg:flex-row-reverse items-center gap-4 sm:gap-6 lg:gap-4 mt-8 sm:mt-8 lg:mt-10 max-w-7xl mx-auto relative mb-8 sm:mb-10 md:mb-16">
+      <div className="flex flex-col lg:flex-row-reverse items-center justify-center mt-8 sm:mt-8 lg:mt-10 max-w-7xl mx-auto relative mb-8 sm:mb-10 md:mb-16 px-4 sm:px-6 lg:px-8">
         {/* Right Side - Image */}
-        <div className="relative flex-shrink-0 w-full lg:w-auto flex justify-center lg:justify-end lg:mr-20">
+        <div className="relative flex-shrink-0 w-full lg:w-auto flex justify-center z-10 lg:ml-[-80px] xl:ml-[-50px]">
           {/* Main circular image */}
-          <div className="relative w-[240px] h-[240px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px] rounded-full border-4 sm:border-6 lg:border-10 border-primary-500 shadow-xl shadow-primary-300 overflow-hidden z-10">
+          <div className="relative w-[240px] h-[240px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px] xl:w-[500px] xl:h-[500px] rounded-full border-4 sm:border-6 lg:border-10 border-slate-900 overflow-hidden z-20">
             <Image
-              src="/privateLabel/ChocolatePeanutButter.png"
+              src="/ChocolatePeanutButter.webp"
               alt="Chocolate Peanut Butter"
               className="w-full h-full object-cover"
               fill
               sizes="(max-width: 640px) 240px, (max-width: 768px) 300px, (max-width: 1024px) 400px, 500px"
             />
           </div>
+
+          {/* Decorative circles - Mirrored for right side */}
+          <div className="hidden sm:block absolute bottom-1 sm:bottom-2 -right-1 sm:-right-2 w-[40px] h-[40px] sm:w-[55px] sm:h-[55px] lg:w-[73px] lg:h-[73px] bg-[#d4dbc4] rounded-full z-10"></div>
+          <div className="hidden sm:block absolute -bottom-6 sm:-bottom-8 lg:-bottom-10 right-48 sm:right-60 lg:right-75 w-[35px] h-[35px] sm:w-[50px] sm:h-[50px] lg:w-[67px] lg:h-[67px] bg-[#d4dbc4] rounded-full z-10"></div>
+          <div className="hidden md:block absolute -bottom-3 sm:-bottom-4 lg:-bottom-6 right-28 sm:right-32 lg:right-40 w-[16px] h-[16px] sm:w-[20px] sm:h-[20px] lg:w-[24px] lg:h-[24px] bg-[#d4dbc4] rounded-full z-10"></div>
+          <div className="hidden md:block absolute top-3 sm:top-4 lg:top-5 right-20 sm:right-24 lg:right-30 w-[16px] h-[16px] sm:w-[20px] sm:h-[20px] lg:w-[24px] lg:h-[24px] bg-[#d4dbc4] rounded-full z-10"></div>
+          <div className="hidden sm:block absolute top-12 sm:top-16 lg:top-20 right-1 sm:right-2 w-[28px] h-[28px] sm:w-[35px] sm:h-[35px] lg:w-[42px] lg:h-[42px] bg-[#d4dbc4] rounded-full z-10"></div>
         </div>
 
         {/* Left Side - Content */}
-        <div className="flex-1 bg-[#d4dbc4] w-full lg:w-[568px] lg:absolute lg:left-28 rounded-2xl sm:rounded-3xl shadow-lg p-4 sm:p-5 md:p-6 lg:p-8 z-20 mt-6 lg:mt-0">
+        <div className="flex-1 bg-[#e9e8ed] w-full max-w-[600px] lg:max-w-[480px] xl:max-w-[568px] rounded-2xl sm:rounded-3xl shadow-lg p-4 sm:p-5 md:p-6 lg:p-8 z-30 mt-8 lg:mt-0 relative">
           <div className="space-y-4">
             {brandInfoItems.map((item, index) => {
               return (
                 <div
                   key={index}
-                  className="flex gap-4 items-start p-2.5 sm:p-3 rounded-2xl hover:bg-white/30 transition-all duration-300 cursor-default group"
+                  className="flex gap-4 items-start p-2.5 sm:p-3 rounded-2xl hover:bg-white/30transition-all duration-300 cursor-default group"
                 >
                   <div>
                     <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-900 mb-1 leading-snug">
@@ -101,7 +108,7 @@ const CreateYourBrand = () => {
                     </h3>
                     <p
                       className="text-gray-700 text-xs sm:text-sm leading-relaxed"
-                      style={{ fontFamily: "Inter_18pt-medium" }}
+                      style={{ fontFamily: "Poppins-medium" }}
                     >
                       {item.description}
                     </p>
@@ -140,7 +147,7 @@ const CreateYourBrand = () => {
             </h4>
             <p
               className="text-gray-700 text-sm"
-              style={{ fontFamily: "Inter_18pt-medium" }}
+              style={{ fontFamily: "Poppins-medium" }}
             >
               {feature.description}
             </p>

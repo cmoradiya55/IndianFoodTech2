@@ -42,7 +42,7 @@ const BlogCard = ({
         <div className="absolute top-3 left-3 z-20">
           <span
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/90 backdrop-blur-md text-primary-600 text-[10px] font-black uppercase tracking-widest shadow-sm border border-white/50 group-hover:bg-primary-500 group-hover:text-white transition-colors duration-500"
-            style={{ fontFamily: "Inter_18pt-medium" }}
+            style={{ fontFamily: "Poppins-medium" }}
           >
             <Tag className="w-3 h-3" />
             {category}
@@ -55,7 +55,7 @@ const BlogCard = ({
         {/* Meta */}
         <div
           className="flex items-center gap-3 text-[10px] font-semibold text-gray-400 uppercase tracking-widest mb-3"
-          style={{ fontFamily: "Inter_18pt-semibold" }}
+          style={{ fontFamily: "Poppins-semibold" }}
         >
           <span className="flex items-center gap-1.5 bg-gray-50 px-2 py-1 rounded-lg">
             <Calendar className="w-3 h-3 text-primary-500" />
@@ -80,7 +80,7 @@ const BlogCard = ({
         {/* Description */}
         <p
           className="text-gray-500 text-xs sm:text-sm leading-relaxed line-clamp-2 mb-4 grow"
-          style={{ fontFamily: "Inter_18pt-medium" }}
+          style={{ fontFamily: "Poppins-medium" }}
         >
           {description}
         </p>
@@ -93,7 +93,7 @@ const BlogCard = ({
             </div>
             <span
               className="text-xs sm:text-sm font-bold text-gray-700 group-hover:text-primary-700 transition-colors duration-300"
-              style={{ fontFamily: "Inter_18pt-bold" }}
+              style={{ fontFamily: "Poppins-bold" }}
             >
               {author}
             </span>

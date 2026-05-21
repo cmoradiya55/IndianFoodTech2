@@ -44,7 +44,7 @@ const Header = () => {
       {/* Top Bar */}
       <div
         className="bg-primary-500 text-white py-[5px]"
-        style={{ fontFamily: "Inter_18pt-regular" }}
+        style={{ fontFamily: "Poppins-regular" }}
       >
         <div className="container-custom px-4">
           <div className="flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm gap-2 sm:gap-0">
@@ -109,7 +109,7 @@ const Header = () => {
             <div className="flex items-center">
               <div className="w-40 h-10 sm:w-48 md:w-60 sm:h-10 md:h-12 relative">
                 <Image
-                  src="/logoBlack.png"
+                  src="/logoBlack.webp"
                   alt="Indian Food Tech"
                   width={240}
                   height={60}
