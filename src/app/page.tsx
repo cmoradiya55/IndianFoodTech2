@@ -2,7 +2,6 @@ import CertificationSection from "../../Component/CertificationSection/Certifica
 import ContactUsComponent from "../../Component/ContactUsComponent/ContactUsComponent";
 import CreateYourBrand from "../../Component/CreateYourBrand/CreateYourBrand";
 import DiscoverProduct from "../../Component/DiscoverProduct/DiscoverProduct";
-import OurCertification from "../../Component/OurCertification/OurCertification";
 import ProductQuality from "../../Component/ProductQuality/ProductQuality";
 import Slider from "../../Component/Slider/Slider";
 import Statistics from "../../Component/Statistics/Statistics";
