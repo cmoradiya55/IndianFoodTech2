@@ -15,6 +15,8 @@ const slides = [
     titleLine2: "Delicious.",
     description:
       "Crafted from the finest peanuts, our butters are rich in taste, natural in goodness, and made to keep you healthy every day.",
+    mobileDescription:
+      "Made from premium peanuts, our rich butters deliver pure, natural goodness to support your daily wellness journey.",
     buttonText: "Explore Products",
     number: "01",
   },
@@ -26,6 +28,8 @@ const slides = [
     titleLine2: "of Happiness",
     description:
       "Smooth and flavorful peanut butter crafted to keep your heart healthy and your taste buds satisfied, every single bite.",
+    mobileDescription:
+      "Enjoy a flavorful, wholesome peanut butter spread designed to nourish your body and satisfy your taste buds.",
     buttonText: "Explore Products",
     number: "02",
   },
@@ -37,6 +41,8 @@ const slides = [
     titleLine2: "Treasure",
     description:
       "Packed with protein, free from preservatives, and made with 100% organic peanuts to give you pure nourishment with every spoonful.",
+    mobileDescription:
+      "High-protein nut spread, free from preservatives and crafted with organic peanuts for clean, active energy.",
     buttonText: "Explore Products",
     number: "03",
   },
@@ -150,7 +156,7 @@ const Slider = () => {
           style={{ height: "50%" }}
         >
           <div key={`m-content-${animKey}`} className="space-y-4">
-            <h1
+            <div
               className="slider-item-anim font-bold leading-tight"
               style={{ animationDelay: "100ms" }}
             >
@@ -166,7 +172,7 @@ const Slider = () => {
               >
                 {slide.titleLine2}
               </span>
-            </h1>
+            </div>
 
             <div
               className="slider-line-anim h-[3px] w-12 rounded-full"
@@ -180,7 +186,7 @@ const Slider = () => {
               className="slider-item-anim text-slate-600 text-sm md:text-base leading-relaxed max-w-[90%]"
               style={{ animationDelay: "300ms" }}
             >
-              {slide.description}
+              {slide.mobileDescription}
             </p>
           </div>
 

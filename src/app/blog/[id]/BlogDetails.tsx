@@ -11,10 +11,13 @@ import {
   AlertCircle,
   ArrowRight,
   Tag,
+  Copy,
+  Check,
 } from "lucide-react";
 import BlogList from "@/data/BlogList.json";
 import BlogCard from "@/components/BlogCard";
 import ImagePreviewModal from "@/components/ImagePreviewModal";
+import AllIconComponent from "../../../../public/AllIconComponent";
 
 // Theme-consistent Content Renderer
 const renderContent = (content: string) => {
@@ -198,6 +201,16 @@ export default function BlogDetails({
   const resolvedParams = use(params);
   const postId = parseInt(resolvedParams.id);
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
+  const [showShareMenu, setShowShareMenu] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyLink = () => {
+    if (typeof window !== "undefined") {
+      navigator.clipboard.writeText(window.location.href);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
 
   const post = useMemo(() => BlogList.find((p) => p.id === postId), [postId]);
 
@@ -351,7 +364,7 @@ export default function BlogDetails({
             </div>
 
             {/* Author signature card */}
-            <div className="mt-6 sm:mt-6 bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-4 shadow-sm border border-[#D2D1D6] flex items-center justify-between gap-2 sm:gap-4">
+            <div className="mt-6 sm:mt-6 bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-4 shadow-sm border border-[#D2D1D6] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 transition-all duration-300 relative overflow-hidden">
               <div className="flex items-center gap-2 sm:gap-4 min-w-0">
                 <div
                   className="w-10 h-10 sm:w-10 sm:h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold text-xs sm:text-sm shrink-0"
@@ -374,9 +387,77 @@ export default function BlogDetails({
                   </p>
                 </div>
               </div>
-              <button className="p-2 sm:p-2.5 rounded-full border border-gray-200 bg-white text-gray-400 hover:text-primary-500 hover:border-primary-300 transition-all duration-300">
-                <Share2 className="w-4 h-4" />
-              </button>
+
+              {/* Premium Social Sharing Integration */}
+              <div className="flex items-center gap-2 self-end sm:self-center">
+                <div className={`flex items-center gap-1.5 transition-all duration-500 origin-right ${showShareMenu ? "opacity-100 max-w-[300px] translate-x-0" : "opacity-0 max-w-0 translate-x-4 overflow-hidden pointer-events-none"}`}>
+                  <button
+                    onClick={handleCopyLink}
+                    className="p-1 rounded-full border border-gray-100 bg-gray-50 text-gray-600 hover:bg-primary-50 hover:text-primary-600 hover:border-primary-200 transition-all duration-200 text-xs font-semibold relative"
+                    title="Copy Link"
+                  >
+                    {copied ? (
+                      <Check className="text-[10px] text-primary-600 px-1 font-bold" />
+                    ) : (
+                      <Copy className="text-[10px] text-primary-600 px-1 font-bold" />
+                    )}
+                  </button>
+                  <Link
+                    href={`https://api.whatsapp.com/send?text=${encodeURIComponent(post.title + " - " + (typeof window !== "undefined" ? window.location.href : ""))}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-emerald-600 hover:bg-primary-50 hover:border-primary-200 transition-all duration-200"
+                    title="Share on WhatsApp"
+                  >
+                    <AllIconComponent icon="whatsAppIcon" width={20} height={20} className="fill-current" />
+                  </Link>
+                  <Link
+                    href={`viber://forward?text=${encodeURIComponent(post.title + " - " + (typeof window !== "undefined" ? window.location.href : ""))}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full border border-gray-100 bg-gray-50 text-violet-600 hover:bg-violet-50 hover:border-violet-200 transition-all duration-200"
+                    title="Share on Viber"
+                  >
+                    <AllIconComponent icon="viberIcon" width={16} height={16} className="fill-current" />
+                  </Link>
+                  <Link
+                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(typeof window !== "undefined" ? window.location.href : "")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full border border-gray-100 bg-gray-50 text-primary-600 hover:bg-primary-50 hover:border-primary-200 transition-all duration-200"
+                    title="Share on Facebook"
+                  >
+                    <AllIconComponent icon="facebookIcon" width={16} height={16} className="fill-current" />
+                  </Link>
+                  <Link
+                    href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(typeof window !== "undefined" ? window.location.href : "")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full border border-gray-100 bg-gray-50 text-primary-500 hover:bg-primary-50 hover:border-primary-200 transition-all duration-200"
+                    title="Share on X"
+                  >
+                    <AllIconComponent icon="xIcon" width={16} height={16} className="fill-current" />
+                  </Link>
+                  <Link
+                    href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(typeof window !== "undefined" ? window.location.href : "")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full border border-gray-100 bg-gray-50 text-blue-700 hover:bg-blue-50 hover:border-blue-200 transition-all duration-200"
+                    title="Share on LinkedIn"
+                  >
+                    <AllIconComponent icon="linkedinIcon" width={16} height={16} className="fill-current" />
+                  </Link>
+
+                </div>
+
+                <button
+                  onClick={() => setShowShareMenu(!showShareMenu)}
+                  className={`p-2.5 rounded-full border transition-all duration-300 ${showShareMenu ? "bg-primary-500 border-primary-500 text-white rotate-90" : "border-gray-200 bg-white text-gray-400 hover:text-primary-500 hover:border-primary-300 animate-pulse"}`}
+                  title="Share Article"
+                >
+                  <Share2 className="w-4 h-4" />
+                </button>
+              </div>
             </div>
           </div>
         </div>

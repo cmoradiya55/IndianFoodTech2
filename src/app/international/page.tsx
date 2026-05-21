@@ -23,6 +23,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.indianfoodtech.in/international",
   },
+  openGraph: {
+    title: "International Peanut Butter Markets | Global Export & Supply",
+    description:
+      "Explore Indian Foodtech's global footprint. High-quality peanut butter export and supply services across 47 international markets including Europe, Asia, and more.",
+    url: "https://www.indianfoodtech.in/international",
+    siteName: "Indian Foodtech",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/logoBlack.webp",
+        width: 800,
+        height: 800,
+        alt: "International Peanut Butter Export Markets",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "International Peanut Butter Markets | Global Export & Supply",
+    description:
+      "Explore Indian Foodtech's global footprint. High-quality peanut butter export and supply services across 47 international markets including Europe, Asia, and more.",
+    images: ["/logoBlack.webp"],
+  },
 };
 
 const importers = [

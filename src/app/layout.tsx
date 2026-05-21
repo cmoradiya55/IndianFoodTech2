@@ -19,8 +19,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
   ),
-  title:
-    "Indian Foodtech, Surat - Manufacturer of Peanut Butter and Tahini Paste",
+  title: "Indian Foodtech | Premium Peanut Butter Manufacturer",
   description:
     "Manufacturer of Peanut Butter, Tahini Paste & Peanut Butter Sachet offered by Indian Foodtech from Surat, Gujarat, India",
   keywords: [
@@ -39,33 +38,34 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.indianfoodtech.in/",
   },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/logoBlack.webp",
+  },
   openGraph: {
-    title:
-      "Indian Foodtech, Surat - Manufacturer of Peanut Butter and Tahini Paste",
+    title: "Indian Foodtech | Premium Peanut Butter Manufacturer",
     description:
       "Manufacturer of Peanut Butter, Tahini Paste & Peanut Butter Sachet offered by Indian Foodtech from Surat, Gujarat, India",
     url: "https://www.indianfoodtech.in/",
-    siteName: "indianfoodtech.in",
+    siteName: "Indian Foodtech",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://5.imimg.com/data5/SELLER/Logo/2022/3/II/GP/LH/149763079/2-120x120.png",
-        width: 120,
-        height: 120,
+        url: "/logoBlack.webp",
+        width: 800,
+        height: 800,
+        alt: "Indian Foodtech Logo",
       },
     ],
   },
   twitter: {
-    card: "summary",
-    title:
-      "Indian Foodtech, Surat - Manufacturer of Peanut Butter and Tahini Paste",
+    card: "summary_large_image",
+    title: "Indian Foodtech | Premium Peanut Butter Manufacturer",
     description:
       "Manufacturer of Peanut Butter, Tahini Paste & Peanut Butter Sachet offered by Indian Foodtech from Surat, Gujarat, India",
     creator: "@indianfoodtech",
-    images: [
-      "https://5.imimg.com/data5/SELLER/Logo/2022/3/II/GP/LH/149763079/2-120x120.png",
-    ],
+    images: ["/logoBlack.webp"],
   },
 };
 
