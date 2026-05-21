@@ -19,12 +19,6 @@
   },
   {
     "id": 4,
-    "name": "Import Export Certificate",
-    "logo": "/certificate/IEC.webp",
-    "certificate": "/certificate/ImportExportCertificate.webp"
-  },
-  {
-    "id": 5,
     "name": "ISO Certification",
     "logo": "/certificate/QRO.webp",
     "certificate": "/certificate/ISOCertificate.webp"
