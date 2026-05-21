@@ -6,11 +6,23 @@ import Image from "next/image";
 import React from "react";
 import { packagingData } from "@/utils/ContainerPackageData";
 import AllIconComponent from "../../../../public/AllIconComponent";
+import { Copy, Share2 } from "lucide-react";
+import Link from "next/link";
 
 const ProductDetails = () => {
   const params = useParams();
   const router = useRouter();
   const productId = params.product as string;
+  const [showShareMenu, setShowShareMenu] = React.useState(false);
+  const [copied, setCopied] = React.useState(false);
+
+  const handleCopyLink = () => {
+    if (typeof window !== "undefined") {
+      navigator.clipboard.writeText(window.location.href);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
 
   // Find the product by ID across all categories
   const product = AllProductsList.flatMap((category) => category.products).find(
@@ -266,7 +278,7 @@ const ProductDetails = () => {
               </button>
 
               <button
-                className="w-full bg-black text-white font-normal py-2 md:py-2.5 px-4 rounded-full transition-colors duration-300 text-xs md:text-sm"
+                className="w-full bg-black text-white font-normal py-2 md:py-2.5 px-4 rounded-full transition-colors duration-300 text-xs md:text-sm mb-2"
                 style={{
                   boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
                   fontFamily: "Poppins-medium",
@@ -274,6 +286,77 @@ const ProductDetails = () => {
               >
                 Get a Quote
               </button>
+
+              {/* Premium Social Sharing Section */}
+              <div className="pt-2 border-t border-gray-100 flex flex-col items-center">
+                <div className="flex items-center justify-between w-full">
+                  <span className="text-xs text-gray-500 font-semibold" style={{ fontFamily: "Poppins-semibold" }}>
+                    Share Product
+                  </span>
+                  <div className="flex items-center gap-1.5">
+                    <div className={`flex items-center gap-1 transition-all duration-500 origin-right ${showShareMenu ? "opacity-100 max-w-[240px] translate-x-0" : "opacity-0 max-w-0 translate-x-4 overflow-hidden pointer-events-none"}`}>
+                      <button
+                        onClick={handleCopyLink}
+                        className="px-2 py-1 rounded-full border border-gray-100 bg-gray-50 text-gray-600 hover:bg-primary-50 hover:text-primary-600 hover:border-primary-200 transition-all duration-200 text-[10px] font-bold"
+                      >
+                        <Copy width={14} height={14} />
+                      </button>
+                      <Link
+                        href={`https://api.whatsapp.com/send?text=${encodeURIComponent(product.name + " - " + (typeof window !== "undefined" ? window.location.href : ""))}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-emerald-600 hover:bg-emerald-50 hover:border-emerald-200 transition-all duration-200"
+                        title="Share on WhatsApp"
+                      >
+                        <AllIconComponent icon="whatsAppIcon" width={14} height={14} className="fill-current" />
+                      </Link>
+                      <Link
+                        href={`viber://forward?text=${encodeURIComponent(product.name + " - " + (typeof window !== "undefined" ? window.location.href : ""))}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-violet-600 hover:bg-violet-50 hover:border-violet-200 transition-all duration-200"
+                        title="Share on Viber"
+                      >
+                        <AllIconComponent icon="viberIcon" width={14} height={14} className="fill-current" />
+                      </Link>
+                      <Link
+                        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(typeof window !== "undefined" ? window.location.href : "")}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-blue-600 hover:bg-blue-50 hover:border-blue-200 transition-all duration-200"
+                        title="Share on Facebook"
+                      >
+                        <AllIconComponent icon="facebookIcon" width={14} height={14} className="fill-current" />
+                      </Link>
+                      <Link
+                        href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(product.name)}&url=${encodeURIComponent(typeof window !== "undefined" ? window.location.href : "")}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-sky-500 hover:bg-sky-50 hover:border-sky-200 transition-all duration-200"
+                        title="Share on X"
+                      >
+                        <AllIconComponent icon="xIcon" width={14} height={14} className="fill-current" />
+                      </Link>
+                      <Link
+                        href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(typeof window !== "undefined" ? window.location.href : "")}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-blue-700 hover:bg-blue-50 hover:border-blue-200 transition-all duration-200"
+                        title="Share on LinkedIn"
+                      >
+                        <AllIconComponent icon="linkedinIcon" width={14} height={14} className="fill-current" />
+                      </Link>
+
+                    </div>
+                    <button
+                      onClick={() => setShowShareMenu(!showShareMenu)}
+                      className={`p-1.5 rounded-full border transition-all duration-300 ${showShareMenu ? "bg-primary-500 border-primary-500 text-white rotate-90" : "border-gray-200 bg-white text-gray-400 hover:text-primary-500 hover:border-primary-300 animate-pulse"}`}
+                    >
+                      <Share2 className="w-3.5 h-3.5" />
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

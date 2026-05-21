@@ -40,9 +40,9 @@ const DiscoverProduct = () => {
       <div className="mb-8 sm:mb-10 md:mb-12 flex gap-3 sm:gap-4">
         <div className="bg-primary-500 h-21 sm:h-28 md:h-35 lg:h-20 w-1 sm:w-1.5 lg:w-1.5 rounded-2xl"></div>
         <div className="mt-1 sm:mt-2">
-          <h1 className="text-base sm:text-base md:text-lg lg:text-2xl font-bold text-gray-900 mb-1 sm:mb-1.5">
+          <h2 className="text-base sm:text-base md:text-lg lg:text-2xl font-bold text-gray-900 mb-1 sm:mb-1.5">
             Discover Our Product
-          </h1>
+          </h2>
           <p
             className="text-sm sm:text-sm md:text-sm lg:text-base text-primary-500 font-medium"
             style={{ fontFamily: "Poppins-medium" }}

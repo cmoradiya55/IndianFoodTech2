@@ -17,9 +17,9 @@ const StoryAboutUs = () => {
       <div className="mb-8 sm:mb-10 flex gap-3 sm:gap-4">
         <div className="bg-primary-500 h-22 sm:h-28 md:h-35 lg:h-26 w-1 sm:w-1.5 lg:w-1.5 rounded-2xl flex-shrink-0"></div>
         <div className="mt-1 sm:mt-2">
-          <h1 className="text-base sm:text-base md:text-lg lg:text-2xl font-bold text-gray-900 mb-2 leading-tight">
+          <h2 className="text-base sm:text-base md:text-lg lg:text-2xl font-bold text-gray-900 mb-2 leading-tight">
             The Story About Us
-          </h1>
+          </h2>
           <p
             className="text-sm sm:text-sm md:text-sm lg:text-base text-primary-500 font-medium leading-relaxed"
             style={{ fontFamily: "Poppins-medium" }}
@@ -62,15 +62,15 @@ const StoryAboutUs = () => {
             className="text-gray-800 text-[11px] sm:text-xs md:text-sm lg:text-base mb-2 sm:mb-3 leading-relaxed"
             style={{ fontFamily: "Poppins-medium" }}
           >
-            At Indian Foodtech, we make high-quality peanut butter, nut butter,
+            At Indian Foodtech, we make high-quality peanut butter, premium tahini paste, nut butter,
             and spreads for brands everywhere.
           </p>
 
           {/* Peanut Butter Your Way */}
           <div className="mb-2 sm:mb-3">
-            <h2 className="text-lg sm:text-base md:text-xl lg:text-xl font-bold text-primary-500 mb-1">
+            <h3 className="text-lg sm:text-base md:text-xl lg:text-xl font-bold text-primary-500 mb-1">
               Peanut Butter Your Way
-            </h2>
+            </h3>
             <p
               className="text-gray-700 text-xs sm:text-sm md:text-sm leading-relaxed"
               style={{ fontFamily: "Poppins-medium" }}
@@ -83,9 +83,9 @@ const StoryAboutUs = () => {
 
           {/* Large-Scale Supply */}
           <div className="mb-3 sm:mb-4">
-            <h2 className="text-lg sm:text-base md:text-xl lg:text-xl font-bold text-primary-500 mb-1 sm:mb-2">
+            <h3 className="text-lg sm:text-base md:text-xl lg:text-xl font-bold text-primary-500 mb-1 sm:mb-2">
               Large-Scale Supply
-            </h2>
+            </h3>
             <p
               className="text-gray-700 text-xs sm:text-sm md:text-sm leading-relaxed"
               style={{ fontFamily: "Poppins-medium" }}
@@ -97,9 +97,9 @@ const StoryAboutUs = () => {
 
           {/* Why Choose Us */}
           <div className="mb-3 sm:mb-5">
-            <h2 className="text-lg sm:text-base md:text-xl lg:text-xl font-bold text-primary-500 mb-1 sm:mb-2">
+            <h3 className="text-lg sm:text-base md:text-xl lg:text-xl font-bold text-primary-500 mb-1 sm:mb-2">
               Why Choose Us
-            </h2>
+            </h3>
             <div
               className="space-y-2 sm:space-y-1"
               style={{ fontFamily: "Poppins-medium" }}

@@ -3,9 +3,45 @@ import React, { Suspense } from 'react'
 import Products from "./Products";
 
 export const metadata: Metadata = {
-  title: "Our Products",
+  title: "Our Products | Indian Foodtech - Nut Spreads",
   description:
     "Explore Indian Food Tech's range of creamy, crunchy, natural, and flavored peanut butters and nut spreads available in jars, pouches, and bulk packs.",
+  keywords: [
+    "peanut butter products",
+    "nut spreads",
+    "tahini paste",
+    "peanut butter sachet",
+    "bulk peanut butter",
+    "creamy peanut butter",
+    "crunchy peanut butter",
+  ],
+  alternates: {
+    canonical: "https://www.indianfoodtech.in/products",
+  },
+  openGraph: {
+    title: "Our Products | Indian Foodtech - Nut Spreads",
+    description:
+      "Explore Indian Food Tech's range of creamy, crunchy, natural, and flavored peanut butters and nut spreads available in jars, pouches, and bulk packs.",
+    url: "https://www.indianfoodtech.in/products",
+    siteName: "Indian Foodtech",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/logoBlack.webp",
+        width: 800,
+        height: 800,
+        alt: "Indian Foodtech Products",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Products | Indian Foodtech - Nut Spreads",
+    description:
+      "Explore Indian Food Tech's range of creamy, crunchy, natural, and flavored peanut butters and nut spreads available in jars, pouches, and bulk packs.",
+    images: ["/logoBlack.webp"],
+  },
 };
 
 // Loading component for the suspense boundary
