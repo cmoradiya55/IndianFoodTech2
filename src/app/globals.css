@@ -134,115 +134,115 @@ body::-webkit-scrollbar {
 
 @font-face {
   font-family: 'Inter_18pt-black';
-  src: url('../../public/font/Inter/Inter_18pt-Black.ttf');
+  src: url('/font/Inter/Inter_18pt-Black.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_18pt-blackitalic';
-  src: url('../../public/font/Inter/Inter_18pt-BlackItalic.ttf');
+  src: url('/font/Inter/Inter_18pt-BlackItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_18pt-bold';
-  src: url('../../public/font/Inter/Inter_18pt-Bold.ttf');
+  src: url('/font/Inter/Inter_18pt-Bold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_18pt-bolditalic';
-  src: url('../../public/font/Inter/Inter_18pt-BoldItalic.ttf');
+  src: url('/font/Inter/Inter_18pt-BoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_18pt-extrabold';
-  src: url('../../public/font/Inter/Inter_18pt-ExtraBold.ttf');
+  src: url('/font/Inter/Inter_18pt-ExtraBold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_18pt-extrabolditalic';
-  src: url('../../public/font/Inter/Inter_18pt-ExtraBoldItalic.ttf');
+  src: url('/font/Inter/Inter_18pt-ExtraBoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_18pt-extralight';
-  src: url('../../public/font/Inter/Inter_18pt-ExtraLight.ttf');
+  src: url('/font/Inter/Inter_18pt-ExtraLight.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_18pt-extralightitalic';
-  src: url('../../public/font/Inter/Inter_18pt-ExtraLightItalic.ttf');
+  src: url('/font/Inter/Inter_18pt-ExtraLightItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_18pt-italic';
-  src: url('../../public/font/Inter/Inter_18pt-Italic.ttf');
+  src: url('/font/Inter/Inter_18pt-Italic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_18pt-light';
-  src: url('../../public/font/Inter/Inter_18pt-Light.ttf');
+  src: url('/font/Inter/Inter_18pt-Light.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_18pt-lightitalic';
-  src: url('../../public/font/Inter/Inter_18pt-LightItalic.ttf');
+  src: url('/font/Inter/Inter_18pt-LightItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_18pt-medium';
-  src: url('../../public/font/Inter/Inter_18pt-Medium.ttf');
+  src: url('/font/Inter/Inter_18pt-Medium.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_18pt-mediumitalic';
-  src: url('../../public/font/Inter/Inter_18pt-MediumItalic.ttf');
+  src: url('/font/Inter/Inter_18pt-MediumItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_18pt-regular';
-  src: url('../../public/font/Inter/Inter_18pt-Regular.ttf');
+  src: url('/font/Inter/Inter_18pt-Regular.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_18pt-semibold';
-  src: url('../../public/font/Inter/Inter_18pt-SemiBold.ttf');
+  src: url('/font/Inter/Inter_18pt-SemiBold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_18pt-semibolditalic';
-  src: url('../../public/font/Inter/Inter_18pt-SemiBoldItalic.ttf');
+  src: url('/font/Inter/Inter_18pt-SemiBoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_18pt-thin';
-  src: url('../../public/font/Inter/Inter_18pt-Thin.ttf');
+  src: url('/font/Inter/Inter_18pt-Thin.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_18pt-thinitalic';
-  src: url('../../public/font/Inter/Inter_18pt-ThinItalic.ttf');
+  src: url('/font/Inter/Inter_18pt-ThinItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_24pt-black';
-  src: url('../../public/font/Inter/Inter_24pt-Black.ttf');
+  src: url('/font/Inter/Inter_24pt-Black.ttf');
   font-weight: normal;
 }
 
@@ -250,103 +250,103 @@ body::-webkit-scrollbar {
 
 @font-face {
   font-family: 'Inter_24pt-blackitalic';
-  src: url('../../public/font/Inter/Inter_24pt-BlackItalic.ttf');
+  src: url('/font/Inter/Inter_24pt-BlackItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_24pt-bold';
-  src: url('../../public/font/Inter/Inter_24pt-Bold.ttf');
+  src: url('/font/Inter/Inter_24pt-Bold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_24pt-bolditalic';
-  src: url('../../public/font/Inter/Inter_24pt-BoldItalic.ttf');
+  src: url('/font/Inter/Inter_24pt-BoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_24pt-extrabold';
-  src: url('../../public/font/Inter/Inter_24pt-ExtraBold.ttf');
+  src: url('/font/Inter/Inter_24pt-ExtraBold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_24pt-extrabolditalic';
-  src: url('../../public/font/Inter/Inter_24pt-ExtraBoldItalic.ttf');
+  src: url('/font/Inter/Inter_24pt-ExtraBoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_24pt-extralight';
-  src: url('../../public/font/Inter/Inter_24pt-ExtraLight.ttf');
+  src: url('/font/Inter/Inter_24pt-ExtraLight.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_24pt-extralightitalic';
-  src: url('../../public/font/Inter/Inter_24pt-ExtraLightItalic.ttf');
+  src: url('/font/Inter/Inter_24pt-ExtraLightItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_24pt-italic';
-  src: url('../../public/font/Inter/Inter_24pt-Italic.ttf');
+  src: url('/font/Inter/Inter_24pt-Italic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_24pt-light';
-  src: url('../../public/font/Inter/Inter_24pt-Light.ttf');
+  src: url('/font/Inter/Inter_24pt-Light.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_24pt-lightitalic';
-  src: url('../../public/font/Inter/Inter_24pt-LightItalic.ttf');
+  src: url('/font/Inter/Inter_24pt-LightItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_24pt-medium';
-  src: url('../../public/font/Inter/Inter_24pt-Medium.ttf');
+  src: url('/font/Inter/Inter_24pt-Medium.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_24pt-mediumitalic';
-  src: url('../../public/font/Inter/Inter_24pt-MediumItalic.ttf');
+  src: url('/font/Inter/Inter_24pt-MediumItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_24pt-regular';
-  src: url('../../public/font/Inter/Inter_24pt-Regular.ttf');
+  src: url('/font/Inter/Inter_24pt-Regular.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_24pt-semibold';
-  src: url('../../public/font/Inter/Inter_24pt-SemiBold.ttf');
+  src: url('/font/Inter/Inter_24pt-SemiBold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_24pt-semibolditalic';
-  src: url('../../public/font/Inter/Inter_24pt-SemiBoldItalic.ttf');
+  src: url('/font/Inter/Inter_24pt-SemiBoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_24pt-thin';
-  src: url('../../public/font/Inter/Inter_24pt-Thin.ttf');
+  src: url('/font/Inter/Inter_24pt-Thin.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_24pt-thinitalic';
-  src: url('../../public/font/Inter/Inter_24pt-ThinItalic.ttf');
+  src: url('/font/Inter/Inter_24pt-ThinItalic.ttf');
   font-weight: normal;
 }
 
@@ -354,109 +354,109 @@ body::-webkit-scrollbar {
 
 @font-face {
   font-family: 'Inter_28pt-black';
-  src: url('../../public/font/Inter/Inter_28pt-Black.ttf');
+  src: url('/font/Inter/Inter_28pt-Black.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_28pt-blackitalic';
-  src: url('../../public/font/Inter/Inter_28pt-BlackItalic.ttf');
+  src: url('/font/Inter/Inter_28pt-BlackItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_28pt-bold';
-  src: url('../../public/font/Inter/Inter_28pt-Bold.ttf');
+  src: url('/font/Inter/Inter_28pt-Bold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_28pt-bolditalic';
-  src: url('../../public/font/Inter/Inter_28pt-BoldItalic.ttf');
+  src: url('/font/Inter/Inter_28pt-BoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_28pt-extrabold';
-  src: url('../../public/font/Inter/Inter_28pt-ExtraBold.ttf');
+  src: url('/font/Inter/Inter_28pt-ExtraBold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_28pt-extrabolditalic';
-  src: url('../../public/font/Inter/Inter_28pt-ExtraBoldItalic.ttf');
+  src: url('/font/Inter/Inter_28pt-ExtraBoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_28pt-extralight';
-  src: url('../../public/font/Inter/Inter_28pt-ExtraLight.ttf');
+  src: url('/font/Inter/Inter_28pt-ExtraLight.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_28pt-extralightitalic';
-  src: url('../../public/font/Inter/Inter_28pt-ExtraLightItalic.ttf');
+  src: url('/font/Inter/Inter_28pt-ExtraLightItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_28pt-italic';
-  src: url('../../public/font/Inter/Inter_28pt-Italic.ttf');
+  src: url('/font/Inter/Inter_28pt-Italic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_28pt-light';
-  src: url('../../public/font/Inter/Inter_28pt-Light.ttf');
+  src: url('/font/Inter/Inter_28pt-Light.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_28pt-lightitalic';
-  src: url('../../public/font/Inter/Inter_28pt-LightItalic.ttf');
+  src: url('/font/Inter/Inter_28pt-LightItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_28pt-medium';
-  src: url('../../public/font/Inter/Inter_28pt-Medium.ttf');
+  src: url('/font/Inter/Inter_28pt-Medium.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_28pt-mediumitalic';
-  src: url('../../public/font/Inter/Inter_28pt-MediumItalic.ttf');
+  src: url('/font/Inter/Inter_28pt-MediumItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_28pt-regular';
-  src: url('../../public/font/Inter/Inter_28pt-Regular.ttf');
+  src: url('/font/Inter/Inter_28pt-Regular.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_28pt-semibold';
-  src: url('../../public/font/Inter/Inter_28pt-SemiBold.ttf');
+  src: url('/font/Inter/Inter_28pt-SemiBold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_28pt-semibolditalic';
-  src: url('../../public/font/Inter/Inter_28pt-SemiBoldItalic.ttf');
+  src: url('/font/Inter/Inter_28pt-SemiBoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_28pt-thin';
-  src: url('../../public/font/Inter/Inter_28pt-Thin.ttf');
+  src: url('/font/Inter/Inter_28pt-Thin.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inter_28pt-thinitalic';
-  src: url('../../public/font/Inter/Inter_28pt-ThinItalic.ttf');
+  src: url('/font/Inter/Inter_28pt-ThinItalic.ttf');
   font-weight: normal;
 }
 
@@ -464,109 +464,109 @@ body::-webkit-scrollbar {
 
 @font-face {
   font-family: 'NotoSerif_condensed-black';
-  src: url('../../public/font/NotoSerif/NotoSerif_Condensed-Black.ttf');
+  src: url('/font/NotoSerif/NotoSerif_Condensed-Black.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_condensed-blackitalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_Condensed-BlackItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_Condensed-BlackItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_condensed-bold';
-  src: url('../../public/font/NotoSerif/NotoSerif_Condensed-Bold.ttf');
+  src: url('/font/NotoSerif/NotoSerif_Condensed-Bold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_condensed-bolditalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_Condensed-BoldItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_Condensed-BoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_condensed-extrabold';
-  src: url('../../public/font/NotoSerif/NotoSerif_Condensed-ExtraBold.ttf');
+  src: url('/font/NotoSerif/NotoSerif_Condensed-ExtraBold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_condensed-extrabolditalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_Condensed-ExtraBoldItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_Condensed-ExtraBoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_condensed-extralight';
-  src: url('../../public/font/NotoSerif/NotoSerif_Condensed-ExtraLight.ttf');
+  src: url('/font/NotoSerif/NotoSerif_Condensed-ExtraLight.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_condensed-extralightitalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_Condensed-ExtraLightItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_Condensed-ExtraLightItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_condensed-italic';
-  src: url('../../public/font/NotoSerif/NotoSerif_Condensed-Italic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_Condensed-Italic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_condensed-light';
-  src: url('../../public/font/NotoSerif/NotoSerif_Condensed-Light.ttf');
+  src: url('/font/NotoSerif/NotoSerif_Condensed-Light.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_condensed-lightitalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_Condensed-LightItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_Condensed-LightItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_condensed-medium';
-  src: url('../../public/font/NotoSerif/NotoSerif_Condensed-Medium.ttf');
+  src: url('/font/NotoSerif/NotoSerif_Condensed-Medium.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_condensed-mediumitalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_Condensed-MediumItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_Condensed-MediumItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_condensed-regular';
-  src: url('../../public/font/NotoSerif/NotoSerif_Condensed-Regular.ttf');
+  src: url('/font/NotoSerif/NotoSerif_Condensed-Regular.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_condensed-semibold';
-  src: url('../../public/font/NotoSerif/NotoSerif_Condensed-SemiBold.ttf');
+  src: url('/font/NotoSerif/NotoSerif_Condensed-SemiBold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_condensed-semibolditalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_Condensed-SemiBoldItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_Condensed-SemiBoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_condensed-thin';
-  src: url('../../public/font/NotoSerif/NotoSerif_Condensed-Thin.ttf');
+  src: url('/font/NotoSerif/NotoSerif_Condensed-Thin.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_condensed-thinitalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_Condensed-ThinItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_Condensed-ThinItalic.ttf');
   font-weight: normal;
 }
 
@@ -574,109 +574,109 @@ body::-webkit-scrollbar {
 
 @font-face {
   font-family: 'NotoSerif_extracondensed-black';
-  src: url('../../public/font/NotoSerif/NotoSerif_ExtraCondensed-Black.ttf');
+  src: url('/font/NotoSerif/NotoSerif_ExtraCondensed-Black.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_extracondensed-blackitalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_ExtraCondensed-BlackItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_ExtraCondensed-BlackItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_extracondensed-bold';
-  src: url('../../public/font/NotoSerif/NotoSerif_ExtraCondensed-Bold.ttf');
+  src: url('/font/NotoSerif/NotoSerif_ExtraCondensed-Bold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_extracondensed-bolditalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_ExtraCondensed-BoldItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_ExtraCondensed-BoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_extracondensed-extrabold';
-  src: url('../../public/font/NotoSerif/NotoSerif_ExtraCondensed-ExtraBold.ttf');
+  src: url('/font/NotoSerif/NotoSerif_ExtraCondensed-ExtraBold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_extracondensed-extrabolditalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_ExtraCondensed-ExtraBoldItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_ExtraCondensed-ExtraBoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_extracondensed-extralight';
-  src: url('../../public/font/NotoSerif/NotoSerif_ExtraCondensed-ExtraLight.ttf');
+  src: url('/font/NotoSerif/NotoSerif_ExtraCondensed-ExtraLight.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_extracondensed-extralightitalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_ExtraCondensed-ExtraLightItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_ExtraCondensed-ExtraLightItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_extracondensed-italic';
-  src: url('../../public/font/NotoSerif/NotoSerif_ExtraCondensed-Italic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_ExtraCondensed-Italic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_extracondensed-light';
-  src: url('../../public/font/NotoSerif/NotoSerif_ExtraCondensed-Light.ttf');
+  src: url('/font/NotoSerif/NotoSerif_ExtraCondensed-Light.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_extracondensed-lightitalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_ExtraCondensed-LightItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_ExtraCondensed-LightItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_extracondensed-medium';
-  src: url('../../public/font/NotoSerif/NotoSerif_ExtraCondensed-Medium.ttf');
+  src: url('/font/NotoSerif/NotoSerif_ExtraCondensed-Medium.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_extracondensed-mediumitalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_ExtraCondensed-MediumItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_ExtraCondensed-MediumItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_extracondensed-regular';
-  src: url('../../public/font/NotoSerif/NotoSerif_ExtraCondensed-Regular.ttf');
+  src: url('/font/NotoSerif/NotoSerif_ExtraCondensed-Regular.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_extracondensed-semibold';
-  src: url('../../public/font/NotoSerif/NotoSerif_ExtraCondensed-SemiBold.ttf');
+  src: url('/font/NotoSerif/NotoSerif_ExtraCondensed-SemiBold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_extracondensed-semibolditalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_ExtraCondensed-SemiBoldItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_ExtraCondensed-SemiBoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_extracondensed-thin';
-  src: url('../../public/font/NotoSerif/NotoSerif_ExtraCondensed-Thin.ttf');
+  src: url('/font/NotoSerif/NotoSerif_ExtraCondensed-Thin.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_extracondensed-thinitalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_ExtraCondensed-ThinItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_ExtraCondensed-ThinItalic.ttf');
   font-weight: normal;
 }
 
@@ -684,217 +684,217 @@ body::-webkit-scrollbar {
 
 @font-face {
   font-family: 'NotoSerif_semicondensed-black';
-  src: url('../../public/font/NotoSerif/NotoSerif_SemiCondensed-Black.ttf');
+  src: url('/font/NotoSerif/NotoSerif_SemiCondensed-Black.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_semicondensed-blackitalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_SemiCondensed-BlackItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_SemiCondensed-BlackItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_semicondensed-bold';
-  src: url('../../public/font/NotoSerif/NotoSerif_SemiCondensed-Bold.ttf');
+  src: url('/font/NotoSerif/NotoSerif_SemiCondensed-Bold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_semicondensed-bolditalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_SemiCondensed-BoldItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_SemiCondensed-BoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_semicondensed-extrabold';
-  src: url('../../public/font/NotoSerif/NotoSerif_SemiCondensed-ExtraBold.ttf');
+  src: url('/font/NotoSerif/NotoSerif_SemiCondensed-ExtraBold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_semicondensed-extrabolditalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_SemiCondensed-ExtraBoldItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_SemiCondensed-ExtraBoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_semicondensed-extralight';
-  src: url('../../public/font/NotoSerif/NotoSerif_SemiCondensed-ExtraLight.ttf');
+  src: url('/font/NotoSerif/NotoSerif_SemiCondensed-ExtraLight.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_semicondensed-extralightitalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_SemiCondensed-ExtraLightItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_SemiCondensed-ExtraLightItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_semicondensed-italic';
-  src: url('../../public/font/NotoSerif/NotoSerif_SemiCondensed-Italic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_SemiCondensed-Italic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_semicondensed-light';
-  src: url('../../public/font/NotoSerif/NotoSerif_SemiCondensed-Light.ttf');
+  src: url('/font/NotoSerif/NotoSerif_SemiCondensed-Light.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_semicondensed-lightitalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_SemiCondensed-LightItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_SemiCondensed-LightItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_semicondensed-medium';
-  src: url('../../public/font/NotoSerif/NotoSerif_SemiCondensed-Medium.ttf');
+  src: url('/font/NotoSerif/NotoSerif_SemiCondensed-Medium.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_semicondensed-mediumitalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_SemiCondensed-MediumItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_SemiCondensed-MediumItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_semicondensed-regular';
-  src: url('../../public/font/NotoSerif/NotoSerif_SemiCondensed-Regular.ttf');
+  src: url('/font/NotoSerif/NotoSerif_SemiCondensed-Regular.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_semicondensed-semibold';
-  src: url('../../public/font/NotoSerif/NotoSerif_SemiCondensed-SemiBold.ttf');
+  src: url('/font/NotoSerif/NotoSerif_SemiCondensed-SemiBold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_semicondensed-semibolditalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_SemiCondensed-SemiBoldItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_SemiCondensed-SemiBoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_semicondensed-thin';
-  src: url('../../public/font/NotoSerif/NotoSerif_SemiCondensed-Thin.ttf');
+  src: url('/font/NotoSerif/NotoSerif_SemiCondensed-Thin.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif_semicondensed-thinitalic';
-  src: url('../../public/font/NotoSerif/NotoSerif_SemiCondensed-ThinItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif_SemiCondensed-ThinItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif-black';
-  src: url('../../public/font/NotoSerif/NotoSerif-Black.ttf');
+  src: url('/font/NotoSerif/NotoSerif-Black.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif-blackitalic';
-  src: url('../../public/font/NotoSerif/NotoSerif-BlackItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif-BlackItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif-bold';
-  src: url('../../public/font/NotoSerif/NotoSerif-Bold.ttf');
+  src: url('/font/NotoSerif/NotoSerif-Bold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif-bolditalic';
-  src: url('../../public/font/NotoSerif/NotoSerif-BoldItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif-BoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif-extrabold';
-  src: url('../../public/font/NotoSerif/NotoSerif-ExtraBold.ttf');
+  src: url('/font/NotoSerif/NotoSerif-ExtraBold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif-extrabolditalic';
-  src: url('../../public/font/NotoSerif/NotoSerif-ExtraBoldItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif-ExtraBoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif-extralight';
-  src: url('../../public/font/NotoSerif/NotoSerif-ExtraLight.ttf');
+  src: url('/font/NotoSerif/NotoSerif-ExtraLight.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif-extralightitalic';
-  src: url('../../public/font/NotoSerif/NotoSerif-ExtraLightItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif-ExtraLightItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif-italic';
-  src: url('../../public/font/NotoSerif/NotoSerif-Italic.ttf');
+  src: url('/font/NotoSerif/NotoSerif-Italic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif-light';
-  src: url('../../public/font/NotoSerif/NotoSerif-Light.ttf');
+  src: url('/font/NotoSerif/NotoSerif-Light.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif-lightitalic';
-  src: url('../../public/font/NotoSerif/NotoSerif-LightItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif-LightItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif-medium';
-  src: url('../../public/font/NotoSerif/NotoSerif-Medium.ttf');
+  src: url('/font/NotoSerif/NotoSerif-Medium.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif-mediumitalic';
-  src: url('../../public/font/NotoSerif/NotoSerif-MediumItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif-MediumItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif-regular';
-  src: url('../../public/font/NotoSerif/NotoSerif-Regular.ttf');
+  src: url('/font/NotoSerif/NotoSerif-Regular.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif-semibold';
-  src: url('../../public/font/NotoSerif/NotoSerif-SemiBold.ttf');
+  src: url('/font/NotoSerif/NotoSerif-SemiBold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif-semibolditalic';
-  src: url('../../public/font/NotoSerif/NotoSerif-SemiBoldItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif-SemiBoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif-thin';
-  src: url('../../public/font/NotoSerif/NotoSerif-Thin.ttf');
+  src: url('/font/NotoSerif/NotoSerif-Thin.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'NotoSerif-thinitalic';
-  src: url('../../public/font/NotoSerif/NotoSerif-ThinItalic.ttf');
+  src: url('/font/NotoSerif/NotoSerif-ThinItalic.ttf');
   font-weight: normal;
 }
 
@@ -902,109 +902,109 @@ body::-webkit-scrollbar {
 
 @font-face {
   font-family: 'Poppins-black';
-  src: url('../../public/font/Poppins/Poppins-Black.ttf');
+  src: url('/font/Poppins/Poppins-Black.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Poppins-blackitalic';
-  src: url('../../public/font/Poppins/Poppins-BlackItalic.ttf');
+  src: url('/font/Poppins/Poppins-BlackItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Poppins-bold';
-  src: url('../../public/font/Poppins/Poppins-Bold.ttf');
+  src: url('/font/Poppins/Poppins-Bold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Poppins-bolditalic';
-  src: url('../../public/font/Poppins/Poppins-BoldItalic.ttf');
+  src: url('/font/Poppins/Poppins-BoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Poppins-extrabold';
-  src: url('../../public/font/Poppins/Poppins-ExtraBold.ttf');
+  src: url('/font/Poppins/Poppins-ExtraBold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Poppins-extrabolditalic';
-  src: url('../../public/font/Poppins/Poppins-ExtraBoldItalic.ttf');
+  src: url('/font/Poppins/Poppins-ExtraBoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Poppins-extralight';
-  src: url('../../public/font/Poppins/Poppins-ExtraLight.ttf');
+  src: url('/font/Poppins/Poppins-ExtraLight.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Poppins-extralightitalic';
-  src: url('../../public/font/Poppins/Poppins-ExtraLightItalic.ttf');
+  src: url('/font/Poppins/Poppins-ExtraLightItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Poppins-italic';
-  src: url('../../public/font/Poppins/Poppins-Italic.ttf');
+  src: url('/font/Poppins/Poppins-Italic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Poppins-light';
-  src: url('../../public/font/Poppins/Poppins-Light.ttf');
+  src: url('/font/Poppins/Poppins-Light.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Poppins-lightitalic';
-  src: url('../../public/font/Poppins/Poppins-LightItalic.ttf');
+  src: url('/font/Poppins/Poppins-LightItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Poppins-medium';
-  src: url('../../public/font/Poppins/Poppins-Medium.ttf');
+  src: url('/font/Poppins/Poppins-Medium.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Poppins-mediumitalic';
-  src: url('../../public/font/Poppins/Poppins-MediumItalic.ttf');
+  src: url('/font/Poppins/Poppins-MediumItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Poppins-regular';
-  src: url('../../public/font/Poppins/Poppins-Regular.ttf');
+  src: url('/font/Poppins/Poppins-Regular.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Poppins-semibold';
-  src: url('../../public/font/Poppins/Poppins-SemiBold.ttf');
+  src: url('/font/Poppins/Poppins-SemiBold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Poppins-semibolditalic';
-  src: url('../../public/font/Poppins/Poppins-SemiBoldItalic.ttf');
+  src: url('/font/Poppins/Poppins-SemiBoldItalic.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Poppins-thin';
-  src: url('../../public/font/Poppins/Poppins-Thin.ttf');
+  src: url('/font/Poppins/Poppins-Thin.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Poppins-thinitalic';
-  src: url('../../public/font/Poppins/Poppins-ThinItalic.ttf');
+  src: url('/font/Poppins/Poppins-ThinItalic.ttf');
   font-weight: normal;
 }
 
