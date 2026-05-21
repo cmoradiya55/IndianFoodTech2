@@ -57,7 +57,7 @@ const Products = () => {
             </h1>
             <p
               className="text-sm sm:text-lg md:text-lg text-primary-500 font-medium leading-relaxed"
-              style={{ fontFamily: "Inter_18pt-medium" }}
+              style={{ fontFamily: "Poppins-medium" }}
             >
               Explore how our product brings ideas to life and adds real value.
             </p>
@@ -76,7 +76,7 @@ const Products = () => {
               <div className="flex items-center justify-center mb-4 sm:mb-6 md:mb-8 lg:mb-10">
                 <div
                   className="bg-[#1D2C00] text-white mt-4 sm:mt-6 md:mt-8 lg:mt-10 px-8 sm:px-12 md:px-12 lg:px-30 py-2.5 sm:py-4 md:py-4 lg:py-3 rounded-full text-sm sm:text-xl md:text-xl lg:text-xl font-normal text-center shadow-md"
-                  style={{ fontFamily: "Inter_18pt-regular" }}
+                  style={{ fontFamily: "Poppins-regular" }}
                 >
                   {categoryItem.categoryName}
                 </div>
@@ -112,7 +112,7 @@ const Products = () => {
 
                       <p
                         className="text-[#5D6079] text-[10px] min-[400px]:text-[11px] sm:text-sm leading-relaxed mb-2.5 sm:mb-5 md:mb-6 text-left sm:text-center grow line-clamp-2 sm:line-clamp-none"
-                        style={{ fontFamily: "Inter_18pt-medium" }}
+                        style={{ fontFamily: "Poppins-medium" }}
                       >
                         {product.description}
                       </p>
@@ -123,7 +123,7 @@ const Products = () => {
                         className="w-[120px] min-[400px]:w-[130px] sm:w-full bg-primary-500 hover:bg-primary-600 text-white font-normal py-1.5 sm:py-2 px-3 sm:px-6 rounded-full transition-colors duration-300 mt-auto text-[10px] min-[400px]:text-[11px] sm:text-base self-start sm:self-auto shadow-md sm:shadow-none"
                         style={{
                           boxShadow: "0 4px 12px rgba(127, 180, 50, 0.3)",
-                          fontFamily: "Inter_18pt-medium",
+                          fontFamily: "Poppins-medium",
                         }}
                       >
                         Explore Details

@@ -17,8 +17,8 @@ const PrivateLabels = () => {
               Private Label, Your Brand Our Expertise
             </h1>
             <p
-              className="text-sm sm:text-base md:text-lg lg:text-lg text-primary-500 font-medium leading-relaxed"
-              style={{ fontFamily: "Inter_18pt-medium" }}
+              className="text-sm sm:text-base md:text-base lg:text-base text-primary-500 font-medium leading-relaxed"
+              style={{ fontFamily: "Poppins-medium" }}
             >
               Bring your ideas to life with custom-made food products crafted
               <br className="hidden md:block" />
@@ -36,7 +36,7 @@ const PrivateLabels = () => {
               <div className="flex justify-center mb-4 sm:mb-8">
                 <div className="relative w-[180px] min-[400px]:w-[250px] sm:w-[300px] md:w-[350px] h-[180px] min-[400px]:h-[250px] sm:h-[300px] md:h-[350px] rounded-2xl min-[400px]:rounded-3xl sm:rounded-[40px] border-2 min-[400px]:border-4 sm:border-6 border-black overflow-hidden">
                   <Image
-                    src="/privateLabelImage.png"
+                    src="/privateLabelImage.webp"
                     alt="Peanut butter being poured"
                     className="w-full h-full object-cover"
                     fill
@@ -51,7 +51,7 @@ const PrivateLabels = () => {
                 </h2>
                 <p
                   className="text-gray-600 text-[11px] min-[400px]:text-sm sm:text-sm leading-relaxed mb-4 sm:mb-6"
-                  style={{ fontFamily: "Inter_18pt-regular" }}
+                  style={{ fontFamily: "Poppins-regular" }}
                 >
                   At Indian Foodtech, we make it simple for you to launch your
                   own brand of delicious nut-based spreads. From peanut butter
@@ -63,7 +63,7 @@ const PrivateLabels = () => {
                 </p>
                 <button
                   className="bg-primary-500 hover:bg-primary-600 shadow-md sm:shadow-xl shadow-primary-500/50 text-white font-medium text-xs min-[400px]:text-sm sm:text-base py-2 min-[400px]:py-2 sm:py-3 px-4 sm:px-6 rounded-full transition-colors duration-200 hover:shadow-lg w-full"
-                  style={{ fontFamily: "Inter_18pt-regular" }}
+                  style={{ fontFamily: "Poppins-regular" }}
                 >
                   Enquire Now
                 </button>
@@ -77,7 +77,7 @@ const PrivateLabels = () => {
               <div className="w-[60%] absolute left-1/8">
                 <div className="relative w-[458px] h-[458px] rounded-[56px] border-12 border-black overflow-hidden z-10">
                   <Image
-                    src="/privateLabelImage.png"
+                    src="/privateLabelImage.webp"
                     alt="Peanut butter being poured"
                     className="w-full h-full object-cover"
                     layout="fill"
@@ -97,7 +97,7 @@ const PrivateLabels = () => {
                 </h2>
                 <p
                   className="text-gray-600 text-base mb-4"
-                  style={{ fontFamily: "Inter_18pt-regular" }}
+                  style={{ fontFamily: "Poppins-regular" }}
                 >
                   At Indian Foodtech, we make it simple for you to launch your
                   own brand of delicious nut-based spreads. From peanut butter
@@ -109,7 +109,7 @@ const PrivateLabels = () => {
                 </p>
                 <button
                   className="bg-primary-500 hover:bg-primary-600 shadow-xl shadow-primary-500/50 text-white font-medium text-lg py-2 px-6 rounded-full transition-colors duration-200 hover:shadow-lg w-full md:w-auto"
-                  style={{ fontFamily: "Inter_18pt-regular" }}
+                  style={{ fontFamily: "Poppins-regular" }}
                 >
                   Enquire Now
                 </button>

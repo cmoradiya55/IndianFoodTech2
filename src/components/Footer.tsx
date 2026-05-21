@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import AllIconComponent from "../../public/AllIconComponent";
+import FloatingChatMenu from "./FloatingChatMenu";
 
 const QUICK_LINKS = [
   { href: "/aboutUs", label: "About Us" },
@@ -24,7 +25,7 @@ const Footer = () => {
           <div className="w-full lg:w-1/3 lg:pr-8">
             <div className="shrink-0 pb-4 lg:mb-3">
               <Image
-                src="/logoWhite.png"
+                src="/logoWhite.webp"
                 alt="Indian Food Tech"
                 width={270}
                 height={55}
@@ -64,20 +65,19 @@ const Footer = () => {
                   height="28"
                 />
               </Link>
-              <Link
+              {/* <Link
                 href="viber://chat?number=%2B919714899711"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:scale-110 transition-transform duration-200"
               >
-                {/* Viber */}
                 <AllIconComponent
                   icon="viberIcon"
                   className="sm:w-7 sm:h-7 text-primary-500"
                   width="28"
                   height="28"
                 />
-              </Link>
+              </Link> */}
             </div>
           </div>
 
@@ -90,7 +90,7 @@ const Footer = () => {
               </h4>
               <ul
                 className="space-y-3 sm:space-y-4"
-                style={{ fontFamily: "Inter_18pt-regular" }}
+                style={{ fontFamily: "Poppins-regular" }}
               >
                 {QUICK_LINKS.map((link) => (
                   <li key={link.href}>
@@ -107,53 +107,57 @@ const Footer = () => {
 
             {/* Contact Information */}
             <div className="w-full md:w-1/2 lg:w-2/3">
-              <h4 className="text-primary-500 text-lg sm:text-xl font-semibold mb-4 sm:mb-6">
+              <h4 className="text-primary-500 text-lg sm:text-xl font-semibold mb-4 sm:mb-2">
                 Contact Us
               </h4>
 
-              {/* Address */}
-              <div className="mb-4 sm:mb-6">
-                <p
-                  className="text-white text-sm sm:text-sm font-medium leading-relaxed"
-                  style={{ fontFamily: "Inter_18pt-regular" }}
-                >
-                  <span className="text-primary-500 text-base">Address:</span>
-                  <br />
-                  Ground Floor, Plot No. 198, 197, 198
-                  <br />
-                  Om Industries Estate, Vibhag 1, Village : Mankana
-                  <br />
-                  Kamrej, Surat - 394190, Gujarat, India
-                </p>
-              </div>
-
-              {/* Contact Details */}
-              <div className="space-y-2 sm:space-y-3">
-                <p
-                  className="text-white text-sm sm:text-sm font-medium"
-                  style={{ fontFamily: "Inter_18pt-regular" }}
-                >
-                  <span className="text-primary-500 text-base">Email:</span>
-                  <Link
-                    href="mailto:office@indianfoodtech.in"
-                    className="ml-2 hover:text-primary-500 transition-colors hover:underline"
-                  >
-                    office@indianfoodtech.in
-                  </Link>
-                </p>
-                <p
-                  className="text-white text-sm sm:text-sm font-medium"
-                  style={{ fontFamily: "Inter_18pt-regular" }}
-                >
-                  <span className="text-primary-500 text-base">Phone:</span>
-                  <Link
-                    href="tel:+919714899711"
-                    className="ml-2 hover:text-primary-500 transition-colors hover:underline"
-                  >
-                    +91 97148 99711
-                  </Link>
-                </p>
-              </div>
+              <table
+                className="border-separate border-spacing-y-3 sm:border-spacing-y-4 w-full"
+                style={{ fontFamily: "Poppins-regular" }}
+              >
+                <tbody>
+                  <tr>
+                    <td className="text-white text-sm sm:text-sm font-medium align-top pr-3 pt-1 w-20">
+                      <span className="text-primary-500 text-sm">Address:</span>
+                    </td>
+                    <td className="text-white text-sm sm:text-sm font-medium align-top">
+                      Ground Floor, Plot No. 198, 197, 198
+                      <br />
+                      Om Industries Estate, Vibhag 1,
+                      <br />
+                      Village : Mankana, Kamrej,
+                      <br />
+                      Surat - 394190, Gujarat, India
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="text-white text-sm sm:text-sm font-medium align-top pr-3">
+                      <span className="text-primary-500 text-sm">Email:</span>
+                    </td>
+                    <td className="align-top">
+                      <Link
+                        href="mailto:office@indianfoodtech.in"
+                        className="text-white text-sm sm:text-sm font-medium hover:text-primary-500 transition-colors hover:underline"
+                      >
+                        office@indianfoodtech.in
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="text-white text-sm sm:text-sm font-medium align-top pr-3">
+                      <span className="text-primary-500 text-sm">Phone:</span>
+                    </td>
+                    <td className="align-top">
+                      <Link
+                        href="tel:+919714899711"
+                        className="text-white text-sm sm:text-sm font-medium hover:text-primary-500 transition-colors hover:underline"
+                      >
+                        +91 97148 99711
+                      </Link>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -176,7 +180,7 @@ const Footer = () => {
             </p>
             <p
               className="opacity-80 text-xs leading-relaxed"
-              style={{ fontFamily: "Inter_18pt-regular" }}
+              style={{ fontFamily: "Poppins-regular" }}
             >
               <span className="sm:hidden">& </span>Developed and managed by{" "}
               <span className="font-semibold">Infinius Tech</span>
@@ -185,20 +189,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Floating WhatsApp Button */}
-      <Link
-        href="https://wa.me/919714899711"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Chat on WhatsApp"
-        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-10 text-white shadow-2xl z-50 hover:scale-110 active:scale-95 transition-transform duration-200"
-      >
-        {/* WhatsApp Icon */}
-        <AllIconComponent
-          icon="whatsAppIcon"
-          className="w-10 h-10 sm:w-12 sm:h-12 lg:w-10 lg:h-10"
-        />
-      </Link>
+      <FloatingChatMenu />
     </footer>
   );
 };

@@ -59,7 +59,7 @@ const renderContent = (content: string) => {
         >
           <div
             className="bg-[#1D2C00] text-white px-4 sm:px-6 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-normal text-center inline-block"
-            style={{ fontFamily: "Inter_18pt-regular" }}
+            style={{ fontFamily: "Poppins-regular" }}
           >
             {line.replace("👉 ", "")}
           </div>
@@ -82,7 +82,7 @@ const renderContent = (content: string) => {
           </span>
           <p
             className="text-gray-800 text-xs sm:text-sm leading-relaxed font-medium"
-            style={{ fontFamily: "Inter_18pt-medium" }}
+            style={{ fontFamily: "Poppins-medium" }}
           >
             {text}
           </p>
@@ -102,7 +102,7 @@ const renderContent = (content: string) => {
           </span>
           <p
             className="text-red-900 text-xs sm:text-sm leading-relaxed font-medium"
-            style={{ fontFamily: "Inter_18pt-medium" }}
+            style={{ fontFamily: "Poppins-medium" }}
           >
             {line.replace(/^[❌🚨]\s*/, "")}
           </p>
@@ -120,7 +120,7 @@ const renderContent = (content: string) => {
           <span className="text-primary-500 text-sm sm:text-base mt-0.5 shrink-0">⦿</span>
           <span
             className="text-xs sm:text-sm leading-relaxed"
-            style={{ fontFamily: "Inter_18pt-regular" }}
+            style={{ fontFamily: "Poppins-regular" }}
           >
             {line.replace(/^[-*]\s*/, "")}
           </span>
@@ -135,14 +135,14 @@ const renderContent = (content: string) => {
         <p
           key={index}
           className="text-gray-700 text-xs sm:text-sm leading-relaxed mb-2 sm:mb-3"
-          style={{ fontFamily: "Inter_18pt-regular" }}
+          style={{ fontFamily: "Poppins-regular" }}
         >
           {parts.map((part, i) =>
             i % 2 === 1 ? (
               <strong
                 key={i}
                 className="font-bold text-gray-900"
-                style={{ fontFamily: "Inter_18pt-bold" }}
+                style={{ fontFamily: "Poppins-bold" }}
               >
                 {part}
               </strong>
@@ -164,7 +164,7 @@ const renderContent = (content: string) => {
       <p
         key={index}
         className="text-gray-700 text-xs sm:text-sm leading-relaxed mb-2 sm:mb-3"
-        style={{ fontFamily: "Inter_18pt-regular" }}
+        style={{ fontFamily: "Poppins-regular" }}
       >
         {line}
       </p>
@@ -212,14 +212,14 @@ export default function BlogDetails({
         </h1>
         <p
           className="text-gray-500 mb-8 text-center text-sm sm:text-base font-medium"
-          style={{ fontFamily: "Inter_18pt-medium" }}
+          style={{ fontFamily: "Poppins-medium" }}
         >
           Article not found.
         </p>
         <Link
           href="/blog"
           className="px-6 sm:px-8 py-2.5 sm:py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-full font-normal text-xs sm:text-sm transition-all duration-300 shadow-md"
-          style={{ fontFamily: "Inter_18pt-medium" }}
+          style={{ fontFamily: "Poppins-medium" }}
         >
           Back to Blog
         </Link>
@@ -259,7 +259,7 @@ export default function BlogDetails({
               <div className="mb-3 sm:mb-4">
                 <span
                   className="inline-flex items-center gap-1.5 px-3.5 sm:px-5 py-1.5 sm:py-2 rounded-full bg-white text-primary-600 text-[10px] sm:text-xs font-black uppercase tracking-widest shadow-sm border border-gray-100"
-                  style={{ fontFamily: "Inter_18pt-bold" }}
+                  style={{ fontFamily: "Poppins-bold" }}
                 >
                   <Tag className="w-3 h-3" />
                   {post.category}
@@ -273,7 +273,7 @@ export default function BlogDetails({
                   </h1>
                   <p
                     className="text-sm sm:text-base md:text-base text-primary-500 font-medium leading-relaxed"
-                    style={{ fontFamily: "Inter_18pt-medium" }}
+                    style={{ fontFamily: "Poppins-medium" }}
                   >
                     {post.description}
                   </p>
@@ -286,7 +286,7 @@ export default function BlogDetails({
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
             <span
               className="flex items-center gap-2 bg-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-[10px] sm:text-xs font-semibold text-gray-600 shadow-sm border border-gray-100"
-              style={{ fontFamily: "Inter_18pt-semibold" }}
+              style={{ fontFamily: "Poppins-semibold" }}
             >
               <div className="w-5 h-5 sm:w-6 sm:h-6 bg-primary-50 rounded-full flex items-center justify-center">
                 <User className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-primary-500" />
@@ -295,14 +295,14 @@ export default function BlogDetails({
             </span>
             <span
               className="flex items-center gap-2 bg-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-[10px] sm:text-xs font-semibold text-gray-500 shadow-sm border border-gray-100"
-              style={{ fontFamily: "Inter_18pt-semibold" }}
+              style={{ fontFamily: "Poppins-semibold" }}
             >
               <Calendar className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-primary-500" />
               {post.date}
             </span>
             <span
               className="flex items-center gap-2 bg-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-[10px] sm:text-xs font-semibold text-gray-500 shadow-sm border border-gray-100"
-              style={{ fontFamily: "Inter_18pt-semibold" }}
+              style={{ fontFamily: "Poppins-semibold" }}
             >
               <Clock className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-primary-500" />
               {readTime}
@@ -339,7 +339,7 @@ export default function BlogDetails({
             <div className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-6 shadow-sm border border-[#D2D1D6] mb-6 sm:mb-6">
               <p
                 className="text-gray-600 text-sm sm:text-base md:text-base leading-relaxed font-medium"
-                style={{ fontFamily: "Inter_18pt-medium" }}
+                style={{ fontFamily: "Poppins-medium" }}
               >
                 {post.description}
               </p>
@@ -355,7 +355,7 @@ export default function BlogDetails({
               <div className="flex items-center gap-2 sm:gap-4 min-w-0">
                 <div
                   className="w-10 h-10 sm:w-10 sm:h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold text-xs sm:text-sm shrink-0"
-                  style={{ fontFamily: "Inter_18pt-bold" }}
+                  style={{ fontFamily: "Poppins-bold" }}
                 >
                   IF
                 </div>
@@ -368,7 +368,7 @@ export default function BlogDetails({
                   </h4>
                   <p
                     className="text-[10px] sm:text-xs text-gray-400 font-medium truncate"
-                    style={{ fontFamily: "Inter_18pt-regular" }}
+                    style={{ fontFamily: "Poppins-regular" }}
                   >
                     Expert Team
                   </p>
@@ -394,7 +394,7 @@ export default function BlogDetails({
             </h2>
             <p
               className="text-[#D4DBC4] text-xs sm:text-sm md:text-base font-normal px-4 sm:px-0 max-w-2xl"
-              style={{ fontFamily: "Inter_18pt-regular" }}
+              style={{ fontFamily: "Poppins-regular" }}
             >
               Our experts help food businesses transition from initial ideas to
               global market players with premium peanut butter technology.
@@ -403,14 +403,14 @@ export default function BlogDetails({
               <Link
                 href="/contactUs"
                 className="w-full sm:w-auto text-center px-6 sm:px-10 py-2.5 sm:py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-full font-normal text-xs sm:text-sm transition-all duration-300 shadow-md"
-                style={{ fontFamily: "Inter_18pt-medium" }}
+                style={{ fontFamily: "Poppins-medium" }}
               >
                 Contact Us
               </Link>
               <Link
                 href="/products"
                 className="w-full sm:w-auto text-center px-6 sm:px-10 py-2.5 sm:py-3 bg-transparent text-[#D4DBC4] border border-[#D4DBC4]/30 hover:border-primary-500 hover:text-primary-500 rounded-full font-normal text-xs sm:text-sm transition-all duration-300"
-                style={{ fontFamily: "Inter_18pt-medium" }}
+                style={{ fontFamily: "Poppins-medium" }}
               >
                 View Products
               </Link>
@@ -435,7 +435,7 @@ export default function BlogDetails({
                 </h2>
                 <p
                   className="text-xs sm:text-sm md:text-base text-primary-500 font-medium leading-relaxed"
-                  style={{ fontFamily: "Inter_18pt-medium" }}
+                  style={{ fontFamily: "Poppins-medium" }}
                 >
                   More insights from our team
                 </p>
@@ -463,7 +463,7 @@ export default function BlogDetails({
               <Link
                 href="/blog"
                 className="px-6 sm:px-10 py-2.5 sm:py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-full font-normal text-xs sm:text-sm transition-all duration-300 shadow-md flex items-center gap-2"
-                style={{ fontFamily: "Inter_18pt-medium" }}
+                style={{ fontFamily: "Poppins-medium" }}
               >
                 View All Articles
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -478,7 +478,7 @@ export default function BlogDetails({
         <div className="max-w-7xl mx-auto container-custom">
           <p
             className="text-black text-xs sm:text-sm md:text-base font-normal text-center py-2 sm:py-3 px-4 sm:px-0"
-            style={{ fontFamily: "Inter_18pt-regular" }}
+            style={{ fontFamily: "Poppins-regular" }}
           >
             Looking for a dependable private label food manufacturer in India?
             Indian

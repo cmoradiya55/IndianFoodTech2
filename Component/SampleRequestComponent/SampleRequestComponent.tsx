@@ -122,7 +122,7 @@ const SampleRequestComponent = () => {
       console.error("Error submitting form:", error);
       alert(
         "Error submitting form: " +
-          (error instanceof Error ? error.message : String(error)),
+        (error instanceof Error ? error.message : String(error)),
       );
       return;
     }
@@ -205,7 +205,7 @@ const SampleRequestComponent = () => {
         </h1>
         <p
           className="text-sm sm:text-base text-gray-500 max-w-lg"
-          style={{ fontFamily: "Inter_18pt-regular" }}
+          style={{ fontFamily: "Poppins-regular" }}
         >
           Discover the authentic taste of our premium exports. Tell us your
           requirements and we&apos;ll prepare a curated sample package.
@@ -311,7 +311,7 @@ const SampleRequestComponent = () => {
           </h3>
           <p
             className="text-sm text-gray-500 mb-6 ml-2 md:ml-15"
-            style={{ fontFamily: "Inter_18pt-regular" }}
+            style={{ fontFamily: "Poppins-regular" }}
           >
             Choose the products you are interested in sampling.
           </p>
@@ -350,7 +350,7 @@ const SampleRequestComponent = () => {
                       </div>
                       <span
                         className="text-sm text-gray-700 group-hover:text-primary-700 transition-colors select-none leading-tight"
-                        style={{ fontFamily: "Inter_18pt-regular" }}
+                        style={{ fontFamily: "Poppins-regular" }}
                       >
                         {product.name}
                       </span>
@@ -391,7 +391,7 @@ const SampleRequestComponent = () => {
               onChange={handleInputChange}
               className="w-full border border-gray-200 rounded-2xl p-4 focus:ring-2 focus:ring-primary-500 outline-none text-sm md:text-base transition-all resize-none shadow-sm focus:border-primary-500 text-gray-700"
               placeholder="Specific requirements, target market, export destination..."
-              style={{ fontFamily: "Inter_18pt-regular" }}
+              style={{ fontFamily: "Poppins-regular" }}
             ></textarea>
           </div>
 
@@ -399,7 +399,7 @@ const SampleRequestComponent = () => {
             <button
               type="submit"
               className="bg-primary-500 hover:bg-primary-600 text-white px-8 py-2.5 md:px-8 md:py-2 rounded-full font-semibold text-sm md:text-base shadow-[0_8px_20px_rgb(29,44,0,0.2)] transition-all transform hover:-translate-y-1 w-full sm:w-auto flex items-center justify-center gap-2"
-              style={{ fontFamily: "Inter_18pt-regular" }}
+              style={{ fontFamily: "Poppins-regular" }}
             >
               <Mail className="w-5 h-5 mr-1" />
               Submit Request

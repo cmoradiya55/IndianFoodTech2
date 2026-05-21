@@ -26,7 +26,7 @@ const AboutUs = () => {
             <div className="flex justify-center mb-4 sm:mb-6 md:mb-6">
               <div
                 className="bg-[#1D2C00] text-white mt-4 sm:mt-6 md:mt-4 px-4 sm:px-8 md:px-6 py-2 sm:py-3 md:py-3 rounded-full text-sm sm:text-lg md:text-base font-normal text-center"
-                style={{ fontFamily: "Inter_18pt-regular" }}
+                style={{ fontFamily: "Poppins-regular" }}
               >
                 Why Partner with Indian Foodtech?
               </div>
@@ -65,7 +65,7 @@ const AboutUs = () => {
             </h2>
             <p
               className="text-[#D4DBC4] text-xs sm:text-sm md:text-base font-normal px-4 sm:px-0"
-              style={{ fontFamily: "Inter_18pt-regular" }}
+              style={{ fontFamily: "Poppins-regular" }}
             >
               Our mission is simple: to help businesses grow with high-quality,
               cost-effective,
@@ -80,7 +80,7 @@ const AboutUs = () => {
       <div className="py-4">
         <div
           className="bg-[#D4DBC4] py-2 px-3 sm:px-4 md:px-8 lg:px-8"
-          style={{ fontFamily: "Inter_18pt-regular" }}
+          style={{ fontFamily: "Poppins-regular" }}
         >
           <div className="max-w-7xl mx-auto container-custom">
             <p className="text-black text-xs sm:text-sm md:text-base font-normal text-center py-3 sm:py-4 md:py-3 px-4 sm:px-0">

@@ -45,7 +45,7 @@ const DiscoverProduct = () => {
           </h1>
           <p
             className="text-sm sm:text-sm md:text-sm lg:text-base text-primary-500 font-medium"
-            style={{ fontFamily: "Inter_18pt-medium" }}
+            style={{ fontFamily: "Poppins-medium" }}
           >
             Explore how our product brings ideas to life and adds real value.
           </p>
@@ -81,7 +81,7 @@ const DiscoverProduct = () => {
               {/* Product Description with flex-grow to fill space */}
               <p
                 className="text-[#5D6079] text-[10px] min-[400px]:text-[11px] sm:text-sm leading-relaxed mb-2 sm:mb-5 md:mb-6 text-left sm:text-center flex-grow line-clamp-2 sm:line-clamp-none"
-                style={{ fontFamily: "Inter_18pt-medium" }}
+                style={{ fontFamily: "Poppins-medium" }}
               >
                 {product.description}
               </p>
@@ -92,7 +92,7 @@ const DiscoverProduct = () => {
                 className="w-auto sm:w-full bg-primary-500 hover:bg-primary-600 text-white font-normal py-1.5 sm:py-2.5 px-4 sm:px-4 rounded-full transition-colors duration-300 mt-auto text-[10px] min-[400px]:text-[11px] sm:text-sm self-start sm:self-auto"
                 style={{
                   boxShadow: "0 4px 12px rgba(127, 180, 50, 0.3)",
-                  fontFamily: "Inter_18pt-medium",
+                  fontFamily: "Poppins-medium",
                 }}
               >
                 Explore Details

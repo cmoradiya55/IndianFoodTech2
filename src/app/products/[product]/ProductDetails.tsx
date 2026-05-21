@@ -113,7 +113,7 @@ const ProductDetails = () => {
                 </h2>
                 <p
                   className="text-black font-semibold text-sm sm:text-sm md:text-sm"
-                  style={{ fontFamily: "Inter_18pt-medium" }}
+                  style={{ fontFamily: "Poppins-medium" }}
                 >
                   {product.ingredients}
                 </p>
@@ -187,7 +187,7 @@ const ProductDetails = () => {
                     <div className="mt-3 pt-3 border-t border-gray-200">
                       <p
                         className="text-black font-medium text-center text-xs md:text-xs"
-                        style={{ fontFamily: "Inter_18pt-medium" }}
+                        style={{ fontFamily: "Poppins-medium" }}
                       >
                         {product.nutrition}
                       </p>
@@ -213,7 +213,7 @@ const ProductDetails = () => {
                           <div
                             key={index}
                             className="text-black font-semibold text-xs md:text-xs"
-                            style={{ fontFamily: "Inter_18pt-medium" }}
+                            style={{ fontFamily: "Poppins-medium" }}
                           >
                             {size}
                           </div>
@@ -241,7 +241,7 @@ const ProductDetails = () => {
                           <div
                             key={index}
                             className="text-primary-500 font-semibold text-xs md:text-xs"
-                            style={{ fontFamily: "Inter_18pt-medium" }}
+                            style={{ fontFamily: "Poppins-medium" }}
                           >
                             {cert}
                           </div>
@@ -259,7 +259,7 @@ const ProductDetails = () => {
                 className="w-full bg-[#7FB432] hover:bg-[#6fa028] text-white font-normal py-2 md:py-2.5 px-4 rounded-full transition-colors duration-300 text-xs md:text-sm"
                 style={{
                   boxShadow: "0 4px 12px rgba(127, 180, 50, 0.3)",
-                  fontFamily: "Inter_18pt-medium",
+                  fontFamily: "Poppins-medium",
                 }}
               >
                 Request Sample
@@ -269,7 +269,7 @@ const ProductDetails = () => {
                 className="w-full bg-black text-white font-normal py-2 md:py-2.5 px-4 rounded-full transition-colors duration-300 text-xs md:text-sm"
                 style={{
                   boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
-                  fontFamily: "Inter_18pt-medium",
+                  fontFamily: "Poppins-medium",
                 }}
               >
                 Get a Quote
@@ -285,7 +285,7 @@ const ProductDetails = () => {
           </h2>
           <p
             className="text-gray-700 text-xs md:text-sm px-4 pb-4"
-            style={{ fontFamily: "Inter_18pt-medium" }}
+            style={{ fontFamily: "Poppins-medium" }}
           >
             {product.detailedDescription}
           </p>
@@ -300,7 +300,7 @@ const ProductDetails = () => {
             </h1>
             <p
               className="text-xs sm:text-sm md:text-base text-primary-500 font-medium leading-relaxed"
-              style={{ fontFamily: "Inter_18pt-medium" }}
+              style={{ fontFamily: "Poppins-medium" }}
             >
               Here are the complete specifications for our carton and tray
               packaging. The details
@@ -349,7 +349,7 @@ const ProductDetails = () => {
                   key={index}
                   className="bg-[#D4DBC4] text-[10px] sm:text-[11px] md:text-xs"
                   style={{
-                    fontFamily: "Inter_18pt-medium",
+                    fontFamily: "Poppins-medium",
                     letterSpacing: "0.25px",
                   }}
                 >
@@ -384,7 +384,7 @@ const ProductDetails = () => {
               <tr
                 className="bg-primary-500 text-white text-[10px] sm:text-[11px] md:text-xs"
                 style={{
-                  fontFamily: "Inter_18pt-medium",
+                  fontFamily: "Poppins-medium",
                   letterSpacing: "0.25px",
                 }}
               >
@@ -413,14 +413,14 @@ const ProductDetails = () => {
                   <div className="w-6 sm:w-8 md:w-10 h-6 sm:h-8 md:h-10">
                     {React.isValidElement(stat.icon)
                       ? React.cloneElement(
-                          stat.icon as React.ReactElement<
-                            React.SVGProps<SVGSVGElement>
-                          >,
-                          {
-                            width: "100%",
-                            height: "100%",
-                          },
-                        )
+                        stat.icon as React.ReactElement<
+                          React.SVGProps<SVGSVGElement>
+                        >,
+                        {
+                          width: "100%",
+                          height: "100%",
+                        },
+                      )
                       : stat.icon}
                   </div>
                 </div>
@@ -432,7 +432,7 @@ const ProductDetails = () => {
                   </h3>
                   <div
                     className="text-gray-800 text-sm sm:text-sm font-medium leading-relaxed"
-                    style={{ fontFamily: "Inter_18pt-medium" }}
+                    style={{ fontFamily: "Poppins-medium" }}
                   >
                     {stat.description}
                   </div>
@@ -448,7 +448,7 @@ const ProductDetails = () => {
           <div className="flex items-center justify-center mb-4 sm:mb-6 md:mb-8">
             <div
               className="bg-[#1D2C00] text-white mt-6 sm:mt-8 md:mt-2 px-6 sm:px-12 md:px-12 lg:px-25 py-2 sm:py-3 md:py-3 lg:py-2 rounded-full text-xs sm:text-base md:text-base lg:text-lg font-normal text-center"
-              style={{ fontFamily: "Inter_18pt-regular" }}
+              style={{ fontFamily: "Poppins-regular" }}
             >
               Recommended Products
             </div>
@@ -495,7 +495,7 @@ const ProductDetails = () => {
 
                     <p
                       className="text-[#5D6079] text-[10px] min-[400px]:text-[11px] sm:text-sm leading-relaxed mb-2.5 sm:mb-5 md:mb-6 text-left sm:text-center grow line-clamp-2 sm:line-clamp-none"
-                      style={{ fontFamily: "Inter_18pt-medium" }}
+                      style={{ fontFamily: "Poppins-medium" }}
                     >
                       {product.description}
                     </p>
@@ -506,7 +506,7 @@ const ProductDetails = () => {
                       className="w-[120px] min-[400px]:w-[130px] sm:w-full bg-[#7FB432] hover:bg-[#6fa028] shadow-md sm:shadow-lg text-white font-normal py-1.5 sm:py-2 px-3 sm:px-6 rounded-full transition-colors duration-300 mt-auto text-[10px] min-[400px]:text-[11px] sm:text-base self-start sm:self-auto"
                       style={{
                         boxShadow: "0 4px 12px rgba(127, 180, 50, 0.3)",
-                        fontFamily: "Inter_18pt-medium",
+                        fontFamily: "Poppins-medium",
                       }}
                     >
                       Explore Details
@@ -524,7 +524,7 @@ const ProductDetails = () => {
               className="bg-[#7FB432] hover:bg-[#6fa028] text-white font-normal py-2 sm:py-2 px-10 sm:px-22 rounded-full transition-colors duration-300 mt-auto text-[12px] sm:text-[14px]"
               style={{
                 boxShadow: "0 4px 12px rgba(127, 180, 50, 0.3)",
-                fontFamily: "Inter_18pt-medium",
+                fontFamily: "Poppins-medium",
               }}
             >
               View All

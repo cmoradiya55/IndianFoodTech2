@@ -2,18 +2,10 @@ import CertificationSection from "../../Component/CertificationSection/Certifica
 import ContactUsComponent from "../../Component/ContactUsComponent/ContactUsComponent";
 import CreateYourBrand from "../../Component/CreateYourBrand/CreateYourBrand";
 import DiscoverProduct from "../../Component/DiscoverProduct/DiscoverProduct";
-import OurCertification from "../../Component/OurCertification/OurCertification";
 import ProductQuality from "../../Component/ProductQuality/ProductQuality";
 import Slider from "../../Component/Slider/Slider";
 import Statistics from "../../Component/Statistics/Statistics";
 import StoryAboutUs from "../../Component/StoryAboutUs/StoryAboutUs";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Home",
-  description:
-    "Welcome to Indian Food Tech. We are a trusted manufacturer of premium peanut butter, nut butters, and spreads offering customized private level solutions.",
-};
 
 export default function Home() {
   return (

@@ -1,5 +1,5 @@
 import { countries } from '@/utils/CountryList';
-import React, { useEffect, useRef, useState } from 'react';    
+import React, { useEffect, useRef, useState } from 'react';
 
 
 export default function MobileInput({
@@ -88,7 +88,7 @@ export default function MobileInput({
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   onClick={(e) => e.stopPropagation()}
-                  style={{ fontFamily: 'Inter_18pt-regular' }}
+                  style={{ fontFamily: 'Poppins-regular' }}
                 />
               </div>
               <div className="py-1 max-h-48 overflow-y-auto">
@@ -120,7 +120,7 @@ export default function MobileInput({
           value={mobileNumber}
           onChange={onMobileNumberChange}
           placeholder={placeholder}
-          style={{ fontFamily: 'Inter_18pt-regular' }}
+          style={{ fontFamily: 'Poppins-regular' }}
           className="shadow appearance-none text-sm sm:text-md border rounded-r-xl w-full py-3 px-4 text-primary-500 leading-tight focus:outline-none focus:ring-2 focus:ring-primary-500"
         />
       </div>

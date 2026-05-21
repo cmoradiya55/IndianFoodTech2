@@ -131,7 +131,7 @@ const ContactUsComponent = () => {
           </h1>
           <p
             className="text-sm sm:text-sm md:text-sm lg:text-base text-primary-500 font-medium leading-relaxed"
-            style={{ fontFamily: "Inter_18pt-medium" }}
+            style={{ fontFamily: "Poppins-medium" }}
           >
             Have questions or want to know more? We&apos;re here to help! Reach
             out to us
@@ -148,7 +148,7 @@ const ContactUsComponent = () => {
         <div className="bg-white rounded-2xl sm:rounded-3xl shadow-lg p-3 sm:p-4 md:p-6">
           <div
             className="space-y-4 sm:space-y-4"
-            style={{ fontFamily: "Inter_18pt-regular" }}
+            style={{ fontFamily: "Poppins-regular" }}
           >
             {contactDetails.map((detail, index) => {
               const IconComponent = detail.Icon;
@@ -159,9 +159,8 @@ const ContactUsComponent = () => {
                   </div>
                   <div>
                     <p
-                      className={`text-black font-medium text-xs sm:text-sm ${
-                        detail.isAddress ? "leading-relaxed" : ""
-                      }`}
+                      className={`text-black font-medium text-xs sm:text-sm ${detail.isAddress ? "leading-relaxed" : ""
+                        }`}
                     >
                       {detail.content}
                     </p>
@@ -211,7 +210,7 @@ const ContactUsComponent = () => {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Name Here"
-                  style={{ fontFamily: "Inter_18pt-regular" }}
+                  style={{ fontFamily: "Poppins-regular" }}
                   className="w-full px-3 sm:px-4 py-2 sm:py-2.5 bg-gray-50 border border-gray-200 rounded-lg sm:rounded-xl focus:outline-none focus:ring-2 text-[10px] sm:text-xs lg:text-sm text-[#5D6079] focus:ring-primary-500 focus:border-transparent"
                   required
                 />
@@ -228,7 +227,7 @@ const ContactUsComponent = () => {
                   value={formData.businessName}
                   onChange={handleChange}
                   placeholder="your business name Here"
-                  style={{ fontFamily: "Inter_18pt-regular" }}
+                  style={{ fontFamily: "Poppins-regular" }}
                   className="w-full px-3 sm:px-4 py-2 sm:py-2.5 bg-gray-50 border border-gray-200 rounded-lg sm:rounded-xl focus:outline-none focus:ring-2 text-[10px] sm:text-xs lg:text-sm text-[#5D6079] focus:ring-primary-500 focus:border-transparent"
                 />
               </div>
@@ -244,7 +243,7 @@ const ContactUsComponent = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="youremail@gmail.com"
-                  style={{ fontFamily: "Inter_18pt-regular" }}
+                  style={{ fontFamily: "Poppins-regular" }}
                   className="w-full px-3 sm:px-4 py-2 sm:py-2.5 bg-gray-50 border border-gray-200 rounded-lg sm:rounded-xl focus:outline-none focus:ring-2 text-[10px] sm:text-xs lg:text-sm text-[#5D6079] focus:ring-primary-500 focus:border-transparent"
                   required
                 />
@@ -261,7 +260,7 @@ const ContactUsComponent = () => {
                     value={formData.countryCode}
                     onChange={handleChange}
                     className="w-20 sm:w-[90px] md:w-[100px] px-1 sm:px-2 py-2 sm:py-2.5 bg-gray-50 border border-gray-200 rounded-lg sm:rounded-xl focus:outline-none focus:ring-2 text-[10px] sm:text-xs lg:text-sm text-[#5D6079] focus:ring-primary-500 focus:border-transparent"
-                    style={{ fontFamily: "Inter_18pt-regular" }}
+                    style={{ fontFamily: "Poppins-regular" }}
                   >
                     {countries
                       .filter((country) => country.code !== 0) // Filter out countries with code 0
@@ -278,7 +277,7 @@ const ContactUsComponent = () => {
                     value={formData.mobile}
                     onChange={handleChange}
                     placeholder="Enter your number"
-                    style={{ fontFamily: "Inter_18pt-regular" }}
+                    style={{ fontFamily: "Poppins-regular" }}
                     className="flex-1 px-2 sm:px-4 py-2 sm:py-2.5 bg-gray-50 border border-gray-200 rounded-lg sm:rounded-xl focus:outline-none focus:ring-2 text-[10px] sm:text-xs lg:text-sm text-[#5D6079] focus:ring-primary-500 focus:border-transparent"
                     required
                   />
@@ -295,7 +294,7 @@ const ContactUsComponent = () => {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Type here"
-                  style={{ fontFamily: "Inter_18pt-regular" }}
+                  style={{ fontFamily: "Poppins-regular" }}
                   rows={5}
                   className="w-full px-3 sm:px-4 py-2 sm:py-2.5 bg-gray-50 border border-gray-200 rounded-lg sm:rounded-xl focus:outline-none focus:ring-2 text-[10px] sm:text-xs lg:text-sm text-[#5D6079] focus:ring-primary-500 focus:border-transparent resize-none"
                 ></textarea>
@@ -304,7 +303,7 @@ const ContactUsComponent = () => {
               {/* Submit Button */}
               <button
                 className="w-full bg-primary-500 hover:bg-primary-600 shadow-xl shadow-primary-500/50 text-white font-semibold py-2 sm:py-3 rounded-full transition-colors duration-200 text-xs sm:text-sm"
-                style={{ fontFamily: "Inter_18pt-regular" }}
+                style={{ fontFamily: "Poppins-regular" }}
               >
                 Send a Message
               </button>

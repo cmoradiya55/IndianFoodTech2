@@ -43,7 +43,7 @@ const Blog = () => {
               </h1>
               <p
                 className="text-sm sm:text-base md:text-base text-primary-500 font-medium leading-relaxed"
-                style={{ fontFamily: "Inter_18pt-medium" }}
+                style={{ fontFamily: "Poppins-medium" }}
               >
                 Exploring premium peanut butter manufacturing
                 <br className="hidden sm:block" />
@@ -62,10 +62,10 @@ const Blog = () => {
                 key={category}
                 onClick={() => setSelectedCategory(category)}
                 className={`relative px-4 py-2 rounded-2xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all duration-300 shrink-0 ${selectedCategory === category
-                    ? "bg-primary-500 text-white shadow-md"
-                    : "bg-white text-gray-500 hover:text-primary-600 hover:bg-primary-50 shadow-md border border-gray-100/50"
+                  ? "bg-primary-500 text-white shadow-md"
+                  : "bg-white text-gray-500 hover:text-primary-600 hover:bg-primary-50 shadow-md border border-gray-100/50"
                   }`}
-                style={{ fontFamily: "Inter_18pt-bold" }}
+                style={{ fontFamily: "Poppins-bold" }}
               >
                 <span className="relative z-10 flex items-center gap-2">
                   {selectedCategory === category && (
@@ -89,12 +89,12 @@ const Blog = () => {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full px-2 sm:px-4 py-2 sm:py-1.5 bg-transparent text-gray-900 placeholder-gray-400 focus:outline-none text-xs sm:text-sm font-medium"
-                style={{ fontFamily: "Inter_18pt-medium" }}
+                style={{ fontFamily: "Poppins-medium" }}
               />
               <button
                 onClick={() => setSearchQuery(searchQuery)}
                 className="bg-primary-500 text-white px-4 sm:px-7 py-2 sm:py-1.5 rounded-xl sm:rounded-2xl font-bold text-xs sm:text-sm hover:bg-primary-600 shadow-[0_4px_12px_rgba(111,158,18,0.2)] hover:shadow-[0_6px_20px_rgba(111,158,18,0.3)] transition-all duration-300 transform active:scale-95 shrink-0"
-                style={{ fontFamily: "Inter_18pt-bold" }}
+                style={{ fontFamily: "Poppins-bold" }}
               >
                 Search
               </button>
@@ -111,7 +111,7 @@ const Blog = () => {
               <Search className="w-12 h-12 text-primary-300 mx-auto mb-5" />
               <h3
                 className="text-xl font-bold text-gray-900 mb-2"
-                style={{ fontFamily: "Inter_18pt-bold" }}
+                style={{ fontFamily: "Poppins-bold" }}
               >
                 No articles found
               </h3>
@@ -158,7 +158,7 @@ const Blog = () => {
                   </h2>
                   <p
                     className="text-gray-500 text-sm sm:text-base leading-relaxed"
-                    style={{ fontFamily: "Inter_18pt-medium" }}
+                    style={{ fontFamily: "Poppins-medium" }}
                   >
                     Get the latest industry news, manufacturing innovations, and
                     curated healthy recipes delivered straight to your inbox.
@@ -174,11 +174,11 @@ const Blog = () => {
                   type="email"
                   placeholder="Enter your email address"
                   className="w-full sm:w-64 px-4 py-3 sm:py-2.5 rounded-xl sm:rounded-full bg-white sm:bg-transparent border border-gray-200 sm:border-none focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-medium shadow-sm sm:shadow-none focus:border-primary-300"
-                  style={{ fontFamily: "Inter_18pt-medium" }}
+                  style={{ fontFamily: "Poppins-medium" }}
                 />
                 <button
                   className="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 sm:py-2.5 rounded-xl sm:rounded-full font-bold text-sm transition-all duration-300 transform active:scale-95 whitespace-nowrap"
-                  style={{ fontFamily: "Inter_18pt-bold" }}
+                  style={{ fontFamily: "Poppins-bold" }}
                 >
                   Subscribe
                 </button>

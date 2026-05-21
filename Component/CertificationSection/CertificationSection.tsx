@@ -26,7 +26,7 @@ const CertificationSection = () => {
             </h2>
             <p
               className="text-sm sm:text-sm md:text-sm lg:text-base text-primary-500 font-medium"
-              style={{ fontFamily: "Inter_18pt-medium" }}
+              style={{ fontFamily: "Poppins-medium" }}
             >
               We maintain the highest standards of quality and food safety,
               <br />
@@ -63,7 +63,7 @@ const CertificationSection = () => {
               <div className="z-10 flex flex-col items-center justify-end flex-grow w-full gap-1.5 sm:gap-2">
                 <h3
                   className="text-[13px] sm:text-sm md:text-[15px] font-bold text-gray-800 text-center group-hover:text-primary-600 transition-colors duration-300 leading-tight"
-                  style={{ fontFamily: "Inter_18pt-bold" }}
+                  style={{ fontFamily: "Poppins-bold" }}
                 >
                   {cert.name}
                 </h3>
@@ -72,7 +72,7 @@ const CertificationSection = () => {
                 <div className="overflow-hidden h-4 flex items-center justify-center">
                   <span
                     className="text-xs sm:text-xs text-primary-500 font-medium transition-all duration-500 opacity-0 group-hover:opacity-100 translate-y-5 group-hover:translate-y-0"
-                    style={{ fontFamily: "Inter_18pt-medium" }}
+                    style={{ fontFamily: "Poppins-medium" }}
                   >
                     View Certificate &rarr;
                   </span>

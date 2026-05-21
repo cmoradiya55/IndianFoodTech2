@@ -22,7 +22,7 @@ const StoryAboutUs = () => {
           </h1>
           <p
             className="text-sm sm:text-sm md:text-sm lg:text-base text-primary-500 font-medium leading-relaxed"
-            style={{ fontFamily: "Inter_18pt-medium" }}
+            style={{ fontFamily: "Poppins-medium" }}
           >
             Explore the journey behind our ideas and the
             <br className="hidden sm:block" />
@@ -37,9 +37,9 @@ const StoryAboutUs = () => {
         {/* Left Side - Image */}
         <div className="relative flex-shrink-0 w-full lg:w-auto flex justify-center lg:justify-start lg:ml-20">
           {/* Main circular image */}
-          <div className="relative w-[240px] h-[240px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] rounded-full border-4 sm:border-6 lg:border-10 border-black overflow-hidden z-10">
+          <div className="relative w-[240px] h-[240px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] rounded-full border-4 sm:border-6 lg:border-10 border-slate-900 overflow-hidden z-10">
             <Image
-              src="/discoverProduct2.png"
+              src="/discoverProduct2.webp"
               alt="Peanut butter being poured"
               className="w-full h-full object-cover"
               fill
@@ -60,7 +60,7 @@ const StoryAboutUs = () => {
           {/* Introduction Text */}
           <p
             className="text-gray-800 text-[11px] sm:text-xs md:text-sm lg:text-base mb-2 sm:mb-3 leading-relaxed"
-            style={{ fontFamily: "Inter_18pt-medium" }}
+            style={{ fontFamily: "Poppins-medium" }}
           >
             At Indian Foodtech, we make high-quality peanut butter, nut butter,
             and spreads for brands everywhere.
@@ -73,7 +73,7 @@ const StoryAboutUs = () => {
             </h2>
             <p
               className="text-gray-700 text-xs sm:text-sm md:text-sm leading-relaxed"
-              style={{ fontFamily: "Inter_18pt-medium" }}
+              style={{ fontFamily: "Poppins-medium" }}
             >
               You can choose from creamy, crunchy, natural, or flavored peanut
               butter. We offer flexible packaging like jars, pouches, and bulk
@@ -88,7 +88,7 @@ const StoryAboutUs = () => {
             </h2>
             <p
               className="text-gray-700 text-xs sm:text-sm md:text-sm leading-relaxed"
-              style={{ fontFamily: "Inter_18pt-medium" }}
+              style={{ fontFamily: "Poppins-medium" }}
             >
               We handle bulk production and private labeling while meeting all
               food safety standards.
@@ -102,7 +102,7 @@ const StoryAboutUs = () => {
             </h2>
             <div
               className="space-y-2 sm:space-y-1"
-              style={{ fontFamily: "Inter_18pt-medium" }}
+              style={{ fontFamily: "Poppins-medium" }}
             >
               <div className="flex items-start gap-2 sm:gap-3">
                 <span className="text-green-500 flex-shrink-0 mt-px">✅</span>
@@ -130,7 +130,7 @@ const StoryAboutUs = () => {
             <button
               onClick={handleSubmit}
               className="w-full bg-primary-500 hover:bg-primary-600 text-white font-semibold py-2.5 sm:py-3 rounded-full transition-colors duration-300 shadow-md hover:shadow-lg text-xs sm:text-sm"
-              style={{ fontFamily: "Inter_18pt-medium" }}
+              style={{ fontFamily: "Poppins-medium" }}
             >
               Learn More
             </button>
