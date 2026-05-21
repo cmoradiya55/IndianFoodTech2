@@ -4,7 +4,7 @@ import AllIconComponent from "../../public/AllIconComponent";
 const ProductQuality = () => {
   const qualityFeatures = [
     {
-      title: "100% Organic",
+      title: "Premium Peanuts",
       description: "Sourced naturally for the freshest taste and nutrition.",
       icon: "organicIcon",
     },
