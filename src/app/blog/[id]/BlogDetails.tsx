@@ -13,6 +13,7 @@ import {
   Tag,
   Copy,
   Check,
+  X,
 } from "lucide-react";
 import BlogList from "@/data/BlogList.json";
 import BlogCard from "@/components/BlogCard";
@@ -199,7 +200,7 @@ export default function BlogDetails({
 }) {
   useScrollProgress();
   const resolvedParams = use(params);
-  const postId = parseInt(resolvedParams.id);
+  const postSlug = resolvedParams.id;
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
   const [showShareMenu, setShowShareMenu] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -212,7 +213,7 @@ export default function BlogDetails({
     }
   };
 
-  const post = useMemo(() => BlogList.find((p) => p.id === postId), [postId]);
+  const post = useMemo(() => BlogList.find((p) => p.slug === postSlug), [postSlug]);
 
   if (!post) {
     return (
@@ -452,10 +453,10 @@ export default function BlogDetails({
 
                 <button
                   onClick={() => setShowShareMenu(!showShareMenu)}
-                  className={`p-2.5 rounded-full border transition-all duration-300 ${showShareMenu ? "bg-primary-500 border-primary-500 text-white rotate-90" : "border-gray-200 bg-white text-gray-400 hover:text-primary-500 hover:border-primary-300 animate-pulse"}`}
+                  className={`p-2.5 rounded-full border transition-all duration-300 bg-primary-500 text-white`}
                   title="Share Article"
                 >
-                  <Share2 className="w-4 h-4" />
+                  {showShareMenu ? <X className="w-4 h-4" /> : <Share2 className="w-4 h-4" />}
                 </button>
               </div>
             </div>
@@ -529,6 +530,7 @@ export default function BlogDetails({
                 <BlogCard
                   key={related.id}
                   id={related.id}
+                  slug={related.slug}
                   title={related.title}
                   description={related.description}
                   image={related.image}

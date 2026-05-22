@@ -6,7 +6,7 @@ import Image from "next/image";
 import React from "react";
 import { packagingData } from "@/utils/ContainerPackageData";
 import AllIconComponent from "../../../../public/AllIconComponent";
-import { Copy, Share2 } from "lucide-react";
+import { Copy, Share2, Check, X } from "lucide-react";
 import Link from "next/link";
 
 const ProductDetails = () => {
@@ -24,9 +24,9 @@ const ProductDetails = () => {
     }
   };
 
-  // Find the product by ID across all categories
+  // Find the product by slug across all categories
   const product = AllProductsList.flatMap((category) => category.products).find(
-    (product) => product.id === productId,
+    (product) => product.slug === productId,
   );
 
   if (!product) {
@@ -297,18 +297,22 @@ const ProductDetails = () => {
                     <div className={`flex items-center gap-1 transition-all duration-500 origin-right ${showShareMenu ? "opacity-100 max-w-[240px] translate-x-0" : "opacity-0 max-w-0 translate-x-4 overflow-hidden pointer-events-none"}`}>
                       <button
                         onClick={handleCopyLink}
-                        className="px-2 py-1 rounded-full border border-gray-100 bg-gray-50 text-gray-600 hover:bg-primary-50 hover:text-primary-600 hover:border-primary-200 transition-all duration-200 text-[10px] font-bold"
+                        className={`px-2 py-1 rounded-full border transition-all duration-200 text-[10px] font-bold ${copied
+                          ? "bg-primary-50 text-primary-600 border-primary-200"
+                          : "border-gray-100 bg-gray-50 text-gray-600 hover:bg-primary-50 hover:text-primary-600 hover:border-primary-200"
+                          }`}
+                        title={copied ? "Link Copied!" : "Copy Link"}
                       >
-                        <Copy width={14} height={14} />
+                        {copied ? <Check width={14} height={14} /> : <Copy width={14} height={14} />}
                       </button>
                       <Link
                         href={`https://api.whatsapp.com/send?text=${encodeURIComponent(product.name + " - " + (typeof window !== "undefined" ? window.location.href : ""))}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-emerald-600 hover:bg-emerald-50 hover:border-emerald-200 transition-all duration-200"
+                        className="p-1 rounded-full border border-gray-100 bg-gray-50 text-primary-500 hover:bg-primary-50 hover:border-primary-200 transition-all duration-200"
                         title="Share on WhatsApp"
                       >
-                        <AllIconComponent icon="whatsAppIcon" width={14} height={14} className="fill-current" />
+                        <AllIconComponent icon="whatsAppIcon" width={18} height={18} className="fill-current" />
                       </Link>
                       <Link
                         href={`viber://forward?text=${encodeURIComponent(product.name + " - " + (typeof window !== "undefined" ? window.location.href : ""))}`}
@@ -323,7 +327,7 @@ const ProductDetails = () => {
                         href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(typeof window !== "undefined" ? window.location.href : "")}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-blue-600 hover:bg-blue-50 hover:border-blue-200 transition-all duration-200"
+                        className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-primary-500 hover:bg-primary-50 hover:border-primary-200 transition-all duration-200"
                         title="Share on Facebook"
                       >
                         <AllIconComponent icon="facebookIcon" width={14} height={14} className="fill-current" />
@@ -332,7 +336,7 @@ const ProductDetails = () => {
                         href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(product.name)}&url=${encodeURIComponent(typeof window !== "undefined" ? window.location.href : "")}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-sky-500 hover:bg-sky-50 hover:border-sky-200 transition-all duration-200"
+                        className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-primary-500 hover:bg-primary-50 hover:border-primary-200 transition-all duration-200"
                         title="Share on X"
                       >
                         <AllIconComponent icon="xIcon" width={14} height={14} className="fill-current" />
@@ -341,7 +345,7 @@ const ProductDetails = () => {
                         href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(typeof window !== "undefined" ? window.location.href : "")}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-blue-700 hover:bg-blue-50 hover:border-blue-200 transition-all duration-200"
+                        className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-primary-500 hover:bg-primary-50 hover:border-primary-200 transition-all duration-200"
                         title="Share on LinkedIn"
                       >
                         <AllIconComponent icon="linkedinIcon" width={14} height={14} className="fill-current" />
@@ -350,9 +354,9 @@ const ProductDetails = () => {
                     </div>
                     <button
                       onClick={() => setShowShareMenu(!showShareMenu)}
-                      className={`p-1.5 rounded-full border transition-all duration-300 ${showShareMenu ? "bg-primary-500 border-primary-500 text-white rotate-90" : "border-gray-200 bg-white text-gray-400 hover:text-primary-500 hover:border-primary-300 animate-pulse"}`}
+                      className="p-1.5 rounded-full transition-all duration-300 bg-primary-500 text-white"
                     >
-                      <Share2 className="w-3.5 h-3.5" />
+                      {showShareMenu ? <X className="w-3.5 h-3.5" /> : <Share2 className="w-3.5 h-3.5" />}
                     </button>
                   </div>
                 </div>
@@ -542,14 +546,14 @@ const ProductDetails = () => {
             {(() => {
               // Find the current product's category
               const currentCategory = AllProductsList.find((category) =>
-                category.products.some((p) => p.id === productId),
+                category.products.some((p) => p.slug === productId),
               );
 
               if (!currentCategory) return null;
 
               // Get other products from the same category (excluding current product)
               const similarProducts = currentCategory.products
-                .filter((p) => p.id !== productId)
+                .filter((p) => p.slug !== productId)
                 .slice(0, 3); // Take only first 3 products
 
               return similarProducts.map((product) => (
@@ -585,7 +589,7 @@ const ProductDetails = () => {
 
                     {/* Explore Button */}
                     <button
-                      onClick={() => router.push(`/products/${product.id}`)}
+                      onClick={() => router.push(`/products/${product.slug}`)}
                       className="w-[120px] min-[400px]:w-[130px] sm:w-full bg-[#7FB432] hover:bg-[#6fa028] shadow-md sm:shadow-lg text-white font-normal py-1.5 sm:py-2 px-3 sm:px-6 rounded-full transition-colors duration-300 mt-auto text-[10px] min-[400px]:text-[11px] sm:text-base self-start sm:self-auto"
                       style={{
                         boxShadow: "0 4px 12px rgba(127, 180, 50, 0.3)",

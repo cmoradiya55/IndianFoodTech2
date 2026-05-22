@@ -8,12 +8,12 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
   const resolvedParams = await params;
-  const postId = parseInt(resolvedParams.id);
-  const post = BlogList.find((p) => p.id === postId);
+  const postSlug = resolvedParams.id;
+  const post = BlogList.find((p) => p.slug === postSlug);
 
   if (!post) {
     return {
-      title: "Blog Not Found",
+      title: "Blog Not Found | Indian Food Tech",
       description: "The requested blog post could not be found",
     };
   }
@@ -41,12 +41,12 @@ export async function generateMetadata({
     ],
     authors: [{ name: post.author || "Indian Foodtech" }],
     alternates: {
-      canonical: `/blog/${postId}`,
+      canonical: `/blog/${postSlug}`,
     },
     openGraph: {
       title: post.title,
       description: post.description,
-      url: `/blog/${postId}`,
+      url: `/blog/${postSlug}`,
       siteName: "Indian Foodtech",
       images: [
         {

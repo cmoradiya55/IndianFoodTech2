@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const productId = resolvedParams.product;
 
   const product = AllProductsList.flatMap((category) => category.products).find(
-    (product) => product.id === productId,
+    (product) => product.slug === productId,
   );
 
   if (!product) {

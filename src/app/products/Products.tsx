@@ -119,7 +119,7 @@ const Products = () => {
 
                       {/* Explore Button */}
                       <button
-                        onClick={() => handleExploreDetails(product.id)}
+                        onClick={() => handleExploreDetails(product.slug)}
                         className="w-[120px] min-[400px]:w-[130px] sm:w-full bg-primary-500 hover:bg-primary-600 text-white font-normal py-1.5 sm:py-2 px-3 sm:px-6 rounded-full transition-colors duration-300 mt-auto text-[10px] min-[400px]:text-[11px] sm:text-base self-start sm:self-auto shadow-md sm:shadow-none"
                         style={{
                           boxShadow: "0 4px 12px rgba(127, 180, 50, 0.3)",
