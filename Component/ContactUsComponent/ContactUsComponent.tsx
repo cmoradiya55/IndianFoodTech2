@@ -68,6 +68,7 @@ const ContactUsComponent = () => {
       message: formData.message,
       formType: "contactUS",
     };
+    console.log("submissionData", submissionData);
 
     if (!formData.name || !formData.email || !formData.businessName) {
       alert(
@@ -86,10 +87,12 @@ const ContactUsComponent = () => {
       });
 
       const responseData = await response.json();
+      console.log("responseData", responseData);
 
       if (!response.ok) {
         throw new Error(responseData.error || "Failed to submit form");
       }
+      console.log("Success", responseData);
 
       // First show success message before any state changes
       alert("Your message has been sent successfully ✅");
@@ -302,6 +305,7 @@ const ContactUsComponent = () => {
 
               {/* Submit Button */}
               <button
+                type="submit"
                 className="w-full bg-primary-500 hover:bg-primary-600 shadow-xl shadow-primary-500/50 text-white font-semibold py-2 sm:py-3 rounded-full transition-colors duration-200 text-xs sm:text-sm"
                 style={{ fontFamily: "Poppins-regular" }}
               >

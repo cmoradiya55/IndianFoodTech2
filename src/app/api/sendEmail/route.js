@@ -2,28 +2,30 @@ import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 
 export async function POST(req) {
-    // Enhanced logging
-    let body;
-    try {
-        body = await req.json();
-    } catch (err) {
-        console.log(err);
-        
-        return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
+  // Enhanced logging
+  let body;
+  try {
+    body = await req.json();
+  } catch (err) {
+    console.log(err);
+
+    return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
+  }
+  console.log("body123", body);
+
+  let emailContent;
+
+  if (body.formType === 'contactUS') {
+    const { name, businessName, email, mobile, message } = body;
+    if (!name || !email || !businessName) {
+      return NextResponse.json(
+        { error: "Name, email, or business name are required." },
+        { status: 400 }
+      );
     }
+    console.log("body", body);
 
-    let emailContent;
-
-    if (body.formType === 'contactUS') {
-        const { name, businessName, email, mobile, message } = body;
-        if (!name || !email || !businessName) {
-            return NextResponse.json(
-                { error: "Name, email, or business name are required." },
-                { status: 400 }
-            );
-        }
-
-        emailContent = `
+    emailContent = `
             📩 New Contact Request
 
             Name: ${name}
@@ -35,27 +37,29 @@ export async function POST(req) {
             ${message}
         `;
 
-    } else if (body.formType === 'sampleRequest') {
-        const {
-            name,
-            businessName,
-            email,
-            mobile,
-            website,
-            address,
-            message,
-            selectedProducts
-        } = body;
+    console.log("emailContent", emailContent);
 
-        if (!selectedProducts || !Array.isArray(selectedProducts) || selectedProducts.length === 0) {
-            return NextResponse.json(
-                { error: "Please select at least one product." },
-                { status: 400 }
-            );
-        }
-        const productsList = selectedProducts.map(product => `- ${product}`).join('\n');
+  } else if (body.formType === 'sampleRequest') {
+    const {
+      name,
+      businessName,
+      email,
+      mobile,
+      website,
+      address,
+      message,
+      selectedProducts
+    } = body;
 
-        emailContent = `
+    if (!selectedProducts || !Array.isArray(selectedProducts) || selectedProducts.length === 0) {
+      return NextResponse.json(
+        { error: "Please select at least one product." },
+        { status: 400 }
+      );
+    }
+    const productsList = selectedProducts.map(product => `- ${product}`).join('\n');
+
+    emailContent = `
             📦 New Sample Request
 
             Name: ${name}
@@ -71,48 +75,52 @@ export async function POST(req) {
             Additional Information:
             ${message || ""}
         `;
+  }
+
+  try {
+    // Check if email password is configured
+    if (!process.env.NEXT_PUBLIC_EMAIL_PASSWORD) {
+      console.error("NEXT_PUBLIC_EMAIL_PASSWORD environment variable is not set");
+      return NextResponse.json(
+        { error: "Email configuration missing" },
+        { status: 500 }
+      );
     }
+    console.log("process.env.NEXT_PUBLIC_SEND_EMAIL", process.env.NEXT_PUBLIC_SEND_EMAIL);
+    console.log("process.env.NEXT_PUBLIC_EMAIL_PASSWORD", process.env.NEXT_PUBLIC_EMAIL_PASSWORD);
 
+    const transporter = nodemailer.createTransport({
+      service: "Gmail",
+      auth: {
+        user: process.env.NEXT_PUBLIC_SEND_EMAIL,
+        pass: process.env.NEXT_PUBLIC_EMAIL_PASSWORD,
+      },
+    });
+    console.log("transporter", transporter);
 
-    try {
-        // Check if email password is configured
-        if (!process.env.EMAIL_PASSWORD) {
-            console.error("EMAIL_PASSWORD environment variable is not set");
-            return NextResponse.json(
-                { error: "Email configuration missing" },
-                { status: 500 }
-            );
-        }
+    const mailOptions = {
+      from: process.env.NEXT_PUBLIC_EMAIL_PASSWORD, // Replace with sender email
+      to: "khushal@indianfoodtech.in", // Replace with recipient email
+      replyTo: body.email,
+      subject: body.formType === 'contactUS' ? `Contact Request from ${body.name}` : `Sample Request from ${body.businessName}`,
+      text: emailContent,
+    };
+    console.log("mailOptions123", mailOptions);
 
-        const transporter = nodemailer.createTransport({
-            service: "Gmail",
-            auth: {
-                user: process.env.SEND_EMAIL,
-                pass: process.env.EMAIL_PASSWORD,
-            },
-        });
+    await transporter.sendMail(mailOptions);
+    console.log("mailOptions", mailOptions);
 
-        const mailOptions = {
-            from: process.env.SEND_EMAIL, // Replace with sender email
-            to: "khushal@indianfoodtech.in", // Replace with recipient email
-            replyTo: body.email,
-            subject: body.formType === 'contactUS' ?  `Contact Request from ${body.name}` : `Sample Request from ${body.businessName}`,
-            text: emailContent,
-        };
+    return NextResponse.json(
+      { success: true, message: "Sample request submitted successfully" },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error("Error sending email:", error);
 
-        await transporter.sendMail(mailOptions);
+    return NextResponse.json(
+      { error: "Failed to send email" },
+      { status: 500 }
 
-        return NextResponse.json(
-            { success: true, message: "Sample request submitted successfully" },
-            { status: 200 }
-        );
-    } catch (error) {
-        console.error("Error sending email:", error);
-
-        return NextResponse.json(
-            { error: "Failed to send email" },
-            { status: 500 }
-            
-        );
-    }
+    );
+  }
 }

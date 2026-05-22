@@ -104,20 +104,20 @@ const StoryAboutUs = () => {
               className="space-y-2 sm:space-y-1"
               style={{ fontFamily: "Poppins-medium" }}
             >
-              <div className="flex items-start gap-2 sm:gap-3">
-                <span className="text-green-500 flex-shrink-0 mt-px">✅</span>
+              <div className="flex items-start gap-2 sm:gap-2">
+                <span className="text-primary-500 flex-shrink-0">◉</span>
                 <p className="text-gray-700 text-xs sm:text-sm md:text-sm leading-relaxed">
                   We are trusted by new and well-known brands.
                 </p>
               </div>
-              <div className="flex items-start gap-2 sm:gap-3">
-                <span className="text-green-500 flex-shrink-0 mt-px">✅</span>
+              <div className="flex items-start gap-2 sm:gap-2">
+                <span className="text-primary-500 flex-shrink-0">◉</span>
                 <p className="text-gray-700 text-xs sm:text-sm md:text-sm leading-relaxed">
                   We provide consistent quality and reliable supply.
                 </p>
               </div>
-              <div className="flex items-start gap-2 sm:gap-3">
-                <span className="text-green-500 flex-shrink-0 mt-px">✅</span>
+              <div className="flex items-start gap-2 sm:gap-2">
+                <span className="text-primary-500 flex-shrink-0">◉</span>
                 <p className="text-gray-700 text-xs sm:text-sm md:text-sm leading-relaxed">
                   Our products are safe, healthy, and ready to export.
                 </p>
