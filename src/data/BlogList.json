@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "slug": "peanut-butter-is-not-just-a-spread-its-a-powerful-industrial-ingredient",
     "title": "Peanut Butter Is Not Just a Spread — It's a Powerful Industrial Ingredient",
     "description": "When most people think of peanut butter, they picture a jar sitting on a supermarket shelf. But in reality, peanut butter plays a much bigger role in today's food manufacturing industry.",
     "image": "/blog/blog1.webp",
@@ -12,6 +13,7 @@
   },
   {
     "id": 2,
+    "slug": "peanut-butter-is-not-just-a-spread-its-an-industrial-ingredient",
     "title": "Peanut Butter Is Not Just a Spread — It's an Industrial Ingredient",
     "description": "Peanut butter is no longer limited to retail shelves. Today, it has become a critical industrial ingredient used across a wide range of food manufacturing applications.",
     "image": "/blog/blog2.webp",
@@ -22,6 +24,7 @@
   },
   {
     "id": 3,
+    "slug": "supplying-peanut-butter-to-europe-compliance-is-not-optional",
     "title": "Supplying Peanut Butter to Europe? Compliance Is Not Optional",
     "description": "The European Union is one of the most strictly regulated food markets in the world. For exporters, understanding regulatory expectations is critical for business survival.",
     "image": "/blog/blog3.webp",
@@ -32,6 +35,7 @@
   },
   {
     "id": 4,
+    "slug": "ramadan-mubarak-a-season-of-reflection-gratitude-meaningful-partnerships",
     "title": "Ramadan Mubarak: A Season of Reflection, Gratitude & Meaningful Partnerships",
     "description": "Ramadan is not just a time of fasting—it is a time of reflection, discipline, gratitude, and connection. At Indian Foodtech, we believe these values are deeply aligned with how we do business.",
     "image": "/blog/blog4.webp",
@@ -42,6 +46,7 @@
   },
   {
     "id": 5,
+    "slug": "why-brands-fail-with-unstable-peanut-butter-suppliers-and-how-to-avoid-it",
     "title": "Why Brands Fail with Unstable Peanut Butter Suppliers (And How to Avoid It)",
     "description": "In the competitive food industry, your product quality is only as strong as your supplier reliability. Choosing the wrong peanut butter supplier can lead to inconsistent taste, oil separation, and delayed shipments.",
     "image": "/blog/blog5.webp",
@@ -52,6 +57,7 @@
   },
   {
     "id": 6,
+    "slug": "peanut-butter-trends-to-watch-in-2026-what-brands-must-know",
     "title": "Peanut Butter Trends to Watch in 2026: What Brands Must Know",
     "description": "As global consumer preferences evolve, peanut butter is becoming a high-growth, innovation-driven category. Explore the key trends of 2026, from functional products to clean labels.",
     "image": "/blog/blog6.webp",
@@ -62,6 +68,7 @@
   },
   {
     "id": 7,
+    "slug": "stop-overpaying-for-peanut-butter-manufacturing-in-2026",
     "title": "Stop Overpaying for Peanut Butter Manufacturing in 2026",
     "description": "Launching your own peanut butter brand? Many distributors and new brands unknowingly lose profits because of inefficient and expensive suppliers. Learn how to optimize smartly.",
     "image": "/blog/blog7.webp",
@@ -72,6 +79,7 @@
   },
   {
     "id": 8,
+    "slug": "gcc-distributors-peanut-butter-demand-is-growing-in-2026",
     "title": "GCC Distributors: Peanut Butter Demand Is Growing in 2026",
     "description": "The GCC region is witnessing a rapid surge in demand for peanut butter and nut-based products. Explore why this presents a huge business opportunity for distributors and importers.",
     "image": "/blog/blog8.webp",
@@ -82,6 +90,7 @@
   },
   {
     "id": 9,
+    "slug": "quality-standards-in-nut-butter-manufacturing-why-compliance-matters-for-global-buyers",
     "title": "Quality Standards in Nut Butter Manufacturing: Why Compliance Matters for Global Buyers",
     "description": "In today's global food industry, quality is not just a feature—it is a requirement. Our manufacturing is aligned with FSSAI, US FDA, and EU food safety regulations.",
     "image": "/blog/blog9.webp",
@@ -92,6 +101,7 @@
   },
   {
     "id": 10,
+    "slug": "about-indian-foodtech-trusted-nut-butter-manufacturing-partner",
     "title": "About Indian Foodtech – Your Trusted Nut Butter Manufacturing Partner",
     "description": "Indian Foodtech is a leading nut butter manufacturer and exporter from India, dedicated to delivering high-quality, consistent, and export-ready products for global markets.",
     "image": "/blog/blog10.webp",
@@ -102,6 +112,7 @@
   },
   {
     "id": 11,
+    "slug": "why-choose-indian-foodtech-as-your-nut-butter-manufacturing-partner",
     "title": "Why Choose Indian Foodtech as Your Nut Butter Manufacturing Partner?",
     "description": "In today's competitive global food market, choosing the right manufacturing partner can make or break your brand. Discover why Indian Foodtech is the preferred choice for global buyers.",
     "image": "/blog/blog11.webp",
@@ -112,6 +123,7 @@
   },
   {
     "id": 12,
+    "slug": "nut-butter-manufacturing-process-from-raw-peanuts-to-premium-quality-products",
     "title": "Nut Butter Manufacturing Process: From Raw Peanuts to Premium Quality Products",
     "description": "Have you ever wondered how high-quality peanut butter and nut spreads are made? Behind every smooth, consistent jar lies a precise, controlled manufacturing process designed to ensure taste, safety, and quality at every stage.",
     "image": "/blog/blog12.webp",
@@ -122,6 +134,7 @@
   },
   {
     "id": 13,
+    "slug": "our-nut-butter-manufacturing-process-precision-quality-global-standards",
     "title": "Our Nut Butter Manufacturing Process: Precision, Quality & Global Standards",
     "description": "At Indian Foodtech, manufacturing is not just a process—it's a system of precision, quality control, and consistency designed to meet global food standards. Explore our technical excellence.",
     "image": "/blog/blog13.webp",

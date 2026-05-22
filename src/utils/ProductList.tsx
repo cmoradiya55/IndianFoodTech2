@@ -2,6 +2,7 @@ import AllProductsListJson from "@/data/ProductList.json";
 
 export interface Product {
   id: string;
+  slug: string;
   name: string;
   description: string;
   detailedDescription: string;

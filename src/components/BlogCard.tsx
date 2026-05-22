@@ -4,6 +4,7 @@ import { Calendar, Clock, Tag, User, ArrowRight } from "lucide-react";
 
 interface BlogCardProps {
   id: number;
+  slug: string;
   title: string;
   description: string;
   image: string;
@@ -14,7 +15,7 @@ interface BlogCardProps {
 }
 
 const BlogCard = ({
-  id,
+  slug,
   title,
   description,
   image,
@@ -25,7 +26,7 @@ const BlogCard = ({
 }: BlogCardProps) => {
   return (
     <Link
-      href={`/blog/${id}`}
+      href={`/blog/${slug}`}
       className="group flex flex-col bg-white rounded-2xl sm:rounded-3xl p-3 sm:p-4 shadow-md transition-all duration-500 border border-[#D2D1D6] hover:shadow-xl hover:-translate-y-1 overflow-hidden h-full"
     >
       {/* Image */}
