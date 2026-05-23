@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import PeanutButterImportVaticanCity from "./PeanutButterImportVaticanCity";
 import MarketSchema from "@/components/MarketSchema";
 
@@ -26,6 +26,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.indianfoodtech.in/peanut-butter-import-vatican-city",
+    languages: {
+      "en-VA": "https://www.indianfoodtech.in/peanut-butter-import-vatican-city",
+      "x-default": "https://www.indianfoodtech.in/",
+    },
   },
 };
 

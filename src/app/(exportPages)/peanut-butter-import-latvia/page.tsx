@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import PeanutButterImportLatvia from "./PeanutButterImportLatvia";
 import MarketSchema from "@/components/MarketSchema";
 
@@ -28,6 +28,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.indianfoodtech.in/peanut-butter-import-latvia",
+    languages: {
+      "en-LV": "https://www.indianfoodtech.in/peanut-butter-import-latvia",
+      "x-default": "https://www.indianfoodtech.in/",
+    },
   },
 };
 

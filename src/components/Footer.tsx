@@ -4,9 +4,9 @@ import AllIconComponent from "../../public/AllIconComponent";
 import FloatingChatMenu from "./FloatingChatMenu";
 
 const QUICK_LINKS = [
-  { href: "/aboutUs", label: "About Us" },
-  { href: "/contactUs", label: "Contact Us" },
-  { href: "/privateLabels", label: "Private Labels" },
+  { href: "/about-us", label: "About Us" },
+  { href: "/contact-us", label: "Contact Us" },
+  { href: "/private-labels", label: "Private Labels" },
   { href: "/products", label: "Products" },
   // { href: "/international", label: "International Hub" },
 ];

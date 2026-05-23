@@ -483,7 +483,7 @@ export default function BlogDetails({
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-3 mt-2 sm:mt-4 w-full sm:w-auto px-4 sm:px-0">
               <Link
-                href="/contactUs"
+                href="/contact-us"
                 className="w-full sm:w-auto text-center px-6 sm:px-10 py-2.5 sm:py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-full font-normal text-xs sm:text-sm transition-all duration-300 shadow-md"
                 style={{ fontFamily: "Poppins-medium" }}
               >
@@ -529,14 +529,7 @@ export default function BlogDetails({
               {relatedPosts.map((related) => (
                 <BlogCard
                   key={related.id}
-                  id={related.id}
-                  slug={related.slug}
-                  title={related.title}
-                  description={related.description}
-                  image={related.image}
-                  date={related.date}
-                  author={related.author}
-                  category={related.category}
+                  post={related}
                 />
               ))}
             </div>

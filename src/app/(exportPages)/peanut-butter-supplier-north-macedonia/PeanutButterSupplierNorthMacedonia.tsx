@@ -1,4 +1,4 @@
-import {
+﻿import {
   ArrowRight,
   Castle,
   CheckCircle2,
@@ -457,7 +457,7 @@ const PeanutButterSupplierNorthMacedonia = () => {
                 WhatsApp Now
               </Link>
               <Link
-                href="/contactUs"
+                href="/contact-us"
                 className="inline-flex items-center justify-center gap-2 border-2 border-primary-500 hover:bg-primary-50 text-primary-700 px-10 py-2 rounded-full text-base font-semibold transition-all"
               >
                 Send Inquiry

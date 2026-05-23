@@ -124,8 +124,8 @@ const Header = () => {
                 Home
               </Link>
               <Link
-                href="/aboutUs"
-                className={navLinkClass(isRouteActive("/aboutUs"))}
+                href="/about-us"
+                className={navLinkClass(isRouteActive("/about-us"))}
               >
                 About Us
               </Link>
@@ -180,8 +180,8 @@ const Header = () => {
                 )}
               </div>
               <Link
-                href="/privateLabels"
-                className={navLinkClass(isRouteActive("/privateLabels"))}
+                href="/private-labels"
+                className={navLinkClass(isRouteActive("/private-labels"))}
               >
                 Private Labels
               </Link>
@@ -192,8 +192,8 @@ const Header = () => {
                 Blog
               </Link>
               <Link
-                href="/contactUs"
-                className={navLinkClass(isRouteActive("/contactUs"))}
+                href="/contact-us"
+                className={navLinkClass(isRouteActive("/contact-us"))}
               >
                 Contact Us
               </Link>
@@ -234,9 +234,9 @@ const Header = () => {
                   Home
                 </Link>
                 <Link
-                  href="/aboutUs"
+                  href="/about-us"
                   className={
-                    isRouteActive("/aboutUs")
+                    isRouteActive("/about-us")
                       ? "bg-primary-500 text-white px-4 py-3 rounded-full font-medium text-center"
                       : "text-gray-700 hover:text-primary-500 font-medium transition-colors px-4 py-3 text-center"
                   }
@@ -307,9 +307,9 @@ const Header = () => {
                   )}
                 </div>
                 <Link
-                  href="/privateLabels"
+                  href="/private-labels"
                   className={
-                    isRouteActive("/privateLabels")
+                    isRouteActive("/private-labels")
                       ? "bg-primary-500 text-white px-4 py-3 rounded-full font-medium text-center"
                       : "text-gray-700 hover:text-primary-500 font-medium transition-colors px-4 py-3 text-center"
                   }
@@ -329,9 +329,9 @@ const Header = () => {
                   Blog
                 </Link>
                 <Link
-                  href="/contactUs"
+                  href="/contact-us"
                   className={
-                    isRouteActive("/contactUs")
+                    isRouteActive("/contact-us")
                       ? "bg-primary-500 text-white px-4 py-3 rounded-full font-medium text-center"
                       : "text-gray-700 hover:text-primary-500 font-medium transition-colors px-4 py-3 text-center"
                   }

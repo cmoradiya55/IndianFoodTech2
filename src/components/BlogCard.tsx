@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar, Clock, Tag, User, ArrowRight } from "lucide-react";
 
-interface BlogCardProps {
+interface Post {
   id: number;
   slug: string;
   title: string;
@@ -14,16 +14,8 @@ interface BlogCardProps {
   readTime?: string;
 }
 
-const BlogCard = ({
-  slug,
-  title,
-  description,
-  image,
-  date,
-  author,
-  category,
-  readTime,
-}: BlogCardProps) => {
+const BlogCard = ({ post }: { post: Post }) => {
+  const { slug, title, description, image, date, author, category, readTime } = post;
   return (
     <Link
       href={`/blog/${slug}`}

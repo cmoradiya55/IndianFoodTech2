@@ -14,13 +14,17 @@ export const metadata: Metadata = {
     "about peanut butter production",
   ],
   alternates: {
-    canonical: "https://www.indianfoodtech.in/aboutUs",
+    canonical: "https://www.indianfoodtech.in/about-us",
+    languages: {
+      "en-US": "https://www.indianfoodtech.in/about-us",
+      "x-default": "https://www.indianfoodtech.in/",
+    },
   },
   openGraph: {
     title: "About Us | Indian Foodtech - Manufacturer Journey",
     description:
       "Learn about Indian Food Tech's journey as a top manufacturer of high-quality peanut butter and spreads, dedicated to food safety and reliable large-scale supply.",
-    url: "https://www.indianfoodtech.in/aboutUs",
+    url: "https://www.indianfoodtech.in/about-us",
     siteName: "Indian Foodtech",
     locale: "en_US",
     type: "website",

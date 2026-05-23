@@ -8,7 +8,7 @@ const StoryAboutUs = () => {
   const pathname = usePathname();
 
   const handleSubmit = () => {
-    router.push("/aboutUs");
+    router.push("/about-us");
   };
 
   return (
@@ -126,7 +126,7 @@ const StoryAboutUs = () => {
           </div>
 
           {/* Learn More Button - Only show on main page */}
-          {pathname !== "/aboutUs" && (
+          {pathname !== "/about-us" && (
             <button
               onClick={handleSubmit}
               className="w-full bg-primary-500 hover:bg-primary-600 text-white font-semibold py-2.5 sm:py-3 rounded-full transition-colors duration-300 shadow-md hover:shadow-lg text-xs sm:text-sm"

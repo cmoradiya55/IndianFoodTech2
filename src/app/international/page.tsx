@@ -259,7 +259,7 @@ export default function InternationalHub() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Link
-              href="/contactUs"
+              href="/contact-us"
               className="px-10 py-4 bg-primary-500 hover:bg-primary-600 text-white rounded-full font-bold text-lg shadow-xl transition-all hover:-translate-y-1"
             >
               Contact Our Export Team

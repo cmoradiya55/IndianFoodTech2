@@ -124,16 +124,7 @@ const Blog = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {filteredPosts.map((post) => (
                 <BlogCard
-                  key={post.id}
-                  id={post.id}
-                  slug={post.slug}
-                  title={post.title}
-                  description={post.excerpt}
-                  image={post.image}
-                  date={post.date}
-                  author={post.author}
-                  category={post.category}
-                  readTime={post.readTime}
+                  post={post}
                 />
               ))}
             </div>

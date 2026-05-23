@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import MarketSchema from "@/components/MarketSchema";
 import PeanutButterImportUnitedArabEmirates from "./PeanutButterImportUnitedArabEmirates";
 
@@ -26,6 +26,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical:
       "https://www.indianfoodtech.in/peanut-butter-import-united-arab-emirates",
+    languages: {
+      "ar-AE": "https://www.indianfoodtech.in/peanut-butter-import-united-arab-emirates",
+      "x-default": "https://www.indianfoodtech.in/",
+    },
   },
 };
 
