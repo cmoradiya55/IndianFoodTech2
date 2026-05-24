@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     "crunchy peanut butter",
   ],
   alternates: {
-    canonical: "https://www.indianfoodtech.in/products",
+    canonical: "/products",
   },
   openGraph: {
     title: "Our Products | Indian Foodtech - Nut Spreads",
     description:
       "Explore Indian Food Tech's range of creamy, crunchy, natural, and flavored peanut butters and nut spreads available in jars, pouches, and bulk packs.",
-    url: "https://www.indianfoodtech.in/products",
+    url: "/products",
     siteName: "Indian Foodtech",
     locale: "en_US",
     type: "website",

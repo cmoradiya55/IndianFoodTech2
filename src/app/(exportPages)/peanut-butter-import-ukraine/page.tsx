@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Ukraine | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Ukraine. Premium bulk supply and customized private label solutions for Ukrainian distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-ukraine",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-ukraine",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_UA",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-ukraine",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-ukraine",
     languages: {
-      "en-UA": "https://www.indianfoodtech.in/peanut-butter-import-ukraine",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-UA": "https://www.indianfoodtech.com/peanut-butter-import-ukraine",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -42,7 +42,7 @@ export default function Page() {
         country="Ukraine"
         type="Importer"
         description="High-quality peanut butter export from India to Ukraine. Premium bulk supply and customized private label solutions for Eastern European distributors."
-        url="https://www.indianfoodtech.in/peanut-butter-import-ukraine"
+        url="https://www.indianfoodtech.com/peanut-butter-import-ukraine"
       />
       <PeanutButterImportUkraine />
     </>

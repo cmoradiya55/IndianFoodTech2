@@ -1,7 +1,15 @@
 import React from "react";
 
 interface SchemaProps {
-  type: "Organization" | "WebSite" | "LocalBusiness" | "Product";
+  type:
+    | "Organization"
+    | "WebSite"
+    | "LocalBusiness"
+    | "Product"
+    | "BlogPosting"
+    | "FAQPage"
+    | "BreadcrumbList"
+    | "HowTo";
   data: Record<string, unknown>;
 }
 

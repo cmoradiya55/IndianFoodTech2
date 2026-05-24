@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Supplier Philippines | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to the Philippines. Premium bulk supply and customized private label solutions for Philippine distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-supplier-philippines",
+    url: "https://www.indianfoodtech.com/peanut-butter-supplier-philippines",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_PH",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-supplier-philippines",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-supplier-philippines",
     languages: {
-      "en-PH": "https://www.indianfoodtech.in/peanut-butter-supplier-philippines",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-PH": "https://www.indianfoodtech.com/peanut-butter-supplier-philippines",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -42,7 +42,7 @@ const PeanutButterSuppliearPhilippinesPage = () => {
         country="Philippines"
         type="Supplier"
         description="Reliable peanut butter supplier in Philippines. Indian Foodtech offers premium bulk supply and private label solutions for the Filipino market."
-        url="https://www.indianfoodtech.in/peanut-butter-supplier-philippines"
+        url="https://www.indianfoodtech.com/peanut-butter-supplier-philippines"
       />
       <PeanutButterSuppliearPhilippines />
     </>

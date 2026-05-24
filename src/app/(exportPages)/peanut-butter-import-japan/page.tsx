@@ -18,16 +18,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Japan | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Japan. Premium bulk supply and customized private label solutions for Asian distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-japan",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-japan",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "ja_JP",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-japan",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-japan",
     languages: {
-      "ja-JP": "https://www.indianfoodtech.in/peanut-butter-import-japan",
-      "x-default": "https://www.indianfoodtech.in/",
+      "ja-JP": "https://www.indianfoodtech.com/peanut-butter-import-japan",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -39,7 +39,7 @@ export default function Page() {
         country="Japan"
         type="Importer"
         description="Reliable peanut butter importer in Japan. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Japanese market."
-        url="https://www.indianfoodtech.in/peanut-butter-import-japan"
+        url="https://www.indianfoodtech.com/peanut-butter-import-japan"
       />
       <PeanutButterImportJapan />
     </>

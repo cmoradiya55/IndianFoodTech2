@@ -19,16 +19,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Vatican City | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Vatican City. Premium bulk supply and customized private label solutions for distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-vatican-city",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-vatican-city",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_VA",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-vatican-city",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-vatican-city",
     languages: {
-      "en-VA": "https://www.indianfoodtech.in/peanut-butter-import-vatican-city",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-VA": "https://www.indianfoodtech.com/peanut-butter-import-vatican-city",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -40,7 +40,7 @@ export default function Page() {
         country="Vatican City"
         type="Importer"
         description="Reliable peanut butter importer in Vatican City. Indian Foodtech offers premium bulk supply, private label, and industrial solutions."
-        url="https://www.indianfoodtech.in/peanut-butter-import-vatican-city"
+        url="https://www.indianfoodtech.com/peanut-butter-import-vatican-city"
       />
       <PeanutButterImportVaticanCity />
     </>

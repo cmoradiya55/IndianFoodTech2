@@ -15,17 +15,17 @@ export const metadata: Metadata = {
     "tahini paste wholesale",
   ],
   alternates: {
-    canonical: "https://www.indianfoodtech.in/private-labels",
+    canonical: "/private-labels",
     languages: {
-      "en-US": "https://www.indianfoodtech.in/private-labels",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-US": "/private-labels",
+      "x-default": "/",
     },
   },
   openGraph: {
     title: "Private Label Peanut Butter | Indian Foodtech",
     description:
       "Partner with Indian Food Tech for premium B2B private label peanut butter manufacturing and flexible packaging solutions tailored for your brand.",
-    url: "https://www.indianfoodtech.in/private-labels",
+    url: "/private-labels",
     siteName: "Indian Foodtech",
     locale: "en_US",
     type: "website",

@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Denmark | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Denmark. Premium bulk supply and customized private label solutions for Scandinavian distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-denmark",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-denmark",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_DK",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-denmark",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-denmark",
     languages: {
-      "en-DK": "https://www.indianfoodtech.in/peanut-butter-import-denmark",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-DK": "https://www.indianfoodtech.com/peanut-butter-import-denmark",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -42,7 +42,7 @@ export default function Page() {
         country="Denmark"
         type="Importer"
         description="High-quality peanut butter export from India to Denmark. Premium bulk supply and customized private label solutions for Scandinavian distributors."
-        url="https://www.indianfoodtech.in/peanut-butter-import-denmark"
+        url="https://www.indianfoodtech.com/peanut-butter-import-denmark"
       />
       <PeanutButterImportDenmark />
     </>

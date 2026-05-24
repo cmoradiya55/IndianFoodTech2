@@ -17,16 +17,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Kenya | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Kenya. Premium bulk supply and customized private label solutions for African distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-kenya",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-kenya",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_KE",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-kenya",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-kenya",
     languages: {
-      "en-KE": "https://www.indianfoodtech.in/peanut-butter-import-kenya",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-KE": "https://www.indianfoodtech.com/peanut-butter-import-kenya",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -38,7 +38,7 @@ export default function Page() {
         country="Kenya"
         type="Importer"
         description="Reliable peanut butter importer in Kenya. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Kenyan market."
-        url="https://www.indianfoodtech.in/peanut-butter-import-kenya"
+        url="https://www.indianfoodtech.com/peanut-butter-import-kenya"
       />
       <PeanutButterImportKenya />
     </>

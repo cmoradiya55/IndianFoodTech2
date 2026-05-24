@@ -6,6 +6,7 @@ import ProductQuality from "../../Component/ProductQuality/ProductQuality";
 import Slider from "../../Component/Slider/Slider";
 import Statistics from "../../Component/Statistics/Statistics";
 import StoryAboutUs from "../../Component/StoryAboutUs/StoryAboutUs";
+import FAQSection from "@/components/FAQSection";
 
 export default function Home() {
   return (
@@ -70,16 +71,6 @@ export default function Home() {
             <ProductQuality />
           </div>
         </section>
-
-        {/* Certification Section */}
-        {/* <section className="bg-white py-4 sm:py-6 md:py-12 lg:py-16 xl:py-16 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-8">
-          <div
-            className="max-w-7xl mx-auto container-custom"
-            style={{ fontFamily: "NotoSerif-semibold" }}
-          >
-            <OurCertification />
-          </div>
-        </section> */}
 
         {/* Certification Section */}
         <section className="bg-white py-4 sm:py-6 md:py-12 lg:py-16 xl:py-16 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-8">

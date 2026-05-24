@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     "indian peanut butter manufacturer",
   ],
   alternates: {
-    canonical: "https://www.indianfoodtech.in/international",
+    canonical: "/international",
   },
   openGraph: {
     title: "International Peanut Butter Markets | Global Export & Supply",
     description:
       "Explore Indian Foodtech's global footprint. High-quality peanut butter export and supply services across 47 international markets including Europe, Asia, and more.",
-    url: "https://www.indianfoodtech.in/international",
+    url: "/international",
     siteName: "Indian Foodtech",
     locale: "en_US",
     type: "website",

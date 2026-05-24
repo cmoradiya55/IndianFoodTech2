@@ -88,7 +88,7 @@ const DiscoverProduct = () => {
 
               {/* Explore Button - pushed to bottom */}
               <button
-                onClick={() => router.push(`/products/${product.id}`)}
+                onClick={() => router.push(`/products/${product.slug}`)}
                 className="w-auto sm:w-full bg-primary-500 hover:bg-primary-600 text-white font-normal py-1.5 sm:py-2.5 px-4 sm:px-4 rounded-full transition-colors duration-300 mt-auto text-[10px] min-[400px]:text-[11px] sm:text-sm self-start sm:self-auto"
                 style={{
                   boxShadow: "0 4px 12px rgba(127, 180, 50, 0.3)",

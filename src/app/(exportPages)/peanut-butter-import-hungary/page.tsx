@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Hungary | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Hungary. Premium bulk supply and customized private label solutions for Central European distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-hungary",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-hungary",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_HU",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-hungary",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-hungary",
     languages: {
-      "en-HU": "https://www.indianfoodtech.in/peanut-butter-import-hungary",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-HU": "https://www.indianfoodtech.com/peanut-butter-import-hungary",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -42,7 +42,7 @@ export default function Page() {
         country="Hungary"
         type="Importer"
         description="High-quality peanut butter export from India to Hungary. Premium bulk supply and customized private label solutions for Eastern European distributors."
-        url="https://www.indianfoodtech.in/peanut-butter-import-hungary"
+        url="https://www.indianfoodtech.com/peanut-butter-import-hungary"
       />
       <PeanutButterImportHungary />
     </>

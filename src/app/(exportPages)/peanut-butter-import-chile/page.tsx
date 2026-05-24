@@ -18,16 +18,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Chile | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Chile. Premium bulk supply and customized private label solutions for South American distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-chile",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-chile",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "es_CL",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-chile",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-chile",
     languages: {
-      "es-CL": "https://www.indianfoodtech.in/peanut-butter-import-chile",
-      "x-default": "https://www.indianfoodtech.in/",
+      "es-CL": "https://www.indianfoodtech.com/peanut-butter-import-chile",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -39,7 +39,7 @@ export default function Page() {
         country="Chile"
         type="Importer"
         description="Reliable peanut butter importer in Chile. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Chilean market."
-        url="https://www.indianfoodtech.in/peanut-butter-import-chile"
+        url="https://www.indianfoodtech.com/peanut-butter-import-chile"
       />
       <PeanutButterImportChile />
     </>

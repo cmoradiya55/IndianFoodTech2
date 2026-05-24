@@ -22,12 +22,14 @@ import { ClockIcon } from "lucide-react";
 import XIcon from "./icon/XIcon";
 import SimpleLinkedInIcon from "./icon/SimpleLinkedInIcon";
 import ViberIcon from "./icon/ViberIcon";
+import ResearchIcon from "./icon/ResearchIcon";
 
 interface AllIconComponentProps {
   width?: number | string;
   height?: number | string;
   icon: string;
   className?: string;
+  color?: string;
 }
 
 const AllIconComponent = ({
@@ -35,6 +37,7 @@ const AllIconComponent = ({
   height,
   icon,
   className = "",
+  color,
 }: AllIconComponentProps) => {
   return (
     <>
@@ -148,6 +151,7 @@ const AllIconComponent = ({
           width={width as any}
           height={height as any}
           className={className}
+          color={color}
         />
       )}
       {icon === "whatsAppIcon" && (
@@ -197,6 +201,14 @@ const AllIconComponent = ({
           width={width as any}
           height={height as any}
           className={className}
+        />
+      )}
+      {icon === "researchIcon" && (
+        <ResearchIcon
+          width={width as any}
+          height={height as any}
+          className={className}
+          color= {color}
         />
       )}
     </>

@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Estonia | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Estonia. Premium bulk supply and customized private label solutions for Baltic distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-estonia",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-estonia",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_EE",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-estonia",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-estonia",
     languages: {
-      "en-EE": "https://www.indianfoodtech.in/peanut-butter-import-estonia",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-EE": "https://www.indianfoodtech.com/peanut-butter-import-estonia",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -42,7 +42,7 @@ export default function Page() {
         country="Estonia"
         type="Importer"
         description="Premium peanut butter exported from India to Estonia. Indian Foodtech offers bulk supply and private label solutions for distributors in Tallinn."
-        url="https://www.indianfoodtech.in/peanut-butter-import-estonia"
+        url="https://www.indianfoodtech.com/peanut-butter-import-estonia"
       />
       <PeanutButterImportEstonia />
     </>

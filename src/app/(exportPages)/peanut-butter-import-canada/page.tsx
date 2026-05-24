@@ -18,16 +18,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Canada | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Canada. Premium bulk supply and customized private label solutions for North American distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-canada",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-canada",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_CA",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-canada",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-canada",
     languages: {
-      "en-CA": "https://www.indianfoodtech.in/peanut-butter-import-canada",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-CA": "https://www.indianfoodtech.com/peanut-butter-import-canada",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -39,7 +39,7 @@ export default function Page() {
         country="Canada"
         type="Importer"
         description="Reliable peanut butter importer in Canada. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Canadian market."
-        url="https://www.indianfoodtech.in/peanut-butter-import-canada"
+        url="https://www.indianfoodtech.com/peanut-butter-import-canada"
       />
       <PeanutButterImportCanada />
     </>

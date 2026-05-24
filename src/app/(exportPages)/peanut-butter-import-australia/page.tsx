@@ -17,16 +17,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Australia | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Australia. Premium bulk supply and customized private label solutions for Oceanic distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-australia",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-australia",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_AU",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-australia",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-australia",
     languages: {
-      "en-AU": "https://www.indianfoodtech.in/peanut-butter-import-australia",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-AU": "https://www.indianfoodtech.com/peanut-butter-import-australia",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -38,7 +38,7 @@ export default function Page() {
         country="Australia"
         type="Importer"
         description="Reliable peanut butter importer in Australia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Australian market."
-        url="https://www.indianfoodtech.in/peanut-butter-import-australia"
+        url="https://www.indianfoodtech.com/peanut-butter-import-australia"
       />
       <PeanutButterImportAustralia />
     </>

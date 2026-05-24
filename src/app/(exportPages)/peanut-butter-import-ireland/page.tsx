@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Ireland | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Ireland. Premium bulk supply and customized private label solutions for Irish distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-ireland",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-ireland",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_IE",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-ireland",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-ireland",
     languages: {
-      "en-IE": "https://www.indianfoodtech.in/peanut-butter-import-ireland",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-IE": "https://www.indianfoodtech.com/peanut-butter-import-ireland",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -42,7 +42,7 @@ export default function Page() {
         country="Ireland"
         type="Importer"
         description="Premium peanut butter exported from India to Ireland. Indian Foodtech offers bulk supply and private label solutions for distributors in Dublin and beyond."
-        url="https://www.indianfoodtech.in/peanut-butter-import-ireland"
+        url="https://www.indianfoodtech.com/peanut-butter-import-ireland"
       />
       <PeanutButterImportIreland />
     </>

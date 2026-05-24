@@ -1074,6 +1074,15 @@ body::-webkit-scrollbar {
   }
 }
 
+@keyframes btnShine {
+  0%, 60% {
+    transform: translateX(-130%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(280%) skewX(-20deg);
+  }
+}
+
 .producPageMainImage {
   width: 42%;
   height: 500px;

@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Supplier Norway | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Norway. Premium bulk supply and customized private label solutions for Scandinavian distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-supplier-norway",
+    url: "https://www.indianfoodtech.com/peanut-butter-supplier-norway",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_NO",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-supplier-norway",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-supplier-norway",
     languages: {
-      "en-NO": "https://www.indianfoodtech.in/peanut-butter-supplier-norway",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-NO": "https://www.indianfoodtech.com/peanut-butter-supplier-norway",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -42,7 +42,7 @@ export default function Page() {
         country="Norway"
         type="Supplier"
         description="Reliable peanut butter supplier in Norway. Indian Foodtech offers premium bulk supply and private label solutions for the Norwegian market."
-        url="https://www.indianfoodtech.in/peanut-butter-supplier-norway"
+        url="https://www.indianfoodtech.com/peanut-butter-supplier-norway"
       />
       <PeanutButterSupplierNorway />
     </>

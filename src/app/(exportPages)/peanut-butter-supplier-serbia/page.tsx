@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Supplier Serbia | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Serbia. Premium bulk supply and customized private label solutions for Serbian distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-supplier-serbia",
+    url: "https://www.indianfoodtech.com/peanut-butter-supplier-serbia",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_RS",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-supplier-serbia",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-supplier-serbia",
     languages: {
-      "en-RS": "https://www.indianfoodtech.in/peanut-butter-supplier-serbia",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-RS": "https://www.indianfoodtech.com/peanut-butter-supplier-serbia",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -42,7 +42,7 @@ export default function Page() {
         country="Serbia"
         type="Supplier"
         description="Reliable peanut butter supplier in Serbia. Indian Foodtech offers premium bulk supply and private label solutions for the Serbian market."
-        url="https://www.indianfoodtech.in/peanut-butter-supplier-serbia"
+        url="https://www.indianfoodtech.com/peanut-butter-supplier-serbia"
       />
       <PeanutButterSupplierSerbia />
     </>

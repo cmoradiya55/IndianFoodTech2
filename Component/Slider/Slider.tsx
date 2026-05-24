@@ -18,6 +18,7 @@ const slides = [
     mobileDescription:
       "Made from premium peanuts, our rich butters deliver pure, natural goodness to support your daily wellness journey.",
     buttonText: "Explore Products",
+    buttonLink: "/products",
     number: "01",
   },
   {
@@ -31,19 +32,21 @@ const slides = [
     mobileDescription:
       "Enjoy a flavorful, wholesome peanut butter spread designed to nourish your body and satisfy your taste buds.",
     buttonText: "Explore Products",
+    buttonLink: "/products",
     number: "02",
   },
   {
     id: 3,
     image: "/slider3.webp",
-    tag: "100% Organic",
-    titleLine1: "Nature's Nutty",
-    titleLine2: "Treasure",
+    tag: "Private Labeling",
+    titleLine1: "Your Brand.",
+    titleLine2: "Our Expertise.",
     description:
-      "Packed with protein, free from preservatives, and made with 100% organic peanuts to give you pure nourishment with every spoonful.",
+      "Scale your brand globally with premium private label manufacturing. From custom formulations to export-ready packaging, we are your trusted B2B partner.",
     mobileDescription:
-      "High-protein nut spread, free from preservatives and crafted with organic peanuts for clean, active energy.",
-    buttonText: "Explore Products",
+      "Scale your brand with certified custom private-label manufacturing and global export services.",
+    buttonText: "Partner With Us",
+    buttonLink: "/contact-us",
     number: "03",
   },
 ];
@@ -193,7 +196,7 @@ const Slider = () => {
           {/* Bottom Actions - CTA + Interactive Indicators */}
           <div className="flex items-center justify-between mt-auto">
             <button
-              onClick={() => router.push("/products")}
+              onClick={() => router.push(slide.buttonLink || "/products")}
               className="slider-item-anim group flex items-center gap-2 bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-2xl font-bold text-sm shadow-lg shadow-primary-500/20 active:scale-95 transition-all duration-300"
               style={{ animationDelay: "400ms" }}
             >
@@ -288,7 +291,7 @@ const Slider = () => {
               style={{ animationDelay: "400ms" }}
             >
               <button
-                onClick={() => router.push("/products")}
+                onClick={() => router.push(slide.buttonLink || "/products")}
                 className="group inline-flex items-center gap-3 3xl:gap-4 bg-primary-500 hover:bg-primary-600 text-white px-5 py-2.5 xl2:px-8 xl2:py-4 3xl:px-10 3xl:py-5 rounded-2xl font-bold text-sm xl2:text-base 3xl:text-xl transition-all duration-300 hover:shadow-[0_15px_45px_rgba(111,158,18,0.35)] hover:scale-[1.03] active:scale-95"
               >
                 {slide.buttonText}

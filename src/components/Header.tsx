@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import SampleRequestComponent from "../../Component/SampleRequestComponent/SampleRequestComponent";
-import { ChevronDown, Mail, Menu, Phone, X } from "lucide-react";
+import { ChevronDown, Mail, Menu, Package, Phone, X } from "lucide-react";
 import AllIconComponent from "../../public/AllIconComponent";
 
 const Header = () => {
@@ -61,18 +61,21 @@ const Header = () => {
               </span>
               <span className="sm:hidden text-xs">Follow us:</span>
               <Link
-                href=""
+                href="https://www.facebook.com/p/Indian-foodtech-100083285323445/"
+                target="_blank"
                 className="text-white hover:text-primary-200 transition-colors"
               >
                 <AllIconComponent
-                  icon="xIcon"
+                  icon="facebookIcon"
                   width="16"
                   height="16"
                   className="sm:w-5 sm:h-5"
+                  color="white"
                 />
               </Link>
               <Link
                 href="https://in.linkedin.com/in/indian-foodtech-b5633829a"
+                target="_blank"
                 className="text-white hover:text-primary-200 transition-colors"
               >
                 <AllIconComponent
@@ -83,7 +86,7 @@ const Header = () => {
             </div>
 
             {/* Email */}
-            <div className="flex items-center space-x-2 order-2 sm:order-3">
+            {/* <div className="flex items-center space-x-2 order-2 sm:order-3">
               <Link
                 href="mailto:office@indianfoodtech.in"
                 className="text-white hover:text-primary-200 flex space-x-2 transition-colors"
@@ -93,7 +96,7 @@ const Header = () => {
                   office@indianfoodtech.in
                 </div>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -201,10 +204,20 @@ const Header = () => {
 
             {/* Sample Request Button - Desktop & Tablet */}
             <button
-              className="hidden sm:block bg-black text-white px-3 sm:px-4 lg:px-6 py-2 lg:py-3 rounded-full text-xs sm:text-sm font-medium hover:bg-gray-800 transition-colors"
+              className="hidden sm:flex items-center gap-1.5 relative overflow-hidden bg-black text-white px-4 lg:px-6 py-2 lg:py-2.5 rounded-full text-xs sm:text-sm font-bold
+                shadow-[0_5px_0_0_#374151]
+                hover:shadow-[0_2px_0_0_#374151] hover:translate-y-[3px]
+                active:shadow-none active:translate-y-[5px]
+                transition-all duration-100 cursor-pointer"
               onClick={openSampleModal}
             >
-              <span className="hidden md:inline">Sample Request</span>
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 w-2/5 bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-12"
+                style={{ animation: "btnShine 3s ease-in-out infinite" }}
+              />
+              <Package className="w-3.5 h-3.5 shrink-0 relative z-10" />
+              <span className="hidden md:inline relative z-10">Sample Request</span>
             </button>
 
             {/* Mobile Menu Button */}
@@ -340,13 +353,23 @@ const Header = () => {
                   Contact Us
                 </Link>
                 <button
-                  className="bg-black text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors w-full sm:hidden"
+                  className="flex items-center justify-center gap-2 relative overflow-hidden bg-black text-white px-6 py-3 rounded-full text-sm font-bold w-full sm:hidden
+                    shadow-[0_5px_0_0_#374151]
+                    hover:shadow-[0_2px_0_0_#374151] hover:translate-y-[3px]
+                    active:shadow-none active:translate-y-[5px]
+                    transition-all duration-100"
                   onClick={() => {
                     openSampleModal();
                     setIsMenuOpen(false);
                   }}
                 >
-                  Sample Request
+                  <span
+                    aria-hidden="true"
+                    className="pointer-events-none absolute inset-0 w-2/5 bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-12"
+                    style={{ animation: "btnShine 3s ease-in-out infinite" }}
+                  />
+                  <Package className="w-4 h-4 relative z-10" />
+                  <span className="relative z-10">Sample Request</span>
                 </button>
               </nav>
             </div>

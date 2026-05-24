@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Switzerland | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Switzerland. Premium bulk supply and customized private label solutions for Swiss distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-switzerland",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-switzerland",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_CH",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-switzerland",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-switzerland",
     languages: {
-      "en-CH": "https://www.indianfoodtech.in/peanut-butter-import-switzerland",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-CH": "https://www.indianfoodtech.com/peanut-butter-import-switzerland",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -42,7 +42,7 @@ export default function Page() {
         country="Switzerland"
         type="Importer"
         description="Reliable peanut butter importer in Switzerland. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Swiss market."
-        url="https://www.indianfoodtech.in/peanut-butter-import-switzerland"
+        url="https://www.indianfoodtech.com/peanut-butter-import-switzerland"
       />
       <PeanutButterImportSwitzerland />
     </>

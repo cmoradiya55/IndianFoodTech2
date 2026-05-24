@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Supplier San Marino | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to San Marino. Premium bulk supply and customized private label solutions for Sammarinese distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-supplier-san-marino",
+    url: "https://www.indianfoodtech.com/peanut-butter-supplier-san-marino",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_SM",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-supplier-san-marino",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-supplier-san-marino",
     languages: {
-      "en-SM": "https://www.indianfoodtech.in/peanut-butter-supplier-san-marino",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-SM": "https://www.indianfoodtech.com/peanut-butter-supplier-san-marino",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -42,7 +42,7 @@ export default function Page() {
         country="San Marino"
         type="Supplier"
         description="Reliable peanut butter supplier in San Marino. Indian Foodtech offers premium bulk supply and private label solutions."
-        url="https://www.indianfoodtech.in/peanut-butter-supplier-san-marino"
+        url="https://www.indianfoodtech.com/peanut-butter-supplier-san-marino"
       />
       <PeanutButterSupplierSanMarino />
     </>

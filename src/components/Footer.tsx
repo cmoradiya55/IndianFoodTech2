@@ -8,6 +8,7 @@ const QUICK_LINKS = [
   { href: "/contact-us", label: "Contact Us" },
   { href: "/private-labels", label: "Private Labels" },
   { href: "/products", label: "Products" },
+  { href: "/faq", label: "FAQ" },
   // { href: "/international", label: "International Hub" },
 ];
 

@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Supplier Poland | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Poland. Premium bulk supply and customized private label solutions for Polish distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-supplier-poland",
+    url: "https://www.indianfoodtech.com/peanut-butter-supplier-poland",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_PL",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-supplier-poland",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-supplier-poland",
     languages: {
-      "en-PL": "https://www.indianfoodtech.in/peanut-butter-supplier-poland",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-PL": "https://www.indianfoodtech.com/peanut-butter-supplier-poland",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -42,7 +42,7 @@ export default function Page() {
         country="Poland"
         type="Supplier"
         description="Reliable peanut butter supplier in Poland. Indian Foodtech offers premium bulk supply and private label solutions for the Polish market."
-        url="https://www.indianfoodtech.in/peanut-butter-supplier-poland"
+        url="https://www.indianfoodtech.com/peanut-butter-supplier-poland"
       />
       <PeanutButterSupplierPoland />
     </>

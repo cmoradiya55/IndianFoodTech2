@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Supplier Austria | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Austria. Premium bulk supply and customized private label solutions for European distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-supplier-austria",
+    url: "https://www.indianfoodtech.com/peanut-butter-supplier-austria",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_AT",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-supplier-austria",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-supplier-austria",
     languages: {
-      "en-AT": "https://www.indianfoodtech.in/peanut-butter-supplier-austria",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-AT": "https://www.indianfoodtech.com/peanut-butter-supplier-austria",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -42,7 +42,7 @@ const PeanutButterSupplierAustriaPage = () => {
         country="Austria"
         type="Supplier"
         description="Reliable peanut butter supplier in Austria. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Austrian market."
-        url="https://www.indianfoodtech.in/peanut-butter-supplier-austria"
+        url="https://www.indianfoodtech.com/peanut-butter-supplier-austria"
       />
       <PeanutButterSupplierAustria />
     </>

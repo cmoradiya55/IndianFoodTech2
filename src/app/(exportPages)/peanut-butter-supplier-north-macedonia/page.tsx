@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Supplier North Macedonia | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to North Macedonia. Premium bulk supply and customized private label solutions for Balkan distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-supplier-north-macedonia",
+    url: "https://www.indianfoodtech.com/peanut-butter-supplier-north-macedonia",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_MK",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-supplier-north-macedonia",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-supplier-north-macedonia",
     languages: {
-      "en-MK": "https://www.indianfoodtech.in/peanut-butter-supplier-north-macedonia",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-MK": "https://www.indianfoodtech.com/peanut-butter-supplier-north-macedonia",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -42,7 +42,7 @@ export default function Page() {
         country="North Macedonia"
         type="Supplier"
         description="Reliable peanut butter supplier in North Macedonia. Indian Foodtech offers premium bulk supply and private label solutions."
-        url="https://www.indianfoodtech.in/peanut-butter-supplier-north-macedonia"
+        url="https://www.indianfoodtech.com/peanut-butter-supplier-north-macedonia"
       />
       <PeanutButterSupplierNorthMacedonia />
     </>

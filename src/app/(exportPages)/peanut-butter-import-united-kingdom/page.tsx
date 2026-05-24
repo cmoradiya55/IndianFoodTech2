@@ -20,16 +20,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer UK | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to the UK. Premium bulk supply and customized private label solutions for British distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-united-kingdom",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-united-kingdom",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_GB",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-united-kingdom",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-united-kingdom",
     languages: {
-      "en-GB": "https://www.indianfoodtech.in/peanut-butter-import-united-kingdom",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-GB": "https://www.indianfoodtech.com/peanut-butter-import-united-kingdom",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -41,7 +41,7 @@ export default function Page() {
         country="United Kingdom"
         type="Importer"
         description="Reliable peanut butter importer in United Kingdom. Indian Foodtech offers premium bulk supply, private label, and industrial solutions."
-        url="https://www.indianfoodtech.in/peanut-butter-import-united-kingdom"
+        url="https://www.indianfoodtech.com/peanut-butter-import-united-kingdom"
       />
       <PeanutButterImportUnitedKingdom />
     </>

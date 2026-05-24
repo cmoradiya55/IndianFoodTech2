@@ -17,16 +17,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Ethiopia | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Ethiopia. Premium bulk supply and customized private label solutions for African distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-ethiopia",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-ethiopia",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_ET",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-ethiopia",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-ethiopia",
     languages: {
-      "en-ET": "https://www.indianfoodtech.in/peanut-butter-import-ethiopia",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-ET": "https://www.indianfoodtech.com/peanut-butter-import-ethiopia",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -38,7 +38,7 @@ export default function Page() {
         country="Ethiopia"
         type="Importer"
         description="Reliable peanut butter importer in Ethiopia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Ethiopian market."
-        url="https://www.indianfoodtech.in/peanut-butter-import-ethiopia"
+        url="https://www.indianfoodtech.com/peanut-butter-import-ethiopia"
       />
       <PeanutButterImportEthiopia />
     </>

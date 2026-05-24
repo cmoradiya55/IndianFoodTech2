@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Supplier Russia | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Russia. Premium bulk supply and customized private label solutions for Russian distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-supplier-russia",
+    url: "https://www.indianfoodtech.com/peanut-butter-supplier-russia",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_RU",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-supplier-russia",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-supplier-russia",
     languages: {
-      "en-RU": "https://www.indianfoodtech.in/peanut-butter-supplier-russia",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-RU": "https://www.indianfoodtech.com/peanut-butter-supplier-russia",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -42,7 +42,7 @@ export default function Page() {
         country="Russia"
         type="Supplier"
         description="Reliable peanut butter supplier in Russia. Indian Foodtech offers premium bulk supply and private label solutions for the Russian market."
-        url="https://www.indianfoodtech.in/peanut-butter-supplier-russia"
+        url="https://www.indianfoodtech.com/peanut-butter-supplier-russia"
       />
       <PeanutButterSupplierRussia />
     </>

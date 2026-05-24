@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Supplier Albania | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Albania. Premium bulk supply and customized private label solutions for Balkan distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-supplier-albania",
+    url: "https://www.indianfoodtech.com/peanut-butter-supplier-albania",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_AL",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-supplier-albania",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-supplier-albania",
     languages: {
-      "en-AL": "https://www.indianfoodtech.in/peanut-butter-supplier-albania",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-AL": "https://www.indianfoodtech.com/peanut-butter-supplier-albania",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -42,7 +42,7 @@ const PeanutButterSupplierAlbaniaPage = () => {
         country="Albania"
         type="Supplier"
         description="Reliable peanut butter supplier in Albania. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Albanian market. Exporting top-tier nut butter to Tirana."
-        url="https://www.indianfoodtech.in/peanut-butter-supplier-albania"
+        url="https://www.indianfoodtech.com/peanut-butter-supplier-albania"
       />
       <PeanutButterSupplierAlbania />
     </>

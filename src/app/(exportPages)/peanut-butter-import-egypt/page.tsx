@@ -18,16 +18,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Egypt | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Egypt. Premium bulk supply and customized private label solutions for African distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-egypt",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-egypt",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "ar_EG",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-egypt",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-egypt",
     languages: {
-      "ar-EG": "https://www.indianfoodtech.in/peanut-butter-import-egypt",
-      "x-default": "https://www.indianfoodtech.in/",
+      "ar-EG": "https://www.indianfoodtech.com/peanut-butter-import-egypt",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -39,7 +39,7 @@ export default function Page() {
         country="Egypt"
         type="Importer"
         description="Reliable peanut butter importer in Egypt. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Egyptian market."
-        url="https://www.indianfoodtech.in/peanut-butter-import-egypt"
+        url="https://www.indianfoodtech.com/peanut-butter-import-egypt"
       />
       <PeanutButterImportEgypt />
     </>

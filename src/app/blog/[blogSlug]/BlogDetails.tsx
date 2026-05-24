@@ -194,13 +194,12 @@ const useScrollProgress = () => {
 };
 
 export default function BlogDetails({
-  params,
+  blogSlug,
 }: {
-  params: Promise<{ id: string }>;
+  blogSlug: string;
 }) {
   useScrollProgress();
-  const resolvedParams = use(params);
-  const postSlug = resolvedParams.id;
+  const postSlug = blogSlug;
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
   const [showShareMenu, setShowShareMenu] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -261,7 +260,7 @@ export default function BlogDetails({
       </div>
 
       {/* HERO HEADER SECTION */}
-      <section className="pt-8 sm:pt-12 md:pt-16 pb-6 sm:pb-6 px-3 sm:px-4 md:px-8 lg:px-8">
+      <section className="pb-6 sm:px-4 md:px-8 lg:px-8">
         <div
           className="max-w-7xl mx-auto container-custom"
           style={{ fontFamily: "NotoSerif-semibold" }}

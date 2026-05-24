@@ -17,16 +17,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer India | Indian Foodtech",
     description:
       "High-quality peanut butter solutions in India. Premium bulk supply and customized private label solutions for domestic and international distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-india",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-india",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_IN",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-india",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-india",
     languages: {
-      "en-IN": "https://www.indianfoodtech.in/peanut-butter-import-india",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-IN": "https://www.indianfoodtech.com/peanut-butter-import-india",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -38,7 +38,7 @@ export default function Page() {
         country="India"
         type="Importer"
         description="Reliable peanut butter importer in India. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Indian market."
-        url="https://www.indianfoodtech.in/peanut-butter-import-india"
+        url="https://www.indianfoodtech.com/peanut-butter-import-india"
       />
       <PeanutButterImportIndia />
     </>

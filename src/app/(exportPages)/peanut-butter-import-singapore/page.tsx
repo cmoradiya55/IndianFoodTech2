@@ -17,16 +17,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Singapore | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Singapore. Premium bulk supply and customized private label solutions for Southeast Asian distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-singapore",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-singapore",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_SG",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-singapore",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-singapore",
     languages: {
-      "en-SG": "https://www.indianfoodtech.in/peanut-butter-import-singapore",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-SG": "https://www.indianfoodtech.com/peanut-butter-import-singapore",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -38,7 +38,7 @@ export default function Page() {
         country="Singapore"
         type="Importer"
         description="Reliable peanut butter importer in Singapore. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Singaporean market."
-        url="https://www.indianfoodtech.in/peanut-butter-import-singapore"
+        url="https://www.indianfoodtech.com/peanut-butter-import-singapore"
       />
       <PeanutButterImportSingapore />
     </>

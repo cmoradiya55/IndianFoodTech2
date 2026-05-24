@@ -17,16 +17,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer New Zealand | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to New Zealand. Premium bulk supply and customized private label solutions for Oceanic distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-new-zealand",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-new-zealand",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_NZ",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-new-zealand",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-new-zealand",
     languages: {
-      "en-NZ": "https://www.indianfoodtech.in/peanut-butter-import-new-zealand",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-NZ": "https://www.indianfoodtech.com/peanut-butter-import-new-zealand",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -38,7 +38,7 @@ export default function Page() {
         country="New Zealand"
         type="Importer"
         description="Reliable peanut butter importer in New Zealand. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Kiwi market."
-        url="https://www.indianfoodtech.in/peanut-butter-import-new-zealand"
+        url="https://www.indianfoodtech.com/peanut-butter-import-new-zealand"
       />
       <PeanutButterImportNewZealand />
     </>

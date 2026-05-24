@@ -17,16 +17,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer South Africa | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to South Africa. Premium bulk supply and customized private label solutions for African distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-south-africa",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-south-africa",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_ZA",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-south-africa",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-south-africa",
     languages: {
-      "en-ZA": "https://www.indianfoodtech.in/peanut-butter-import-south-africa",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-ZA": "https://www.indianfoodtech.com/peanut-butter-import-south-africa",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -38,7 +38,7 @@ export default function Page() {
         country="South Africa"
         type="Importer"
         description="Reliable peanut butter importer in South Africa. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the South African market."
-        url="https://www.indianfoodtech.in/peanut-butter-import-south-africa"
+        url="https://www.indianfoodtech.com/peanut-butter-import-south-africa"
       />
       <PeanutButterImportSouthAfrica />
     </>

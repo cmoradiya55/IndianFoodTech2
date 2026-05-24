@@ -17,16 +17,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Ghana | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Ghana. Premium bulk supply and customized private label solutions for African distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-ghana",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-ghana",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_GH",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-ghana",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-ghana",
     languages: {
-      "en-GH": "https://www.indianfoodtech.in/peanut-butter-import-ghana",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-GH": "https://www.indianfoodtech.com/peanut-butter-import-ghana",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -38,7 +38,7 @@ export default function Page() {
         country="Ghana"
         type="Importer"
         description="Reliable peanut butter importer in Ghana. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Ghanaian market."
-        url="https://www.indianfoodtech.in/peanut-butter-import-ghana"
+        url="https://www.indianfoodtech.com/peanut-butter-import-ghana"
       />
       <PeanutButterImportGhana />
     </>

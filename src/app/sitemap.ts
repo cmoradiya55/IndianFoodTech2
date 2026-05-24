@@ -3,7 +3,7 @@ import BlogList from "@/data/BlogList.json";
 import ProductList from "@/data/ProductList.json";
 
 const BASE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://www.indianfoodtech.in";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://www.indianfoodtech.com";
 
 function parseBlogDate(dateStr: string): Date {
   // "20 March, 2026" → Date
@@ -113,6 +113,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "peanut-butter-import-egypt",
     "peanut-butter-import-ethiopia",
     "peanut-butter-import-tanzania",
+    "peanut-butter-import-botswana",
     "peanut-butter-import-australia",
     "peanut-butter-import-new-zealand",
     "peanut-butter-supplier-albania",

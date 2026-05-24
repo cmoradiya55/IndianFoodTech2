@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     title: "Peanut Butter Supplier Bosnia & Herzegovina | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Bosnia & Herzegovina. Premium bulk supply and customized private label solutions for Balkan distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-supplier-bosnia-herzegovina",
+    url: "https://www.indianfoodtech.com/peanut-butter-supplier-bosnia-herzegovina",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_BA",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-supplier-bosnia-herzegovina",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-supplier-bosnia-herzegovina",
     languages: {
-      "en-BA": "https://www.indianfoodtech.in/peanut-butter-supplier-bosnia-herzegovina",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-BA": "https://www.indianfoodtech.com/peanut-butter-supplier-bosnia-herzegovina",
+      "x-default": "https://www.indianfoodtech.com/",
     },
   },
 };
@@ -42,7 +42,7 @@ const PeanutButterSupplierBosniaHerzegovinaPage = () => {
         country="Bosnia Herzegovina"
         type="Supplier"
         description="Reliable peanut butter supplier in Bosnia Herzegovina. Indian Foodtech offers premium bulk supply, private label, and industrial solutions."
-        url="https://www.indianfoodtech.in/peanut-butter-supplier-bosnia-herzegovina"
+        url="https://www.indianfoodtech.com/peanut-butter-supplier-bosnia-herzegovina"
       />
       <PeanutButterSupplierBosniaHerzegovina />
     </>

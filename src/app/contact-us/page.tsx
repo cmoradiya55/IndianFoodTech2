@@ -14,17 +14,17 @@ export const metadata: Metadata = {
     "peanut butter supplier contact",
   ],
   alternates: {
-    canonical: "https://www.indianfoodtech.in/contact-us",
+    canonical: "/contact-us",
     languages: {
-      "en-US": "https://www.indianfoodtech.in/contact-us",
-      "x-default": "https://www.indianfoodtech.in/",
+      "en-US": "/contact-us",
+      "x-default": "/",
     },
   },
   openGraph: {
     title: "Contact Us | Indian Foodtech - Get a Quote",
     description:
       "Get in touch with Indian Food Tech. We are here to assist with inquiries about our peanut butter products, bulk orders, shipping, and private label partnerships.",
-    url: "https://www.indianfoodtech.in/contact-us",
+    url: "/contact-us",
     siteName: "Indian Foodtech",
     locale: "en_US",
     type: "website",

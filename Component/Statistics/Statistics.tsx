@@ -5,6 +5,7 @@ interface StatItem {
   title: string;
   subtitle: string;
   icon: string | React.ReactNode;
+  color?: string
 }
 
 const Statistics = () => {
@@ -15,7 +16,7 @@ const Statistics = () => {
       icon: "globalShippingIcon",
     },
     {
-      title: "40+ Wide Range",
+      title: "15+ Wide Range",
       subtitle: "Flavors for Everyone",
       icon: "packegeIcon",
     },
@@ -23,6 +24,12 @@ const Statistics = () => {
       title: "5 MT/Day",
       subtitle: "Steady Daily Output",
       icon: "growArrowIcon",
+    },
+    {
+      title: "Inhouse R&D",
+      subtitle: "New Product Development",
+      icon: "researchIcon",
+      color: "#ffffff"
     },
   ];
 
@@ -45,13 +52,13 @@ const Statistics = () => {
       </div>
 
       {/* Stats Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-7 px-4 sm:px-6 md:px-8 lg:px-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 lg:gap-7 px-4 sm:px-6 md:px-8 lg:px-12">
         {stats.map((stat, index) => (
           <div
             key={index}
             className="bg-white rounded-xl sm:rounded-2xl lg:rounded-2xl shadow-lg p-1 sm:p-2 md:p-3 lg:p-4 hover:shadow-2xl transition-shadow duration-300"
           >
-            <div className="flex items-start gap-3 sm:gap-4 lg:gap-5">
+            <div className="flex flex-col items-center gap-3 sm:gap-4 lg:gap-5">
               {/* Green Circle Icon */}
               <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-[45px] md:h-[45px] lg:w-[50px] lg:h-[50px] bg-gradient-to-b from-primary-400 to-primary-600 rounded-xl sm:rounded-2xl lg:rounded-2xl flex-shrink-0 shadow-md flex items-center justify-center">
                 {typeof stat.icon === "string" ? (
@@ -59,6 +66,7 @@ const Statistics = () => {
                     icon={stat.icon}
                     width={24}
                     height={24}
+                    color={stat.color || ""}
                     className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-8 lg:h-8"
                   />
                 ) : (
@@ -67,7 +75,7 @@ const Statistics = () => {
               </div>
 
               {/* Text Content */}
-              <div className="flex-1">
+              <div className="flex-1 text-center">
                 <div className="text-sm sm:text-base md:text-base lg:text-lg font-bold text-gray-900 mb-1">
                   {stat.title}
                 </div>
