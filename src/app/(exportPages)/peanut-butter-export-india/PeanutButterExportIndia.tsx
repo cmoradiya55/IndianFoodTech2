@@ -17,7 +17,7 @@ import AllIconComponent from "../../../../public/AllIconComponent";
 import React from "react";
 import { motion, Variants } from "framer-motion";
 
-const PeanutButterImportIndia = () => {
+const PeanutButterExportIndia = () => {
   // Staggered variants for list and grid containers
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -51,9 +51,6 @@ const PeanutButterImportIndia = () => {
     <div className="min-h-screen bg-white font-sans text-gray-900 overflow-x-hidden">
       {/* Hero Section - Compact & Elegant */}
       <section className="relative bg-[#e9e8ed] py-10 sm:py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-72 h-72 bg-primary-100 rounded-full blur-3xl opacity-30"></div>
-        <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-72 h-72 bg-primary-50 rounded-full blur-3xl opacity-30"></div>
-
         <div className="max-w-7xl mx-auto relative">
           <div className="flex flex-col lg:flex-row gap-8 items-center text-center lg:text-left">
             <motion.div
@@ -64,19 +61,19 @@ const PeanutButterImportIndia = () => {
             >
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-100 text-primary-800 text-xs font-semibold tracking-wide uppercase" style={{ fontFamily: "Poppins-medium" }}>
                 <Castle className="w-3.5 h-3.5" />
-                India Supply Specialist
+                India Export Specialist
               </div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-950 leading-[1.1] tracking-tighter">
-                Peanut Butter Importer in India
+                Peanut Butter Exporter in India
                 <br />
-                <span className="text-primary-700 font-black">
-                  Premium Bulk Supply Mumbai
+                <span className="text-primary-600 font-black">
+                  Premium Bulk Export from Gujarat
                 </span>
               </h1>
               <p className="text-base sm:text-base text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium" style={{ fontFamily: "Poppins-medium" }}>
-                Indian Foodtech is your manufacturing partner supplying premium
-                peanut butter directly from the source to distributors and
-                brands across India.
+                Indian Foodtech is a leading peanut butter manufacturer and
+                exporter based in India, delivering premium quality products to
+                distributors and brands across the globe.
               </p>
               <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
                 <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
@@ -114,7 +111,7 @@ const PeanutButterImportIndia = () => {
                   <div className="relative aspect-[16/10] bg-primary-50 rounded-[1.8rem] flex items-center justify-center overflow-hidden">
                     <Image
                       src="/country/import-india.webp"
-                      alt="undefined"
+                      alt="Peanut butter export from India - Indian Foodtech manufacturing facility"
                       fill
                       className="object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
                     />
@@ -139,13 +136,13 @@ const PeanutButterImportIndia = () => {
             >
               <h2 className="text-lg sm:text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
                 <div className="w-1.5 h-10 bg-primary-500 rounded-full"></div>
-                Manufacturing Peanut Butter in India
+                Exporting Peanut Butter from India
               </h2>
               <p className="text-sm sm:text-sm text-gray-600 leading-relaxed mb-6 font-medium" style={{ fontFamily: "Poppins-medium" }}>
-                We have extensive experience in the Indian markets, specifically
-                understanding the detailed requirements of distributors in
-                India. Our operations are streamlined to ensure your orders
-                arrive fresh and on time.
+                Based in Gujarat, the heart of India&apos;s peanut belt, we
+                manufacture and export premium peanut butter to markets
+                worldwide. Our operations are streamlined to ensure your orders
+                arrive fresh and on time, no matter the destination.
               </p>
               <motion.div
                 variants={containerVariants}
@@ -155,11 +152,11 @@ const PeanutButterImportIndia = () => {
                 className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2"
               >
                 {[
-                  "Bulk peanut butter supply",
+                  "Bulk peanut butter export",
                   "Private label & OEM services",
                   "Flexible packaging options",
-                  "Competitive export pricing",
-                  "Fast and secure shipping",
+                  "Competitive factory-direct pricing",
+                  "Global shipping & logistics",
                 ].map((item, idx) => (
                   <motion.div
                     variants={slideLeftVariants}
@@ -184,19 +181,19 @@ const PeanutButterImportIndia = () => {
               whileHover={{ y: -4 }}
               className="md:w-1/3 bg-primary-600 rounded-3xl p-8 sm:px-10 sm:py-8 text-white shadow-xl cursor-default"
             >
-              <h3 className="text-xl font-semibold mb-4">India Quick-Ship</h3>
+              <h3 className="text-xl font-semibold mb-4">Export Advantage</h3>
               <ul className="space-y-3 font-medium opacity-90">
                 <li className="flex items-center gap-3 text-sm" style={{ fontFamily: "Poppins-medium" }}>
                   <span className="font-medium text-base text-primary-200">01</span>
-                  Direct Indian Port Access
+                  Factory-to-Port Direct Access
                 </li>
                 <li className="flex items-center gap-3 text-sm" style={{ fontFamily: "Poppins-medium" }}>
                   <span className="font-medium text-base text-primary-200">02</span>
-                  Optimized Transit Paths
+                  Mundra & JNPT Port Proximity
                 </li>
                 <li className="flex items-center gap-3 text-sm" style={{ fontFamily: "Poppins-medium" }}>
                   <span className="font-medium text-base text-primary-200">03</span>
-                  Complete Customs Support
+                  Complete Export Documentation
                 </li>
               </ul>
             </motion.div>
@@ -301,19 +298,19 @@ const PeanutButterImportIndia = () => {
                 {[
                   {
                     title: "Direct Manufacturer",
-                    desc: "We eliminate middlemen, ensuring you get the freshest produce at factory prices.",
+                    desc: "We eliminate middlemen, ensuring you get the freshest produce at factory-direct prices.",
                   },
                   {
-                    title: "Export Quality Standards",
-                    desc: "Rigorous quality control adhering to international safety certifications.",
+                    title: "International Quality Standards",
+                    desc: "Rigorous quality control with FSSAI, HACCP, and ISO certifications for global markets.",
                   },
                   {
-                    title: "Custom Branding",
-                    desc: "End-to-end design and manufacturing support for your private label.",
+                    title: "Custom Branding & OEM",
+                    desc: "End-to-end design, formulation, and manufacturing support for your private label.",
                   },
                   {
                     title: "Dedicated Export Team",
-                    desc: "Logistics experts to handle India import documentation and shipping.",
+                    desc: "Logistics experts handling export documentation, customs, and worldwide shipping.",
                   },
                 ].map((item, idx) => (
                   <motion.div
@@ -347,12 +344,12 @@ const PeanutButterImportIndia = () => {
               <div className="bg-[#1D2C00] rounded-[2.5rem] p-12 text-white relative overflow-hidden">
                 <div className="relative z-10 space-y-4">
                   <h3 className="text-xl font-black tracking-tight underline decoration-primary-500 underline-offset-8">
-                    Direct Access
+                    Made in India, Shipped Worldwide
                   </h3>
                   <p className="text-base opacity-80 font-medium" style={{ fontFamily: "Poppins-medium" }}>
-                    As a primary manufacturer, we control every step of the
-                    process—from sourcing the finest peanuts to the final
-                    airtight seal.
+                    As a manufacturer based in India&apos;s peanut heartland, we
+                    control every step—from sourcing the finest Gujarat peanuts
+                    to export-ready packaging and global delivery.
                   </p>
                 </div>
                 <div className="mt-6 flex items-center gap-6 z-10 relative">
@@ -406,10 +403,10 @@ const PeanutButterImportIndia = () => {
               className="lg:w-1/2 space-y-6 text-center lg:text-left"
             >
               <h2 className="text-xl sm:text-2xl lg:text-3xl pr-34 font-black leading-[1.1]">
-                Product Specifications
+                Private Label Solutions
               </h2>
               <p className="text-sm pr-24 opacity-80 font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0" style={{ fontFamily: "Poppins-medium" }}>
-                Engineered for Global Consumption
+                Your Brand, Our Manufacturing Excellence
               </p>
               <div className="flex flex-wrap gap-4 justify-center lg:justify-start pt-2">
                 {[
@@ -480,10 +477,10 @@ const PeanutButterImportIndia = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10 space-y-2">
             <h2 className="text-xl sm:text-3xl font-black text-gray-900">
-              Why Choose Indian Foodtech?
+              Our Export Process
             </h2>
             <p className="text-gray-500 sm:text-base font-medium" style={{ fontFamily: "Poppins-medium" }}>
-
+              Seamless from factory floor to your warehouse
             </p>
           </div>
 
@@ -496,23 +493,23 @@ const PeanutButterImportIndia = () => {
           >
             {[
               {
-                title: "Documentation",
-                desc: "Precise execution of Invoice, Packing List, and COO.",
+                title: "Export Documentation",
+                desc: "Complete Invoice, Packing List, COO, and Phytosanitary certificates.",
                 icon: <Star className="w-7 h-7" />,
               },
               {
-                title: "Secure Packing",
-                desc: "Export-grade packaging to withstand oceanic transit.",
+                title: "Export-Grade Packing",
+                desc: "Durable packaging designed to withstand international ocean transit.",
                 icon: <Package className="w-7 h-7" />,
               },
               {
-                title: "Shipping Options",
-                desc: "Selection of best sea and air routes for India.",
+                title: "Global Shipping",
+                desc: "Optimized sea and air routes from Indian ports to your destination.",
                 icon: <Truck className="w-7 h-7" />,
               },
               {
-                title: "Local Support",
-                desc: "Advisory support for the import clearance process.",
+                title: "Buyer Support",
+                desc: "End-to-end assistance with import clearance at your destination.",
                 icon: <ShieldCheck className="w-7 h-7" />,
               },
             ].map((step, idx) => (
@@ -554,13 +551,13 @@ const PeanutButterImportIndia = () => {
               <Phone className="w-8 h-8" />
             </div>
             <h2 className="text-xl sm:text-2xl font-black text-gray-900 leading-tight">
-              Private Label Peanut Butter{" "}
-              <span className="text-primary-400">in India</span>
+              Export Peanut Butter{" "}
+              <span className="text-primary-400">from India</span>
             </h2>
             <p className="text-base max-w-2xl text-gray-500 font-medium" style={{ fontFamily: "Poppins-medium" }}>
-              Launch your own premium peanut butter brand in India with our
-              end-to-end OEM services. We provide the quality; you provide the
-              vision.
+              Partner with India&apos;s leading peanut butter manufacturer for
+              bulk export, private label, and OEM solutions. We provide the
+              quality; you grow your brand worldwide.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
               <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
@@ -592,4 +589,4 @@ const PeanutButterImportIndia = () => {
   );
 };
 
-export default PeanutButterImportIndia;
+export default PeanutButterExportIndia;
