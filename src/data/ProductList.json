@@ -389,8 +389,8 @@
         "sizes": [
           "40 kg bag"
         ],
-        "detailImage": "/productsImage/RoastedPeanutDices.webp",
-        "cardImage": "/productsImage/RoastedPeanutDices.webp",
+        "cardImage": "/products/card/RoastedPeanutDices.webp",
+        "detailImage": "/products/detail/RoastedPeanutDices.webp",
         "recommended": false
       }
     ]
@@ -423,8 +423,8 @@
           "1 kg",
           "20 kg pail"
         ],
-        "detailImage": "/products/detail/HazealnutChocolateSpread.webp",
-        "cardImage": "/products/card/HazealnutChocolateSpread.webp",
+        "detailImage": "/products/detail/HazealNutSpread.webp",
+        "cardImage": "/products/card/HazealNutSpread.webp",
         "recommended": false
       }
     ]

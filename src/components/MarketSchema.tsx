@@ -3,7 +3,7 @@ import Schema from "./Schema";
 
 interface MarketSchemaProps {
   country: string;
-  type: "Importer" | "Supplier";
+  type: "Importer" | "Supplier" | "Exporter";
   description: string;
   url: string;
 }

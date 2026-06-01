@@ -133,8 +133,8 @@ const Header = () => {
       {/* Frosted Glass Background Bar (fades in on scroll to blur content behind the floating header) */}
       <div
         className={`fixed top-0 left-0 right-0 w-full h-[72px] sm:h-[80px] md:h-[88px] transition-all duration-500 ease-in-out z-40 border-b pointer-events-none ${isScrolled
-          ? "bg-white/40 backdrop-blur-md border-gray-200/10 opacity-100"
-          : "bg-transparent backdrop-blur-none border-transparent opacity-0"
+          ? "bg-transparent border-gray-200/10 opacity-100"
+          : "bg-transparent border-transparent opacity-0"
           }`}
       />
 
@@ -154,9 +154,9 @@ const Header = () => {
             stiffness: 140,
             damping: 20,
           }}
-          className={`pointer-events-auto mx-auto rounded-full flex items-center justify-between px-5 sm:px-8 h-[56px] sm:h-[62px] md:h-[68px] border backdrop-blur-lg transition-colors duration-300 w-[calc(100%-38px)] max-w-7xl translate-y-[10px] ${isScrolled
-              ? "bg-white/95 border-gray-200/15 shadow-[0_12px_40px_-10px_rgba(0,0,0,0.06)]"
-              : "bg-white/90 border-white/30 shadow-[0_8px_32px_rgba(0,0,0,0.04)]"
+          className={`pointer-events-auto mx-auto rounded-full flex items-center justify-between px-5 sm:px-8 h-[56px] sm:h-[62px] md:h-[68px] border backdrop-blur-lg transition-colors duration-300 w-[calc(100%-38px)] max-w-7xl translate-y-[10px] shadow-lg ${isScrolled
+            ? "bg-white/95 border-gray-200/15"
+            : "bg-white/90 border-white/30"
             }`}
           style={{ fontFamily: "NotoSerif-semibold" }}
         >
