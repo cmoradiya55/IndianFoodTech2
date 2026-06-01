@@ -3,6 +3,8 @@ import { Search } from "lucide-react";
 import React, { useState } from "react";
 import BlogList from "@/data/BlogList.json";
 import BlogCard from "@/components/BlogCard";
+import { motion, Variants } from "framer-motion";
+import PageHeader from "@/components/PageHeader";
 
 const blogPosts = BlogList.map((post) => ({
   ...post,
@@ -29,32 +31,53 @@ const Blog = () => {
     return matchesCategory && matchesSearch;
   });
 
-  return (
-    <div className="min-h-screen bg-[#e9e8ed] font-sans text-gray-900 pb-20">
-      {/* HERO SECTION */}
-      <section className="pt-12 sm:pt-16 pb-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="mb-10 sm:mb-12">
-          {/* Header */}
-          <div className="flex gap-3 sm:gap-4">
-            <div className="bg-primary-500 h-24 sm:h-28 md:h-32 lg:h-[104px] w-1 sm:w-1.5 lg:w-1.5 rounded-2xl shrink-0"></div>
-            <div className="mt-1 sm:mt-2">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-2xl font-bold text-gray-900 mb-2 sm:mb-3 leading-tight tracking-tight">
-                The Nutty Knowledge Hub
-              </h1>
-              <p
-                className="text-sm sm:text-base md:text-base text-primary-500 font-medium leading-relaxed"
-                style={{ fontFamily: "Poppins-medium" }}
-              >
-                Exploring premium peanut butter manufacturing
-                <br className="hidden sm:block" />
-                and curated healthy recipes.
-              </p>
-            </div>
-          </div>
-        </div>
+  // Framer Motion variants for card stagger reveals
+  const containerVariants: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.08,
+      },
+    },
+  };
 
-        {/* Search Bar & Category Filters Row */}
-        <div className="flex flex-col-reverse lg:flex-row lg:items-center justify-between gap-5 lg:gap-8 border-b border-gray-200/60 mt-4">
+  const cardVariants: Variants = {
+    hidden: { opacity: 0, y: 25 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 100, damping: 15 },
+    },
+  };
+
+  return (
+    <div className="min-h-screen bg-[#e9e8ed] py-6 sm:py-8 md:py-12 px-3 sm:px-4 md:px-8 lg:px-8">
+      {/* HERO SECTION */}
+      <section className="mx-auto container-custom">
+        {/* Header with slide-up reveal */}
+        <PageHeader
+          title="The Nutty Knowledge Hub"
+          description={
+            <>
+              Exploring premium peanut butter manufacturing
+              <br className="hidden sm:block" />
+              and curated healthy recipes.
+            </>
+          }
+          className="mb-10 sm:mb-12"
+          titleClassName="text-2xl sm:text-3xl md:text-4xl lg:text-2xl font-bold mb-2 sm:mb-3"
+          descriptionClassName="text-sm sm:text-base md:text-base"
+        />
+
+        {/* Search Bar & Category Filters Row with slide-up entrance */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+          className="flex flex-col-reverse lg:flex-row lg:items-center justify-between gap-5 lg:gap-8 border-b border-gray-200/60 mt-4"
+        >
           {/* Category Filters */}
           <div className="flex flex-wrap lg:flex-nowrap gap-2 py-3 lg:overflow-x-auto scrollbar-hide items-center w-full lg:w-auto px-1">
             {categories.map((category) => (
@@ -100,7 +123,7 @@ const Blog = () => {
               </button>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* BLOG CONTENT - PREMIUM CARDS */}
@@ -121,13 +144,24 @@ const Blog = () => {
               </p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-60px" }}
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
+            >
               {filteredPosts.map((post) => (
-                <BlogCard
-                  post={post}
-                />
+                <motion.div
+                  key={post.id}
+                  variants={cardVariants}
+                  whileHover={{ scale: 1.02, translateY: -3 }}
+                  className="h-full"
+                >
+                  <BlogCard post={post} />
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           )}
         </div>
       </section>
@@ -135,7 +169,13 @@ const Blog = () => {
       {/* NEWSLETTER SECTION (THEME WISE) */}
       <section className="mt-10 sm:mt-16 px-4 sm:px-6 lg:px-8 pb-10">
         <div className="max-w-6xl mx-auto">
-          <div className="relative bg-white rounded-3xl p-5 sm:p-8 lg:p-10 shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-gray-100 overflow-hidden flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-10">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="relative bg-white rounded-3xl p-5 sm:p-8 lg:p-10 shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-gray-100 overflow-hidden flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-10"
+          >
             {/* Decorative background shapes */}
             <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/3 w-64 h-64 bg-primary-500/5 rounded-full blur-2xl pointer-events-none"></div>
             <div className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 w-48 h-48 bg-primary-500/5 rounded-full blur-2xl pointer-events-none"></div>
@@ -168,15 +208,17 @@ const Blog = () => {
                   className="w-full sm:w-64 px-4 py-3 sm:py-2.5 rounded-xl sm:rounded-full bg-white sm:bg-transparent border border-gray-200 sm:border-none focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-medium shadow-sm sm:shadow-none focus:border-primary-300"
                   style={{ fontFamily: "Poppins-medium" }}
                 />
-                <button
-                  className="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 sm:py-2.5 rounded-xl sm:rounded-full font-bold text-sm transition-all duration-300 transform active:scale-95 whitespace-nowrap"
+                <motion.button
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                  className="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 sm:py-2.5 rounded-xl sm:rounded-full font-bold text-sm transition-all duration-300 transform active:scale-95 whitespace-nowrap cursor-pointer"
                   style={{ fontFamily: "Poppins-bold" }}
                 >
                   Subscribe
-                </button>
+                </motion.button>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </div>

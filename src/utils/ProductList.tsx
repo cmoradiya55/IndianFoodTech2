@@ -11,8 +11,8 @@ export interface Product {
   certifications?: string[];
   sizes?: string[];
   recommended: boolean;
-  cardImage: string;
-  otherImages?: string[];
+  detailImage: string;
+  cardImage?: string;
 }
 
 export interface Category {

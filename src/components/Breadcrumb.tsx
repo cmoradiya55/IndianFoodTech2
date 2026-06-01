@@ -42,7 +42,6 @@ export default function Breadcrumb({
             >
               {items.map((item, index) => {
                 const isFirst = index === 0;
-                const isLast = index === items.length - 1;
 
                 const relativeUrl = (item.url.startsWith("http")
                   ? new URL(item.url).pathname

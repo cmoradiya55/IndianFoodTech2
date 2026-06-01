@@ -8,6 +8,7 @@ import { packagingData } from "@/utils/ContainerPackageData";
 import AllIconComponent from "../../../../public/AllIconComponent";
 import { Copy, Share2, Check, X } from "lucide-react";
 import Link from "next/link";
+import { motion, Variants } from "framer-motion";
 
 const ProductDetails = () => {
   const params = useParams();
@@ -72,6 +73,35 @@ const ProductDetails = () => {
     router.push("/products");
   };
 
+  // Framer Motion variants for staggered grids
+  const containerVariants: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.08,
+      },
+    },
+  };
+
+  const statCardVariants: Variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 100, damping: 15 },
+    },
+  };
+
+  const productCardVariants: Variants = {
+    hidden: { opacity: 0, y: 25 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 120, damping: 16 },
+    },
+  };
+
   return (
     <div className="bg-[#e9e8ed] min-h-screen px-3 sm:px-4 md:px-28 py-8 md:py-8 lg:py-5">
       <div
@@ -82,36 +112,51 @@ const ProductDetails = () => {
         <div className="relative mb-4 sm:mb-6 lg:min-h-[480px] xl:min-h-[580px]">
           {/* Mobile/Tablet Layout - Stacked */}
           <div className="block lg:hidden">
-            {/* Product Image */}
+            {/* Product Image with slide-up fade */}
             <div className="flex justify-center mb-8 sm:mb-12">
-              <div className="relative w-[220px] h-[300px] sm:w-[260px] sm:h-[350px] md:w-[300px] md:h-[400px] rounded-3xl sm:rounded-[40px] overflow-hidden">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ type: "spring", stiffness: 90, damping: 15 }}
+                className="relative w-[220px] h-[300px] sm:w-[260px] sm:h-[350px] md:w-[300px] md:h-[400px] rounded-3xl sm:rounded-[40px] overflow-hidden"
+              >
                 <Image
-                  src={product.cardImage}
+                  src={product.detailImage}
                   alt={product.name}
                   className="w-full h-full object-cover"
                   fill
                 />
-              </div>
+              </motion.div>
             </div>
           </div>
 
           {/* Desktop Layout - Side by Side (lg+) - UNCHANGED */}
           <div className="hidden lg:block">
-            {/* Left Side - Image (Absolute positioned) */}
-            <div className="absolute left-[30px] top-10 z-10 w-full">
+            {/* Left Side - Image (Absolute positioned, reveals with horizontal slide-in) */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ type: "spring", stiffness: 100, damping: 18 }}
+              className="absolute left-[30px] top-10 z-10 w-full"
+            >
               <div className="relative producPageMainImage rounded-l-[40px] overflow-hidden">
                 <Image
-                  src={product.cardImage}
+                  src={product.detailImage}
                   alt={product.name}
                   className="w-full h-full object-cover"
                   fill
                 />
               </div>
-            </div>
+            </motion.div>
           </div>
 
-          {/* Right Side - Product Info */}
-          <div className="relative ml-auto producPageRightSection bg-white rounded-[40px] shadow-lg z-30 flex flex-col lg:min-h-[400px] xl:min-h-[500px]">
+          {/* Right Side - Product Info with slide-up entrance */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", stiffness: 90, damping: 16 }}
+            className="relative ml-auto producPageRightSection bg-white rounded-[40px] shadow-lg z-30 flex flex-col lg:min-h-[400px] xl:min-h-[500px]"
+          >
             {/* Product Name */}
             <h1 className="text-sm md:text-lg lg:text-xl font-bold text-primary-500 mb-4">
               {product.name}
@@ -267,7 +312,9 @@ const ProductDetails = () => {
 
             {/* Action Buttons */}
             <div className="mt-5 lg:mt-auto space-y-3">
-              <button
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
                 className="w-full bg-[#7FB432] hover:bg-[#6fa028] text-white font-normal py-2 md:py-2.5 px-4 rounded-full transition-colors duration-300 text-xs md:text-sm"
                 style={{
                   boxShadow: "0 4px 12px rgba(127, 180, 50, 0.3)",
@@ -275,9 +322,11 @@ const ProductDetails = () => {
                 }}
               >
                 Request Sample
-              </button>
+              </motion.button>
 
-              <button
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
                 className="w-full bg-black text-white font-normal py-2 md:py-2.5 px-4 rounded-full transition-colors duration-300 text-xs md:text-sm mb-2"
                 style={{
                   boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
@@ -285,7 +334,7 @@ const ProductDetails = () => {
                 }}
               >
                 Get a Quote
-              </button>
+              </motion.button>
 
               {/* Premium Social Sharing Section */}
               <div className="pt-2 border-t border-gray-100 flex flex-col items-center">
@@ -362,13 +411,19 @@ const ProductDetails = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
 
-        {/* Detailed Description */}
-        <div className="p-2 sm:p-4 bg-white mb-8 sm:mb-12 md:mb-16 lg:mb-14 xl:mb-14 rounded-2xl">
+        {/* Detailed Description with viewport reveal */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="p-2 sm:p-4 bg-white mb-8 sm:mb-12 md:mb-16 lg:mb-14 xl:mb-14 rounded-2xl"
+        >
           <h2 className="text-xl text-black text-center mb-2">
-            Product Discription
+            Product Description
           </h2>
           <p
             className="text-gray-700 text-xs md:text-sm px-4 pb-4"
@@ -376,10 +431,16 @@ const ProductDetails = () => {
           >
             {product.detailedDescription}
           </p>
-        </div>
+        </motion.div>
 
-        {/* Packaging Details Section */}
-        <div className="mb-4 sm:mb-6 md:mb-8 lg:mb-10 flex gap-3 sm:gap-4">
+        {/* Packaging Details Section with horizontal reveal */}
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="mb-4 sm:mb-6 md:mb-8 lg:mb-10 flex gap-3 sm:gap-4"
+        >
           <div className="bg-primary-500 h-24 sm:h-22 md:h-28 w-1.5 rounded-2xl flex-shrink-0"></div>
           <div className="mt-1 sm:mt-2">
             <h1 className="text-sm sm:text-base md:text-lg lg:text-2xl font-bold text-gray-900 mb-2">
@@ -396,10 +457,16 @@ const ProductDetails = () => {
               into containers.
             </p>
           </div>
-        </div>
+        </motion.div>
 
-        {/* Container Table */}
-        <div className="overflow-x-auto rounded-lg sm:rounded-2xl mb-4 sm:mb-6 md:mb-8 lg:mb-10">
+        {/* Container Table with smooth lift */}
+        <motion.div
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="overflow-x-auto rounded-lg sm:rounded-2xl mb-4 sm:mb-6 md:mb-8 lg:mb-10"
+        >
           <table className="w-full min-w-[800px]">
             <thead>
               <tr className="bg-primary-500 text-white text-[10px] sm:text-[11px] md:text-xs">
@@ -485,14 +552,22 @@ const ProductDetails = () => {
               </tr>
             </tfoot>
           </table>
-        </div>
+        </motion.div>
 
-        {/* Stats Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-6 px-0 sm:px-4 md:px-8 lg:px-8 mt-4 sm:mt-6 md:mt-8 lg:mt-10 mb-6 sm:mb-8 md:mb-16 lg:mb-20">
+        {/* Stats Cards with stagger entrances and subtle micro-hover lifts */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-80px" }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-6 px-0 sm:px-4 md:px-8 lg:px-8 mt-4 sm:mt-6 md:mt-8 lg:mt-10 mb-6 sm:mb-8 md:mb-16 lg:mb-20"
+        >
           {stats.map((stat, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-[#F6F6F6] border-[#D2D1D6] border rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg py-3 sm:py-4 md:py-6 px-3 min-[400px]:px-4 sm:px-6 hover:shadow-2xl transition-shadow duration-300"
+              variants={statCardVariants}
+              whileHover={{ scale: 1.02, translateY: -3 }}
+              className="bg-[#F6F6F6] border-[#D2D1D6] border rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg py-3 sm:py-4 md:py-6 px-3 min-[400px]:px-4 sm:px-6 hover:shadow-2xl transition-all duration-300"
             >
               <div className="gap-3 sm:gap-4 flex flex-row sm:flex-col items-center justify-start sm:justify-center">
                 {/* Green Circle Icon */}
@@ -525,24 +600,34 @@ const ProductDetails = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         {/* Recommended Products */}
         <div>
-          {/* Title */}
+          {/* Title with spring viewport entrance */}
           <div className="flex items-center justify-center mb-4 sm:mb-6 md:mb-8">
-            <div
-              className="bg-[#1D2C00] text-white mt-6 sm:mt-8 md:mt-2 px-6 sm:px-12 md:px-12 lg:px-25 py-2 sm:py-3 md:py-3 lg:py-2 rounded-full text-xs sm:text-base md:text-base lg:text-lg font-normal text-center"
+            <motion.div
+              initial={{ opacity: 0, y: -15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ type: "spring", stiffness: 100, damping: 15 }}
+              className="bg-[#1D2C00] text-white mt-6 sm:mt-8 md:mt-2 px-6 sm:px-12 md:px-12 lg:px-25 py-2 sm:py-3 md:py-3 lg:py-2 rounded-full text-xs sm:text-base md:text-base lg:text-lg font-normal text-center shadow-sm"
               style={{ fontFamily: "Poppins-regular" }}
             >
               Recommended Products
-            </div>
+            </motion.div>
           </div>
 
-          {/* Products Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 md:gap-6">
+          {/* Products Grid with staggered reveal and subtle card hovers */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 md:gap-6"
+          >
             {(() => {
               // Find the current product's category
               const currentCategory = AllProductsList.find((category) =>
@@ -557,14 +642,16 @@ const ProductDetails = () => {
                 .slice(0, 3); // Take only first 3 products
 
               return similarProducts.map((product) => (
-                <div
+                <motion.div
                   key={product.id}
+                  variants={productCardVariants}
+                  whileHover={{ scale: 1.02, translateY: -3 }}
                   className="bg-white rounded-2xl sm:rounded-3xl shadow-md sm:shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border-[1px] border-[#D2D1D6] flex flex-row sm:flex-col items-center sm:items-stretch h-auto sm:h-full p-2 sm:p-0"
                 >
                   {/* Product Image */}
                   <div className="relative shrink-0 overflow-hidden w-28 h-28 min-[400px]:w-32 min-[400px]:h-32 sm:w-[200px] md:w-[216px] sm:h-[180px] md:h-[180px] rounded-xl sm:rounded-2xl ml-2 sm:mx-auto mt-0 sm:mt-6 md:mt-8 border border-gray-100 sm:border-none">
                     <Image
-                      src={product.cardImage}
+                        src={product.cardImage || product.detailImage}
                       alt={product.name}
                       fill
                       className="object-cover"
@@ -588,7 +675,9 @@ const ProductDetails = () => {
                     </p>
 
                     {/* Explore Button */}
-                    <button
+                    <motion.button
+                      whileHover={{ scale: 1.03 }}
+                      whileTap={{ scale: 0.97 }}
                       onClick={() => router.push(`/products/${product.slug}`)}
                       className="w-[120px] min-[400px]:w-[130px] sm:w-full bg-[#7FB432] hover:bg-[#6fa028] shadow-md sm:shadow-lg text-white font-normal py-1.5 sm:py-2 px-3 sm:px-6 rounded-full transition-colors duration-300 mt-auto text-[10px] min-[400px]:text-[11px] sm:text-base self-start sm:self-auto"
                       style={{
@@ -597,16 +686,18 @@ const ProductDetails = () => {
                       }}
                     >
                       Explore Details
-                    </button>
+                    </motion.button>
                   </div>
-                </div>
+                </motion.div>
               ));
             })()}
-          </div>
+          </motion.div>
 
           {/* View All Products Button */}
           <div className="flex justify-center mt-4 sm:mt-6 md:mt-8">
-            <button
+            <motion.button
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
               onClick={() => handleExploreDetails()}
               className="bg-[#7FB432] hover:bg-[#6fa028] text-white font-normal py-2 sm:py-2 px-10 sm:px-22 rounded-full transition-colors duration-300 mt-auto text-[12px] sm:text-[14px]"
               style={{
@@ -615,7 +706,7 @@ const ProductDetails = () => {
               }}
             >
               View All
-            </button>
+            </motion.button>
           </div>
         </div>
       </div>

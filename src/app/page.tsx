@@ -1,24 +1,23 @@
-import CertificationSection from "../../Component/CertificationSection/CertificationSection";
-import ContactUsComponent from "../../Component/ContactUsComponent/ContactUsComponent";
 import CreateYourBrand from "../../Component/CreateYourBrand/CreateYourBrand";
 import DiscoverProduct from "../../Component/DiscoverProduct/DiscoverProduct";
 import ProductQuality from "../../Component/ProductQuality/ProductQuality";
-import Slider from "../../Component/Slider/Slider";
+import Hero from "../../Component/Hero/Hero";
 import Statistics from "../../Component/Statistics/Statistics";
 import StoryAboutUs from "../../Component/StoryAboutUs/StoryAboutUs";
-import FAQSection from "@/components/FAQSection";
+import OurCertification from "../../Component/OurCertification/OurCertification";
+import ContactUs from "./contact-us/ContactUs";
 
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
       <main className="w-full">
-        {/* Slider Section */}
-        <section className="bg-[#e9e8ed] h-[calc(100vh-94px)] max-h-[945px] overflow-hidden">
+        {/* Hero Section */}
+        <section className="bg-[#e9e8ed] h-[calc(100vh-var(--header-height,82px))] sm:h-[calc(100vh-var(--header-height,86px))] lg:h-[calc(100vh-var(--header-height,94px))] overflow-hidden">
           <div
             className="mx-auto h-full overflow-hidden scrollbar-hide"
             style={{ fontFamily: "NotoSerif-semibold" }}
           >
-            <Slider />
+            <Hero />
           </div>
         </section>
 
@@ -32,13 +31,13 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Story About Us Section */}
+        {/* Discover Product Section */}
         <section className="bg-[#e9e8ed] py-6 sm:py-8 md:py-12 lg:py-16 xl:py-16 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-8">
           <div
             className="max-w-7xl mx-auto container-custom"
             style={{ fontFamily: "NotoSerif-semibold" }}
           >
-            <StoryAboutUs />
+            <DiscoverProduct />
           </div>
         </section>
 
@@ -52,18 +51,18 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Discover Product Section */}
+        {/* Story About Us Section */}
         <section className="bg-[#e9e8ed] py-6 sm:py-8 md:py-12 lg:py-16 xl:py-16 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-8">
           <div
             className="max-w-7xl mx-auto container-custom"
             style={{ fontFamily: "NotoSerif-semibold" }}
           >
-            <DiscoverProduct />
+            <StoryAboutUs />
           </div>
         </section>
 
         {/* Quality Section */}
-        <section className="bg-[#e9e8ed] py-4 sm:py-6 md:py-12 lg:py-16 xl:py-16 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-8">
+        <section className="bg-[#e9e8ed] pb-4 sm:pb-6 md:pb-12 lg:pb-16 xl:py-16 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-8">
           <div
             className="max-w-7xl mx-auto container-custom"
             style={{ fontFamily: "NotoSerif-semibold" }}
@@ -78,9 +77,10 @@ export default function Home() {
             className="max-w-7xl mx-auto container-custom"
             style={{ fontFamily: "NotoSerif-semibold" }}
           >
-            <CertificationSection />
+            <OurCertification />
           </div>
         </section>
+
 
         {/* Contact Us Section */}
         <section className="bg-[#e9e8ed] py-6 sm:py-8 md:py-12 lg:py-16 xl:py-16 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-8">
@@ -88,7 +88,7 @@ export default function Home() {
             className="max-w-7xl mx-auto container-custom"
             style={{ fontFamily: "NotoSerif-semibold" }}
           >
-            <ContactUsComponent />
+            <ContactUs />
           </div>
         </section>
       </main>

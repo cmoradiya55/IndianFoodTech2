@@ -166,7 +166,7 @@ const Footer = () => {
 
       {/* Bottom Bar (Green) */}
       <div className="bg-primary-500">
-        <div className="container-custom py-3 px-4 sm:px-6 lg:px-8">
+        <div className="container-custom py-1 px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-center text-white text-center">
             <p className="text-white text-sm font-semibold">
               ©2025 Indian Foodtech. All Rights Reserved
@@ -178,13 +178,6 @@ const Footer = () => {
                 Terms of use
               </Link>
               <span className="opacity-75 hidden sm:inline">)</span>
-            </p>
-            <p
-              className="opacity-80 text-xs leading-relaxed"
-              style={{ fontFamily: "Poppins-regular" }}
-            >
-              <span className="sm:hidden">& </span>Developed and managed by{" "}
-              <span className="font-semibold">Infinius Tech</span>
             </p>
           </div>
         </div>

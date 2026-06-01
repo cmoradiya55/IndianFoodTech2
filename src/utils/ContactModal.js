@@ -9,6 +9,18 @@ export default function ContactModal({ firstOpenDelay = 20000, reopenDelay = 800
     const [openCount, setOpenCount] = useState(0);
     const [currentIndex, setCurrentIndex] = useState(0);
 
+    // Prevent background scrolling when Contact Modal is open
+    useEffect(() => {
+        if (showContact) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "unset";
+        }
+        return () => {
+            document.body.style.overflow = "unset";
+        };
+    }, [showContact]);
+
     useEffect(() => {
         // First open after "firstOpenDelay"
         const timer = setTimeout(() => {

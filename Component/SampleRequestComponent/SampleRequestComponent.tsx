@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import TextInput from "../FormComponents/TextInput";
 import MobileInput from "../FormComponents/MobileInput";
 import { AllProductsList } from "@/utils/ProductList";
-import { Mail } from "lucide-react";
+import { Beaker, Mail } from "lucide-react";
 
 const SampleRequestComponent = () => {
   const [productSelectionError, setProductSelectionError] = useState("");
@@ -182,20 +182,7 @@ const SampleRequestComponent = () => {
       {/* Header Section */}
       <div className="flex flex-col items-center text-center mb-8 md:mb-5">
         <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-4">
-          <svg
-            className="w-8 h-8 text-primary-600"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
-            />
-          </svg>
+          <Beaker className="w-8 h-8 text-primary-600" />
         </div>
         <h1
           className="text-2xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-2"
@@ -322,7 +309,7 @@ const SampleRequestComponent = () => {
             </p>
           )}
 
-          <div className="ml-2 md:ml-15 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+          <div className="ml-2 md:ml-15 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-5">
             {AllProductsList.map((category) => (
               <div
                 key={category.id}

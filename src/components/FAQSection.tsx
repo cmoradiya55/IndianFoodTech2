@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import Schema from "./Schema";
 import FAQData from "@/data/FAQData.json";
@@ -45,7 +45,6 @@ function buildFAQSchema(items: FAQItem[]) {
 
 export default function FAQSection({
   category,
-  title = "Frequently Asked Questions",
   showSchema = true,
   maxItems,
   className = "",
@@ -54,6 +53,26 @@ export default function FAQSection({
   const items = getFAQItems(category, maxItems);
 
   if (items.length === 0) return null;
+
+  // Stagger variants for accordion items reveal
+  const listVariants: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.08,
+      },
+    },
+  };
+
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 15 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 100, damping: 15 },
+    },
+  };
 
   return (
     <section
@@ -64,18 +83,26 @@ export default function FAQSection({
       )}
 
       <div className="max-w-4xl mx-auto container-custom">
-        {/* Accordion */}
-        <div className="space-y-3">
+        {/* Accordion List with staggered reveals */}
+        <motion.div
+          variants={listVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-40px" }}
+          className="space-y-3"
+        >
           {items.map((item, index) => {
             const isOpen = openIndex === index;
             return (
-              <div
+              <motion.div
                 key={index}
-                className="border border-gray-200 rounded-xl overflow-hidden"
+                variants={itemVariants}
+                whileHover={{ scale: 1.005, translateY: -1 }}
+                className="border border-gray-200 rounded-xl overflow-hidden shadow-sm"
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : index)}
-                  className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left bg-white hover:bg-gray-50 transition-colors"
+                  className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left bg-white hover:bg-gray-50 transition-colors cursor-pointer"
                   aria-expanded={isOpen}
                 >
                   <span
@@ -109,10 +136,10 @@ export default function FAQSection({
                     </motion.div>
                   )}
                 </AnimatePresence>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
