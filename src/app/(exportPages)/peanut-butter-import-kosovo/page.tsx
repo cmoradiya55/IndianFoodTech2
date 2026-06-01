@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import PeanutButterImportKosovo from "./PeanutButterImportKosovo";
 import MarketSchema from "@/components/MarketSchema";
 
@@ -21,13 +21,17 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Kosovo | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Kosovo. Premium bulk supply and customized private label solutions for Balkan distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-kosovo",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-kosovo",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_XK",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-kosovo",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-kosovo",
+    languages: {
+      "en-XK": "https://www.indianfoodtech.com/peanut-butter-import-kosovo",
+      "x-default": "https://www.indianfoodtech.com/",
+    },
   },
 };
 
@@ -38,7 +42,7 @@ export default function Page() {
         country="Kosovo"
         type="Importer"
         description="Reliable peanut butter importer in Kosovo. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Kosovo market."
-        url="https://www.indianfoodtech.in/peanut-butter-import-kosovo"
+        url="https://www.indianfoodtech.com/peanut-butter-import-kosovo"
       />
       <PeanutButterImportKosovo />
     </>

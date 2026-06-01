@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import PeanutButterImportVietnam from "./PeanutButterImportVietnam";
 import MarketSchema from "@/components/MarketSchema";
 
@@ -18,13 +18,17 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Vietnam | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Vietnam. Premium bulk supply and customized private label solutions for Southeast Asian distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-vietnam",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-vietnam",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "vi_VN",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-vietnam",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-vietnam",
+    languages: {
+      "vi-VN": "https://www.indianfoodtech.com/peanut-butter-import-vietnam",
+      "x-default": "https://www.indianfoodtech.com/",
+    },
   },
 };
 
@@ -35,7 +39,7 @@ export default function Page() {
         country="Vietnam"
         type="Importer"
         description="Reliable peanut butter importer in Vietnam. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Vietnamese market."
-        url="https://www.indianfoodtech.in/peanut-butter-import-vietnam"
+        url="https://www.indianfoodtech.com/peanut-butter-import-vietnam"
       />
       <PeanutButterImportVietnam />
     </>

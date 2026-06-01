@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import PeanutButterImportLuxembourg from "./PeanutButterImportLuxembourg";
 import MarketSchema from "@/components/MarketSchema";
 
@@ -21,13 +21,17 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Luxembourg | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Luxembourg. Premium bulk supply and customized private label solutions for BeNeLux distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-luxembourg",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-luxembourg",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_LU",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-luxembourg",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-luxembourg",
+    languages: {
+      "en-LU": "https://www.indianfoodtech.com/peanut-butter-import-luxembourg",
+      "x-default": "https://www.indianfoodtech.com/",
+    },
   },
 };
 
@@ -38,7 +42,7 @@ export default function Page() {
         country="Luxembourg"
         type="Importer"
         description="Reliable peanut butter importer in Luxembourg. Indian Foodtech offers premium bulk supply, private label, and industrial solutions."
-        url="https://www.indianfoodtech.in/peanut-butter-import-luxembourg"
+        url="https://www.indianfoodtech.com/peanut-butter-import-luxembourg"
       />
       <PeanutButterImportLuxembourg />
     </>

@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import PeanutButterImportSpain from "./PeanutButterImportSpain";
 import MarketSchema from "@/components/MarketSchema";
 
@@ -21,13 +21,17 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Spain | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Spain. Premium bulk supply and customized private label solutions for European distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-spain",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-spain",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_ES",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-spain",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-spain",
+    languages: {
+      "en-ES": "https://www.indianfoodtech.com/peanut-butter-import-spain",
+      "x-default": "https://www.indianfoodtech.com/",
+    },
   },
 };
 
@@ -38,7 +42,7 @@ export default function Page() {
         country="Spain"
         type="Importer"
         description="Reliable peanut butter importer in Spain. Indian Foodtech provides high-quality bulk supply and private label services for the Spanish market."
-        url="https://www.indianfoodtech.in/peanut-butter-import-spain"
+        url="https://www.indianfoodtech.com/peanut-butter-import-spain"
       />
       <PeanutButterImportSpain />
     </>

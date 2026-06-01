@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import AllIconComponent from "../../public/AllIconComponent";
+import { motion, Variants } from "framer-motion";
 
 const PROCESSES = [
   {
@@ -29,16 +31,40 @@ const PROCESSES = [
 ];
 
 const WorksProcessSection = () => {
+  // Framer Motion variants for timeline stagger reveals
+  const containerVariants: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.12,
+      },
+    },
+  };
+
+  const stepVariants: Variants = {
+    hidden: { opacity: 0, y: 25 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 100, damping: 15 },
+    },
+  };
+
   return (
     <div className="py-8 sm:py-6 md:py-8 lg:py-8">
-      {/* Section Header */}
+      {/* Section Header with spring slide-down */}
       <div className="flex justify-center mb-6 sm:mb-6 md:mb-8 lg:mb-10">
-        <div
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ type: "spring", stiffness: 120, damping: 15 }}
           className="bg-[#1D2C00] text-white mt-4 sm:mt-8 md:mt-10 lg:mt-10 px-8 sm:px-12 md:px-18 lg:px-12 py-2 sm:py-2 md:py-2 lg:py-3 rounded-full text-sm sm:text-xl md:text-lg lg:text-lg font-normal text-center shadow-md"
           style={{ fontFamily: "Poppins-regular" }}
         >
           How It Works – Our Process
-        </div>
+        </motion.div>
       </div>
 
       {/* Unified Responsive Timeline Layout */}
@@ -54,13 +80,20 @@ const WorksProcessSection = () => {
           <div className="absolute left-[17px] md:left-[27px] -bottom-6 md:-bottom-10 w-[16px] h-[16px] md:w-[24px] md:h-[24px] bg-primary-500 rounded-full"></div>
 
           {/* Process Steps */}
-          <div className="space-y-8 md:space-y-10 relative z-10 pt-2 pb-2">
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-65px" }}
+            className="space-y-8 md:space-y-10 relative z-10 pt-2 pb-2"
+          >
             {PROCESSES.map((process, index) => (
-              <div
+              <motion.div
                 key={index}
+                variants={stepVariants}
                 className="flex items-start gap-4 md:gap-[58px] relative"
               >
-                {/* Icon Circle */}
+                {/* Icon Circle - perfectly preserved style */}
                 <div className="bg-primary-500 h-[50px] w-[50px] md:h-[78px] md:w-[78px] mt-4 md:mt-10 flex shrink-0 items-center justify-center rounded-full shadow-lg relative z-20">
                   <div className="flex-shrink-0 bg-[#F6F6F6] w-[38px] h-[38px] md:w-[60px] md:h-[60px] rounded-full flex items-center justify-center shadow-inner md:shadow-2xl relative z-10">
                     <div className="w-[18px] h-[18px] md:w-[27px] md:h-[27px] text-black">
@@ -73,8 +106,11 @@ const WorksProcessSection = () => {
                   </div>
                 </div>
 
-                {/* Content Card */}
-                <div className="flex-1 bg-white rounded-2xl md:rounded-3xl shadow-xl shadow-[#d4dbc4] p-5 md:p-6 space-y-2">
+                {/* Content Card with micro-hover lift */}
+                <motion.div
+                  whileHover={{ scale: 1.01, x: 4 }}
+                  className="flex-1 bg-white rounded-2xl md:rounded-3xl shadow-xl shadow-[#d4dbc4] p-5 md:p-6 space-y-2 cursor-default transition-all duration-300 hover:shadow-2xl"
+                >
                   <h3
                     className="text-base md:text-lg font-medium text-black"
                     style={{ fontFamily: "NotoSerif-semibold" }}
@@ -87,10 +123,10 @@ const WorksProcessSection = () => {
                   >
                     {process.description}
                   </p>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

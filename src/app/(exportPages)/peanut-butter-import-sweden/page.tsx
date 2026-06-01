@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import PeanutButterImportSweden from "./PeanutButterImportSweden";
 import MarketSchema from "@/components/MarketSchema";
 
@@ -21,13 +21,17 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Sweden | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Sweden. Premium bulk supply and customized private label solutions for Nordic distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-sweden",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-sweden",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_SE",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-sweden",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-sweden",
+    languages: {
+      "en-SE": "https://www.indianfoodtech.com/peanut-butter-import-sweden",
+      "x-default": "https://www.indianfoodtech.com/",
+    },
   },
 };
 
@@ -38,7 +42,7 @@ export default function Page() {
         country="Sweden"
         type="Importer"
         description="High-quality peanut butter export from India to Sweden. Premium bulk supply and customized private label solutions for Scandinavian distributors."
-        url="https://www.indianfoodtech.in/peanut-butter-import-sweden"
+        url="https://www.indianfoodtech.com/peanut-butter-import-sweden"
       />
       <PeanutButterImportSweden />
     </>

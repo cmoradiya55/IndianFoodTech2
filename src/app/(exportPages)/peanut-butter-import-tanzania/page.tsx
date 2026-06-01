@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import PeanutButterImportTanzania from "./PeanutButterImportTanzania";
 import MarketSchema from "@/components/MarketSchema";
 
@@ -17,13 +17,17 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Tanzania | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Tanzania. Premium bulk supply and customized private label solutions for African distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-tanzania",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-tanzania",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_TZ",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-tanzania",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-tanzania",
+    languages: {
+      "en-TZ": "https://www.indianfoodtech.com/peanut-butter-import-tanzania",
+      "x-default": "https://www.indianfoodtech.com/",
+    },
   },
 };
 
@@ -34,7 +38,7 @@ export default function Page() {
         country="Tanzania"
         type="Importer"
         description="Reliable peanut butter importer in Tanzania. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Tanzanian market."
-        url="https://www.indianfoodtech.in/peanut-butter-import-tanzania"
+        url="https://www.indianfoodtech.com/peanut-butter-import-tanzania"
       />
       <PeanutButterImportTanzania />
     </>

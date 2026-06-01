@@ -1,10 +1,13 @@
+"use client";
 import React from "react";
 import AllIconComponent from "../../public/AllIconComponent";
+import { motion, Variants } from "framer-motion";
 
 interface StatItem {
   title: string;
   subtitle: string;
   icon: string | React.ReactNode;
+  color?: string;
 }
 
 const Statistics = () => {
@@ -15,7 +18,7 @@ const Statistics = () => {
       icon: "globalShippingIcon",
     },
     {
-      title: "40+ Wide Range",
+      title: "15+ Wide Range",
       subtitle: "Flavors for Everyone",
       icon: "packegeIcon",
     },
@@ -24,41 +27,97 @@ const Statistics = () => {
       subtitle: "Steady Daily Output",
       icon: "growArrowIcon",
     },
+    {
+      title: "Inhouse R&D",
+      subtitle: "New Product Development",
+      icon: "researchIcon",
+      color: "#ffffff",
+    },
   ];
 
+  // Framer Motion Animation Variants
+  const containerVariants: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.12,
+        delayChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 80,
+        damping: 15,
+      },
+    },
+  };
+
+  const lineVariants: Variants = {
+    hidden: { scaleY: 0 },
+    visible: {
+      scaleY: 1,
+      transition: {
+        duration: 0.8,
+        ease: [0.25, 1, 0.5, 1],
+      },
+    },
+  };
+
   return (
-    <div>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-100px" }}
+      variants={containerVariants}
+    >
       {/* Header Section */}
-      <div className="mb-4 sm:mb-4 md:mb-6 lg:mb-12 flex gap-3 sm:gap-4 lg:gap-5">
-        <div className="bg-primary-500 h-20 sm:h-28 md:h-35 lg:h-20 w-1 sm:w-1.5 lg:w-1.5 rounded-2xl flex-shrink-0"></div>
+      <motion.div 
+        className="mb-8 sm:mb-10 md:mb-12 flex gap-3 sm:gap-4 lg:gap-5"
+        variants={itemVariants}
+      >
+        <motion.div 
+          className="bg-primary-500 h-28 md:h-35 lg:h-20 w-1 sm:w-1.5 lg:w-1.5 rounded-2xl flex-shrink-0 origin-top"
+          variants={lineVariants}
+        ></motion.div>
         <div className="mt-1 sm:mt-1 lg:mt-2">
-          <h2 className="text-base sm:text-base md:text-lg lg:text-2xl font-bold text-gray-900 mb-2 leading-tight">
+          <h2 className="text-2xl font-bold text-gray-900 mb-2 leading-tight">
             Spreading Health and Happiness
           </h2>
           <p
-            className="text-sm sm:text-sm md:text-sm lg:text-base text-primary-500 font-medium leading-relaxed"
+            className="text-[15px] text-primary-500 font-medium leading-relaxed"
             style={{ fontFamily: "Poppins-medium" }}
           >
             Delivering trusted value
           </p>
         </div>
-      </div>
+      </motion.div>
 
       {/* Stats Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-7 px-4 sm:px-6 md:px-8 lg:px-12">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 lg:gap-7 px-4 sm:px-6 md:px-8 lg:px-12">
         {stats.map((stat, index) => (
-          <div
+          <motion.div
             key={index}
-            className="bg-white rounded-xl sm:rounded-2xl lg:rounded-2xl shadow-lg p-1 sm:p-2 md:p-3 lg:p-4 hover:shadow-2xl transition-shadow duration-300"
+            variants={itemVariants}
+            whileHover={{ y: -6, scale: 1.01, boxShadow: "0 20px 40px -15px rgba(0,0,0,0.1)" }}
+            className="bg-white rounded-xl sm:rounded-2xl lg:rounded-2xl shadow-lg p-3 lg:p-4 transition-all duration-300 group/card cursor-pointer border border-gray-50"
           >
-            <div className="flex items-start gap-3 sm:gap-4 lg:gap-5">
+            <div className="flex flex-col items-center gap-3 sm:gap-4 lg:gap-5">
               {/* Green Circle Icon */}
-              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-[45px] md:h-[45px] lg:w-[50px] lg:h-[50px] bg-gradient-to-b from-primary-400 to-primary-600 rounded-xl sm:rounded-2xl lg:rounded-2xl flex-shrink-0 shadow-md flex items-center justify-center">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-[45px] md:h-[45px] lg:w-[50px] lg:h-[50px] bg-gradient-to-b from-primary-400 to-primary-600 rounded-xl sm:rounded-2xl lg:rounded-2xl flex-shrink-0 shadow-md flex items-center justify-center group-hover/card:scale-105 group-hover/card:rotate-2 transition-transform duration-300">
                 {typeof stat.icon === "string" ? (
                   <AllIconComponent
                     icon={stat.icon}
                     width={24}
                     height={24}
+                    color={stat.color || ""}
                     className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-8 lg:h-8"
                   />
                 ) : (
@@ -67,7 +126,7 @@ const Statistics = () => {
               </div>
 
               {/* Text Content */}
-              <div className="flex-1">
+              <div className="flex-1 text-center">
                 <div className="text-sm sm:text-base md:text-base lg:text-lg font-bold text-gray-900 mb-1">
                   {stat.title}
                 </div>
@@ -76,10 +135,10 @@ const Statistics = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import PeanutButterSupplierSlovakia from "./PeanutButterSupplierSlovakia";
 import MarketSchema from "@/components/MarketSchema";
 
@@ -21,13 +21,17 @@ export const metadata: Metadata = {
     title: "Peanut Butter Supplier Slovakia | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Slovakia. Premium bulk supply and customized private label solutions for Slovak distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-supplier-slovakia",
+    url: "https://www.indianfoodtech.com/peanut-butter-supplier-slovakia",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_SK",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-supplier-slovakia",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-supplier-slovakia",
+    languages: {
+      "en-SK": "https://www.indianfoodtech.com/peanut-butter-supplier-slovakia",
+      "x-default": "https://www.indianfoodtech.com/",
+    },
   },
 };
 
@@ -38,7 +42,7 @@ export default function Page() {
         country="Slovakia"
         type="Supplier"
         description="Reliable peanut butter supplier in Slovakia. Indian Foodtech offers premium bulk supply and private label solutions for the Slovakian market."
-        url="https://www.indianfoodtech.in/peanut-butter-supplier-slovakia"
+        url="https://www.indianfoodtech.com/peanut-butter-supplier-slovakia"
       />
       <PeanutButterSupplierSlovakia />
     </>

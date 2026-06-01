@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import PeanutButterSupplierCroatia from "./PeanutButterSupplierCroatia";
 import MarketSchema from "@/components/MarketSchema";
 
@@ -21,13 +21,17 @@ export const metadata: Metadata = {
     title: "Peanut Butter Supplier Croatia | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Croatia. Premium bulk supply and customized private label solutions for Adriatic distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-supplier-croatia",
+    url: "https://www.indianfoodtech.com/peanut-butter-supplier-croatia",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_HR",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-supplier-croatia",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-supplier-croatia",
+    languages: {
+      "en-HR": "https://www.indianfoodtech.com/peanut-butter-supplier-croatia",
+      "x-default": "https://www.indianfoodtech.com/",
+    },
   },
 };
 
@@ -38,7 +42,7 @@ const PeanutButterSupplierCroatiaPage = () => {
         country="Croatia"
         type="Supplier"
         description="Reliable peanut butter supplier in Croatia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Croatian market."
-        url="https://www.indianfoodtech.in/peanut-butter-supplier-croatia"
+        url="https://www.indianfoodtech.com/peanut-butter-supplier-croatia"
       />
       <PeanutButterSupplierCroatia />
     </>

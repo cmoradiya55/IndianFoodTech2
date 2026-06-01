@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import PeanutButterImportSlovenia from "./PeanutButterImportSlovenia";
 import MarketSchema from "@/components/MarketSchema";
 
@@ -21,13 +21,17 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Slovenia | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Slovenia. Premium bulk supply and customized private label solutions for Central European distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-slovenia",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-slovenia",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_SI",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-slovenia",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-slovenia",
+    languages: {
+      "en-SI": "https://www.indianfoodtech.com/peanut-butter-import-slovenia",
+      "x-default": "https://www.indianfoodtech.com/",
+    },
   },
 };
 
@@ -38,7 +42,7 @@ export default function Page() {
         country="Slovenia"
         type="Importer"
         description="Premium peanut butter exported from India to Slovenia. Indian Foodtech offers bulk supply and private label solutions for distributors in Ljubljana."
-        url="https://www.indianfoodtech.in/peanut-butter-import-slovenia"
+        url="https://www.indianfoodtech.com/peanut-butter-import-slovenia"
       />
       <PeanutButterImportSlovenia />
     </>

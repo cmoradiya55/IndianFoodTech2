@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import PeanutButterImportGreece from "./PeanutButterImportGreece";
 import MarketSchema from "@/components/MarketSchema";
 
@@ -21,13 +21,17 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Greece | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Greece. Premium bulk supply and customized private label solutions for Mediterranean distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-greece",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-greece",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_GR",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-greece",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-greece",
+    languages: {
+      "en-GR": "https://www.indianfoodtech.com/peanut-butter-import-greece",
+      "x-default": "https://www.indianfoodtech.com/",
+    },
   },
 };
 
@@ -38,7 +42,7 @@ export default function Page() {
         country="Greece"
         type="Importer"
         description="Reliable peanut butter importer in Greece. Indian Foodtech provides high-quality bulk supply and private label services for the Greek market."
-        url="https://www.indianfoodtech.in/peanut-butter-import-greece"
+        url="https://www.indianfoodtech.com/peanut-butter-import-greece"
       />
       <PeanutButterImportGreece />
     </>

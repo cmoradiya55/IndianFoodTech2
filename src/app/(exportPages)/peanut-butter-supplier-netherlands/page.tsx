@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import PeanutButterSupplierNetherlands from "./PeanutButterSupplierNetherlands";
 import MarketSchema from "@/components/MarketSchema";
 
@@ -21,13 +21,17 @@ export const metadata: Metadata = {
     title: "Peanut Butter Supplier Netherlands | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to the Netherlands. Premium bulk supply and customized private label solutions for Dutch distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-supplier-netherlands",
+    url: "https://www.indianfoodtech.com/peanut-butter-supplier-netherlands",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_NL",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-supplier-netherlands",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-supplier-netherlands",
+    languages: {
+      "en-NL": "https://www.indianfoodtech.com/peanut-butter-supplier-netherlands",
+      "x-default": "https://www.indianfoodtech.com/",
+    },
   },
 };
 
@@ -38,7 +42,7 @@ export default function Page() {
         country="Netherlands"
         type="Supplier"
         description="Reliable peanut butter supplier in the Netherlands. Indian Foodtech offers premium bulk supply and private label solutions for the Dutch market."
-        url="https://www.indianfoodtech.in/peanut-butter-supplier-netherlands"
+        url="https://www.indianfoodtech.com/peanut-butter-supplier-netherlands"
       />
       <PeanutButterSupplierNetherlands />
     </>

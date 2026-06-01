@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import PeanutButterSupplierAndorra from "./PeanutButterSupplierAndorra";
 import MarketSchema from "@/components/MarketSchema";
 
@@ -21,13 +21,17 @@ export const metadata: Metadata = {
     title: "Peanut Butter Supplier Andorra | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Andorra. Premium bulk supply and customized private label solutions for European distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-supplier-andorra",
+    url: "https://www.indianfoodtech.com/peanut-butter-supplier-andorra",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_AD",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-supplier-andorra",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-supplier-andorra",
+    languages: {
+      "en-AD": "https://www.indianfoodtech.com/peanut-butter-supplier-andorra",
+      "x-default": "https://www.indianfoodtech.com/",
+    },
   },
 };
 
@@ -38,7 +42,7 @@ const PeanutButterSupplierAndorraPage = () => {
         country="Andorra"
         type="Supplier"
         description="Reliable peanut butter supplier in Andorra. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Andorran market."
-        url="https://www.indianfoodtech.in/peanut-butter-supplier-andorra"
+        url="https://www.indianfoodtech.com/peanut-butter-supplier-andorra"
       />
       <PeanutButterSupplierAndorra />
     </>

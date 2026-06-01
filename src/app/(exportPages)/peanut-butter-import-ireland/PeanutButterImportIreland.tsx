@@ -1,3 +1,4 @@
+"use client";
 import {
   ArrowRight,
   Castle,
@@ -14,19 +15,54 @@ import Link from "next/link";
 import Image from "next/image";
 import AllIconComponent from "../../../../public/AllIconComponent";
 import React from "react";
+import { motion, Variants } from "framer-motion";
 
 const PeanutButterImportIreland = () => {
+  // Staggered variants for list and grid containers
+  const containerVariants: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.08,
+      },
+    },
+  };
+
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 100, damping: 15 },
+    },
+  };
+
+  const slideLeftVariants: Variants = {
+    hidden: { opacity: 0, x: -20 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { type: "spring", stiffness: 100, damping: 15 },
+    },
+  };
+
   return (
     <div className="min-h-screen bg-white font-sans text-gray-900 overflow-x-hidden">
       {/* Hero Section - Compact & Elegant */}
-      <section className="relative bg-[#f8fcf0] py-10 sm:py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <section className="relative bg-[#e9e8ed] py-10 sm:py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-72 h-72 bg-primary-100 rounded-full blur-3xl opacity-30"></div>
         <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-72 h-72 bg-primary-50 rounded-full blur-3xl opacity-30"></div>
 
         <div className="max-w-7xl mx-auto relative">
           <div className="flex flex-col lg:flex-row gap-8 items-center text-center lg:text-left">
-            <div className="flex-1 space-y-5 animate-slide-up">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-100 text-primary-800 text-xs font-bold tracking-wide uppercase">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ type: "spring", stiffness: 100, damping: 16 }}
+              className="flex-1 space-y-5"
+            >
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-100 text-primary-800 text-xs font-semibold tracking-wide uppercase" style={{ fontFamily: "Poppins-medium" }}>
                 <Castle className="w-3.5 h-3.5" />
                 Ireland Supply Specialist
               </div>
@@ -37,82 +73,90 @@ const PeanutButterImportIreland = () => {
                   Allmhaireoir im cnónna talún in Éirinn
                 </span>
               </h1>
-              <p className="text-base sm:text-lg text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
+              <p className="text-base sm:text-base text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium" style={{ fontFamily: "Poppins-medium" }}>
                 Indian Foodtech is your manufacturing partner supplying premium
                 peanut butter directly from India to distributors and brands
                 across Ireland.
               </p>
               <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                <Link
-                  href="https://wa.me/919714899711"
-                  className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-full text-base font-bold shadow-md shadow-primary-200 transition-all transform hover:-translate-y-0.5"
-                >
-                  <MessageSquare className="w-4.5 h-4.5" />
-                  Get a Quote
-                </Link>
-                <Link
-                  href="/products"
-                  className="inline-flex items-center gap-2 bg-white border border-gray-200 hover:border-primary-500 text-gray-700 px-6 py-3 rounded-full text-base font-bold transition-all"
-                >
-                  Products
-                  <ArrowRight className="w-4 h-4 hover:translate-x-1 transition-all" />
-                </Link>
+                <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
+                  <Link
+                    href="https://wa.me/919714899711"
+                    className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-full text-sm font-semibold shadow-md shadow-primary-200 transition-all"
+                    style={{ fontFamily: "Poppins-medium" }}
+                  >
+                    <MessageSquare className="w-4.5 h-4.5" />
+                    Get a Quote
+                  </Link>
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
+                  <Link
+                    href="/products"
+                    className="inline-flex items-center gap-2 bg-white border border-gray-200 hover:border-primary-50 text-gray-700 px-6 py-3 rounded-full text-sm font-semibold transition-all"
+                    style={{ fontFamily: "Poppins-medium" }}
+                  >
+                    Products
+                    <ArrowRight className="w-4 h-4 hover:translate-x-1 transition-all" />
+                  </Link>
+                </motion.div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="flex-1 w-full max-w-md lg:max-w-none animate-fade-in">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.96 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ type: "spring", stiffness: 80, damping: 15, delay: 0.15 }}
+              className="flex-1 w-full max-w-md lg:max-w-none"
+            >
               <div className="relative group">
                 <div className="absolute inset-0 bg-primary-500 rounded-[2rem] rotate-2 group-hover:rotate-1 transition-transform opacity-10"></div>
                 <div className="relative bg-white rounded-[2rem] shadow-strong p-2 overflow-hidden border border-gray-100">
                   <div className="relative aspect-[16/10] bg-primary-50 rounded-[1.8rem] flex items-center justify-center overflow-hidden">
                     <Image
                       src="/country/import-ireland.webp"
-                      alt="Peanut butter exporter from India to Ireland bulk supply Dublin"
+                      alt="undefined"
                       fill
                       className="object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
                     />
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Internal SEO Section */}
-      <section className="py-6 px-4 sm:px-6 lg:px-8 bg-white text-center">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">
-            Peanut Butter Supplier in Dublin & Ireland
-          </h2>
-          <p className="text-sm text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            As a leading{" "}
-            <strong>peanut butter exporter from India to Ireland</strong>, we
-            specialize in delivering premium, EU-compliant nut butters. Whether
-            you are a distributor in
-            <strong> Dublin</strong>, <strong>Cork</strong>, or a retailer in
-            <strong> Galway</strong>, our bulk supply and private label
-            solutions are perfectly tailored for the Irish market.
-          </p>
-        </div>
-      </section>
-
       {/* Engagement Section */}
-      <section className="py-8 px-4 sm:px-6 lg:px-8 border-b border-gray-50">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 border-b border-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row gap-6 items-center">
-            <div className="flex-1">
-              <h2 className="text-lg sm:text-2xl font-black text-gray-900 mb-4 flex items-center gap-3">
+            <motion.div
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6 }}
+              className="flex-1"
+            >
+              <h2 className="text-lg sm:text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
                 <div className="w-1.5 h-10 bg-primary-500 rounded-full"></div>
-                Exporting Peanut Butter to Ireland
+                Peanut Butter Supplier in Dublin & Ireland
               </h2>
-              <p className="text-base text-gray-600 leading-relaxed mb-6 font-medium">
-                We have extensive experience in the European markets,
-                specifically understanding the detailed requirements of
-                importers in Ireland. Our operations are streamlined to ensure
-                your orders arrive fresh and on time.
+              <p className="text-sm sm:text-sm text-gray-600 leading-relaxed mb-6 font-medium" style={{ fontFamily: "Poppins-medium" }}>
+                As a leading{" "}
+                <strong>peanut butter exporter from India to Ireland</strong>, we
+                specialize in delivering premium, EU-compliant nut butters. Whether
+                you are a distributor in
+                <strong> Dublin</strong>, <strong>Cork</strong>, or a retailer in
+                <strong> Galway</strong>, our bulk supply and private label
+                solutions are perfectly tailored for the Irish market.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2">
+              <motion.div
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2"
+              >
                 {[
                   "Bulk peanut butter supply",
                   "Private label & OEM services",
@@ -120,53 +164,71 @@ const PeanutButterImportIreland = () => {
                   "Competitive export pricing",
                   "Fast and secure shipping",
                 ].map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-3">
+                  <motion.div
+                    variants={slideLeftVariants}
+                    key={idx}
+                    className="flex items-center gap-3"
+                    style={{ fontFamily: "Poppins-medium" }}
+                  >
                     <CheckCircle2 className="w-5 h-5 text-primary-500 flex-shrink-0" />
-                    <span className="text-gray-700 text-base font-semibold">
+                    <span className="text-gray-700 text-sm font-medium">
                       {item}
                     </span>
-                  </div>
+                  </motion.div>
                 ))}
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
 
-            <div className="md:w-1/3 bg-primary-600 rounded-3xl p-8 sm:px-10 sm:py-8 text-white shadow-xl">
-              <h3 className="text-xl font-black mb-4">Ireland Quick-Ship</h3>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ type: "spring", stiffness: 100, damping: 15 }}
+              whileHover={{ y: -4 }}
+              className="md:w-1/3 bg-primary-600 rounded-3xl p-8 sm:px-10 sm:py-8 text-white shadow-xl cursor-default"
+            >
+              <h3 className="text-xl font-semibold mb-4">Ireland Quick-Ship</h3>
               <ul className="space-y-3 font-medium opacity-90">
-                <li className="flex gap-3">
-                  <span className="font-black text-primary-200">01</span>
+                <li className="flex items-center gap-3 text-sm" style={{ fontFamily: "Poppins-medium" }}>
+                  <span className="font-medium text-base text-primary-200">01</span>
                   Direct Indian Port Access
                 </li>
-                <li className="flex gap-3">
-                  <span className="font-black text-primary-200">02</span>
+                <li className="flex items-center gap-3 text-sm" style={{ fontFamily: "Poppins-medium" }}>
+                  <span className="font-medium text-base text-primary-200">02</span>
                   Optimized Transit Paths
                 </li>
-                <li className="flex gap-3">
-                  <span className="font-black text-primary-200">03</span>
+                <li className="flex items-center gap-3 text-sm" style={{ fontFamily: "Poppins-medium" }}>
+                  <span className="font-medium text-base text-primary-200">03</span>
                   Complete Customs Support
                 </li>
               </ul>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
       {/* Product Specs */}
-      <section className="py-8 sm:py-8 bg-gray-50 px-4 sm:px-6 lg:px-8">
+      <section className="py-12 sm:py-16 bg-gray-50 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="mb-10 flex gap-4">
-            <div className="h-20 w-1.5 bg-primary-500 rounded-full"></div>
+            <div className="h-18 w-1.5 bg-primary-500 rounded-full"></div>
             <div className="space-y-2">
               <h2 className="text-xl sm:text-2xl font-black mt-2 text-gray-900">
                 Product Specifications
               </h2>
-              <p className="max-w-2xl text-gray-600 font-medium italic uppercase tracking-wider text-sm">
+              <p className="max-w-2xl text-gray-600 font-medium tracking-wider text-sm" style={{ fontFamily: "Poppins-medium" }}>
                 Engineered for Global Consumption
               </p>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-40px" }}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+          >
             {[
               {
                 label: "Variety",
@@ -193,11 +255,12 @@ const PeanutButterImportIreland = () => {
                 num: "04",
               },
             ].map((spec, idx) => (
-              <div
+              <motion.div
                 key={idx}
-                className="group relative bg-white p-8 rounded-[2.5rem] border border-gray-100 shadow-soft hover:shadow-2xl hover:shadow-primary-100/40 transition-all duration-500 transform hover:-translate-y-2 overflow-hidden"
+                variants={itemVariants}
+                whileHover={{ y: -6, boxShadow: "0 20px 40px -15px rgba(0,0,0,0.08)" }}
+                className="group relative bg-white p-8 rounded-[2.5rem] border border-gray-100 shadow-soft transition-all duration-500 overflow-hidden cursor-default"
               >
-                {/* Background Decor */}
                 <span className="absolute -top-4 -right-2 text-8xl font-black text-primary-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
                   {spec.num}
                 </span>
@@ -207,7 +270,7 @@ const PeanutButterImportIreland = () => {
                     {spec.icon}
                   </div>
                   <div className="space-y-2">
-                    <h4 className="text-primary-500/60 text-xs font-bold uppercase tracking-[0.25em]">
+                    <h4 className="text-primary-500/60 text-xs font-bold uppercase tracking-[0.15em]" style={{ fontFamily: "Poppins-medium" }}>
                       {spec.label}
                     </h4>
                     <div className="text-xl font-black text-gray-900 leading-tight tracking-tight">
@@ -215,17 +278,15 @@ const PeanutButterImportIreland = () => {
                     </div>
                   </div>
                 </div>
-
-                {/* Bottom Accent */}
                 <div className="absolute bottom-0 left-0 w-0 h-1.5 bg-primary-500 group-hover:w-full transition-all duration-700"></div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-8 sm:py-8 px-4 sm:px-6 lg:px-8">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 lg:items-center gap-4">
             <div className="space-y-6 order-2 lg:order-1">
@@ -233,14 +294,20 @@ const PeanutButterImportIreland = () => {
                 Why Choose Indian Foodtech?
               </h2>
 
-              <div className="space-y-5">
+              <motion.div
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="space-y-5"
+              >
                 {[
                   {
                     title: "Direct Manufacturer",
                     desc: "We eliminate middlemen, ensuring you get the freshest produce at factory prices.",
                   },
                   {
-                    title: "Export Quality Standrads",
+                    title: "Export Quality Standards",
                     desc: "Rigorous quality control adhering to international safety certifications.",
                   },
                   {
@@ -252,30 +319,40 @@ const PeanutButterImportIreland = () => {
                     desc: "Logistics experts to handle Ireland import documentation and shipping.",
                   },
                 ].map((item, idx) => (
-                  <div key={idx} className="flex gap-5 group">
-                    <div className="w-10 h-10 bg-primary-50 rounded-full flex-shrink-0 flex items-center justify-center text-primary-600 font-black group-hover:bg-primary-600 group-hover:text-white transition-colors border border-primary-100">
+                  <motion.div
+                    variants={itemVariants}
+                    key={idx}
+                    className="flex items-center gap-5 group"
+                  >
+                    <div className="w-8 h-8 bg-primary-50 rounded-full flex-shrink-0 flex items-center justify-center text-primary-600 font-black group-hover:bg-primary-600 group-hover:text-white transition-colors border border-primary-100">
                       {idx + 1}
                     </div>
                     <div>
                       <h4 className="text-xl font-bold text-gray-900">
                         {item.title}
                       </h4>
-                      <p className="text-gray-600 text-base font-medium leading-relaxed">
+                      <p className="text-gray-500 text-sm font-medium leading-relaxed" style={{ fontFamily: "Poppins-medium" }}>
                         {item.desc}
                       </p>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
-              </div>
+              </motion.div>
             </div>
 
-            <div className="order-1 lg:order-2">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, x: 20 }}
+              whileInView={{ opacity: 1, scale: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ type: "spring", stiffness: 90, damping: 15 }}
+              className="order-1 lg:order-2"
+            >
               <div className="bg-[#1D2C00] rounded-[2.5rem] p-12 text-white relative overflow-hidden">
                 <div className="relative z-10 space-y-4">
-                  <h3 className="text-lg font-black tracking-tight underline decoration-primary-500 underline-offset-8">
+                  <h3 className="text-xl font-black tracking-tight underline decoration-primary-500 underline-offset-8">
                     Direct Access
                   </h3>
-                  <p className="text-lg opacity-80 font-medium">
+                  <p className="text-base opacity-80 font-medium" style={{ fontFamily: "Poppins-medium" }}>
                     As a primary manufacturer, we control every step of the
                     process—from sourcing the finest peanuts to the final
                     airtight seal.
@@ -285,13 +362,12 @@ const PeanutButterImportIreland = () => {
                   <div className="h-px bg-white/20 flex-1"></div>
                   <AllIconComponent
                     icon="excellentQualityIcon"
-                    width={64}
-                    height={64}
+                    width={50}
+                    height={50}
                     className="text-primary-400"
                   />
                   <div className="h-px bg-white/20 flex-1"></div>
                 </div>
-                {/* Background Pattern */}
                 <div className="absolute top-0 right-0 w-full h-full opacity-5 pointer-events-none">
                   <svg
                     width="100%"
@@ -316,26 +392,32 @@ const PeanutButterImportIreland = () => {
                   </svg>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
       {/* Private Label Section */}
-      <section className="py-8 sm:py-8 bg-[#1D2C00] text-white px-4 sm:px-6 lg:px-8">
+      <section className="py-12 sm:py-16 bg-[#1D2C00] text-white px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row gap-4 items-center">
-            <div className="lg:w-1/2 space-y-6 text-center lg:text-left">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="lg:w-1/2 space-y-6 text-center lg:text-left"
+            >
               <h2 className="text-xl sm:text-2xl lg:text-3xl pr-34 font-black leading-[1.1]">
-                Private Label Peanut Butter{" "}
-                <span className="text-primary-400">in Ireland</span>
+                <div className="w-1.5 h-10 bg-primary-500 rounded-full"></div>
+                Exporting Peanut Butter to Ireland
               </h2>
-              <p className="text-base pr-24 opacity-80 font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Launch your own premium peanut butter brand in Ireland with our
-                end-to-end OEM services. We provide the quality; you provide the
-                vision.
+              <p className="text-sm pr-24 opacity-80 font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0" style={{ fontFamily: "Poppins-medium" }}>
+                We have extensive experience in the European markets,
+                specifically understanding the detailed requirements of
+                importers in Ireland. Our operations are streamlined to ensure
+                your orders arrive fresh and on time.
               </p>
-
               <div className="flex flex-wrap gap-4 justify-center lg:justify-start pt-2">
                 {[
                   "Custom Packaging",
@@ -345,16 +427,23 @@ const PeanutButterImportIreland = () => {
                 ].map((tag, idx) => (
                   <span
                     key={idx}
-                    className="bg-white/10 border border-white/20 px-6 py-2 rounded-full text-sm font-bold tracking-widest uppercase"
+                    className="bg-white/10 border border-white/20 px-6 py-2 rounded-full text-sm font-medium tracking-widest uppercase"
+                    style={{ fontFamily: "Poppins-medium" }}
                   >
                     {tag}
                   </span>
                 ))}
               </div>
-            </div>
+            </motion.div>
 
             <div className="lg:w-1/2 w-full">
-              <div className="grid grid-cols-2 gap-4">
+              <motion.div
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="grid grid-cols-2 gap-4"
+              >
                 {[
                   {
                     icon: <Star className="w-8 h-8" />,
@@ -373,179 +462,136 @@ const PeanutButterImportIreland = () => {
                     label: "Durable Jars",
                   },
                 ].map((card, idx) => (
-                  <div
+                  <motion.div
                     key={idx}
-                    className="bg-white/5 border border-white/10 p-10 rounded-3xl backdrop-blur-sm text-center hover:bg-white/10 transition-colors"
+                    variants={itemVariants}
+                    whileHover={{ scale: 1.04, backgroundColor: "rgba(255, 255, 255, 0.1)" }}
+                    className="bg-white/5 border border-white/10 p-10 rounded-3xl backdrop-blur-sm text-center hover:bg-white/10 transition-colors cursor-default"
                   >
                     <div className="text-primary-400 mb-4 inline-block">
                       {card.icon}
                     </div>
-                    <div className="text-sm font-black tracking-widest uppercase whitespace-nowrap">
+                    <div className="text-sm font-bold tracking-widest uppercase whitespace-nowrap" style={{ fontFamily: "Poppins-medium" }}>
                       {card.label}
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Export Process */}
-      <section className="py-8 sm:py-12 bg-white px-4 sm:px-6 lg:px-8">
+      <section className="py-12 sm:py-16 bg-white px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10 space-y-2">
-            <h2 className="text-xl sm:text-2xl font-black text-gray-900">
-              Shipping & Export Process
+            <h2 className="text-xl sm:text-3xl font-black text-gray-900">
+              Product Specifications
             </h2>
-            <p className="text-gray-600 font-medium">
-              Streamlined logistics for Ireland importers
+            <p className="text-gray-500 sm:text-base font-medium" style={{ fontFamily: "Poppins-medium" }}>
+              Engineered for Global Consumption
             </p>
           </div>
 
-          <div>
-            {/* Connection Line */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
-              {[
-                {
-                  title: "Documentation",
-                  desc: "Precise execution of Invoice, Packing List, and COO.",
-                  icon: <Star className="w-7 h-7" />,
-                },
-                {
-                  title: "Secure Packing",
-                  desc: "Export-grade packaging to withstand oceanic transit.",
-                  icon: <Package className="w-7 h-7" />,
-                },
-                {
-                  title: "Shipping Options",
-                  desc: "Selection of best sea and air routes for Ireland.",
-                  icon: <Truck className="w-7 h-7" />,
-                },
-                {
-                  title: "Local Support",
-                  desc: "Advisory support for the import clearance process.",
-                  icon: <ShieldCheck className="w-7 h-7" />,
-                },
-              ].map((step, idx) => (
-                <div key={idx} className="text-center space-y-6 group">
-                  <div className="w-16 h-16 bg-primary-500 text-white rounded-full mx-auto flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-primary-600 group-hover:text-white transition-transform">
-                    {step.icon}
-                  </div>
-                  <div className="space-y-2">
-                    <h4 className="text-xl font-black text-gray-900 uppercase tracking-tight">
-                      {step.title}
-                    </h4>
-                    <p className="text-gray-500 font-medium text-sm leading-relaxed px-4">
-                      {step.desc}
-                    </p>
-                  </div>
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10"
+          >
+            {[
+              {
+                title: "Documentation",
+                desc: "Precise execution of Invoice, Packing List, and COO.",
+                icon: <Star className="w-7 h-7" />,
+              },
+              {
+                title: "Secure Packing",
+                desc: "Export-grade packaging to withstand oceanic transit.",
+                icon: <Package className="w-7 h-7" />,
+              },
+              {
+                title: "Shipping Options",
+                desc: "Selection of best sea and air routes for Ireland.",
+                icon: <Truck className="w-7 h-7" />,
+              },
+              {
+                title: "Local Support",
+                desc: "Advisory support for the import clearance process.",
+                icon: <ShieldCheck className="w-7 h-7" />,
+              },
+            ].map((step, idx) => (
+              <motion.div
+                variants={itemVariants}
+                key={idx}
+                className="text-center space-y-6 group cursor-default"
+              >
+                <div className="w-16 h-16 bg-primary-500 text-white rounded-full mx-auto flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-primary-600 transition-transform">
+                  {step.icon}
                 </div>
-              ))}
-            </div>
-          </div>
+                <div className="space-y-2">
+                  <h4 className="text-xl font-black text-gray-900 tracking-tight">
+                    {step.title}
+                  </h4>
+                  <p className="text-gray-500 font-medium text-sm leading-relaxed px-4" style={{ fontFamily: "Poppins-medium" }}>
+                    {step.desc}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
       {/* Final CTA / WhatsApp */}
       <section className="py-10 bg-primary-50 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto bg-white rounded-[3rem] p-12 sm:p-16 text-center shadow-strong border border-primary-100 relative overflow-hidden mb-10">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.96 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ type: "spring", stiffness: 100, damping: 15 }}
+          className="max-w-4xl mx-auto bg-white rounded-[3rem] p-12 sm:p-16 text-center shadow-strong border border-primary-100 relative overflow-hidden mb-10"
+        >
           <div className="absolute -top-12 -right-12 w-48 h-48 bg-primary-100 rounded-full blur-3xl opacity-30"></div>
 
           <div className="relative z-10 flex flex-col items-center space-y-4">
             <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center text-white shadow-xl animate-bounce-gentle">
               <Phone className="w-8 h-8" />
             </div>
-            <h2 className="text-xl sm:text-2xl font-black text-gray-900 leading-tight px-12">
-              Ready to Import Peanut Butter in Ireland?
+            <h2 className="text-xl sm:text-2xl font-black text-gray-900 leading-tight">
+              Why Choose Indian Foodtech?
             </h2>
-            <p className="text-lg text-gray-600 font-medium leading-relaxed">
-              Launch your brand or replenish your stock today. Contact us for
-              real-time pricing and sample requests.
+            <p className="text-base max-w-2xl text-gray-500 font-medium" style={{ fontFamily: "Poppins-medium" }}>
+
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
-              <Link
-                href="https://wa.me/919714899711"
-                className="inline-flex items-center justify-center gap-3 bg-primary-500 hover:bg-primary-600 text-white px-10 py-2 rounded-full text-base font-semibold transition-all shadow-lg hover:-translate-y-1"
-              >
-                <div className="w-7 h-7 bg-white/20 rounded-full flex items-center justify-center">
-                  <MessageSquare className="w-3.5 h-3.5 fill-white" />
-                </div>
-                WhatsApp Now
-              </Link>
-              <Link
-                href="/contactUs"
-                className="inline-flex items-center justify-center gap-2 border-2 border-primary-500 hover:bg-primary-50 text-primary-700 px-10 py-2 rounded-full text-base font-semibold transition-all"
-              >
-                Send Inquiry
-              </Link>
-            </div>
-            <div className="pt-4 border-t border-gray-200 w-full flex flex-col items-center gap-2">
-              <span className="text-gray-400 font-bold uppercase tracking-[0.2em] text-xs">
-                Official Partner
-              </span>
-              <div className="text-lg font-black text-gray-900 tracking-tight">
-                INDIAN <span className="text-primary-600">FOODTECH</span>
-              </div>
+              <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
+                <Link
+                  href="https://wa.me/919714899711"
+                  className="inline-flex items-center justify-center gap-3 bg-primary-500 hover:bg-primary-600 text-white px-10 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg"
+                  style={{ fontFamily: "Poppins-medium" }}
+                >
+                  <div className="w-7 h-7 bg-white/20 rounded-full flex items-center justify-center">
+                    <MessageSquare className="w-3.5 h-3.5 fill-white" />
+                  </div>
+                  WhatsApp Now
+                </Link>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
+                <Link
+                  href="/contact-us"
+                  className="inline-flex items-center justify-center border-2 border-primary-500 hover:bg-primary-50 text-primary-600 text-sm px-10 py-3 rounded-full font-semibold transition-all"
+                  style={{ fontFamily: "Poppins-medium" }}
+                >
+                  Send Inquiry
+                </Link>
+              </motion.div>
             </div>
           </div>
-        </div>
-
-        {/* Hidden Geo Keywords for SEO */}
-        <div className="hidden pointer-events-none opacity-0 h-0 overflow-hidden">
-          peanut butter importer Ireland, im cnónna talún Éirinn, Dublin peanut
-          butter distributor, peanut butter supplier Celtic, nut butter exporter
-          India to Ireland, wholesale peanut butter Dublin, private label peanut
-          butter manufacturer Ireland.
-        </div>
-
-        {/* FAQ Schema Markup */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: [
-                {
-                  "@type": "Question",
-                  name: "Do you supply peanut butter to Ireland?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Yes, Indian Foodtech exports peanut butter in bulk and private label formats to Ireland, serving distributors in Dublin, Cork, and across the country.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "Can I order private label peanut butter in Dublin?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Yes, we providing full private label manufacturing services for the Irish market, including custom jar sizing and label design compliant with EU and local regulations.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "What are the shipping times to Ireland?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Shipping times vary but we ensure optimized transit routes from Indian ports to reach Ireland efficiently via major European ports like Rotterdam or Antwerp.",
-                  },
-                },
-              ],
-            }),
-          }}
-        />
+        </motion.div>
       </section>
-
-      {/* Sticky CTA (Mobile) - Could be a component but for now here */}
-      <div className="fixed bottom-6 right-6 z-50 sm:hidden">
-        <Link
-          href="https://wa.me/919714899711"
-          className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white shadow-2xl animate-pulse"
-        >
-          <MessageSquare className="w-8 h-8 fill-current" />
-        </Link>
-      </div>
     </div>
   );
 };

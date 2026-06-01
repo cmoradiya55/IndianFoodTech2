@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import PeanutButterImportIndonesia from "./PeanutButterImportIndonesia";
 import MarketSchema from "@/components/MarketSchema";
 
@@ -18,13 +18,17 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Indonesia | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Indonesia. Premium bulk supply and customized private label solutions for Southeast Asian distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-indonesia",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-indonesia",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "id_ID",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-indonesia",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-indonesia",
+    languages: {
+      "id-ID": "https://www.indianfoodtech.com/peanut-butter-import-indonesia",
+      "x-default": "https://www.indianfoodtech.com/",
+    },
   },
 };
 
@@ -35,7 +39,7 @@ export default function Page() {
         country="Indonesia"
         type="Importer"
         description="Reliable peanut butter importer in Indonesia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Indonesian market."
-        url="https://www.indianfoodtech.in/peanut-butter-import-indonesia"
+        url="https://www.indianfoodtech.com/peanut-butter-import-indonesia"
       />
       <PeanutButterImportIndonesia />
     </>

@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import PeanutButterImportFinland from "./PeanutButterImportFinland";
 import MarketSchema from "@/components/MarketSchema";
 
@@ -21,13 +21,17 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Finland | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Finland. Premium bulk supply and customized private label solutions for Nordic distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-finland",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-finland",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_FI",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-finland",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-finland",
+    languages: {
+      "en-FI": "https://www.indianfoodtech.com/peanut-butter-import-finland",
+      "x-default": "https://www.indianfoodtech.com/",
+    },
   },
 };
 
@@ -38,7 +42,7 @@ export default function Page() {
         country="Finland"
         type="Importer"
         description="Reliable peanut butter importer in Finland. Indian Foodtech provides high-quality bulk peanut butter and private labeling for the Finnish market."
-        url="https://www.indianfoodtech.in/peanut-butter-import-finland"
+        url="https://www.indianfoodtech.com/peanut-butter-import-finland"
       />
       <PeanutButterImportFinland />
     </>

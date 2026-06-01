@@ -15,10 +15,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.indianfoodtech.com";
+
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
-  ),
+  metadataBase: new URL(BASE_URL),
   title: "Indian Foodtech | Premium Peanut Butter Manufacturer",
   description:
     "Manufacturer of Peanut Butter, Tahini Paste & Peanut Butter Sachet offered by Indian Foodtech from Surat, Gujarat, India",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   creator: "Indian Foodtech",
   publisher: "Indian Foodtech",
   alternates: {
-    canonical: "https://www.indianfoodtech.in/",
+    canonical: "/",
   },
   icons: {
     icon: "/favicon.ico",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Indian Foodtech | Premium Peanut Butter Manufacturer",
     description:
       "Manufacturer of Peanut Butter, Tahini Paste & Peanut Butter Sachet offered by Indian Foodtech from Surat, Gujarat, India",
-    url: "https://www.indianfoodtech.in/",
+    url: "/",
     siteName: "Indian Foodtech",
     locale: "en_US",
     type: "website",
@@ -82,17 +82,61 @@ export default function RootLayout({
       >
         <div className="min-h-screen flex flex-col">
           <Schema
-            type="Organization"
+            type="LocalBusiness"
             data={{
+              "@type": ["Organization", "LocalBusiness"],
               name: "Indian Foodtech",
-              url: "https://www.indianfoodtech.in",
-              logo: "https://5.imimg.com/data5/SELLER/Logo/2022/3/II/GP/LH/149763079/2-120x120.png",
+              url: BASE_URL,
+              logo: `${BASE_URL}/logoBlack.webp`,
+              image: `${BASE_URL}/logoBlack.webp`,
+              description:
+                "B2B peanut butter manufacturer and exporter from Surat, Gujarat, India. 3,000 kg daily capacity, exporting to 47 countries with FSSAI, Halal, and ISO certifications.",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress:
+                  "Ground Floor, Plot No. 198, 197, 198, Om Industries Estate, Vibhag 1, Village: Mankana, Kamrej",
+                addressLocality: "Surat",
+                addressRegion: "Gujarat",
+                postalCode: "394190",
+                addressCountry: "IN",
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: 21.1702,
+                longitude: 72.8311,
+              },
+              telephone: "+91-97148-99711",
+              email: "office@indianfoodtech.in",
+              currenciesAccepted: "USD, EUR, INR",
+              paymentAccepted: "Bank Transfer, Letter of Credit",
+              areaServed: { "@type": "Place", name: "Worldwide" },
+              knowsAbout: [
+                "peanut butter manufacturing",
+                "nut butter export",
+                "private label food manufacturing",
+                "bulk peanut butter supply",
+                "halal food production",
+              ],
+              hasCredential: [
+                {
+                  "@type": "EducationalOccupationalCredential",
+                  credentialCategory: "FSSAI License",
+                },
+                {
+                  "@type": "EducationalOccupationalCredential",
+                  credentialCategory: "Halal Certification",
+                },
+                {
+                  "@type": "EducationalOccupationalCredential",
+                  credentialCategory: "ISO Certification",
+                },
+              ],
               contactPoint: {
                 "@type": "ContactPoint",
                 telephone: "+91-97148-99711",
                 contactType: "customer service",
                 email: "office@indianfoodtech.in",
-                areaServed: "IN",
+                areaServed: "Worldwide",
                 availableLanguage: ["en", "hi", "gu"],
               },
               sameAs: [
@@ -105,11 +149,11 @@ export default function RootLayout({
             type="WebSite"
             data={{
               name: "Indian Foodtech",
-              url: "https://www.indianfoodtech.in",
+              url: BASE_URL,
               potentialAction: {
                 "@type": "SearchAction",
                 target:
-                  "https://www.indianfoodtech.in/products?q={search_term_string}",
+                  `${BASE_URL}/products?q={search_term_string}`,
                 "query-input": "required name=search_term_string",
               },
             }}

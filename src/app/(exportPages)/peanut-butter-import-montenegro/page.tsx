@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import PeanutButterImportMontenegro from "./PeanutButterImportMontenegro";
 import MarketSchema from "@/components/MarketSchema";
 
@@ -21,13 +21,17 @@ export const metadata: Metadata = {
     title: "Peanut Butter Importer Montenegro | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Montenegro. Premium bulk supply and customized private label solutions for Balkan distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-import-montenegro",
+    url: "https://www.indianfoodtech.com/peanut-butter-import-montenegro",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_ME",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-import-montenegro",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-import-montenegro",
+    languages: {
+      "en-ME": "https://www.indianfoodtech.com/peanut-butter-import-montenegro",
+      "x-default": "https://www.indianfoodtech.com/",
+    },
   },
 };
 
@@ -38,7 +42,7 @@ export default function Page() {
         country="Montenegro"
         type="Importer"
         description="Reliable peanut butter importer in Montenegro. Indian Foodtech offers premium bulk supply, private label, and industrial solutions."
-        url="https://www.indianfoodtech.in/peanut-butter-import-montenegro"
+        url="https://www.indianfoodtech.com/peanut-butter-import-montenegro"
       />
       <PeanutButterImportMontenegro />
     </>

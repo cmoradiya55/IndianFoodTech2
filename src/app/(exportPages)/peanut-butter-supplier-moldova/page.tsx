@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import PeanutButterSupplierMoldova from "./PeanutButterSupplierMoldova";
 import MarketSchema from "@/components/MarketSchema";
 
@@ -21,13 +21,17 @@ export const metadata: Metadata = {
     title: "Peanut Butter Supplier Moldova | Indian Foodtech",
     description:
       "High-quality peanut butter exported from India to Moldova. Premium bulk supply and customized private label solutions for Moldovan distributors.",
-    url: "https://www.indianfoodtech.in/peanut-butter-supplier-moldova",
+    url: "https://www.indianfoodtech.com/peanut-butter-supplier-moldova",
     siteName: "Indian Foodtech",
     type: "website",
     locale: "en_MD",
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/peanut-butter-supplier-moldova",
+    canonical: "https://www.indianfoodtech.com/peanut-butter-supplier-moldova",
+    languages: {
+      "en-MD": "https://www.indianfoodtech.com/peanut-butter-supplier-moldova",
+      "x-default": "https://www.indianfoodtech.com/",
+    },
   },
 };
 
@@ -38,7 +42,7 @@ export default function Page() {
         country="Moldova"
         type="Supplier"
         description="Reliable peanut butter supplier in Moldova. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Moldovan market."
-        url="https://www.indianfoodtech.in/peanut-butter-supplier-moldova"
+        url="https://www.indianfoodtech.com/peanut-butter-supplier-moldova"
       />
       <PeanutButterSupplierMoldova />
     </>

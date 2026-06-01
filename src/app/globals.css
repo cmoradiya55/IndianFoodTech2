@@ -120,7 +120,7 @@
 
 html,
 body {
-  background: var(--background);
+  background: #e9e8ed;
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
   scrollbar-width: none;
@@ -1071,6 +1071,18 @@ body::-webkit-scrollbar {
 
   50% {
     transform: translateY(-5px);
+  }
+}
+
+@keyframes btnShine {
+
+  0%,
+  60% {
+    transform: translateX(-130%) skewX(-20deg);
+  }
+
+  100% {
+    transform: translateX(280%) skewX(-20deg);
   }
 }
 

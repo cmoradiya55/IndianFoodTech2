@@ -8,7 +8,7 @@
         "slug": "natural-creamy-peanut-butter",
         "name": "Natural Creamy Peanut Butter",
         "description": "100% natural peanut butter made with roasted peanuts. High protein, no sugar, no preservatives.",
-        "detailedDescription": "Our Natural Creamy Peanut Butter is made from just one simple ingredient—100% premium roasted peanuts. No added sugar, no preservatives, and absolutely no hydrogenated oils—just pure, wholesome goodness. With its luxuriously smooth texture, it spreads effortlessly on bread, blends seamlessly into smoothies, and makes a delicious dip for fruits or snacks. Every spoonful bursts with the rich, nutty flavor of real peanuts while fueling your body with plant-based protein, dietary fiber, and heart-healthy fats. A guilt-free treat, it’s perfect for athletes, fitness lovers, weight-watchers, and anyone seeking a clean and nutritious lifestyle. Whether you enjoy it on toast, in your favorite recipes, or straight from the jar, our Creamy Peanut Butter delivers natural indulgence in its purest form.",
+        "detailedDescription": "Our Natural Creamy Peanut Butter is made from 100% roasted peanuts—pure, simple, and packed with nutrition. With zero added sugar, no preservatives, and no hydrogenated oils, it’s a guilt-free spread that delivers authentic nutty flavor in every bite. Rich in protein, fiber, and healthy fats, this peanut butter is perfect for fitness enthusiasts, weight-watchers, and anyone who loves clean eating. Choose Creamy for a smooth, melt-in-mouth texture. Spread it on toast, blend into shakes, or enjoy it by the spoon—this jar is pure goodness.",
         "ingredients": "Premium Roasted Peanut only.",
         "nutrition": "Per 2 tbsp (32g): Calories 199kcal, Fat 14g, Carbs 5g, Protein 9g",
         "certifications": [
@@ -28,17 +28,15 @@
           "20 kg pail"
         ],
         "recommended": true,
-        "cardImage": "/productsImage/Natural Creamy Peanut Butter.webp",
-        "otherImages": [
-          "/productsImage/Classic Creamy Peanut Butter extended.jpeg"
-        ]
+        "cardImage": "/products/card/NaturalCreamy.webp",
+        "detailImage": "/products/detail/NaturalCreamy.webp"
       },
       {
         "id": "C1P2",
         "slug": "natural-crunchy-peanut-butter",
         "name": "Natural Crunchy Peanut Butter",
         "description": "100% natural peanut butter made with roasted peanuts. High protein, no sugar, no preservatives.",
-        "detailedDescription": "Our Natural Crunchy Peanut Butter is crafted from 100% premium roasted peanuts—nothing else. Free from added sugar, preservatives, and hydrogenated oils, it’s pure, wholesome, and irresistibly crunchy. Every spoonful combines the rich, nutty flavor of real peanuts with the perfect crunch, making it both satisfying and nutritious. Rich in plant-based protein, dietary fiber, and heart-healthy fats, it fuels your active lifestyle while keeping you fuller for longer. Whether you spread it on toast, blend it into smoothies, drizzle it over oats, or simply enjoy it straight from the jar, our Crunchy Peanut Butter delivers natural goodness with a satisfying crunch in every bite.",
+        "detailedDescription": "Our Natural Crunchy Peanut Butter is made from 100% roasted peanuts—pure, simple, and packed with nutrition. With zero added sugar, no preservatives, and no hydrogenated oils, it’s a guilt-free spread that delivers authentic nutty flavor in every bite. Rich in protein, fiber, and healthy fats, this peanut butter is perfect for fitness enthusiasts, weight-watchers, and anyone who loves clean eating. Choose Crunchy for that extra nutty bite. Spread it on toast, blend it into shakes, or enjoy it by the spoon—this jar is pure goodness.",
         "ingredients": "Premium Roasted Peanut only.",
         "nutrition": "Per 2 tbsp (32g): Calories 199kcal, Fat 14g, Carbs 5g, Protein 9g",
         "certifications": [
@@ -58,17 +56,15 @@
           "20 kg pail"
         ],
         "recommended": true,
-        "cardImage": "/productsImage/Natural Crunch Peanut Butter.webp",
-        "otherImages": [
-          "/productsImage/Natural Crunch Peanut Butter.webp"
-        ]
+        "cardImage": "/products/card/NaturalCrunchy.webp",
+        "detailImage": "/products/detail/NaturalCrunchy.webp"
       },
       {
         "id": "C1P3",
         "slug": "classic-creamy-peanut-butter",
         "name": "Classic Creamy Peanut Butter",
-        "description": "Rich, creamy & crunchy classic peanut butter. Perfect for sandwiches, smoothies & healthy snacking. Protein-packed goodness.",
-        "detailedDescription": "Experience the classic goodness of our Creamy Peanut Butter, crafted from 100% premium roasted peanuts—nothing more, nothing less. Free from added sugar, preservatives, and hydrogenated oils, it’s pure, natural, and packed with nutrition. With its velvety-smooth texture, it spreads effortlessly on bread, stirs seamlessly into smoothies, and adds rich flavor to baking or savory dishes. Every bite delivers authentic peanut taste while providing a powerful boost of plant-based protein, fiber, and healthy fats. Whether you’re fueling your fitness goals, managing your diet, or simply indulging in a wholesome treat, our Classic Creamy Peanut Butter is the perfect balance of nutrition and flavor.",
+        "description": "Rich, creamy classic peanut butter. Perfect for sandwiches, smoothies & healthy snacking. Protein-packed goodness.",
+        "detailedDescription": "Taste tradition with our Classic Peanut Butter, a timeless spread crafted from premium roasted peanuts. Rich in protein and bursting with nutty flavor, this peanut butter is a pantry must-have. Available in creamy for smooth perfection and crunchy for that extra bite, it’s ideal for sandwiches, smoothies, or just a spoonful straight from the jar. Packed with nutrition and taste, our Classic Peanut Butter gives you the best of both worlds—wholesome energy and delicious indulgence.",
         "ingredients": "Roasted Peanut, Sugar, Salt, Stabilizer (to  prevent oil sepration).",
         "nutrition": "Per 2 tbsp (32g): Calories 190kcal, Fat 13g, Carbs 9g, Protein 8g",
         "certifications": [
@@ -88,17 +84,15 @@
           "20 kg pail"
         ],
         "recommended": false,
-        "cardImage": "/productsImage/Classic Creamy Peanut Butter.webp",
-        "otherImages": [
-          "/productsImage/Classic Creamy Peanut Butter.webp"
-        ]
+        "cardImage": "/products/card/ClassicCreamy.webp",
+        "detailImage": "/products/detail/ClassicCreamy.webp"
       },
       {
         "id": "C1P4",
         "slug": "classic-crunchy-peanut-butter",
         "name": "Classic Crunchy Peanut Butter",
-        "description": "Rich, creamy & crunchy classic peanut butter. Perfect for sandwiches, smoothies & healthy snacking. Protein-packed goodness.",
-        "detailedDescription": "Savor the bold nutty goodness of our Crunchy Peanut Butter, crafted from 100% roasted peanuts for an irresistible taste and texture. Free from added sugar, preservatives, and hydrogenated oils, it’s a clean, nutrient-packed spread you can feel good about. Each spoonful combines rich peanut flavor with a satisfying crunch—perfect for sandwiches, smoothies, or snacking straight from the jar. Loaded with protein, fiber, and healthy fats, it’s a delicious way to power your day with natural energy.",
+        "description": "Rich, crunchy classic peanut butter. Perfect for sandwiches, smoothies & healthy snacking. Protein-packed goodness.",
+        "detailedDescription": "Taste tradition with our Classic Peanut Butter, a timeless spread crafted from premium roasted peanuts. Rich in protein and bursting with nutty flavor, this peanut butter is a pantry must-have. Available in creamy for smooth perfection and crunchy for that extra bite, it’s ideal for sandwiches, smoothies, or just a spoonful straight from the jar. Packed with nutrition and taste, our Classic Peanut Butter gives you the best of both worlds—wholesome energy and delicious indulgence.",
         "ingredients": "Roasted Peanut, Sugar, Salt, Stabilizer (to  prevent oil sepration).",
         "nutrition": "Per 2 tbsp (32g): Calories 190kcal, Fat 13g, Carbs 9g, Protein 8g",
         "certifications": [
@@ -118,19 +112,17 @@
           "20 kg pail"
         ],
         "recommended": false,
-        "cardImage": "/productsImage/Classic Crunch Peanut Butter.webp",
-        "otherImages": [
-          "/productsImage/Classic Crunch Peanut Butter.webp"
-        ]
+        "cardImage": "/products/card/ClassicCrunchy.webp",
+        "detailImage": "/products/detail/ClassicCrunchy.webp"
       },
       {
         "id": "C1P5",
         "slug": "chocolate-creamy-peanut-butter",
         "name": "Chocolate Creamy Peanut Butter",
-        "description": "Sweetened with organic honey for a delightful flavor",
-        "detailedDescription": "Experience indulgence redefined with our Chocolate Creamy Peanut Butter, a luscious blend of premium roasted peanuts and rich cocoa. Crafted without preservatives, hydrogenated oils, or refined sugar, this spread delivers guilt-free pleasure in every spoonful. Its smooth, melt-in-mouth texture makes it perfect for toast, pancakes, smoothies, baking, or simply enjoying straight from the jar. Packed with protein, fiber, and healthy fats, it combines nourishment with decadence—your ideal partner for both energy and indulgence.",
-        "ingredients": "Organic peanuts, organic honey, organic palm fruit oil, sea salt.",
-        "nutrition": "Per 2 tbsp (32g): Calories 210, Fat 16g, Carbs 10g, Protein 8g",
+        "description": "Delicious chocolate peanut butter with creamy option. A healthy, protein-rich spread for fitness & chocolate lovers.",
+        "detailedDescription": "Satisfy your cravings with our Chocolate Peanut Butter, a perfect fusion of rich cocoa and roasted peanuts. This guilt-free indulgence delivers the nutty goodness of peanut butter with the chocolaty sweetness you love. Available in Creamy for a silky-smooth treat, it’s perfect for spreading on bread, blending in smoothies, or enjoying as a dessert topping. Packed with protein, fiber, and healthy fats, it’s the ultimate snack for both fitness lovers and chocolate fans.",
+        "ingredients": "Premium Roasted Peanut, Dark Chocolate, Sugar, Salt, Stabilizer (to  prevent oil sepration)",
+        "nutrition": "Per 2 tbsp (32g): Calories 190kcal, Fat 13g, Carbs 12g, Protein 6g",
         "certifications": [
           "Non-GMO Project Verified",
           "Keto Certified",
@@ -148,19 +140,17 @@
           "20 kg pail"
         ],
         "recommended": false,
-        "cardImage": "/productsImage/Chocolate Creamy Peanut Butter.webp",
-        "otherImages": [
-          "/productsImage/Chocolate Creamy Peanut Butter.webp"
-        ]
+        "cardImage": "/products/card/ChocolateCreamy.webp",
+        "detailImage": "/products/detail/ChocolateCreamy.webp"
       },
       {
         "id": "C1P6",
         "slug": "chocolate-crunchy-peanut-butter",
         "name": "Chocolate Crunchy Peanut Butter",
-        "description": "Sweetened with organic honey for a delightful flavor",
-        "detailedDescription": "Elevate your snacking with our Chocolate Crunchy Peanut Butter, where the wholesome crunch of roasted peanuts meets the irresistible richness of cocoa. Made with clean ingredients and free from preservatives, hydrogenated oils, and refined sugar, this spread is a powerhouse of nutrition and taste. Each bite offers the perfect balance of creamy chocolate flavor and satisfying nutty crunch. Spread it on toast, add it to desserts, swirl it into shakes, or enjoy it by the spoon—it’s pure, crunchy bliss packed with protein, fiber, and healthy fats.",
-        "ingredients": "Organic peanuts, organic honey, organic palm fruit oil, sea salt.",
-        "nutrition": "Per 2 tbsp (32g): Calories 210, Fat 16g, Carbs 10g, Protein 8g",
+        "description": "Delicious chocolate peanut butter with crunchy option. A healthy, protein-rich spread for fitness & chocolate lovers.",
+        "detailedDescription": "Satisfy your cravings with our Chocolate Peanut Butter, a perfect fusion of rich cocoa and roasted peanuts. This guilt-free indulgence delivers the nutty goodness of peanut butter with the chocolaty sweetness you love. Available in Crunchy for an extra bite, it’s perfect for spreading on bread, blending in smoothies, or enjoying as a dessert topping. Packed with protein, fiber, and healthy fats, it’s the ultimate snack for both fitness lovers and chocolate fans.",
+        "ingredients": "Premium Roasted Peanut, Dark Chocolate, Sugar, Salt, Stabilizer (to  prevent oil sepration)",
+        "nutrition": "Per 2 tbsp (32g): Calories 190kcal, Fat 13g, Carbs 12g, Protein 6g",
         "certifications": [
           "Non-GMO Project Verified",
           "Keto Certified",
@@ -178,19 +168,17 @@
           "20 kg pail"
         ],
         "recommended": false,
-        "cardImage": "/productsImage/Chocolate Crunch Peanut Butter.webp",
-        "otherImages": [
-          "/productsImage/Chocolate Crunch Peanut Butter.webp"
-        ]
+        "cardImage": "/products/card/ChocolateCrunchy.webp",
+        "detailImage": "/products/detail/ChocolateCrunchy.webp"
       },
       {
         "id": "C1P7",
         "slug": "elaichi-creamy-peanut-butter",
         "name": "Elaichi (Cardamom) Creamy Peanut Butter",
-        "description": "Delicious chocolate peanut butter with creamy & crunchy options. A healthy, protein-rich spread for fitness & chocolate lovers.",
-        "detailedDescription": "Discover a delightful fusion of tradition and nutrition with our Elaichi Creamy Peanut Butter. Made from 100% premium roasted peanuts and infused with the aromatic warmth of natural cardamom, this spread brings a unique Indian twist to a global favorite. With its silky-smooth texture, it spreads effortlessly on toast, melts beautifully into warm rotis, or adds a flavorful boost to smoothies and desserts. Packed with protein, fiber, and healthy fats, it’s a wholesome way to enjoy indulgence with a touch of exotic flavor.",
-        "ingredients": "Roasted Peanut, Sugar, Salt, Stabilizer (to  prevent oil sepration).",
-        "nutrition": "Per 2 tbsp (32g): Calories 190kcal, Fat 13g, Carbs 9g, Protein 8g",
+        "description": "Unique elaichi cardamom peanut butter in creamy textures. Exotic flavor, rich protein & perfect for Indian taste buds.",
+        "detailedDescription": "Experience a royal twist with our Elaichi Creamy Peanut Butter, infused with the warm, aromatic flavor of cardamom. A unique blend of premium roasted peanuts and Indian spices, this spread is both nutritious and flavorful. Choose Creamy for smooth indulgence. High in protein, fiber, and healthy fats, this exotic spread is perfect with parathas, toast, desserts, or even festive sweets. A jar of traditional taste with modern health benefits.",
+        "ingredients": "Premium Roasted Peanut, Sugar, Elaichi (Cardamom), Salt, Stabilizer (to  prevent oil sepration)",
+        "nutrition": "Per 2 tbsp (32g): Calories 202kcal, Fat 15g, Carbs 7g, Protein 9g",
         "certifications": [
           "Non-GMO Project Verified",
           "Keto Certified",
@@ -208,19 +196,17 @@
           "20 kg pail"
         ],
         "recommended": false,
-        "cardImage": "/productsImage/Cardamom Creamy Peanut Butter.webp",
-        "otherImages": [
-          "/productsImage/Cardamom Creamy Peanut Butter.webp"
-        ]
+        "cardImage": "/products/card/ElaichiCreamy.webp",
+        "detailImage": "/products/detail/ElaichiCreamy.webp"
       },
       {
         "id": "C1P8",
         "slug": "elaichi-crunchy-peanut-butter",
         "name": "Elaichi (Cardamom) Crunchy Peanut Butter",
-        "description": "Delicious chocolate peanut butter with creamy & crunchy options. A healthy, protein-rich spread for fitness & chocolate lovers.",
-        "detailedDescription": "Savor the perfect balance of crunch and tradition with our Elaichi Crunchy Peanut Butter. Crafted from roasted peanuts blended with the fragrant essence of cardamom, this spread offers a nutty bite with a hint of spice that awakens your taste buds. Free from preservatives, hydrogenated oils, and refined sugar, it’s as clean as it is delicious. Ideal for spreading on toast, swirling into milkshakes, pairing with fruits, or simply enjoying by the spoon, this protein-rich, fiber-packed spread is both nutritious and uniquely flavorful.",
-        "ingredients": "Roasted Peanut, Sugar, Salt, Stabilizer (to  prevent oil sepration).",
-        "nutrition": "Per 2 tbsp (32g): Calories 190kcal, Fat 13g, Carbs 9g, Protein 8g",
+        "description": "Unique elaichi cardamom peanut butter in crunchy texture. Exotic flavor, rich protein & perfect for Indian taste buds.",
+        "detailedDescription": "Experience a royal twist with our Elaichi Crunchy Peanut Butter, infused with the warm, aromatic flavor of cardamom. A unique blend of premium roasted peanuts and Indian spices, this spread is both nutritious and flavorful. Choose Crunchy for a nutty, spiced bite. High in protein, fiber, and healthy fats, this exotic spread is perfect with parathas, toast, desserts, or even festive sweets. A jar of traditional taste with modern health benefits.",
+        "ingredients": "Premium Roasted Peanut, Sugar, Elaichi (Cardamom), Salt, Stabilizer (to  prevent oil sepration)",
+        "nutrition": "Per 2 tbsp (32g): Calories 202kcal, Fat 15g, Carbs 7g, Protein 9g",
         "certifications": [
           "Non-GMO Project Verified",
           "Keto Certified",
@@ -238,17 +224,15 @@
           "20 kg pail"
         ],
         "recommended": false,
-        "cardImage": "/productsImage/Cardamom Crunch Peanut Butter.webp",
-        "otherImages": [
-          "/productsImage/Cardamom Crunch Peanut Butter.webp"
-        ]
+        "cardImage": "/products/card/ElaichiCrunchy.webp",
+        "detailImage": "/products/detail/ElaichiCrunchy.webp"
       },
       {
         "id": "C1P12",
         "slug": "natural-creamy-peanut-butter-sugar-free",
         "name": "Natural Creamy Peanut Butter Sugar free",
         "description": "Enjoy guilt-free snacking with our zero sugar peanut butter. Made from 98% roasted peanuts & stabilizer for creamy perfection",
-        "detailedDescription": "Enjoy the authentic taste of peanuts in our Natural Creamy Peanut Butter – Sugar Free, crafted with 98% premium roasted peanuts and a touch of natural stabilizer for perfect smoothness. With absolutely no added sugar, no preservatives, and no hydrogenated oils, it’s a spread you can feel good about. Its silky, melt-in-mouth texture makes it ideal for spreading on toast, blending into protein shakes, or adding a nutty richness to desserts. Packed with protein, fiber, and healthy fats, this creamy delight is the perfect companion for clean eating, fitness, and everyday snacking.",
+        "detailedDescription": "Discover the pure goodness of our Zero Sugar Peanut Butter, made with 98% premium roasted peanuts and a small amount of stabilizer for smooth consistency. With absolutely no added sugar, no artificial preservatives, and no hydrogenated oils, this peanut butter is the perfect choice for health-conscious individuals and fitness lovers",
         "ingredients": "Roasted Peanuts 98%, Salt, Stabilizer (E471).",
         "nutrition": "Per 2 tbsp (32g): Calories 199kcal, Fat 14g, Carbs 5g, Protein 9g",
         "certifications": [
@@ -268,17 +252,15 @@
           "20 kg pail"
         ],
         "recommended": false,
-        "cardImage": "/productsImage/Sugar Free Creamy Peanut Butter.webp",
-        "otherImages": [
-          "/productsImage/Sugar Free Creamy Peanut Butter.webp"
-        ]
+        "cardImage": "/products/card/ZeroSugarCreamy.webp",
+        "detailImage": "/products/detail/ZeroSugarCreamy.webp"
       },
       {
         "id": "C1P13",
         "slug": "natural-crunchy-peanut-butter-sugar-free",
         "name": "Natural Crunchy Peanut Butter Sugar free",
         "description": "Enjoy guilt-free snacking with our zero sugar peanut butter. Made from 98% roasted peanuts & stabilizer for creamy perfection",
-        "detailedDescription": "Satisfy your craving for texture with our Natural Crunchy Peanut Butter – Sugar Free, made from 98% roasted peanuts and a hint of stabilizer to maintain consistency. With zero added sugar, no preservatives, and no hydrogenated oils, it’s a wholesome spread designed for health-conscious individuals. Each spoonful combines rich peanut flavor with a satisfying crunch, making it perfect for sandwiches, smoothies, or enjoying straight from the jar. High in protein, fiber, and healthy fats, this crunchy version fuels your day with natural energy and guilt-free goodness.",
+        "detailedDescription": "Discover the pure goodness of our Zero Sugar Crunchy Peanut Butter, made with 98% premium roasted peanuts and a small amount of stabilizer for smooth consistency. With absolutely no added sugar, no artificial preservatives, and no hydrogenated oils, this peanut butter is the perfect choice for health-conscious individuals and fitness lovers.",
         "ingredients": "Roasted Peanuts 98%, Salt, Stabilizer (E471).",
         "nutrition": "Per 2 tbsp (32g): Calories 199kcal, Fat 14g, Carbs 5g, Protein 9g",
         "certifications": [
@@ -298,10 +280,8 @@
           "20 kg pail"
         ],
         "recommended": false,
-        "cardImage": "/productsImage/Sugar Free Crunchy Peanut Butter.webp",
-        "otherImages": [
-          "/productsImage/Sugar Free Crunchy Peanut Butter.webp"
-        ]
+        "cardImage": "/products/card/ZeroSugarCrunchy.webp",
+        "detailImage": "/products/detail/ZeroSugarCrunchy.webp"
       }
     ]
   },
@@ -333,7 +313,8 @@
           "1 kg",
           "20 kg pail"
         ],
-        "cardImage": "/productsImage/Almond Butter.webp",
+        "cardImage": "/products/card/Almond.webp",
+        "detailImage": "/products/detail/AlmondButter.webp",
         "recommended": false
       },
       {
@@ -342,7 +323,7 @@
         "name": "Cashew Butter",
         "description": "Smooth, creamy cashew butter made from 100% roasted premium cashews. Naturally rich in protein, magnesium & healthy fats.",
         "detailedDescription": "Delight your taste buds with the rich, creamy flavor of our Cashew Butter, made from 100% premium roasted cashews. With no added sugar, no preservatives, and no artificial ingredients, it’s a pure nut butter that’s both indulgent and healthy. Naturally packed with protein, magnesium, iron, and healthy fats, cashew butter is a delicious source of energy that supports overall wellness. Enjoy it as a spread, in desserts, smoothies, or straight from the jar—its silky smooth texture makes every spoonful irresistible.",
-        "ingredients": "100% Roasted Premium Cashew\t\t\t\t\t\t\t\t\t\t\t",
+        "ingredients": "100% Roasted Premium Cashew",
         "nutrition": "Per 2 tbsp (32g): Calories 186kcal, Fat 15g, Carbs 9g, Protein 6g",
         "certifications": [
           "Non-GMO Project Verified",
@@ -360,7 +341,8 @@
           "1 kg",
           "20 kg pail"
         ],
-        "cardImage": "/productsImage/Cashew Butter.webp",
+        "cardImage": "/products/card/Cashew.webp",
+        "detailImage": "/products/detail/CashewButter.webp",
         "recommended": false
       },
       {
@@ -369,7 +351,7 @@
         "name": "Tahini (Sesame Paste)",
         "description": "Smooth, creamy tahini made from 100% roasted sesame seeds. Rich in protein, calcium & healthy fats—perfect for dips, dressings & spreads",
         "detailedDescription": "Our Tahini is crafted from 100% premium roasted sesame seeds, stone-ground into a smooth, creamy paste. With no added sugar, preservatives, or artificial ingredients, it’s a wholesome superfood packed with plant-based protein, calcium, iron, and healthy fats. Traditionally used in Middle Eastern and Mediterranean cuisine, tahini is the key ingredient in hummus, baba ganoush, dressings, sauces, and desserts. Its nutty, earthy flavor and silky texture make it a versatile kitchen essential for both home cooks and professional chefs. Whether you’re looking for a nutritious spread, a vegan-friendly ingredient, or a natural source of energy, our 100% sesame seed tahini is the perfect choice.",
-        "ingredients": "100% Roasted Premium Hulled Sesame ",
+        "ingredients": "100% Roasted Premium Hulled Sesame",
         "nutrition": "Per 2 tbsp (32g): Calories 191kcal, Fat 17g, Carbs 7g, Protein 5g",
         "certifications": [
           "Non-GMO Project Verified",
@@ -387,7 +369,8 @@
           "1 kg",
           "20 kg pail"
         ],
-        "cardImage": "/productsImage/Tahini.webp",
+        "cardImage": "/products/card/Tahini.webp",
+        "detailImage": "/products/detail/Tahini.webp",
         "recommended": false
       }
     ]
@@ -401,8 +384,12 @@
         "slug": "roasted-peanut-dices",
         "name": "Roasted Peanut Dices",
         "description": "Premium roasted peanut dices with uniform size & rich crunch. Ideal for bakery, confectionery, snacks & toppings",
-        "detailedDescription": "Our crunchy organic peanut butter features finely chopped peanut pieces for that satisfying texture everyone loves. Made from premium organic peanuts with just a touch of sea salt to enhance the natural peanut flavor.",
-        "ingredients": "Roasted Peanuts",
+        "detailedDescription": "Our Roasted Peanut Dices are carefully processed from the finest quality peanuts, roasted to perfection, and diced into uniform pieces. These crunchy, flavorful dices are perfect for bakeries, confectionery, ice creams, chocolates, snack/protein bars, and savory food products. Packed with protein, fiber, and essential nutrients, roasted peanut dices not only enhance flavor but also add texture and nutritional value to any recipe. Consistently roasted and precisely cut, they are widely trusted by food processors and manufacturers for high-quality production",
+        "ingredients": "100% Roasted Peanuts",
+        "sizes": [
+          "40 kg bag"
+        ],
+        "detailImage": "/productsImage/RoastedPeanutDices.webp",
         "cardImage": "/productsImage/RoastedPeanutDices.webp",
         "recommended": false
       }
@@ -436,7 +423,8 @@
           "1 kg",
           "20 kg pail"
         ],
-        "cardImage": "/productsImage/HazealnutChocolateSpread.webp",
+        "detailImage": "/products/detail/HazealnutChocolateSpread.webp",
+        "cardImage": "/products/card/HazealnutChocolateSpread.webp",
         "recommended": false
       }
     ]

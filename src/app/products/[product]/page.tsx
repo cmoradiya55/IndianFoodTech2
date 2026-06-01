@@ -2,6 +2,27 @@ import { Metadata } from "next";
 import React, { Suspense } from "react";
 import ProductDetails from "./ProductDetails";
 import { AllProductsList } from "@/utils/ProductList";
+import Schema from "@/components/Schema";
+import Breadcrumb from "@/components/Breadcrumb";
+
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.indianfoodtech.com";
+
+function parseNutrition(nutrition: string | undefined) {
+  if (!nutrition) return undefined;
+  const calories = nutrition.match(/Calories\s+(\d+)/)?.[1];
+  const fat = nutrition.match(/Fat\s+(\d+)g/)?.[1];
+  const carbs = nutrition.match(/Carbs\s+(\d+)g/)?.[1];
+  const protein = nutrition.match(/Protein\s+(\d+)g/)?.[1];
+  if (!calories) return undefined;
+  return {
+    "@type": "NutritionInformation",
+    servingSize: "32g",
+    calories: `${calories} kcal`,
+    ...(fat && { fatContent: `${fat} g` }),
+    ...(carbs && { carbohydrateContent: `${carbs} g` }),
+    ...(protein && { proteinContent: `${protein} g` }),
+  };
+}
 
 type Props = {
   params: Promise<{ product: string }>;
@@ -25,10 +46,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title = `${product.name} - Premium Peanut Butter & Spreads | Indian Food Tech`;
   const description = product.description || `Explore our high-quality ${product.name} at Indian Food Tech. Premium nut products, peanut butters, and spreads.`;
-  const canonicalUrl = `https://www.indianfoodtech.in/products/${productId}`;
-  const imageUrl = product.cardImage.startsWith("http")
-    ? product.cardImage
-    : `https://www.indianfoodtech.in${product.cardImage}`;
+  const canonicalUrl = `${BASE_URL}/products/${productId}`;
+  const imageUrl = product.detailImage.startsWith("http")
+    ? product.detailImage
+    : `${BASE_URL}${product.detailImage}`;
 
   const keywords = [
     product.name.toLowerCase(),
@@ -96,10 +117,95 @@ function ProductDetailsLoading() {
   );
 }
 
-export default function ProductDetailPage() {
+export default async function ProductDetailPage({
+  params,
+}: {
+  params: Promise<{ product: string }>;
+}) {
+  const { product: productId } = await params;
+  const product = AllProductsList.flatMap((cat) => cat.products).find(
+    (p) => p.slug === productId
+  );
+
+  const imageUrl = product
+    ? product.detailImage.startsWith("http")
+      ? product.detailImage
+      : `${BASE_URL}${product.detailImage}`
+    : undefined;
+
+  const nutrition = product ? parseNutrition(product.nutrition) : undefined;
+
   return (
-    <Suspense fallback={<ProductDetailsLoading />}>
-      <ProductDetails />
-    </Suspense>
+    <>
+      {product && (
+        <Breadcrumb
+          items={[
+            { name: "Home", url: `${BASE_URL}` },
+            { name: "Products", url: `${BASE_URL}/products` },
+            { name: product.name, url: `${BASE_URL}/products/${product.slug}` },
+          ]}
+        />
+      )}
+
+      {product && (
+        <Schema
+          type="Product"
+          data={{
+            name: product.name,
+            description: product.detailedDescription || product.description,
+            image: imageUrl,
+            brand: { "@type": "Brand", name: "Indian Foodtech" },
+            manufacturer: {
+              "@type": "Organization",
+              name: "Indian Foodtech",
+              url: BASE_URL,
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Surat",
+                addressRegion: "Gujarat",
+                addressCountry: "IN",
+              },
+            },
+            ...(nutrition && { nutrition }),
+            additionalProperty: [
+              ...(product.certifications ?? []).map((cert: string) => ({
+                "@type": "PropertyValue",
+                name: "Product Certification",
+                value: cert,
+              })),
+              {
+                "@type": "PropertyValue",
+                name: "Company Certification",
+                value: "FSSAI Licensed",
+              },
+              {
+                "@type": "PropertyValue",
+                name: "Company Certification",
+                value: "Halal Certified",
+              },
+              {
+                "@type": "PropertyValue",
+                name: "Company Certification",
+                value: "ISO Certified",
+              },
+            ],
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              availability: "https://schema.org/InStock",
+              offerCount: product.sizes?.length ?? 1,
+              seller: {
+                "@type": "Organization",
+                name: "Indian Foodtech",
+              },
+            },
+            url: `${BASE_URL}/products/${product.slug}`,
+          }}
+        />
+      )}
+      <Suspense fallback={<ProductDetailsLoading />}>
+        <ProductDetails />
+      </Suspense>
+    </>
   );
 }

@@ -1,19 +1,63 @@
 import type { MetadataRoute } from "next";
+import BlogList from "@/data/BlogList.json";
+import ProductList from "@/data/ProductList.json";
+
+const BASE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://www.indianfoodtech.com";
+
+function parseBlogDate(dateStr: string): Date {
+  // "20 March, 2026" → Date
+  const match = dateStr.match(/^(\d+)\s+(\w+),?\s+(\d{4})$/);
+  if (!match) return new Date("2026-03-01");
+  const [, day, month, year] = match;
+  const parsed = new Date(`${month} ${day}, ${year}`);
+  return isNaN(parsed.getTime()) ? new Date("2026-03-01") : parsed;
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-
   const corePages = [
-    { url: "", priority: 1, changeFrequency: "weekly" as const },
-    { url: "products", priority: 0.9, changeFrequency: "weekly" as const },
     {
-      url: "privateLabels",
+      url: "",
+      priority: 1.0,
+      changeFrequency: "weekly" as const,
+      date: "2026-03-01",
+    },
+    {
+      url: "products",
+      priority: 0.9,
+      changeFrequency: "weekly" as const,
+      date: "2026-03-01",
+    },
+    {
+      url: "private-labels",
       priority: 0.8,
       changeFrequency: "monthly" as const,
+      date: "2026-03-01",
     },
-    { url: "aboutUs", priority: 0.7, changeFrequency: "monthly" as const },
-    { url: "contactUs", priority: 0.7, changeFrequency: "monthly" as const },
-    { url: "blog", priority: 0.8, changeFrequency: "weekly" as const },
+    {
+      url: "about-us",
+      priority: 0.7,
+      changeFrequency: "monthly" as const,
+      date: "2026-03-01",
+    },
+    {
+      url: "contact-us",
+      priority: 0.7,
+      changeFrequency: "monthly" as const,
+      date: "2026-03-01",
+    },
+    {
+      url: "blog",
+      priority: 0.8,
+      changeFrequency: "weekly" as const,
+      date: "2026-03-01",
+    },
+    {
+      url: "international",
+      priority: 0.75,
+      changeFrequency: "monthly" as const,
+      date: "2026-03-01",
+    },
   ];
 
   const internationalPages = [
@@ -69,6 +113,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "peanut-butter-import-egypt",
     "peanut-butter-import-ethiopia",
     "peanut-butter-import-tanzania",
+    "peanut-butter-import-botswana",
     "peanut-butter-import-australia",
     "peanut-butter-import-new-zealand",
     "peanut-butter-supplier-albania",
@@ -95,18 +140,38 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "peanut-butter-supplier-slovakia",
   ];
 
+  const allProducts = (
+    ProductList as Array<{ products: Array<{ slug: string }> }>
+  ).flatMap((cat) => cat.products);
+
+  const blogEntries: MetadataRoute.Sitemap = BlogList.map((post) => ({
+    url: `${BASE_URL}/blog/${post.slug}`,
+    lastModified: parseBlogDate(post.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const productEntries: MetadataRoute.Sitemap = allProducts.map((product) => ({
+    url: `${BASE_URL}/products/${product.slug}`,
+    lastModified: new Date("2026-03-01"),
+    changeFrequency: "monthly" as const,
+    priority: 0.75,
+  }));
+
   return [
     ...corePages.map((page) => ({
-      url: `${baseUrl}/${page.url}`.replace(/\/$/, ""),
-      lastModified: new Date(),
+      url: page.url ? `${BASE_URL}/${page.url}` : BASE_URL,
+      lastModified: new Date(page.date),
       changeFrequency: page.changeFrequency,
       priority: page.priority,
     })),
     ...internationalPages.map((slug) => ({
-      url: `${baseUrl}/${slug}`,
-      lastModified: new Date(),
+      url: `${BASE_URL}/${slug}`,
+      lastModified: new Date("2026-03-01"),
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),
+    ...blogEntries,
+    ...productEntries,
   ];
 }

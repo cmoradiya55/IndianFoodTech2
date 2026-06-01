@@ -20,12 +20,12 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://www.indianfoodtech.in/blog",
+    canonical: "/blog",
   },
   openGraph: {
     title: "Blog | Indian Foodtech - Peanut Butter Insights & Recipes",
     description: "Explore health tips, industry insights, creative recipes, and everything about peanut butter from Indian Foodtech — your trusted peanut butter manufacturer.",
-    url: "https://www.indianfoodtech.in/blog",
+    url: "/blog",
     siteName: "Indian Foodtech",
     locale: "en_US",
     type: "website",
