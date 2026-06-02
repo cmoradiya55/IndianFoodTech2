@@ -98,7 +98,7 @@ const Header = () => {
       dropdown: [
         { name: "Peanut Butter", href: "/products?category=peanut-butter" },
         { name: "Nut Butters", href: "/products?category=nut-butters" },
-        { name: "Roasted Peanuts", href: "/products?category=roasted-peanuts" },
+        // { name: "Roasted Peanuts", href: "/products?category=roasted-peanuts" },
         { name: "Spread", href: "/products?category=spread" },
       ],
     },
