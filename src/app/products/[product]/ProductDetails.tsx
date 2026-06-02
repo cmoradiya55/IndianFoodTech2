@@ -17,6 +17,11 @@ const ProductDetails = () => {
   const productId = params.product as string;
   const [showShareMenu, setShowShareMenu] = React.useState(false);
   const [copied, setCopied] = React.useState(false);
+  const [shareUrl, setShareUrl] = React.useState("");
+
+  React.useEffect(() => {
+    setShareUrl(window.location.href);
+  }, []);
 
   const handleCopyLink = () => {
     if (typeof window !== "undefined") {
@@ -356,7 +361,7 @@ const ProductDetails = () => {
                         {copied ? <Check width={14} height={14} /> : <Copy width={14} height={14} />}
                       </button>
                       <Link
-                        href={`https://api.whatsapp.com/send?text=${encodeURIComponent(product.name + " - " + (typeof window !== "undefined" ? window.location.href : ""))}`}
+                        href={`https://api.whatsapp.com/send?text=${encodeURIComponent(product.name + " - " + shareUrl)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-1 rounded-full border border-gray-100 bg-gray-50 text-primary-500 hover:bg-primary-50 hover:border-primary-200 transition-all duration-200"
@@ -365,7 +370,7 @@ const ProductDetails = () => {
                         <AllIconComponent icon="whatsAppIcon" width={18} height={18} className="fill-current" />
                       </Link>
                       <Link
-                        href={`viber://forward?text=${encodeURIComponent(product.name + " - " + (typeof window !== "undefined" ? window.location.href : ""))}`}
+                        href={`viber://forward?text=${encodeURIComponent(product.name + " - " + shareUrl)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-violet-600 hover:bg-violet-50 hover:border-violet-200 transition-all duration-200"
@@ -374,7 +379,7 @@ const ProductDetails = () => {
                         <AllIconComponent icon="viberIcon" width={14} height={14} className="fill-current" />
                       </Link>
                       <Link
-                        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(typeof window !== "undefined" ? window.location.href : "")}`}
+                        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-primary-500 hover:bg-primary-50 hover:border-primary-200 transition-all duration-200"
@@ -383,7 +388,7 @@ const ProductDetails = () => {
                         <AllIconComponent icon="facebookIcon" width={14} height={14} className="fill-current" />
                       </Link>
                       <Link
-                        href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(product.name)}&url=${encodeURIComponent(typeof window !== "undefined" ? window.location.href : "")}`}
+                        href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(product.name)}&url=${encodeURIComponent(shareUrl)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-primary-500 hover:bg-primary-50 hover:border-primary-200 transition-all duration-200"
@@ -392,7 +397,7 @@ const ProductDetails = () => {
                         <AllIconComponent icon="xIcon" width={14} height={14} className="fill-current" />
                       </Link>
                       <Link
-                        href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(typeof window !== "undefined" ? window.location.href : "")}`}
+                        href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-primary-500 hover:bg-primary-50 hover:border-primary-200 transition-all duration-200"

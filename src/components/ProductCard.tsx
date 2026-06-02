@@ -43,7 +43,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       <div className="flex flex-col items-center w-full px-5 pt-3 pb-5 gap-1">
         {/* Name */}
         <h3
-          className={`text-base font-bold text-center leading-snug transition-colors duration-300 text-[#1D2C00] }`}
+          className={`text-base font-bold text-center leading-snug transition-colors duration-300 text-[#1D2C00]`}
           style={{ fontFamily: "NotoSerif-semibold" }}
         >
           {product.name}
