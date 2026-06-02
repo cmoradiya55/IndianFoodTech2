@@ -376,6 +376,26 @@
     ]
   },
   {
+    "id": 3,
+    "categoryName": "Roasted Peanuts",
+    "products": [
+      {
+        "id": "C3P2",
+        "slug": "roasted-peanut-dices",
+        "name": "Roasted Peanut Dices",
+        "description": "Premium roasted peanut dices with uniform size & rich crunch. Ideal for bakery, confectionery, snacks & toppings",
+        "detailedDescription": "Our Roasted Peanut Dices are carefully processed from the finest quality peanuts, roasted to perfection, and diced into uniform pieces. These crunchy, flavorful dices are perfect for bakeries, confectionery, ice creams, chocolates, snack/protein bars, and savory food products. Packed with protein, fiber, and essential nutrients, roasted peanut dices not only enhance flavor but also add texture and nutritional value to any recipe. Consistently roasted and precisely cut, they are widely trusted by food processors and manufacturers for high-quality production",
+        "ingredients": "100% Roasted Peanuts",
+        "sizes": [
+          "40 kg bag"
+        ],
+        "cardImage": "/products/card/RoastedPeanutDices.webp",
+        "detailImage": "/products/detail/RoastedPeanutDices.webp",
+        "recommended": false
+      }
+    ]
+  },
+  {
     "id": 4,
     "categoryName": "Spread",
     "products": [
