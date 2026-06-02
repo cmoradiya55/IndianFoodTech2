@@ -9,6 +9,7 @@ import AllIconComponent from "../../../../public/AllIconComponent";
 import { Copy, Share2, Check, X } from "lucide-react";
 import Link from "next/link";
 import { motion, Variants } from "framer-motion";
+import ProductCard from "@/components/ProductCard";
 
 const ProductDetails = () => {
   const params = useParams();
@@ -626,7 +627,7 @@ const ProductDetails = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 md:gap-6"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-3 sm:gap-x-5 md:gap-x-6 gap-y-28 pt-24 "
           >
             {(() => {
               // Find the current product's category
@@ -641,54 +642,12 @@ const ProductDetails = () => {
                 .filter((p) => p.slug !== productId)
                 .slice(0, 3); // Take only first 3 products
 
-              return similarProducts.map((product) => (
-                <motion.div
-                  key={product.id}
+              return similarProducts.map((recProduct) => (
+                <ProductCard
+                  key={recProduct.id}
+                  product={recProduct}
                   variants={productCardVariants}
-                  whileHover={{ scale: 1.02, translateY: -3 }}
-                  className="bg-white rounded-2xl sm:rounded-3xl shadow-md sm:shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border-[1px] border-[#D2D1D6] flex flex-row sm:flex-col items-center sm:items-stretch h-auto sm:h-full p-2 sm:p-0"
-                >
-                  {/* Product Image */}
-                  <div className="relative shrink-0 overflow-hidden w-28 h-28 min-[400px]:w-32 min-[400px]:h-32 sm:w-[200px] md:w-[216px] sm:h-[180px] md:h-[180px] rounded-xl sm:rounded-2xl ml-2 sm:mx-auto mt-0 sm:mt-6 md:mt-8 border border-gray-100 sm:border-none">
-                    <Image
-                        src={product.cardImage || product.detailImage}
-                      alt={product.name}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-
-                  {/* Product Content */}
-                  <div className="px-3 sm:px-6 md:px-8 py-3 sm:py-4 md:py-6 flex flex-col grow h-full justify-center sm:justify-start">
-                    {/* Header with fixed min-height for 2 lines */}
-                    <div className="min-h-0 sm:min-h-14 md:min-h-18 flex items-center justify-start sm:justify-center mb-1 sm:mb-1.5">
-                      <h3 className="text-sm min-[400px]:text-base sm:text-xl font-bold text-gray-900 text-left sm:text-center leading-tight line-clamp-2 sm:line-clamp-none">
-                        {product.name}
-                      </h3>
-                    </div>
-
-                    <p
-                      className="text-[#5D6079] text-[10px] min-[400px]:text-[11px] sm:text-sm leading-relaxed mb-2.5 sm:mb-5 md:mb-6 text-left sm:text-center grow line-clamp-2 sm:line-clamp-none"
-                      style={{ fontFamily: "Poppins-medium" }}
-                    >
-                      {product.description}
-                    </p>
-
-                    {/* Explore Button */}
-                    <motion.button
-                      whileHover={{ scale: 1.03 }}
-                      whileTap={{ scale: 0.97 }}
-                      onClick={() => router.push(`/products/${product.slug}`)}
-                      className="w-[120px] min-[400px]:w-[130px] sm:w-full bg-[#7FB432] hover:bg-[#6fa028] shadow-md sm:shadow-lg text-white font-normal py-1.5 sm:py-2 px-3 sm:px-6 rounded-full transition-colors duration-300 mt-auto text-[10px] min-[400px]:text-[11px] sm:text-base self-start sm:self-auto"
-                      style={{
-                        boxShadow: "0 4px 12px rgba(127, 180, 50, 0.3)",
-                        fontFamily: "Poppins-medium",
-                      }}
-                    >
-                      Explore Details
-                    </motion.button>
-                  </div>
-                </motion.div>
+                />
               ));
             })()}
           </motion.div>
