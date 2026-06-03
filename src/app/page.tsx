@@ -83,7 +83,7 @@ export default function Home() {
 
 
         {/* Contact Us Section */}
-        <section className="bg-[#e9e8ed] py-6 sm:py-8 md:py-12 lg:py-16 xl:py-16 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-8">
+        <section className="bg-[#e9e8ed] py-6 sm:py-8 md:py-12 lg:py-10 xl:py-10 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-8">
           <div
             className="max-w-7xl mx-auto container-custom"
             style={{ fontFamily: "NotoSerif-semibold" }}
