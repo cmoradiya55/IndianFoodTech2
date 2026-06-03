@@ -55,7 +55,7 @@ export default function FAQPage() {
 
   return (
     <>
-      <div className="bg-[#e9e8ed] py-6 sm:py-8 px-3 sm:px-4 md:px-8">
+      <div className="bg-[#e9e8ed] py-6 sm:py-8 px-3 sm:px-4 md:px-8 mt-12 sm:mt-6">
         <div
           className="max-w-7xl mx-auto container-custom"
           style={{ fontFamily: "NotoSerif-semibold" }}
@@ -74,19 +74,18 @@ export default function FAQPage() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.08, ease: "easeOut" }}
-            className="flex gap-2 overflow-x-auto pb-1 scrollbar-none"
+            className="flex flex-wrap gap-2 overflow-x-auto pb-1 scrollbar-none"
           >
             {tabs.map((tab) => {
               const isActive = activeTab === tab.id;
               return (
                 <motion.button
                   key={tab.id}
-                  whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                   onClick={() => setActiveTab(tab.id)}
                   className={`shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition-colors duration-200 border cursor-pointer ${isActive
-                      ? "bg-primary-500 text-white border-primary-500"
-                      : "bg-white text-gray-700 border-gray-200 hover:border-primary-500 hover:text-primary-500"
+                    ? "bg-primary-500 text-white border-primary-500"
+                    : "bg-white text-gray-700 border-gray-200 hover:border-primary-500 hover:text-primary-500"
                     }`}
                   style={{ fontFamily: "Poppins-medium" }}
                 >

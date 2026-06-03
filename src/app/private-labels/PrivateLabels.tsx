@@ -7,7 +7,7 @@ import PageHeader from "@/components/PageHeader";
 
 const PrivateLabels = () => {
   return (
-    <div className="bg-[#e9e8ed] py-6 sm:py-8 md:py-12 px-3 sm:px-4 md:px-8 lg:px-8">
+    <div className="bg-[#e9e8ed] py-6 sm:py-8 md:py-12 px-3 sm:px-4 md:px-8 lg:px-8 mt-12 sm:mt-6">
       <div
         className="mx-auto container-custom"
         style={{ fontFamily: "NotoSerif-semibold" }}
@@ -28,7 +28,7 @@ const PrivateLabels = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="bg-white p-4 sm:p-6 md:p-8 lg:p-0 lg:px-8 mt-6 lg:mb-10 rounded-2xl sm:rounded-3xl lg:rounded-3xl shadow-lg lg:shadow-xl flex flex-col lg:flex-row lg:items-center lg:h-[396px] lg:relative"
+            className="bg-white p-4 sm:p-6 md:p-8 lg:p-0 lg:px-8 sm:mt-14 mt-10 lg:mb-10 rounded-2xl sm:rounded-3xl lg:rounded-3xl shadow-lg lg:shadow-xl flex flex-col lg:flex-row lg:items-center lg:h-[396px] lg:relative"
           >
             {/* Image Section with clean spring scale entrance */}
             <motion.div

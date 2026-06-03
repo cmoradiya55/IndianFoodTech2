@@ -52,7 +52,7 @@ const Blog = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#e9e8ed] py-6 sm:py-8 md:py-12 px-3 sm:px-4 md:px-8 lg:px-8">
+    <div className="min-h-screen bg-[#e9e8ed] py-6 sm:py-8 md:py-12 px-3 sm:px-4 md:px-8 lg:px-8 mt-12 sm:mt-6">
       {/* HERO SECTION */}
       <section className="mx-auto container-custom">
         {/* Header with slide-up reveal */}
@@ -79,7 +79,7 @@ const Blog = () => {
           className="flex flex-col-reverse lg:flex-row lg:items-center justify-between gap-5 lg:gap-8 border-b border-gray-200/60 mt-4"
         >
           {/* Category Filters */}
-          <div className="flex flex-wrap lg:flex-nowrap gap-2 py-3 lg:overflow-x-auto scrollbar-hide items-center w-full lg:w-auto px-1">
+          <div className="flex flex-wrap lg:flex-nowrap gap-2 py-3 lg:overflow-x-auto scrollbar-hide items-center w-full lg:w-auto px-1 pb-8">
             {categories.map((category) => (
               <button
                 key={category}
@@ -101,7 +101,7 @@ const Blog = () => {
           </div>
 
           {/* Search Bar */}
-          <div className="w-full lg:w-auto relative group sm:max-w-md lg:min-w-[360px] shrink-0">
+          <div className="w-full lg:w-auto relative group sm:max-w-md lg:min-w-[360px] mt-0 sm:-mt-6">
             <div className="relative flex items-center bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-gray-100 p-1 sm:p-1.5 focus-within:border-primary-300 focus-within:ring-4 focus-within:ring-primary-500/10 transition-all duration-500">
               <div className="w-7 h-7 sm:w-8 sm:h-8 shrink-0 rounded-full bg-gray-50 flex items-center justify-center ml-1 group-focus-within:bg-primary-50 transition-colors duration-300">
                 <Search className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gray-400 group-focus-within:text-primary-500 transition-colors" />

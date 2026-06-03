@@ -270,7 +270,7 @@ export default function BlogDetails({
   };
 
   return (
-    <div className="min-h-screen bg-[#e9e8ed] font-sans text-gray-900 leading-normal">
+    <div className="min-h-screen bg-[#e9e8ed] font-sans text-gray-900 leading-normal mt-2 sm:mt-2">
       {/* Scroll Progress Bar */}
       <div className="fixed top-0 left-0 w-full h-1 z-[60] pointer-events-none">
         <div
