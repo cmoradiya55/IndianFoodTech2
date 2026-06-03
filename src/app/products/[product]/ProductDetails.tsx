@@ -40,9 +40,9 @@ const ProductDetails = () => {
     return (
       <div className="min-h-screen bg-[#e9e8ed] flex items-center justify-center">
         <div className="text-center px-4">
-          <h1 className="text-lg sm:text-xl font-bold text-gray-900 mb-4">
+          <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-4">
             Product not found
-          </h1>
+          </h2>
           <button
             onClick={() => router.push("/products")}
             className="bg-[#7FB432] text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-[#6fa028] transition-colors text-sm sm:text-base"
@@ -449,9 +449,9 @@ const ProductDetails = () => {
         >
           <div className="bg-primary-500 h-24 sm:h-22 md:h-28 w-1.5 rounded-2xl flex-shrink-0"></div>
           <div className="mt-1 sm:mt-2">
-            <h1 className="text-sm sm:text-base md:text-lg lg:text-2xl font-bold text-gray-900 mb-2">
+            <h2 className="text-sm sm:text-base md:text-lg lg:text-2xl font-bold text-gray-900 mb-2">
               Packaging Details
-            </h1>
+            </h2>
             <p
               className="text-xs sm:text-sm md:text-base text-primary-500 font-medium leading-relaxed"
               style={{ fontFamily: "Poppins-medium" }}
