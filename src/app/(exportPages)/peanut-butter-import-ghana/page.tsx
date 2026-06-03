@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import MarketSchema from "@/components/MarketSchema";
 import PeanutButterImportGhana from "./PeanutButterImportGhana";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Ghana | Bulk Supply Accra",
+  title: "Peanut Butter Importer Ghana | Bulk Export from India",
   description:
-    "Reliable peanut butter importer in Ghana. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Ghanaian market. Exporting top-tier nut butter to Accra.",
+    "Reliable peanut butter importer in Ghana. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Ghanaian market.",
   keywords: [
     "peanut butter importer ghana",
     "bulk peanut butter accra",

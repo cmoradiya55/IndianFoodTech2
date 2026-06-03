@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportSouthAfrica from "./PeanutButterImportSouthAfrica";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer South Africa | Bulk Supply Johannesburg",
+  title: "Peanut Butter Importer South Africa | Indian Foodtech",
   description:
-    "Reliable peanut butter importer in South Africa. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the South African market. Exporting top-tier nut butter to Johannesburg.",
+    "Reliable peanut butter importer in South Africa. Indian Foodtech offers premium bulk supply, private label, and custom solutions for the South African market.",
   keywords: [
     "peanut butter importer south africa",
     "bulk peanut butter south africa",
@@ -37,7 +37,7 @@ export default function Page() {
       <MarketSchema
         country="South Africa"
         type="Importer"
-        description="Reliable peanut butter importer in South Africa. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the South African market."
+        description="Reliable peanut butter importer in South Africa. Indian Foodtech offers premium bulk supply, private label, and custom solutions for the South African market."
         url="https://www.indianfoodtech.com/peanut-butter-import-south-africa"
       />
       <PeanutButterImportSouthAfrica />

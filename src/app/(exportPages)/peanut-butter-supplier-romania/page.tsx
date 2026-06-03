@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterSupplierRomania from "./PeanutButterSupplierRomania";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier Romania | Furnizor de Unt de Arahide",
   description:
-    "Reliable peanut butter supplier in Romania. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Romanian market. Exporting top-tier nut butter to Bucharest.",
+    "Reliable peanut butter supplier in Romania. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Romanian market.",
   keywords: [
     "peanut butter supplier romania",
     "bulk peanut butter romania",

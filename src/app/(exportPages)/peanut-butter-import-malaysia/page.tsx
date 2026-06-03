@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import MarketSchema from "@/components/MarketSchema";
 import PeanutButterImportMalaysia from "./PeanutButterImportMalaysia";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Malaysia | Pengimport Mentega Kacang",
   description:
-    "Reliable peanut butter importer in Malaysia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Malaysian market. Exporting top-tier nut butter to Kuala Lumpur.",
+    "Reliable peanut butter importer in Malaysia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Malaysian market.",
   keywords: [
     "peanut butter importer malaysia",
     "pengimport mentega kacang malaysia",

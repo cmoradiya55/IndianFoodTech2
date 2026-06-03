@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import MarketSchema from "@/components/MarketSchema";
 import PeanutButterImportArgentina from "./PeanutButterImportArgentina";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Argentina | Importador de Mantequilla de Maní",
+  title: "Peanut Butter Importer Argentina | Bulk Supply India",
   description:
-    "Reliable peanut butter importer in Argentina. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Argentine market. Exporting top-tier nut butter to Buenos Aires.",
+    "Reliable peanut butter importer in Argentina. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Argentine market.",
   keywords: [
     "peanut butter importer argentina",
     "importador mantequilla mani argentina",

@@ -1,16 +1,16 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterSupplierCroatia from "./PeanutButterSupplierCroatia";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Supplier Croatia | Dobavljač Kikiriki Maslaca",
+  title: "Peanut Butter Supplier Croatia | Dobavljac Kikiriki Maslaca",
   description:
-    "Reliable peanut butter supplier in Croatia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Croatian market. Exporting top-tier nut butter to Zagreb.",
+    "Reliable peanut butter supplier in Croatia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Croatian market.",
   keywords: [
     "peanut butter supplier croatia",
     "bulk peanut butter croatia",
     "private label peanut butter croatia",
-    "dobavljač kikiriki maslaca",
+    "dobavljac kikiriki maslaca",
     "veleprodaja kikiriki maslaca",
     "uvoz kikiriki maslaca hrvatska",
     "peanut butter supplier zagreb",

@@ -1,18 +1,18 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportUkraine from "./PeanutButterImportUkraine";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Ukraine | Імпортер арахісового масла в Україні",
+  title: "Peanut Butter Importer Ukraine | Bulk Export from India",
   description:
-    "Reliable peanut butter importer in Ukraine. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Ukrainian market. Exporting top-tier nut butter to Kyiv.",
+    "Reliable peanut butter importer in Ukraine. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Ukrainian market.",
   keywords: [
     "peanut butter importer ukraine",
     "bulk peanut butter ukraine",
     "private label peanut butter ukraine",
-    "імпортер арахісового масла",
-    "арахісове масло оптом",
-    "імпорт арахісового масла україна",
+    "???????? ??????????? ?????",
+    "????????? ????? ?????",
+    "?????? ??????????? ????? ???????",
     "peanut butter supplier kyiv",
     "ukrainian food importers",
     "eastern european peanut butter supply",

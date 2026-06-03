@@ -1,18 +1,18 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterSupplierRussia from "./PeanutButterSupplierRussia";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Supplier Russia | Поставщик Арахисового Масла",
+  title: "Peanut Butter Supplier Russia | ????????? ??????????? ?????",
   description:
-    "Reliable peanut butter supplier in Russia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Russian market. Exporting top-tier nut butter to Moscow.",
+    "Reliable peanut butter supplier in Russia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Russian market.",
   keywords: [
     "peanut butter supplier russia",
     "bulk peanut butter russia",
     "private label peanut butter russia",
-    "поставщик арахисового масла",
-    "арахисовое масло оптом",
-    "импорт арахисового масла россия",
+    "????????? ??????????? ?????",
+    "?????????? ????? ?????",
+    "?????? ??????????? ????? ??????",
     "peanut butter supplier moscow",
     "russian food importers",
     "eurasian peanut butter supply",

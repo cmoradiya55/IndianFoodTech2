@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportBrazil from "./PeanutButterImportBrazil";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Brazil | Importador de Manteiga de Amendoim",
+  title: "Peanut Butter Importer Brazil | Bulk Export from India",
   description:
-    "Reliable peanut butter importer in Brazil. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Brazilian market. Exporting top-tier nut butter to São Paulo.",
+    "Reliable peanut butter importer in Brazil. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Brazilian market.",
   keywords: [
     "peanut butter importer brazil",
     "importador manteiga amendoim brasil",

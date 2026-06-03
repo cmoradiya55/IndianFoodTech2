@@ -1,18 +1,18 @@
-Ôªøimport { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportCzechRepublic from "./PeanutButterImportCzechRepublic";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Czech Republic | Dodavatel Ara≈°√≠dov√©ho M√°sla",
+  title: "Peanut Butter Importer Czech Republic | Indian Foodtech",
   description:
-    "Reliable peanut butter importer in Czech Republic. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Czech market. Exporting top-tier nut butter to Prague.",
+    "Reliable peanut butter importer in Czech Republic. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Czech market.",
   keywords: [
     "peanut butter importer czech republic",
     "bulk peanut butter czech republic",
     "private label peanut butter czech republic",
-    "ara≈°√≠dov√© m√°slo dodavatel",
-    "ara≈°√≠dov√© m√°slo velkoobchod",
-    "dovoz ara≈°√≠dov√©ho m√°sla ƒçesk√° republika",
+    "araöÌdovÈ m·slo dodavatel",
+    "araöÌdovÈ m·slo velkoobchod",
+    "dovoz araöÌdovÈho m·sla cesk· republika",
     "peanut butter supplier prague",
     "czech food importers",
     "bohemian peanut butter supply",

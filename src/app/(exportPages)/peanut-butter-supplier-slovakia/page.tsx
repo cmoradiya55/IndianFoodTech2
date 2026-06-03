@@ -1,18 +1,18 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterSupplierSlovakia from "./PeanutButterSupplierSlovakia";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Supplier Slovakia | Dodávateľ Arašidového Masla",
+  title: "Peanut Butter Supplier Slovakia | Bulk Supply India",
   description:
-    "Reliable peanut butter supplier in Slovakia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Slovak market. Exporting top-tier nut butter to Bratislava.",
+    "Reliable peanut butter supplier in Slovakia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Slovak market.",
   keywords: [
     "peanut butter supplier slovakia",
     "bulk peanut butter slovakia",
     "private label peanut butter slovakia",
-    "dodávateľ arašidového masla",
-    "arašidové maslo veľkoobchod",
-    "import arašidového masla slovensko",
+    "dod�vatel ara�idov�ho masla",
+    "ara�idov� maslo velkoobchod",
+    "import ara�idov�ho masla slovensko",
     "peanut butter supplier bratislava",
     "slovak food importers",
     "european peanut butter supply",

@@ -1,26 +1,26 @@
-Ôªøimport { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterSupplierMonaco from "./PeanutButterSupplierMonaco";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Supplier Monaco | Fournisseur de Beurre de Cacahu√®te",
+  title: "Peanut Butter Supplier Monaco | Bulk Export from India",
   description:
-    "Reliable peanut butter supplier in Monaco. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Mon√©gasque market. Exporting top-tier nut butter to Monte Carlo.",
+    "Reliable peanut butter supplier in Monaco. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the MonÈgasque market.",
   keywords: [
     "peanut butter supplier monaco",
     "bulk peanut butter monaco",
     "private label peanut butter monaco",
-    "fournisseur de beurre de cacahu√®te",
-    "beurre de cacahu√®te en gros",
-    "importation de beurre de cacahu√®te monaco",
+    "fournisseur de beurre de cacahuËte",
+    "beurre de cacahuËte en gros",
+    "importation de beurre de cacahuËte monaco",
     "peanut butter supplier monte carlo",
-    "mon√©gasque food importers",
+    "monÈgasque food importers",
     "european peanut butter supply",
   ],
   openGraph: {
     title: "Peanut Butter Supplier Monaco | Indian Foodtech",
     description:
-      "High-quality peanut butter exported from India to Monaco. Premium bulk supply and customized private label solutions for Mon√©gasque distributors.",
+      "High-quality peanut butter exported from India to Monaco. Premium bulk supply and customized private label solutions for MonÈgasque distributors.",
     url: "https://www.indianfoodtech.com/peanut-butter-supplier-monaco",
     siteName: "Indian Foodtech",
     type: "website",

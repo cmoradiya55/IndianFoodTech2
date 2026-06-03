@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportIndonesia from "./PeanutButterImportIndonesia";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Indonesia | Importir Selai Kacang",
   description:
-    "Reliable peanut butter importer in Indonesia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Indonesian market. Exporting top-tier nut butter to Jakarta.",
+    "Reliable peanut butter importer in Indonesia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Indonesian market.",
   keywords: [
     "peanut butter importer indonesia",
     "importir selai kacang indonesia",

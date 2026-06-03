@@ -1,18 +1,18 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterSupplierPoland from "./PeanutButterSupplierPoland";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Supplier Poland | Dostawca Masła Orzechowego",
+  title: "Peanut Butter Supplier Poland | Dostawca Masla Orzechowego",
   description:
-    "Reliable peanut butter supplier in Poland. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Polish market. Exporting top-tier nut butter to Warsaw.",
+    "Reliable peanut butter supplier in Poland. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Polish market.",
   keywords: [
     "peanut butter supplier poland",
     "bulk peanut butter poland",
     "private label peanut butter poland",
-    "dostawca masła orzechowego",
-    "hurtownia masła orzechowego",
-    "import masła orzechowego polska",
+    "dostawca masla orzechowego",
+    "hurtownia masla orzechowego",
+    "import masla orzechowego polska",
     "peanut butter supplier warsaw",
     "polish food importers",
     "european peanut butter supply",

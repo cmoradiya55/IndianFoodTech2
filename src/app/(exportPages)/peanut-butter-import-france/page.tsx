@@ -1,18 +1,18 @@
-Ôªøimport { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportFrance from "./PeanutButterImportFrance";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer France | Importateur de Beurre de Cacahu√®te",
+  title: "Peanut Butter Importer France | Bulk Export from India",
   description:
-    "Reliable peanut butter importer in France. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the French market. Exporting top-tier nut butter to Paris.",
+    "Reliable peanut butter importer in France. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the French market.",
   keywords: [
     "peanut butter importer france",
     "bulk peanut butter france",
     "private label peanut butter france",
-    "importateur beurre de cacahu√®te",
-    "beurre de cacahu√®te en gros",
-    "importation de beurre de cacahu√®te france",
+    "importateur beurre de cacahuËte",
+    "beurre de cacahuËte en gros",
+    "importation de beurre de cacahuËte france",
     "peanut butter supplier paris",
     "french food importers",
     "european peanut butter supply",

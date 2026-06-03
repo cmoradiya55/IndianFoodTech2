@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportMontenegro from "./PeanutButterImportMontenegro";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Montenegro | Uvoznik kikiriki putera u Crnoj Gori",
+  title: "Peanut Butter Importer Montenegro | Indian Foodtech",
   description:
-    "Reliable peanut butter importer in Montenegro. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Montenegrin market. Exporting top-tier nut butter to Podgorica.",
+    "Reliable peanut butter importer in Montenegro. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Montenegrin market.",
   keywords: [
     "peanut butter importer montenegro",
     "bulk peanut butter montenegro",

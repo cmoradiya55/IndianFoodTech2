@@ -1,14 +1,14 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportKuwait from "./PeanutButterImportKuwait";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Kuwait | مستورد زبدة الفول السوداني",
+  title: "Peanut Butter Importer Kuwait | ?????? ???? ????? ????????",
   description:
-    "Reliable peanut butter importer in Kuwait. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Kuwaiti market. Exporting top-tier nut butter to Kuwait City.",
+    "Reliable peanut butter importer in Kuwait. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Kuwaiti market.",
   keywords: [
     "peanut butter importer kuwait",
-    "مستورد زبدة الفول السوداني الكويت",
+    "?????? ???? ????? ???????? ??????",
     "bulk peanut butter kuwait city",
     "private label peanut butter kuwait",
     "peanut butter supplier al jahra",

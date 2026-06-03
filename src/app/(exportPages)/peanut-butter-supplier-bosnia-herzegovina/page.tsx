@@ -1,16 +1,16 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterSupplierBosniaHerzegovina from "./PeanutButterSupplierBosniaHerzegovina";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Supplier Bosnia & Herzegovina | Dobavljač Kikiriki Putera",
+  title: "Peanut Butter Supplier Bosnia & Herzegovina | Bulk Supply",
   description:
-    "Reliable peanut butter supplier in Bosnia & Herzegovina. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Bosnian market. Exporting top-tier nut butter to Sarajevo.",
+    "Reliable peanut butter supplier in Bosnia and Herzegovina. Indian Foodtech offers premium bulk supply, private label, and solutions for the Bosnian market.",
   keywords: [
     "peanut butter supplier bosnia and herzegovina",
     "bulk peanut butter bosnia",
     "private label peanut butter bosnia",
-    "dobavljač kikiriki putera",
+    "dobavljac kikiriki putera",
     "veleprodaja kikiriki putera",
     "uvoz kikiriki putera bosna",
     "peanut butter supplier sarajevo",

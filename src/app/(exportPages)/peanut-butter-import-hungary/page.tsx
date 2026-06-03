@@ -1,18 +1,18 @@
-锘縤mport { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportHungary from "./PeanutButterImportHungary";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Hungary | Mogyor贸vaj import艖r Magyarorsz谩gon",
+  title: "Peanut Butter Importer Hungary | Bulk Export from India",
   description:
-    "Reliable peanut butter importer in Hungary. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Hungarian market. Exporting top-tier nut butter to Budapest.",
+    "Reliable peanut butter importer in Hungary. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Hungarian market.",
   keywords: [
     "peanut butter importer hungary",
     "bulk peanut butter hungary",
     "private label peanut butter hungary",
-    "mogyor贸vaj import艖r",
-    "mogyor贸vaj nagykereskedelem",
-    "mogyor贸vaj import magyarorsz谩gon",
+    "mogyor髒aj importor",
+    "mogyor髒aj nagykereskedelem",
+    "mogyor髒aj import magyarorsz醙on",
     "peanut butter supplier budapest",
     "hungarian food importers",
     "central european peanut butter supply",

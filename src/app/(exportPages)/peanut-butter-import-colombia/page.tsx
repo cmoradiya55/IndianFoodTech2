@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import MarketSchema from "@/components/MarketSchema";
 import PeanutButterImportColombia from "./PeanutButterImportColombia";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Colombia | Importador de Mantequilla de Maní",
+  title: "Peanut Butter Importer Colombia | Bulk Supply India",
   description:
-    "Reliable peanut butter importer in Colombia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Colombian market. Exporting top-tier nut butter to Bogotá.",
+    "Reliable peanut butter importer in Colombia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Colombian market.",
   keywords: [
     "peanut butter importer colombia",
     "importador mantequilla mani colombia",

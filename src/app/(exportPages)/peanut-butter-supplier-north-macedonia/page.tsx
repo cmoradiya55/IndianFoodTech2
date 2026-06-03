@@ -1,18 +1,18 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterSupplierNorthMacedonia from "./PeanutButterSupplierNorthMacedonia";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Supplier North Macedonia | Добавувач на Путер од Кикирики",
+  title: "Peanut Butter Supplier North Macedonia | Indian Foodtech",
   description:
-    "Reliable peanut butter supplier in North Macedonia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Macedonian market. Exporting top-tier nut butter to Skopje.",
+    "Reliable peanut butter supplier in North Macedonia. Indian Foodtech offers premium bulk supply, private label, and solutions for the Macedonian market.",
   keywords: [
     "peanut butter supplier north macedonia",
     "bulk peanut butter north macedonia",
     "private label peanut butter north macedonia",
-    "добавувач на путер од кикирики",
-    "путер од кикирики на големо",
-    "увоз на путер од кикирики македонија",
+    "????????? ?? ????? ?? ????????",
+    "????? ?? ???????? ?? ??????",
+    "???? ?? ????? ?? ???????? ??????????",
     "peanut butter supplier skopje",
     "macedonian food importers",
     "balkan peanut butter supply",
@@ -41,7 +41,7 @@ export default function Page() {
       <MarketSchema
         country="North Macedonia"
         type="Supplier"
-        description="Reliable peanut butter supplier in North Macedonia. Indian Foodtech offers premium bulk supply and private label solutions."
+        description="Reliable peanut butter supplier in North Macedonia. Indian Foodtech offers premium bulk supply, private label, and solutions for the Macedonian market. Indian Foodtech offers premium bulk supply and private label solutions."
         url="https://www.indianfoodtech.com/peanut-butter-supplier-north-macedonia"
       />
       <PeanutButterSupplierNorthMacedonia />

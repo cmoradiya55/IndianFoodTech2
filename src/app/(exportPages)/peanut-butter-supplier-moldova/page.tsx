@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterSupplierMoldova from "./PeanutButterSupplierMoldova";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier Moldova | Furnizor de Unt de Arahide",
   description:
-    "Reliable peanut butter supplier in Moldova. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Moldovan market. Exporting top-tier nut butter to Chisinau.",
+    "Reliable peanut butter supplier in Moldova. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Moldovan market.",
   keywords: [
     "peanut butter supplier moldova",
     "bulk peanut butter moldova",

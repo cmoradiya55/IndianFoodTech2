@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportChile from "./PeanutButterImportChile";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Chile | Importador de Mantequilla de Maní",
+  title: "Peanut Butter Importer Chile | Bulk Export from India",
   description:
-    "Reliable peanut butter importer in Chile. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Chilean market. Exporting top-tier nut butter to Santiago.",
+    "Reliable peanut butter importer in Chile. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Chilean market.",
   keywords: [
     "peanut butter importer chile",
     "importador mantequilla mani chile",

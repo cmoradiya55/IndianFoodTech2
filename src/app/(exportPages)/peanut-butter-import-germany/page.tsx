@@ -1,17 +1,17 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportGermany from "./PeanutButterImportGermany";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Germany | Erdnussbutter-Importeur",
   description:
-    "Reliable peanut butter importer in Germany. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the German market. Exporting top-tier nut butter to Berlin.",
+    "Reliable peanut butter importer in Germany. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the German market.",
   keywords: [
     "peanut butter importer germany",
     "bulk peanut butter germany",
     "private label peanut butter germany",
     "erdnussbutter importeur",
-    "erdnussbutter großhandel",
+    "erdnussbutter gro�handel",
     "erdnussbutter import deutschland",
     "peanut butter supplier berlin",
     "german food importers",

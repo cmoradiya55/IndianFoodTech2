@@ -1,18 +1,18 @@
-ï»¿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterSupplierAlbania from "./PeanutButterSupplierAlbania";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Supplier Albania | Furnizues i Gjalpit tÃ« Kikirikut",
+  title: "Peanut Butter Supplier Albania | Bulk Export from India",
   description:
-    "Reliable peanut butter supplier in Albania. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Albanian market. Exporting top-tier nut butter to Tirana.",
+    "Reliable peanut butter supplier in Albania. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Albanian market.",
   keywords: [
     "peanut butter supplier albania",
     "bulk peanut butter albania",
     "private label peanut butter albania",
     "furnizues gjalpi kikiriku",
-    "gjalpÃ« kikiriku me shumicÃ«",
-    "importimi i gjalpit tÃ« kikirikut shqipÃ«ri",
+    "gjalpë kikiriku me shumicë",
+    "importimi i gjalpit të kikirikut shqipëri",
     "peanut butter supplier tirana",
     "albanian food importers",
     "balkan peanut butter supply",
@@ -41,7 +41,7 @@ const PeanutButterSupplierAlbaniaPage = () => {
       <MarketSchema
         country="Albania"
         type="Supplier"
-        description="Reliable peanut butter supplier in Albania. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Albanian market. Exporting top-tier nut butter to Tirana."
+        description="Reliable peanut butter supplier in Albania. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Albanian market."
         url="https://www.indianfoodtech.com/peanut-butter-supplier-albania"
       />
       <PeanutButterSupplierAlbania />
