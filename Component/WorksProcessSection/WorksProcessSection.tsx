@@ -60,7 +60,7 @@ const WorksProcessSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ type: "spring", stiffness: 120, damping: 15 }}
-          className="bg-[#1D2C00] text-white mt-4 sm:mt-8 md:mt-10 lg:mt-10 px-8 sm:px-12 md:px-18 lg:px-12 py-2 sm:py-2 md:py-2 lg:py-3 rounded-full text-sm sm:text-xl md:text-lg lg:text-lg font-normal text-center shadow-md"
+          className="bg-[#1D2C00] text-white mt-4 sm:mt-8 md:mt-10 lg:mt-10 mb-6 sm:mb-6 md:mb-6 lg:mb-8 px-8 sm:px-12 md:px-18 lg:px-12 py-2 sm:py-2 md:py-2 lg:py-3 rounded-full text-sm sm:text-xl md:text-lg lg:text-lg font-normal text-center shadow-md"
           style={{ fontFamily: "Poppins-regular" }}
         >
           How It Works – Our Process

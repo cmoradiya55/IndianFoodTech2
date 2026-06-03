@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const ContactUs = () => {
   return (
-    <div className='bg-[#e9e8ed]'>
+    <div className='bg-[#e9e8ed] py-4 sm:py-12 mt-12 sm:mt-6'>
       <div className='min-h-screen'>
         {/* Smooth spring fade-up viewport entrance reveal */}
         <motion.div

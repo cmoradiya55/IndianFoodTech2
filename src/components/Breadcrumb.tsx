@@ -33,7 +33,7 @@ export default function Breadcrumb({
       {showVisual && (
         <nav
           aria-label="Breadcrumb"
-          className="px-4 sm:px-6 lg:px-8 pt-6 pb-2 bg-[#e9e8ed]"
+          className="px-4 sm:px-6 lg:px-8 pt-6 pb-2 bg-[#e9e8ed] mt-4 sm:mt-2"
         >
           <div className="max-w-7xl mx-auto container-custom">
             <ol

@@ -34,7 +34,7 @@ const AboutUs = () => {
 
   return (
     <>
-      <div className="bg-[#e9e8ed] py-6 sm:py-8 md:py-12 px-3 sm:px-4 md:px-8 lg:px-8">
+      <div className="bg-[#e9e8ed] py-6 sm:py-8 md:py-12 px-3 sm:px-4 md:px-8 lg:px-8 mt-12 sm:mt-6">
         <div
           className="max-w-7xl mx-auto container-custom"
           style={{ fontFamily: "NotoSerif-semibold" }}

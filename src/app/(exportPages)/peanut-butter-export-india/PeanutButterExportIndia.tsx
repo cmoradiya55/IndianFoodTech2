@@ -48,7 +48,7 @@ const PeanutButterExportIndia = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white font-sans text-gray-900 overflow-x-hidden">
+    <div className="min-h-screen bg-white font-sans text-gray-900 overflow-x-hidden mt-8 sm:mt-6">
       {/* Hero Section - Compact & Elegant */}
       <section className="relative bg-[#e9e8ed] py-10 sm:py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="max-w-7xl mx-auto relative">
@@ -221,7 +221,7 @@ const PeanutButterExportIndia = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-40px" }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+            className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4"
           >
             {[
               {
@@ -259,7 +259,7 @@ const PeanutButterExportIndia = () => {
                   {spec.num}
                 </span>
 
-                <div className="relative z-10">
+                <div className="relative z-10 flex flex-col items-center text-center sm:items-start sm:text-left">
                   <div className="w-14 h-14 bg-primary-50 rounded-2xl flex items-center justify-center text-primary-600 mb-4 group-hover:bg-primary-600 group-hover:text-white group-hover:rotate-6 transition-all duration-500 shadow-inner">
                     {spec.icon}
                   </div>
