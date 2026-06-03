@@ -130,34 +130,23 @@ const Header = () => {
 
   return (
     <>
-      {/* Frosted Glass Background Bar (fades in on scroll to blur content behind the floating header) */}
-      <div
-        className={`fixed top-0 left-0 right-0 w-full h-[72px] sm:h-[80px] md:h-[88px] transition-all duration-500 ease-in-out z-40 border-b pointer-events-none ${isScrolled
-          ? "bg-transparent border-gray-200/10 opacity-100"
-          : "bg-transparent border-transparent opacity-0"
-          }`}
-      />
-
       <header
         ref={headerRef}
-        className="sticky top-0 z-50 w-full bg-transparent h-[72px] sm:h-[80px] md:h-[88px] pointer-events-none flex items-center select-none"
+        className="sticky top-0 z-50 w-full bg-transparent h-[30px] sm:h-[55px] pointer-events-none flex items-center select-none"
       >
         {/* Floating Capsule Card (translates slightly on scroll for premium kinetic feedback) */}
         <motion.div
           animate={{
-            y: isScrolled ? 4 : 10,
+            y: isScrolled ? 6 : 14,
             width: isScrolled ? "calc(100% - 48px)" : "calc(100% - 38px)",
-            maxWidth: isScrolled ? "1152px" : "1280px", // max-w-6xl (1152px) vs max-w-7xl (1280px)
+            maxWidth: isScrolled ? "1200px" : "1280px", // max-w-6xl (1152px) vs max-w-7xl (1280px)
           }}
           transition={{
             type: "spring",
             stiffness: 140,
             damping: 20,
           }}
-          className={`pointer-events-auto mx-auto rounded-full flex items-center justify-between px-5 sm:px-8 h-[56px] sm:h-[62px] md:h-[68px] border backdrop-blur-lg transition-colors duration-300 w-[calc(100%-38px)] max-w-7xl translate-y-[10px] shadow-lg ${isScrolled
-            ? "bg-white/95 border-gray-200/15"
-            : "bg-white/90 border-white/30"
-            }`}
+          className={`pointer-events-auto mx-auto rounded-full flex items-center justify-between px-5 sm:px-8 h-[56px] sm:h-[62px] md:h-[68px] border backdrop-blur-lg transition-colors duration-300 w-[100%] sm:w-[calc(100%-38px)] max-w-7xl translate-y-[10px] shadow-lg bg-white/90 border-white/30 }`}
           style={{ fontFamily: "NotoSerif-semibold" }}
         >
           {/* Left: Logo */}
