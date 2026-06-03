@@ -200,7 +200,7 @@ const ContactUsComponent = () => {
       />
 
       {/* Contact Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 mb-6">
         {/* Left Card - Contact Information */}
         <motion.div
           variants={leftSlideVariants}
