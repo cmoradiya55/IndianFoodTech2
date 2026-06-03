@@ -3,12 +3,12 @@ import PeanutButterImportVietnam from "./PeanutButterImportVietnam";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Vietnam | Nh‡ nh?p kh?u bo d?u ph?ng",
+  title: "Peanut Butter Importer Vietnam | Nh√† nh?p kh?u bo d?u ph?ng",
   description:
     "Reliable peanut butter importer in Vietnam. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Vietnamese market.",
   keywords: [
     "peanut butter importer vietnam",
-    "nh‡ nh?p kh?u bo d?u ph?ng vietnam",
+    "nh√† nh?p kh?u bo d?u ph?ng vietnam",
     "bulk peanut butter ho chi minh city",
     "private label peanut butter vietnam",
     "peanut butter supplier hanoi",

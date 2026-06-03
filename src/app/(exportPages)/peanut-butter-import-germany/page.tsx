@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "bulk peanut butter germany",
     "private label peanut butter germany",
     "erdnussbutter importeur",
-    "erdnussbutter großhandel",
+    "erdnussbutter groÃŸhandel",
     "erdnussbutter import deutschland",
     "peanut butter supplier berlin",
     "german food importers",

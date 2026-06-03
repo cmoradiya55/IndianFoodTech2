@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "private label peanut butter belgium",
     "leverancier van pindakaas",
     "pindakaas groothandel",
-    "import van pindakaas belgië",
+    "import van pindakaas belgiÃ«",
     "peanut butter supplier brussels",
     "belgian food importers",
     "european peanut butter supply",

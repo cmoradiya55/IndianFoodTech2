@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "private label peanut butter spain",
     "importador mantequilla de cacahuete",
     "mantequilla de cacahuete al por mayor",
-    "importación mantequilla de cacahuete españa",
+    "importaciÃ³n mantequilla de cacahuete espaÃ±a",
     "peanut butter supplier madrid",
     "spanish food importers",
     "european peanut butter supply",

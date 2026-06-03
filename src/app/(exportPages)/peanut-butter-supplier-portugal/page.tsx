@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "private label peanut butter portugal",
     "fornecedor de manteiga de amendoim",
     "manteiga de amendoim por atacado",
-    "importação de manteiga de amendoim portugal",
+    "importaÃ§Ã£o de manteiga de amendoim portugal",
     "peanut butter supplier lisbon",
     "portuguese food importers",
     "european peanut butter supply",

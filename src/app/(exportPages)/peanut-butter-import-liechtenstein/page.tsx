@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "bulk peanut butter liechtenstein",
     "private label peanut butter liechtenstein",
     "erdnussbutter importeur",
-    "erdnussbutter großhandel",
+    "erdnussbutter groÃŸhandel",
     "erdnussbutter import liechtenstein",
     "peanut butter supplier vaduz",
     "liechtenstein food importers",
