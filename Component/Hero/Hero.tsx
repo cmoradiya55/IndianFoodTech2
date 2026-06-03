@@ -156,23 +156,8 @@ const Hero = () => {
   return (
     <div className="relative w-full h-full flex flex-col justify-between max-w-7xl mx-auto py-14 sm:py-8 lg:py-10 px-4 sm:px-6">
 
-      {/* Background Cinematic Spatial Elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#fafafc] via-white to-primary-50/10 -z-30 rounded-[48px]" />
-
-      {/* Slow rotating fine-line decorative rings for ultra-modern aesthetic */}
-      {/* <motion.div
-        variants={ringVariants}
-        animate="animate1"
-        className="absolute top-[-10%] right-[-5%] w-96 h-96 border border-slate-500 rounded-full z-10 pointer-events-none"
-      />
-      <motion.div
-        variants={ringVariants}
-        animate="animate2"
-        className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] border border-slate-500 rounded-full z-10 pointer-events-none"
-      /> */}
-
       {/* Main Spacious Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-10 lg:gap-16 xl:gap-24 my-auto min-h-[380px] sm:min-h-[440px]">
+      <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-10 lg:gap-16 xl:gap-24 my-auto min-h-[380px] sm:min-h-[440px] py-4 2xl:py-40">
 
         {/* Left Side: Editorial Typography Column */}
         <div className="md:col-span-5 z-20 flex flex-col justify-center text-left">
@@ -262,80 +247,6 @@ const Hero = () => {
           </AnimatePresence>
         </div>
       </div>
-
-      {/* Sleek Bottom Typographic Line-Dock Indicators (Desktop & Tablet md+) */}
-      <div className="hidden md:flex justify-between items-center w-full border-t border-slate-200/60 pt-6 mt-12 z-20">
-        <div className="flex gap-10 lg:gap-14">
-          {slides.map((s, idx) => (
-            <button
-              key={s.id}
-              onClick={() => goTo(idx)}
-              className="flex flex-col text-left group relative pb-3 cursor-pointer"
-            >
-              <div className="flex items-center gap-3">
-                <span className={`text-[10px] font-black tracking-wider transition-colors duration-300 ${idx === current ? "text-primary-500" : "text-slate-400"}`}>
-                  {s.number}
-                </span>
-                <span className={`text-xs font-black tracking-widest uppercase transition-colors duration-300 ${idx === current ? "text-slate-900" : "text-slate-400 group-hover:text-slate-600"}`}>
-                  {s.tag}
-                </span>
-              </div>
-
-              {/* Clean fine underline that scales width */}
-              {idx === current && (
-                <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-slate-100 rounded-full overflow-hidden">
-                  <motion.div
-                    className="h-full bg-primary-500 origin-left"
-                    initial={{ scaleX: 0 }}
-                    animate={{ scaleX: 1 }}
-                    transition={{ duration: AUTOPLAY_MS / 1000, ease: "linear" }}
-                    key={`progress-line-${animKey}`}
-                  />
-                </div>
-              )}
-            </button>
-          ))}
-        </div>
-
-        {/* Minimal Circle Arrow Nav */}
-        <div className="flex gap-3">
-          <button
-            onClick={prev}
-            className="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:text-slate-800 hover:border-slate-800 active:scale-95 transition-all duration-300 cursor-pointer"
-          >
-            <ChevronLeft className="w-5 h-5" />
-          </button>
-          <button
-            onClick={next}
-            className="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:text-slate-800 hover:border-slate-800 active:scale-95 transition-all duration-300 cursor-pointer"
-          >
-            <ChevronRight className="w-5 h-5" />
-          </button>
-        </div>
-      </div>
-
-      {/* Premium Mobile Bottom Line indicators (Mobile screen size) */}
-      <div className="md:hidden flex justify-center gap-3 mt-6 z-20">
-        {slides.map((s, idx) => (
-          <button
-            key={s.id}
-            onClick={() => goTo(idx)}
-            className={`h-1 rounded-full transition-all duration-500 relative overflow-hidden ${idx === current ? "w-10 bg-primary-500" : "w-4 bg-slate-200"
-              }`}
-          >
-            {idx === current && (
-              <motion.div
-                className="absolute inset-0 bg-primary-600 origin-left"
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: 1 }}
-                transition={{ duration: AUTOPLAY_MS / 1000, ease: "linear" }}
-                key={`mobile-progress-${animKey}`}
-              />
-            )}
-          </button>
-        ))}
-      </div>
-
     </div>
   );
 };
