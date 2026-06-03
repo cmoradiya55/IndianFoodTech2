@@ -1,18 +1,18 @@
-ï»¿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportDenmark from "./PeanutButterImportDenmark";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Denmark | ImportÃ¸r af JordnÃ¸ddesmÃ¸r",
+  title: "Peanut Butter Importer Denmark | Importør af Jordnøddesmør",
   description:
-    "Reliable peanut butter importer in Denmark. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Danish market. Exporting top-tier nut butter to Copenhagen.",
+    "Reliable peanut butter importer in Denmark. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Danish market.",
   keywords: [
     "peanut butter importer denmark",
     "bulk peanut butter denmark",
     "private label peanut butter denmark",
-    "jordnÃ¸ddesmÃ¸r importÃ¸r",
-    "jordnÃ¸ddesmÃ¸r engros",
-    "import af jordnÃ¸ddesmÃ¸r danmark",
+    "jordnøddesmør importør",
+    "jordnøddesmør engros",
+    "import af jordnøddesmør danmark",
     "peanut butter supplier copenhagen",
     "danish food importers",
     "scandinavian peanut butter supply",

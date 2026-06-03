@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterSuppliearPhilippines from "./PeanutButterSuppliearPhilippines";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Supplier Philippines | Supplier sa Pilipinas",
   description:
-    "Reliable peanut butter supplier in the Philippines. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Philippine market. Exporting top-tier nut butter to Manila.",
+    "Reliable peanut butter supplier in the Philippines. Indian Foodtech offers premium bulk supply, private label, and solutions for the Philippine market.",
   keywords: [
     "peanut butter supplier philippines",
     "bulk peanut butter philippines",

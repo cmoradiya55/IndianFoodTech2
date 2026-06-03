@@ -1,14 +1,14 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportSouthKorea from "./PeanutButterImportSouthKorea";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer South Korea | 땅콩 버터 수입업자",
+  title: "Peanut Butter Importer South Korea | Indian Foodtech",
   description:
-    "Reliable peanut butter importer in South Korea. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Korean market. Exporting top-tier nut butter to Seoul.",
+    "Reliable peanut butter importer in South Korea. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Korean market.",
   keywords: [
     "peanut butter importer south korea",
-    "땅콩 버터 수입업자",
+    "?? ?? ????",
     "bulk peanut butter seoul",
     "private label peanut butter korea",
     "peanut butter supplier busan",

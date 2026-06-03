@@ -1,18 +1,18 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportIceland from "./PeanutButterImportIceland";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Iceland | Innflutningsaðili hnetusmjörs á Íslandi",
+  title: "Peanut Butter Importer Iceland | Bulk Export from India",
   description:
-    "Reliable peanut butter importer in Iceland. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Icelandic market. Exporting top-tier nut butter to Reykjavik.",
+    "Reliable peanut butter importer in Iceland. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Icelandic market.",
   keywords: [
     "peanut butter importer iceland",
     "bulk peanut butter iceland",
     "private label peanut butter iceland",
-    "hnetusmjör innflytjandi",
-    "hnetusmjör heildsala",
-    "innflutningur hnetusmjörs ísland",
+    "hnetusmj�r innflytjandi",
+    "hnetusmj�r heildsala",
+    "innflutningur hnetusmj�rs �sland",
     "peanut butter supplier reykjavik",
     "icelandic food importers",
     "nordic peanut butter supply",

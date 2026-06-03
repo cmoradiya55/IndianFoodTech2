@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import MarketSchema from "@/components/MarketSchema";
 import PeanutButterImportKenya from "./PeanutButterImportKenya";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Kenya | Bulk Supply Nairobi",
+  title: "Peanut Butter Importer Kenya | Bulk Export from India",
   description:
-    "Reliable peanut butter importer in Kenya. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Kenyan market. Exporting top-tier nut butter to Nairobi.",
+    "Reliable peanut butter importer in Kenya. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Kenyan market.",
   keywords: [
     "peanut butter importer kenya",
     "bulk peanut butter nairobi",

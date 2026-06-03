@@ -1,18 +1,18 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterSupplierBulgaria from "./PeanutButterSupplierBulgaria";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Supplier Bulgaria | Доставчик на Фъстъчено Масло",
+  title: "Peanut Butter Supplier Bulgaria | Bulk Supply India",
   description:
-    "Reliable peanut butter supplier in Bulgaria. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Bulgarian market. Exporting top-tier nut butter to Sofia.",
+    "Reliable peanut butter supplier in Bulgaria. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Bulgarian market.",
   keywords: [
     "peanut butter supplier bulgaria",
     "bulk peanut butter bulgaria",
     "private label peanut butter bulgaria",
-    "доставчик на фъстъчено масло",
-    "фъстъчено масло на едро",
-    "внос на фъстъчено масло българия",
+    "????????? ?? ????????? ?????",
+    "????????? ????? ?? ????",
+    "???? ?? ????????? ????? ????????",
     "peanut butter supplier sofia",
     "bulgarian food importers",
     "balkan peanut butter supply",

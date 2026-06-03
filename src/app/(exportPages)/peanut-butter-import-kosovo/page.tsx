@@ -1,18 +1,18 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportKosovo from "./PeanutButterImportKosovo";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Kosovo | Importues i gjalpit të kikirikut në Kosovë",
+  title: "Peanut Butter Importer Kosovo | Bulk Export from India",
   description:
-    "Reliable peanut butter importer in Kosovo. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Kosovo market. Exporting top-tier nut butter to Pristina.",
+    "Reliable peanut butter importer in Kosovo. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Kosovo market.",
   keywords: [
     "peanut butter importer kosovo",
     "bulk peanut butter kosovo",
     "private label peanut butter kosovo",
     "importues gjalpi kikiriku",
-    "gjalpë kikiriku me shumicë",
-    "importimi i gjalpit të kikirikut kosovë",
+    "gjalp� kikiriku me shumic�",
+    "importimi i gjalpit t� kikirikut kosov�",
     "peanut butter supplier pristina",
     "kosovo food importers",
     "balkan peanut butter supply",

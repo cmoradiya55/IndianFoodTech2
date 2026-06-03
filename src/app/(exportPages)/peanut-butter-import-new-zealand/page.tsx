@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportNewZealand from "./PeanutButterImportNewZealand";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer New Zealand | Bulk Supply Auckland",
   description:
-    "Reliable peanut butter importer in New Zealand. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Kiwi market. Exporting top-tier nut butter to Auckland.",
+    "Reliable peanut butter importer in New Zealand. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Kiwi market.",
   keywords: [
     "peanut butter importer new zealand",
     "bulk peanut butter auckland",

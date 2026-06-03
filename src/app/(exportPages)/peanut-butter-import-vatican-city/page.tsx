@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportVaticanCity from "./PeanutButterImportVaticanCity";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Vatican City | Importatore di Burro d'Arachidi",
+  title: "Peanut Butter Importer Vatican City | Indian Foodtech",
   description:
-    "Reliable peanut butter importer in Vatican City. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Holy See. Exporting top-tier nut butter.",
+    "Reliable peanut butter importer in Vatican City. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Holy See.",
   keywords: [
     "peanut butter importer vatican city",
     "bulk peanut butter vatican city",

@@ -1,18 +1,18 @@
-Ôªøimport { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportEstonia from "./PeanutButterImportEstonia";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Estonia | Maap√§hkliv√µi maaletooja Eestis",
+  title: "Peanut Butter Importer Estonia | Bulk Export from India",
   description:
-    "Reliable peanut butter importer in Estonia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Estonian market. Exporting top-tier nut butter to Tallinn.",
+    "Reliable peanut butter importer in Estonia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Estonian market.",
   keywords: [
     "peanut butter importer estonia",
     "bulk peanut butter estonia",
     "private label peanut butter estonia",
-    "maap√§hkliv√µi maaletooja",
-    "maap√§hkliv√µi hulgim√º√ºk",
-    "maap√§hkliv√µi import eestisse",
+    "maap‰hklivıi maaletooja",
+    "maap‰hklivıi hulgim¸¸k",
+    "maap‰hklivıi import eestisse",
     "peanut butter supplier tallinn",
     "estonia food importers",
     "baltic peanut butter supply",

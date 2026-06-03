@@ -1,18 +1,18 @@
-ï»¿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportIreland from "./PeanutButterImportIreland";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Ireland | Allmhaireoir im cnÃ³nna talÃºn in Ã‰irinn",
+  title: "Peanut Butter Importer Ireland | Bulk Export from India",
   description:
-    "Reliable peanut butter importer in Ireland. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Irish market. Exporting top-tier nut butter to Dublin.",
+    "Reliable peanut butter importer in Ireland. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Irish market.",
   keywords: [
     "peanut butter importer ireland",
     "bulk peanut butter ireland",
     "private label peanut butter ireland",
-    "allmhaireoir im cnÃ³nna talÃºn",
-    "mÃ³rchÃ³ir im cnÃ³nna talÃºn Ã©ire",
-    "solÃ¡thraÃ­ im cnÃ³nna talÃºn dublin",
+    "allmhaireoir im cnónna talún",
+    "mórchóir im cnónna talún éire",
+    "soláthraí im cnónna talún dublin",
     "peanut butter supplier ireland",
     "irish food importers",
     "emerald isle peanut butter supply",

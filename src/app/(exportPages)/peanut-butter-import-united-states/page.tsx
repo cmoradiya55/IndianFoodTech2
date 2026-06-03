@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import MarketSchema from "@/components/MarketSchema";
 import PeanutButterImportUnitedStates from "./PeanutButterImportUnitedStates";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer United States | Bulk Nut Butter Supply",
+  title: "Peanut Butter Importer United States | Indian Foodtech",
   description:
-    "Reliable peanut butter importer in United States. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the American market. Exporting top-tier nut butter to New York.",
+    "Reliable peanut butter importer in United States. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the American market.",
   keywords: [
     "peanut butter importer united states",
     "bulk peanut butter usa",

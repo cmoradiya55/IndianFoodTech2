@@ -5,7 +5,7 @@ import MarketSchema from "@/components/MarketSchema";
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Botswana | Bulk Supply Gaborone",
   description:
-    "Reliable peanut butter importer in Botswana. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Botswana market. Exporting top-tier nut butter to Gaborone.",
+    "Reliable peanut butter importer in Botswana. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Botswana market.",
   keywords: [
     "peanut butter importer botswana",
     "bulk peanut butter botswana",

@@ -1,18 +1,18 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterSupplierBelarus from "./PeanutButterSupplierBelarus";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Supplier Belarus | Поставщик Арахисового Масла",
+  title: "Peanut Butter Supplier Belarus | Bulk Export from India",
   description:
-    "Reliable peanut butter supplier in Belarus. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Belarusian market. Exporting top-tier nut butter to Minsk.",
+    "Reliable peanut butter supplier in Belarus. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Belarusian market.",
   keywords: [
     "peanut butter supplier belarus",
     "bulk peanut butter belarus",
     "private label peanut butter belarus",
-    "поставщик арахисового масла",
-    "арахисовое масло оптом",
-    "импорт арахисового масла беларусь",
+    "????????? ??????????? ?????",
+    "?????????? ????? ?????",
+    "?????? ??????????? ????? ????????",
     "peanut butter supplier minsk",
     "belarusian food importers",
     "eastern european peanut butter supply",

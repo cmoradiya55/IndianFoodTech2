@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportLuxembourg from "./PeanutButterImportLuxembourg";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Luxembourg | Importateur de Beurre d'Arachide",
+  title: "Peanut Butter Importer Luxembourg | Indian Foodtech",
   description:
-    "Reliable peanut butter importer in Luxembourg. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Luxembourg market. Exporting top-tier nut butter to Luxembourg City.",
+    "Reliable peanut butter importer in Luxembourg. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Luxembourg market.",
   keywords: [
     "peanut butter importer luxembourg",
     "bulk peanut butter luxembourg",

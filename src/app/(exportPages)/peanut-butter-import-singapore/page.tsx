@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportSingapore from "./PeanutButterImportSingapore";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Singapore | Bulk Supply Hub",
+  title: "Peanut Butter Importer Singapore | Bulk Export from India",
   description:
-    "Reliable peanut butter importer in Singapore. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Singaporean market. Exporting top-tier nut butter to the Lion City.",
+    "Reliable peanut butter importer in Singapore. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Singaporean market.",
   keywords: [
     "peanut butter importer singapore",
     "bulk peanut butter singapore",

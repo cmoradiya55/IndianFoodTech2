@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportItaly from "./PeanutButterImportItaly";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Italy | Importatore di Burro di Arachidi in Italia",
+  title: "Peanut Butter Importer Italy | Bulk Export from India",
   description:
-    "Reliable peanut butter importer in Italy. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Italian market. Exporting top-tier nut butter to Rome.",
+    "Reliable peanut butter importer in Italy. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Italian market.",
   keywords: [
     "peanut butter importer italy",
     "bulk peanut butter italy",

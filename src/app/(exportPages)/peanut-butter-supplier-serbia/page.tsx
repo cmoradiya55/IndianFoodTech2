@@ -1,18 +1,18 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterSupplierSerbia from "./PeanutButterSupplierSerbia";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Supplier Serbia | Добављач Путера од Кикирикија",
+  title: "Peanut Butter Supplier Serbia | Bulk Export from India",
   description:
-    "Reliable peanut butter supplier in Serbia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Serbian market. Exporting top-tier nut butter to Belgrade.",
+    "Reliable peanut butter supplier in Serbia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Serbian market.",
   keywords: [
     "peanut butter supplier serbia",
     "bulk peanut butter serbia",
     "private label peanut butter serbia",
-    "добављач путера од кикирикија",
-    "путер од кикирикија на велико",
-    "увоз путера од кикирикија србија",
+    "???????? ?????? ?? ??????????",
+    "????? ?? ?????????? ?? ??????",
+    "???? ?????? ?? ?????????? ??????",
     "peanut butter supplier belgrade",
     "serbian food importers",
     "balkan peanut butter supply",

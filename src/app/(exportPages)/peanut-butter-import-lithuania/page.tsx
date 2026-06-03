@@ -1,18 +1,18 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportLithuania from "./PeanutButterImportLithuania";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Lithuania | Zemės riešutų sviesto importuotojas Lietuvoje",
+  title: "Peanut Butter Importer Lithuania | Bulk Supply India",
   description:
-    "Reliable peanut butter importer in Lithuania. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Lithuanian market. Exporting top-tier nut butter to Vilnius.",
+    "Reliable peanut butter importer in Lithuania. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Lithuanian market.",
   keywords: [
     "peanut butter importer lithuania",
     "bulk peanut butter lithuania",
     "private label peanut butter lithuania",
-    "žemės riešutų sviesto importuotojas",
-    "žemės riešutų sviestas didmeninė prekyba",
-    "žemės riešutų sviesto importas lietuvoje",
+    "�emes rie�utu sviesto importuotojas",
+    "�emes rie�utu sviestas didmenine prekyba",
+    "�emes rie�utu sviesto importas lietuvoje",
     "peanut butter supplier vilnius",
     "lithuanian food importers",
     "baltic peanut butter supply",

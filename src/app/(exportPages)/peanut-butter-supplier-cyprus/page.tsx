@@ -1,18 +1,18 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterSupplierCyprus from "./PeanutButterSupplierCyprus";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Supplier Cyprus | Προμηθευτής Φυστικοβούτυρου",
+  title: "Peanut Butter Supplier Cyprus | ???�??e?t?? F?st???�??t????",
   description:
-    "Reliable peanut butter supplier in Cyprus. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Cypriot market. Exporting top-tier nut butter to Nicosia.",
+    "Reliable peanut butter supplier in Cyprus. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Cypriot market.",
   keywords: [
     "peanut butter supplier cyprus",
     "bulk peanut butter cyprus",
     "private label peanut butter cyprus",
-    "προμηθευτής φυστικοβούτυρου",
-    "φυστικοβούτυρο χονδρική",
-    "εισαγωγή φυστικοβούτυρου κύπρος",
+    "p??�??e?t?? f?st???�??t????",
+    "f?st???�??t??? ???d????",
+    "e?sa???? f?st???�??t???? ??p???",
     "peanut butter supplier nicosia",
     "cypriot food importers",
     "mediterranean peanut butter supply",

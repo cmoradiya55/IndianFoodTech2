@@ -1,18 +1,18 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportSlovenia from "./PeanutButterImportSlovenia";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Slovenia | Uvoznik arašidovega masla v Sloveniji",
+  title: "Peanut Butter Importer Slovenia | Bulk Supply India",
   description:
-    "Reliable peanut butter importer in Slovenia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Slovenian market. Exporting top-tier nut butter to Ljubljana.",
+    "Reliable peanut butter importer in Slovenia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Slovenian market.",
   keywords: [
     "peanut butter importer slovenia",
     "bulk peanut butter slovenia",
     "private label peanut butter slovenia",
-    "uvoznik arašidovega masla",
-    "arašidovo maslo veleprodaja",
-    "uvoz arašidovega masla slovenija",
+    "uvoznik ara�idovega masla",
+    "ara�idovo maslo veleprodaja",
+    "uvoz ara�idovega masla slovenija",
     "peanut butter supplier ljubljana",
     "slovenian food importers",
     "central european peanut butter supply",

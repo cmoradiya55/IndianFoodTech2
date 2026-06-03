@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportAustralia from "./PeanutButterImportAustralia";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Australia | Bulk Supply Sydney",
   description:
-    "Reliable peanut butter importer in Australia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Australian market. Exporting top-tier nut butter to Sydney.",
+    "Reliable peanut butter importer in Australia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Australian market.",
   keywords: [
     "peanut butter importer australia",
     "bulk peanut butter sydney",

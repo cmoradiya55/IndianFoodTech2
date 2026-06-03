@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterImportEthiopia from "./PeanutButterImportEthiopia";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer Ethiopia | Bulk Supply Addis Ababa",
   description:
-    "Reliable peanut butter importer in Ethiopia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Ethiopian market. Exporting top-tier nut butter to Addis Ababa.",
+    "Reliable peanut butter importer in Ethiopia. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Ethiopian market.",
   keywords: [
     "peanut butter importer ethiopia",
     "bulk peanut butter addis ababa",

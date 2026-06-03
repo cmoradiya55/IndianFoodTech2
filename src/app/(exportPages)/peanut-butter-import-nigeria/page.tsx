@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import MarketSchema from "@/components/MarketSchema";
 import PeanutButterImportNigeria from "./PeanutButterImportNigeria";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Importer Nigeria | Bulk Supply Lagos",
+  title: "Peanut Butter Importer Nigeria | Bulk Export from India",
   description:
-    "Reliable peanut butter importer in Nigeria. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Nigerian market. Exporting top-tier nut butter to Lagos.",
+    "Reliable peanut butter importer in Nigeria. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Nigerian market.",
   keywords: [
     "peanut butter importer nigeria",
     "bulk peanut butter lagos",

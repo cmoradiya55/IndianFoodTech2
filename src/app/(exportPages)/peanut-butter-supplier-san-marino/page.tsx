@@ -1,11 +1,11 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterSupplierSanMarino from "./PeanutButterSupplierSanMarino";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Supplier San Marino | Fornitore di Burro d'Arachidi",
+  title: "Peanut Butter Supplier San Marino | Indian Foodtech",
   description:
-    "Reliable peanut butter supplier in San Marino. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Sammarinese market. Exporting top-tier nut butter to San Marino City.",
+    "Reliable peanut butter supplier in San Marino. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Sammarinese market.",
   keywords: [
     "peanut butter supplier san marino",
     "bulk peanut butter san marino",

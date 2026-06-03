@@ -1,18 +1,18 @@
-ï»¿import { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterSupplierNorway from "./PeanutButterSupplierNorway";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Supplier Norway | PeanÃ¸ttsmÃ¸r-LeverandÃ¸r",
+  title: "Peanut Butter Supplier Norway | Peanøttsmør-Leverandør",
   description:
-    "Reliable peanut butter supplier in Norway. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Norwegian market. Exporting top-tier nut butter to Oslo.",
+    "Reliable peanut butter supplier in Norway. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Norwegian market.",
   keywords: [
     "peanut butter supplier norway",
     "bulk peanut butter norway",
     "private label peanut butter norway",
-    "peanÃ¸ttsmÃ¸r leverandÃ¸r",
-    "peanÃ¸ttsmÃ¸r engros",
-    "import av peanÃ¸ttsmÃ¸r norge",
+    "peanøttsmør leverandør",
+    "peanøttsmør engros",
+    "import av peanøttsmør norge",
     "peanut butter supplier oslo",
     "norwegian food importers",
     "scandinavian peanut butter supply",

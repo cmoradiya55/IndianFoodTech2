@@ -1,18 +1,18 @@
-Ôªøimport { Metadata } from "next";
+import { Metadata } from "next";
 import PeanutButterSupplierAndorra from "./PeanutButterSupplierAndorra";
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Supplier Andorra | Prove√Ødor de Mantega de Cacauet",
+  title: "Peanut Butter Supplier Andorra | Bulk Export from India",
   description:
-    "Reliable peanut butter supplier in Andorra. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Andorran market. Exporting top-tier nut butter to Andorra la Vella.",
+    "Reliable peanut butter supplier in Andorra. Indian Foodtech offers premium bulk supply, private label, and industrial solutions for the Andorran market.",
   keywords: [
     "peanut butter supplier andorra",
     "bulk peanut butter andorra",
     "private label peanut butter andorra",
-    "prove√Ødor mantega de cacauet",
-    "mantega de cacauet a l'engr√≤s",
-    "importaci√≥ de mantega de cacauet andorra",
+    "proveÔdor mantega de cacauet",
+    "mantega de cacauet a l'engrÚs",
+    "importaciÛ de mantega de cacauet andorra",
     "peanut butter supplier andorra la vella",
     "andorran food importers",
     "european peanut butter supply",
