@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { Product } from "@/utils/ProductList";
@@ -17,9 +17,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
   variants,
 }) => {
   const router = useRouter();
-
-
-
 
   return (
     /* overflow-visible lets the product image pop above the card top edge */

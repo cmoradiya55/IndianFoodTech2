@@ -154,22 +154,22 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative w-full h-full flex flex-col justify-between max-w-7xl mx-auto py-6 sm:py-8 lg:py-10 px-4 sm:px-6">
+    <div className="relative w-full h-full flex flex-col justify-between max-w-7xl mx-auto py-14 sm:py-8 lg:py-10 px-4 sm:px-6">
 
       {/* Background Cinematic Spatial Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#fafafc] via-white to-primary-50/10 -z-30 rounded-[48px]" />
 
       {/* Slow rotating fine-line decorative rings for ultra-modern aesthetic */}
-      <motion.div
+      {/* <motion.div
         variants={ringVariants}
         animate="animate1"
-        className="absolute top-[-10%] right-[-5%] w-96 h-96 border border-slate-100 rounded-full -z-10 pointer-events-none"
+        className="absolute top-[-10%] right-[-5%] w-96 h-96 border border-slate-500 rounded-full z-10 pointer-events-none"
       />
       <motion.div
         variants={ringVariants}
         animate="animate2"
-        className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] border border-slate-100 rounded-full -z-10 pointer-events-none"
-      />
+        className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] border border-slate-500 rounded-full z-10 pointer-events-none"
+      /> */}
 
       {/* Main Spacious Grid */}
       <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-10 lg:gap-16 xl:gap-24 my-auto min-h-[380px] sm:min-h-[440px]">

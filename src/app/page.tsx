@@ -12,9 +12,9 @@ export default function Home() {
     <div className="overflow-x-hidden">
       <main className="w-full">
         {/* Hero Section */}
-        <section className="bg-[#e9e8ed] h-[calc(100vh-var(--header-height,82px))] sm:h-[calc(100vh-var(--header-height,86px))] lg:h-[calc(100vh-var(--header-height,94px))] overflow-hidden">
+        <section className="bg-[#e9e8ed] h-auto sm:h-[calc(100vh-var(--header-height,82px))] sm:h-[calc(100vh-var(--header-height,86px))] lg:h-[calc(100vh-var(--header-height,94px))] overflow-hidden">
           <div
-            className="mx-auto h-full overflow-hidden scrollbar-hide"
+            className="mx-auto overflow-hidden scrollbar-hide"
             style={{ fontFamily: "NotoSerif-semibold" }}
           >
             <Hero />

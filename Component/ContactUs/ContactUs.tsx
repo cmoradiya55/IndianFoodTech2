@@ -232,7 +232,7 @@ const ContactUsComponent = () => {
             {/* Map */}
             <div className="mt-4 sm:mt-10 rounded-xl sm:rounded-2xl overflow-hidden shadow-inner border border-slate-100">
               <iframe
-                src="https://www.google.com/maps?q=21.20460098512739, 72.990028915698&hl=es;z=14&output=embed"
+                src="https://www.google.com/maps?q=Indian+Foodtech,+Kamrej,+Surat,+Gujarat,+India&hl=en&z=15&output=embed"
                 width="100%"
                 height="200"
                 className="sm:h-[260px]"
