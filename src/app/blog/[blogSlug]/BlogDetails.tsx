@@ -218,12 +218,12 @@ export default function BlogDetails({
   if (!post) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-[#e9e8ed]">
-        <h1
+        <h2
           className="text-6xl sm:text-7xl font-bold text-primary-300 mb-4 tracking-tighter"
           style={{ fontFamily: "NotoSerif-semibold" }}
         >
           404
-        </h1>
+        </h2>
         <p
           className="text-gray-500 mb-8 text-center text-sm sm:text-base font-medium"
           style={{ fontFamily: "Poppins-medium" }}

@@ -82,11 +82,11 @@ const PageHeader: React.FC<PageHeaderProps> = ({
 
       {/* Animated text content */}
       <motion.div variants={textVariants} className="mt-0.5 sm:mt-1.5">
-        <h1
+        <h2
           className={`text-xl sm:text-xl md:text-lg lg:text-xl font-bold text-gray-900 mb-1 sm:mb-1.5 leading-tight tracking-tight ${titleClassName}`}
         >
           {title}
-        </h1>
+        </h2>
         {description && (
           <p
             className={`text-sm sm:text-lg md:text-base text-primary-500 font-medium leading-relaxed ${descriptionClassName}`}

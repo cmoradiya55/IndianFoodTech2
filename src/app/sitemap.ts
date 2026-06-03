@@ -52,12 +52,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       date: "2026-03-01",
     },
-    {
-      url: "international",
-      priority: 0.75,
-      changeFrequency: "monthly" as const,
-      date: "2026-03-01",
-    },
   ];
 
   const internationalPages = [

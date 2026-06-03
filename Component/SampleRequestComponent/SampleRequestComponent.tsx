@@ -184,12 +184,12 @@ const SampleRequestComponent = () => {
         <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-4">
           <Beaker className="w-8 h-8 text-primary-600" />
         </div>
-        <h1
+        <h2
           className="text-2xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-2"
           style={{ fontFamily: "NotoSerif-semibold" }}
         >
           Request a Sample
-        </h1>
+        </h2>
         <p
           className="text-sm sm:text-base text-gray-500 max-w-lg"
           style={{ fontFamily: "Poppins-regular" }}
