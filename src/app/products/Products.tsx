@@ -70,6 +70,7 @@ const Products = () => {
           title="Discover Our Product"
           description="Explore how our product brings ideas to life and adds real value."
           className="mb-6 sm:mb-10 md:mb-6 lg:mb-6"
+          isPageHeader={true}
         />
 
         {/* Dynamic Product Categories */}

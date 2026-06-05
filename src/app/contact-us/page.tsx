@@ -47,5 +47,5 @@ export const metadata: Metadata = {
 };
 
 export default function ContactUsPage() {
-  return <ContactUs />;
+  return <ContactUs isPageHeader={true} />;
 }

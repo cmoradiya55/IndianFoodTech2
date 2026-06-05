@@ -19,6 +19,7 @@ const PrivateLabels = () => {
           className="mb-6 md:mb-6"
           titleClassName="text-2xl font-bold mb-1 sm:mb-2"
           descriptionClassName="max-w-[500px] text-[15px]"
+          isPageHeader={true}
         />
 
         {/* About Private Labels Section */}

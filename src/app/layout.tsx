@@ -10,8 +10,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: "Indian Foodtech | Premium Peanut Butter Manufacturer",
   description:
-    "Manufacturer of Peanut Butter, Tahini Paste & Peanut Butter Sachet offered by Indian Foodtech from Surat, Gujarat, India",
+    "Manufacturer of Peanut Butter, Nut butter & Peanut Butter Sachet offered by Indian Foodtech from Surat, Gujarat, India",
   keywords: [
+    "peanut butter",
     "peanut butter manufacturer",
     "nut butter",
     "private label peanut butter",
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Indian Foodtech | Premium Peanut Butter Manufacturer",
     description:
-      "Manufacturer of Peanut Butter, Tahini Paste & Peanut Butter Sachet offered by Indian Foodtech from Surat, Gujarat, India",
+      "Manufacturer of Peanut Butter, Nut butter & Peanut Butter Sachet offered by Indian Foodtech from Surat, Gujarat, India",
     url: "/",
     siteName: "Indian Foodtech",
     locale: "en_US",
@@ -52,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Indian Foodtech | Premium Peanut Butter Manufacturer",
     description:
-      "Manufacturer of Peanut Butter, Tahini Paste & Peanut Butter Sachet offered by Indian Foodtech from Surat, Gujarat, India",
+      "Manufacturer of Peanut Butter, Nut butter & Peanut Butter Sachet offered by Indian Foodtech from Surat, Gujarat, India",
     creator: "@indianfoodtech",
     images: ["/logoBlack.webp"],
   },

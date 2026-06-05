@@ -4,6 +4,7 @@ import React from "react";
 import AllIconComponent from "../../public/AllIconComponent";
 import { Package, ShieldCheck, Factory } from "lucide-react";
 import { motion, Variants } from "framer-motion";
+import PageHeader from "@/components/PageHeader";
 
 const features = [
   {
@@ -98,26 +99,12 @@ const CreateYourBrand = () => {
       variants={containerVariants}
     >
       {/* Header Section */}
-      <motion.div
-        className="mb-8 sm:mb-10 flex gap-3 sm:gap-4"
-        variants={itemVariants}
-      >
-        <motion.div
-          className="bg-primary-500 h-auto sm:h-26 w-1 sm:w-1.5 lg:w-1.5 rounded-2xl flex-shrink-0 origin-top"
-          variants={lineVariants}
-        ></motion.div>
-        <div className="mt-1 sm:mt-2">
-          <h2 className="text-2xl font-bold text-gray-900 mb-2 leading-tight">
-            Create Your Own Peanut Butter Brand
-          </h2>
-          <p
-            className="text-[15px] text-primary-500 font-medium leading-relaxed max-w-xl"
-            style={{ fontFamily: "Poppins-medium" }}
-          >
-            We specialize in manufacturing top-quality peanut butter and nut butter in India using carefully selected peanuts and nuts for great taste and nutrition.
-          </p>
-        </div>
-      </motion.div>
+      <PageHeader
+        title="Create Your Own Peanut Butter Brand"
+        description="We specialize in manufacturing top-quality peanut butter and nut butter in India."
+        isPageHeader={false}
+        descriptionClassName="max-w-xl"
+      />
 
       {/* Main Content - Compact List Layout */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6 my-8 max-w-4xl mx-auto px-4 sm:px-0">

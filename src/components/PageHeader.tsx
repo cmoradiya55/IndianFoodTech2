@@ -4,35 +4,13 @@ import React from "react";
 import { motion, Variants } from "framer-motion";
 
 export interface PageHeaderProps {
-  /**
-   * The main page title.
-   */
   title: string;
-
-  /**
-   * Optional description text or custom React elements (for inline line-breaks or highlighting).
-   */
   description?: React.ReactNode;
-
-  /**
-   * Extra className applied to the root container.
-   */
   className?: string;
-
-  /**
-   * Extra className applied to the title heading.
-   */
   titleClassName?: string;
-
-  /**
-   * Extra className applied to the description paragraph.
-   */
   descriptionClassName?: string;
-
-  /**
-   * Extra className applied to the vertical accent bar.
-   */
   barClassName?: string;
+  isPageHeader?: boolean;
 }
 
 const barVariants: Variants = {
@@ -66,6 +44,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
   titleClassName = "",
   descriptionClassName = "",
   barClassName = "",
+  isPageHeader = false,
 }) => {
   return (
     <motion.div
@@ -81,12 +60,20 @@ const PageHeader: React.FC<PageHeaderProps> = ({
       />
 
       {/* Animated text content */}
-      <motion.div variants={textVariants} className="mt-0.5 sm:mt-1.5">
-        <h1
-          className={`text-xl sm:text-xl md:text-lg lg:text-xl font-bold text-gray-900 mb-1 sm:mb-1.5 leading-tight tracking-tight ${titleClassName}`}
-        >
-          {title}
-        </h1>
+      <motion.div variants={textVariants} className="my-0.5 sm:my-1.5">
+        {isPageHeader ? (
+          <h1
+            className={`text-xl sm:text-xl md:text-lg lg:text-xl font-bold text-gray-900 mb-1 sm:mb-1.5 leading-tight tracking-tight ${titleClassName}`}
+          >
+            {title}
+          </h1>
+        ) : (
+          <h2
+            className={`text-xl sm:text-xl md:text-lg lg:text-xl font-bold text-gray-900 mb-1 sm:mb-1.5 leading-tight tracking-tight ${titleClassName}`}
+          >
+            {title}
+          </h2>
+        )}
         {description && (
           <p
             className={`text-sm sm:text-lg md:text-base text-primary-500 font-medium leading-relaxed ${descriptionClassName}`}
