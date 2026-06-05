@@ -39,7 +39,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-3 sm:space-x-4 pt-8">
               <Link
-                href="https://in.linkedin.com/in/indian-foodtech-b5633829a"
+                href="https://in.linkedin.com/company/indian-foodtech"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:scale-110 transition-transform duration-200"
