@@ -401,7 +401,7 @@ const Header = () => {
                     />
                   </Link>
                   <Link
-                    href="https://in.linkedin.com/in/indian-foodtech-b5633829a"
+                    href="https://in.linkedin.com/company/indian-foodtech"
                     target="_blank"
                     className="text-gray-500 hover:text-primary-500 transition-colors"
                     aria-label="LinkedIn"

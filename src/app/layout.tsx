@@ -130,7 +130,7 @@ export default function RootLayout({
               },
               sameAs: [
                 "https://www.facebook.com/p/Indian-foodtech-100083285323445/",
-                "https://in.linkedin.com/in/indian-foodtech-b5633829a",
+                "https://in.linkedin.com/company/indian-foodtech",
               ],
             }}
           />
