@@ -4,7 +4,7 @@ import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
   title: "Peanut Butter Importer in Malta | Bulk Supply India",
-  description: "Premium peanut butter importer in Malta. Indian Foodtech offers high-quality bulk supply, private label, and industrial solutions for the Maltese market. Exporting to Valletta.",
+  description: "Premium peanut butter importer in Malta. High-quality bulk supply, private label, and industrial solutions from Indian Foodtech for the Maltese market.",
   keywords: [
     "peanut butter importer malta",
     "bulk peanut butter malta",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Peanut Butter Importer in Malta | Bulk Supply India",
-    description: "Premium peanut butter importer in Malta. Indian Foodtech offers high-quality bulk supply, private label, and industrial solutions for the Maltese market. Exporting to Valletta.",
+    description: "Premium peanut butter importer in Malta. High-quality bulk supply, private label, and industrial solutions from Indian Foodtech for the Maltese market.",
     url: "https://www.indianfoodtech.com/peanut-butter-import-malta",
     siteName: "Indian Foodtech",
     images: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Peanut Butter Importer in Malta | Bulk Supply India",
-    description: "Premium peanut butter importer in Malta. Indian Foodtech offers high-quality bulk supply, private label, and industrial solutions for the Maltese market. Exporting to Valletta.",
+    description: "Premium peanut butter importer in Malta. High-quality bulk supply, private label, and industrial solutions from Indian Foodtech for the Maltese market.",
     images: ["https://www.indianfoodtech.com/country/malta-hero.webp"],
   },
   alternates: {
