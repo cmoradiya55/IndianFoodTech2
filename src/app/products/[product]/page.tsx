@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  const title = `${product.name} - Premium Peanut Butter & Spreads | Indian Food Tech`;
+  const title = `${product.name} | Indian Foodtech`;
   const description = product.description || `Explore our high-quality ${product.name} at Indian Food Tech. Premium nut products, peanut butters, and spreads.`;
   const canonicalUrl = `${BASE_URL}/products/${productId}`;
   const imageUrl = product.detailImage.startsWith("http")
