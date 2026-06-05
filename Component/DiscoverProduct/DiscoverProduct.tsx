@@ -3,6 +3,7 @@ import React from "react";
 import { AllProductsList, Product } from "@/utils/ProductList";
 import { motion, Variants } from "framer-motion";
 import ProductCard from "@/components/ProductCard";
+import PageHeader from "@/components/PageHeader";
 
 const getStableProducts = (): Product[] =>
   AllProductsList.flatMap((category) => category.products).slice(0, 3);
@@ -55,29 +56,13 @@ const DiscoverProduct = () => {
       viewport={{ once: true, margin: "-100px" }}
       variants={containerVariants}
     >
-      {/* Header Section */}
-      <motion.div
-        className="mb-8 sm:mb-10 md:mb-12 flex gap-3 sm:gap-4"
-        variants={itemVariants}
-      >
-        <motion.div
-          className="bg-primary-500 h-auto w-1 sm:w-1.5 lg:w-1.5 rounded-2xl origin-top"
-          variants={lineVariants}
-        ></motion.div>
-        <div className="mt-1 sm:mt-2">
-          <h2 className="text-2xl font-bold text-gray-900 mb-1 sm:mb-1.5">
-            Discover Our Product
-          </h2>
-          <p
-            className="text-[15px] text-primary-500 font-medium"
-            style={{ fontFamily: "Poppins-medium" }}
-          >
-            Explore how our product brings ideas to life and adds real value.
-          </p>
-        </div>
-      </motion.div>
+      <PageHeader
+        title="Discover Our Product"
+        description="Explore how our product brings ideas to life and adds real value."
+        isPageHeader={false}
+      />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 sm:gap-x-5 md:gap-x-6 gap-y-28 pt-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 sm:gap-x-5 md:gap-x-6 gap-y-28 pt-24 mt-8 sm:mt-10 md:mt-12" >
         {products.map((product, index) => (
           <ProductCard
             key={product.id}

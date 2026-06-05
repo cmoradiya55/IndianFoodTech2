@@ -40,7 +40,7 @@ const AboutUs = () => {
           style={{ fontFamily: "NotoSerif-semibold" }}
         >
           {/* Story About Us Section */}
-          <StoryAboutUs />
+          <StoryAboutUs isPageHeader={true} />
 
           {/* Why Partner with Us Section */}
           <div className="mt-8 sm:mt-12 md:mt-16">

@@ -5,6 +5,7 @@ import Image from "next/image";
 import CertificationList from "@/data/CertificationList.json";
 import ImagePreviewModal from "@/components/ImagePreviewModal";
 import { motion, Variants } from "framer-motion";
+import PageHeader from "@/components/PageHeader";
 
 const OurCertification = () => {
   const [selectedCertificate, setSelectedCertificate] = useState<{
@@ -54,38 +55,22 @@ const OurCertification = () => {
   return (
     <section className="bg-white relative">
       <motion.div
-        className="container mx-auto px-4 relative z-10"
+        className="container mx-auto relative z-10"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         variants={containerVariants}
       >
         {/* Header Section */}
-        <motion.div
-          className="mb-8 sm:mb-10 md:mb-12 flex gap-3 sm:gap-4"
-          variants={itemVariants}
-        >
-          <motion.div
-            className="bg-primary-500 h-21 sm:h-28 md:h-35 lg:h-26 w-1 sm:w-1.5 lg:w-1.5 rounded-2xl flex-shrink-0 origin-top"
-            variants={lineVariants}
-          ></motion.div>
-          <div className="mt-1 sm:mt-2">
-            <h2 className="text-base sm:text-base md:text-lg lg:text-2xl font-bold text-gray-900 mb-1 sm:mb-1.5">
-              Our Certifications
-            </h2>
-            <p
-              className="text-sm sm:text-sm md:text-sm lg:text-base text-primary-500 font-medium"
-              style={{ fontFamily: "Poppins-medium" }}
-            >
-              We maintain the highest standards of quality and food safety,
-              <br />
-              backed by internationally recognized certifications.
-            </p>
-          </div>
-        </motion.div>
+        <PageHeader
+          title="Our Certifications"
+          description="We maintain the highest standards of quality and food safety, backed by internationally recognized certifications."
+          isPageHeader={false}
+          descriptionClassName="max-w-2xl"
+        />
 
         {/* Certificates */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8 mt-8 sm:mt-10 md:mt-12">
           {CertificationList.map((cert) => (
             <motion.div
               key={cert.id}

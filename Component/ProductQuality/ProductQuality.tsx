@@ -2,6 +2,7 @@
 import React from "react";
 import AllIconComponent from "../../public/AllIconComponent";
 import { motion, Variants } from "framer-motion";
+import PageHeader from "@/components/PageHeader";
 
 const ProductQuality = () => {
   const qualityFeatures = [
@@ -72,33 +73,15 @@ const ProductQuality = () => {
       variants={containerVariants}
     >
       {/* Header Section */}
-      <motion.div 
-        className="mb-8 sm:mb-10 md:mb-12 flex gap-3 sm:gap-4"
-        variants={itemVariants}
-      >
-        <motion.div 
-          className="bg-primary-500 h-33 sm:h-28 md:h-35 lg:h-28 w-1 sm:w-1.5 lg:w-1.5 rounded-2xl flex-shrink-0 origin-top"
-          variants={lineVariants}
-        ></motion.div>
-        <div className="mt-1 sm:mt-2">
-          <h2 className="text-base sm:text-base md:text-lg lg:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">
-            Why We Stand Out
-          </h2>
-          <p
-            className="text-sm sm:text-sm md:text-sm lg:text-base text-primary-500 font-medium leading-relaxed"
-            style={{ fontFamily: "Poppins-medium" }}
-          >
-            We deliver unmatched quality, innovative solutions, and dedicated
-            support to help
-            <br className="hidden md:block" />
-            you achieve your goals effortlessly. Experience excellence every
-            step of the way.
-          </p>
-        </div>
-      </motion.div>
+      <PageHeader
+        title="Why We Stand Out"
+        description="We deliver unmatched quality, innovative solutions, and dedicated support to help you achieve your goals effortlessly. Experience excellence every step of the way."
+        isPageHeader={false}
+        descriptionClassName="max-w-2xl"
+      />
 
       {/* Quality Points Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-2 gap-3 sm:gap-5 md:gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-2 gap-3 sm:gap-5 md:gap-6 mt-8 sm:mt-10 max-w-7xl mx-auto relative">
         {qualityFeatures.map((feature, index) => {
           return (
             <motion.div
@@ -141,7 +124,7 @@ const ProductQuality = () => {
       </div>
 
       {/* Quality Assurance Section */}
-      <motion.div 
+      <motion.div
         variants={itemVariants}
         whileHover={{ scale: 1.01 }}
         className="mt-8 sm:mt-10 md:mt-12 bg-[#00280C] px-6 sm:px-6 md:px-20 py-6 sm:py-5 md:py-5 rounded-2xl sm:rounded-3xl md:rounded-3xl flex flex-col gap-4 sm:gap-6 md:gap-4 text-center items-center cursor-pointer shadow-md hover:shadow-xl transition-all duration-500 border border-emerald-950/20"

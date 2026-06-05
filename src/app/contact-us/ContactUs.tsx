@@ -3,11 +3,10 @@ import React from 'react'
 import ContactUsComponent from '../../../Component/ContactUs/ContactUs';
 import { motion } from "framer-motion";
 
-const ContactUs = () => {
+const ContactUs = ({ isPageHeader }: { isPageHeader?: boolean }) => {
   return (
-    <div className='bg-[#e9e8ed] mt-12 sm:mt-6'>
-      <div className=''>
-        {/* Smooth spring fade-up viewport entrance reveal */}
+    <div className='bg-[#e9e8ed]'>
+      <div className='mx-auto container-custom py-6 sm:py-8 md:py-12 mt-12 sm:mt-6'>
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
@@ -15,7 +14,7 @@ const ContactUs = () => {
           className='max-w-7xl mx-auto container-custom'
           style={{ fontFamily: 'NotoSerif-semibold' }}
         >
-          <ContactUsComponent />
+          <ContactUsComponent isPageHeader={isPageHeader} />
         </motion.div>
       </div>
     </div>

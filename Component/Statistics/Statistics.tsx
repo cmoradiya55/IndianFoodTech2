@@ -2,6 +2,7 @@
 import React from "react";
 import AllIconComponent from "../../public/AllIconComponent";
 import { motion, Variants } from "framer-motion";
+import PageHeader from "@/components/PageHeader";
 
 interface StatItem {
   title: string;
@@ -79,29 +80,14 @@ const Statistics = () => {
       variants={containerVariants}
     >
       {/* Header Section */}
-      <motion.div 
-        className="mb-8 sm:mb-10 md:mb-12 flex gap-3 sm:gap-4 lg:gap-5"
-        variants={itemVariants}
-      >
-        <motion.div 
-          className="bg-primary-500 h-28 md:h-35 lg:h-20 w-1 sm:w-1.5 lg:w-1.5 rounded-2xl flex-shrink-0 origin-top"
-          variants={lineVariants}
-        ></motion.div>
-        <div className="mt-1 sm:mt-1 lg:mt-2">
-          <h2 className="text-2xl font-bold text-gray-900 mb-2 leading-tight">
-            Spreading Health and Happiness
-          </h2>
-          <p
-            className="text-[15px] text-primary-500 font-medium leading-relaxed"
-            style={{ fontFamily: "Poppins-medium" }}
-          >
-            Delivering trusted value
-          </p>
-        </div>
-      </motion.div>
+      <PageHeader
+        title="Spreading Health and Happiness"
+        description="Delivering trusted value"
+        isPageHeader={false}
+      />
 
       {/* Stats Cards */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 lg:gap-7 px-4 sm:px-6 md:px-8 lg:px-12">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 lg:gap-7 px-4 sm:px-6 md:px-8 lg:px-12 mt-8 sm:mt-10 md:mt-12">
         {stats.map((stat, index) => (
           <motion.div
             key={index}

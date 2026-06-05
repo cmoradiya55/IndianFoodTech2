@@ -6,7 +6,7 @@ import { motion, Variants } from "framer-motion";
 import { Award, ShieldCheck, Sparkles, ShieldCheckIcon, Globe } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 
-const StoryAboutUs = () => {
+const StoryAboutUs = ({ isPageHeader }: { isPageHeader?: boolean }) => {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -118,17 +118,11 @@ const StoryAboutUs = () => {
     >
       <PageHeader
         title="The Story About Us"
-        description={
-          <>
-            Explore the journey behind our ideas and the
-            <br className="hidden sm:block" />
-            <span className="sm:hidden"> </span>
-            purpose that shapes them
-          </>
-        }
+        description="Explore the journey behind our ideas and the purpose that shapes them"
         className="mb-10 sm:mb-12"
         titleClassName="text-2xl font-extrabold"
-        descriptionClassName="text-[15px] leading-relaxed tracking-wide"
+        descriptionClassName="text-[15px] leading-relaxed tracking-wide max-w-xl"
+        isPageHeader={isPageHeader}
       />
 
       {/* Content Section */}

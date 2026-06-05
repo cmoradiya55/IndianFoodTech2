@@ -52,22 +52,16 @@ const Blog = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#e9e8ed] py-6 sm:py-8 md:py-12 px-3 sm:px-4 md:px-8 lg:px-8 mt-12 sm:mt-6">
+    <div className="min-h-screen bg-[#e9e8ed] py-6 sm:py-8 md:py-12 px-3 sm:px-4 md:px-8 lg:px-8 mt-12 sm:mt-6" style={{ fontFamily: "NotoSerif-semibold" }}>
       {/* HERO SECTION */}
       <section className="mx-auto container-custom">
         {/* Header with slide-up reveal */}
         <PageHeader
           title="The Nutty Knowledge Hub"
-          description={
-            <>
-              Exploring premium peanut butter manufacturing
-              <br className="hidden sm:block" />
-              and curated healthy recipes.
-            </>
-          }
+          description="Exploring premium peanut butter manufacturing and curated healthy recipes."
           className="mb-10 sm:mb-12"
-          titleClassName="text-2xl sm:text-3xl md:text-4xl lg:text-2xl font-bold mb-2 sm:mb-3"
-          descriptionClassName="text-sm sm:text-base md:text-base"
+          descriptionClassName="text-sm sm:text-base md:text-base max-w-xl"
+          isPageHeader={true}
         />
 
         {/* Search Bar & Category Filters Row with slide-up entrance */}

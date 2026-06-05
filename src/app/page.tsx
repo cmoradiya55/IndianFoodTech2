@@ -5,7 +5,7 @@ import Hero from "../../Component/Hero/Hero";
 import Statistics from "../../Component/Statistics/Statistics";
 import StoryAboutUs from "../../Component/StoryAboutUs/StoryAboutUs";
 import OurCertification from "../../Component/OurCertification/OurCertification";
-import ContactUs from "./contact-us/ContactUs";
+import ContactUsComponent from "../../Component/ContactUs/ContactUs";
 
 export default function Home() {
   return (
@@ -24,7 +24,7 @@ export default function Home() {
         {/* Statistics Section */}
         <section className="bg-[#d4dbc4] py-6 sm:py-8 md:py-12 lg:py-16 xl:py-16 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-8">
           <div
-            className="max-w-7xl mx-auto container-custom"
+            className="container-custom"
             style={{ fontFamily: "NotoSerif-semibold" }}
           >
             <Statistics />
@@ -34,7 +34,7 @@ export default function Home() {
         {/* Discover Product Section */}
         <section className="bg-[#e9e8ed] py-6 sm:py-8 md:py-12 lg:py-16 xl:py-16 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-8">
           <div
-            className="max-w-7xl mx-auto container-custom"
+            className="container-custom"
             style={{ fontFamily: "NotoSerif-semibold" }}
           >
             <DiscoverProduct />
@@ -42,9 +42,9 @@ export default function Home() {
         </section>
 
         {/* Create Your Brand Section */}
-        <section className="bg-white py-4 sm:py-6 md:py-8 lg:py-12 xl:py-16 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-8">
+        <section className="bg-white py-6 sm:py-8 md:py-12 lg:py-16 xl:py-16 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-8">
           <div
-            className="max-w-7xl mx-auto container-custom"
+            className="container-custom"
             style={{ fontFamily: "NotoSerif-semibold" }}
           >
             <CreateYourBrand />
@@ -54,17 +54,17 @@ export default function Home() {
         {/* Story About Us Section */}
         <section className="bg-[#e9e8ed] py-6 sm:py-8 md:py-12 lg:py-16 xl:py-16 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-8">
           <div
-            className="max-w-7xl mx-auto container-custom"
+            className="container-custom"
             style={{ fontFamily: "NotoSerif-semibold" }}
           >
-            <StoryAboutUs />
+            <StoryAboutUs isPageHeader={false} />
           </div>
         </section>
 
         {/* Quality Section */}
-        <section className="bg-[#e9e8ed] pb-4 sm:pb-6 md:pb-12 lg:pb-16 xl:py-16 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-8">
+        <section className="bg-[#e9e8ed] py-6 sm:py-8 md:py-12 lg:py-16 xl:py-16 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-8">
           <div
-            className="max-w-7xl mx-auto container-custom"
+            className="container-custom"
             style={{ fontFamily: "NotoSerif-semibold" }}
           >
             <ProductQuality />
@@ -72,9 +72,9 @@ export default function Home() {
         </section>
 
         {/* Certification Section */}
-        <section className="bg-white py-4 sm:py-6 md:py-12 lg:py-16 xl:py-16 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-8">
+        <section className="bg-white py-6 sm:py-8 md:py-12 lg:py-16 xl:py-16 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-8">
           <div
-            className="max-w-7xl mx-auto container-custom"
+            className="container-custom"
             style={{ fontFamily: "NotoSerif-semibold" }}
           >
             <OurCertification />
@@ -85,10 +85,10 @@ export default function Home() {
         {/* Contact Us Section */}
         <section className="bg-[#e9e8ed] py-6 sm:py-8 md:py-12 lg:py-16 xl:py-16 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-8">
           <div
-            className="max-w-7xl mx-auto container-custom"
+            className="container-custom"
             style={{ fontFamily: "NotoSerif-semibold" }}
           >
-            <ContactUs />
+            <ContactUsComponent isPageHeader={false} />
           </div>
         </section>
       </main>
