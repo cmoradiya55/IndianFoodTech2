@@ -391,7 +391,7 @@ export default function BlogDetails({
               className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-6 shadow-sm border border-[#D2D1D6] mb-6 sm:mb-6"
             >
               <p
-                className="text-gray-600 text-sm sm:text-base md:text-base leading-relaxed font-medium"
+                className="aeo-speakable-summary text-gray-600 text-sm sm:text-base md:text-base leading-relaxed font-medium"
                 style={{ fontFamily: "Poppins-medium" }}
               >
                 {post.description}

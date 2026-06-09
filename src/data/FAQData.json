@@ -2,7 +2,7 @@
   "general": [
     {
       "question": "What is Indian Foodtech?",
-      "answer": "Indian Foodtech is a B2B peanut butter manufacturer and exporter based in Surat, Gujarat, India. We produce over 3,000 kg of peanut butter daily and export to 47 countries worldwide. We hold FSSAI, Halal, and ISO certifications."
+      "answer": "Indian Foodtech is a B2B peanut butter manufacturer and exporter based in Surat, Gujarat, India. We produce over 5 MT of peanut butter daily and export to 75+ countries worldwide. We hold FSSAI, Halal, and ISO certifications."
     },
     {
       "question": "What certifications does Indian Foodtech hold?",
@@ -10,11 +10,11 @@
     },
     {
       "question": "What is the daily production capacity of Indian Foodtech?",
-      "answer": "Indian Foodtech has a daily production capacity of 3,000 kg of peanut butter and nut butters at our facility in Surat, Gujarat, equipped with advanced roasting, grinding, and color-sorting systems."
+      "answer": "Indian Foodtech has a daily production capacity of 5 MT of peanut butter and nut butters at our facility in Surat, Gujarat, equipped with advanced roasting, grinding, and color-sorting systems."
     },
     {
       "question": "Which countries does Indian Foodtech export to?",
-      "answer": "Indian Foodtech exports to 47 countries across Europe, the Middle East, Southeast Asia, Africa, and the Americas. Key markets include Germany, the UAE, Saudi Arabia, the UK, France, Australia, Singapore, and South Africa."
+      "answer": "Indian Foodtech exports to 75+ countries across Europe, the Middle East, Southeast Asia, Africa, and the Americas. Key markets include Germany, the UAE, Saudi Arabia, the UK, France, Australia, Singapore, and South Africa."
     },
     {
       "question": "Is Indian Foodtech's peanut butter halal certified?",
@@ -28,7 +28,7 @@
   "products": [
     {
       "question": "What types of peanut butter does Indian Foodtech manufacture?",
-      "answer": "We manufacture 10 peanut butter varieties: Natural Creamy, Natural Crunchy, Classic Creamy, Classic Crunchy, Chocolate Creamy, Chocolate Crunchy, Elaichi Creamy, Elaichi Crunchy, Sugar-Free Natural Creamy, and Sugar-Free Natural Crunchy. We also produce Almond Butter, Cashew Butter, Tahini, Roasted Peanut Dices, and Hazelnut Chocolate Spread."
+      "answer": "We manufacture 10 peanut butter varieties: Natural Creamy, Natural Crunchy, Classic Creamy, Classic Crunchy, Chocolate Creamy, Chocolate Crunchy, Elaichi Creamy, Elaichi Crunchy, Sugar-Free Natural Creamy, and Sugar-Free Natural Crunchy. We also produce Almond Butter, Cashew Butter, Tahini, and Hazelnut Chocolate Spread."
     },
     {
       "question": "What packaging sizes are available for bulk peanut butter orders?",

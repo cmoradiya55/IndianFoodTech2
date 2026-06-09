@@ -51,7 +51,7 @@ const AboutUs = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ type: "spring", stiffness: 120, damping: 15 }}
-                className="bg-[#1D2C00] text-white px-6 sm:px-8 py-2.5 sm:py-3.5 rounded-full text-xs sm:text-sm md:text-base font-normal text-center shadow-md"
+                className="aeo-speakable-summary bg-[#1D2C00] text-white px-6 sm:px-8 py-2.5 sm:py-3.5 rounded-full text-xs sm:text-sm md:text-base font-normal text-center shadow-md"
                 style={{ fontFamily: "Poppins-regular" }}
               >
                 Why Partner with Indian Foodtech?
@@ -121,22 +121,24 @@ const AboutUs = () => {
       </div>
 
       {/* Looking for a Dependable Private Label Food Manufacturer in India? Section */}
-      <div className="py-6 bg-[#e9e8ed]">
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          className="bg-[#D4DBC4] py-6 px-4 sm:px-6 md:px-8 rounded-[24px] max-w-7xl mx-auto container-custom shadow-sm border border-gray-200/10"
-          style={{ fontFamily: "Poppins-regular" }}
-        >
-          <p className="text-black text-xs sm:text-sm md:text-base font-medium text-center px-4 sm:px-0 leading-relaxed">
-            Looking for a dependable private label food manufacturer in India?
-            Indian
-            <br className="hidden md:block" />
-            Foodtech is the partner you can trust.
-          </p>
-        </motion.div>
+      <div className="py-6">
+        <div className="bg-[#D4DBC4]">
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="py-6 px-4 sm:px-6 md:px-8 rounded-[24px] max-w-7xl mx-auto container-custom"
+            style={{ fontFamily: "Poppins-regular" }}
+          >
+            <p className="text-black text-xs sm:text-sm md:text-base font-medium text-center px-4 sm:px-0 leading-relaxed">
+              Looking for a dependable private label food manufacturer in India?
+              Indian
+              <br className="hidden md:block" />
+              Foodtech is the partner you can trust.
+            </p>
+          </motion.div>
+        </div>
       </div>
     </>
   );

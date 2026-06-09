@@ -51,9 +51,6 @@ const PeanutButterSupplierAlbania = () => {
     <div className="min-h-screen bg-white font-sans text-gray-900 overflow-x-hidden mt-8 sm:mt-6">
       {/* Hero Section - Compact & Elegant */}
       <section className="relative bg-[#e9e8ed] py-10 sm:py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-72 h-72 bg-primary-100 rounded-full blur-3xl opacity-30"></div>
-        <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-72 h-72 bg-primary-50 rounded-full blur-3xl opacity-30"></div>
-
         <div className="max-w-7xl mx-auto relative">
           <div className="flex flex-col lg:flex-row gap-8 items-center text-center lg:text-left">
             <motion.div
@@ -73,7 +70,7 @@ const PeanutButterSupplierAlbania = () => {
                   Furnizues i gjalpit të kikirikut
                 </span>
               </h1>
-              <p className="text-base sm:text-base text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium" style={{ fontFamily: "Poppins-medium" }}>
+              <p className="aeo-speakable-summary text-base sm:text-base text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium" style={{ fontFamily: "Poppins-medium" }}>
                 Indian Foodtech is your manufacturing partner supplying premium
                 peanut butter directly from India to distributors and brands
                 across Albania.

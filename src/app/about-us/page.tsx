@@ -1,6 +1,9 @@
 import { Metadata } from "next";
 import React from 'react'
 import AboutUs from "./AboutUs";
+import Schema from "@/components/Schema";
+
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.indianfoodtech.com";
 
 export const metadata: Metadata = {
   title: "About Us | Indian Foodtech - Manufacturer Journey",
@@ -47,5 +50,36 @@ export const metadata: Metadata = {
 };
 
 export default function AboutUsPage() {
-  return <AboutUs />;
+  return (
+    <>
+      <Schema
+        type="BreadcrumbList"
+        data={{
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+            { "@type": "ListItem", position: 2, name: "About Us", item: `${BASE_URL}/about-us` },
+          ],
+        }}
+      />
+      <Schema
+        type="AboutPage"
+        data={{
+          "@id": `${BASE_URL}/about-us#webpage`,
+          name: "About Indian Foodtech",
+          description:
+            "Indian Foodtech is a B2B peanut butter and nut butter manufacturer and exporter based in Surat, Gujarat, India, producing 5 MT daily and exporting to 75+ countries with FSSAI, Halal, and ISO certifications.",
+          url: `${BASE_URL}/about-us`,
+          inLanguage: "en",
+          isPartOf: { "@id": `${BASE_URL}/#website` },
+          about: { "@id": `${BASE_URL}/#organization` },
+          mainEntity: { "@id": `${BASE_URL}/#organization` },
+          speakable: {
+            "@type": "SpeakableSpecification",
+            cssSelector: [".aeo-speakable-summary"],
+          },
+        }}
+      />
+      <AboutUs />
+    </>
+  );
 }

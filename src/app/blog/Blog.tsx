@@ -62,6 +62,7 @@ const Blog = () => {
           className="mb-10 sm:mb-12"
           descriptionClassName="text-sm sm:text-base md:text-base max-w-xl"
           isPageHeader={true}
+          isSpeakable={true}
         />
 
         {/* Search Bar & Category Filters Row with slide-up entrance */}

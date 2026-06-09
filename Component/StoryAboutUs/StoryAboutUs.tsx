@@ -191,7 +191,7 @@ const StoryAboutUs = ({ isPageHeader }: { isPageHeader?: boolean }) => {
           {/* Introduction Text */}
           <motion.p
             variants={itemVariants}
-            className="text-gray-800 text-sm sm:text-base mb-6 leading-relaxed font-medium"
+            className="aeo-speakable-summary text-gray-800 text-sm sm:text-base mb-6 leading-relaxed font-medium "
             style={{ fontFamily: "Poppins-medium" }}
           >
             At Indian Foodtech, we make high-quality peanut butter, premium tahini paste, nut butter,

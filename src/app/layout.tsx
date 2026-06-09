@@ -75,12 +75,13 @@ export default function RootLayout({
             type="LocalBusiness"
             data={{
               "@type": ["Organization", "LocalBusiness"],
+              "@id": `${BASE_URL}/#organization`,
               name: "Indian Foodtech",
               url: BASE_URL,
               logo: `${BASE_URL}/logoBlack.webp`,
               image: `${BASE_URL}/logoBlack.webp`,
               description:
-                "B2B peanut butter manufacturer and exporter from Surat, Gujarat, India. 3,000 kg daily capacity, exporting to 47 countries with FSSAI, Halal, and ISO certifications.",
+                "B2B peanut butter manufacturer and exporter from Surat, Gujarat, India. 5 MT daily capacity, exporting to 75+ countries with FSSAI, Halal, and ISO certifications.",
               address: {
                 "@type": "PostalAddress",
                 streetAddress:
@@ -138,8 +139,14 @@ export default function RootLayout({
           <Schema
             type="WebSite"
             data={{
+              "@id": `${BASE_URL}/#website`,
               name: "Indian Foodtech",
               url: BASE_URL,
+              description:
+                "Official site of Indian Foodtech, a B2B peanut butter and nut butter manufacturer and exporter based in Surat, Gujarat, India exporting to 75+ countries.",
+              inLanguage: "en-US",
+              about: { "@id": `${BASE_URL}/#organization` },
+              publisher: { "@id": `${BASE_URL}/#organization` },
               potentialAction: {
                 "@type": "SearchAction",
                 target:

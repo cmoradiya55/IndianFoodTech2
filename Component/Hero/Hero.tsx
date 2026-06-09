@@ -191,7 +191,7 @@ const Hero = () => {
               {/* High-legibility Editorial Paragraph */}
               <motion.p
                 variants={textItemVariants}
-                className="text-slate-500 text-sm sm:text-[15px] lg:text-[17px] leading-relaxed max-w-md font-medium"
+                className="aeo-speakable-summary text-slate-500 text-sm sm:text-[15px] lg:text-[17px] leading-relaxed max-w-md font-medium"
                 style={{ fontFamily: "Poppins-medium" }}
               >
                 <span className="sm:hidden">{slide.mobileDescription}</span>

@@ -70,7 +70,7 @@ const PeanutButterExportIndia = () => {
                   Premium Bulk Export from Gujarat
                 </span>
               </h1>
-              <p className="text-base sm:text-base text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium" style={{ fontFamily: "Poppins-medium" }}>
+              <p className="aeo-speakable-summary text-base sm:text-base text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium" style={{ fontFamily: "Poppins-medium" }}>
                 Indian Foodtech is a leading peanut butter manufacturer and
                 exporter based in India, delivering premium quality products to
                 distributors and brands across the globe.

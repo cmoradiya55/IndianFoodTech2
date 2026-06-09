@@ -6,10 +6,30 @@ import Statistics from "../../Component/Statistics/Statistics";
 import StoryAboutUs from "../../Component/StoryAboutUs/StoryAboutUs";
 import OurCertification from "../../Component/OurCertification/OurCertification";
 import ContactUsComponent from "../../Component/ContactUs/ContactUs";
+import Schema from "@/components/Schema";
+
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.indianfoodtech.com";
 
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
+      <Schema
+        type="WebPage"
+        data={{
+          "@id": `${BASE_URL}/#webpage`,
+          name: "Indian Foodtech | Premium Peanut Butter Manufacturer",
+          description:
+            "B2B peanut butter manufacturer and exporter from Surat, Gujarat, India. 5 MT daily capacity, exporting to 75+ countries with FSSAI, Halal, and ISO certifications.",
+          url: BASE_URL,
+          inLanguage: "en",
+          isPartOf: { "@id": `${BASE_URL}/#website` },
+          about: { "@id": `${BASE_URL}/#organization` },
+          speakable: {
+            "@type": "SpeakableSpecification",
+            cssSelector: [".aeo-speakable-summary"],
+          },
+        }}
+      />
       <main className="w-full">
         {/* Hero Section */}
         <section className="bg-[#e9e8ed] h-auto sm:h-[calc(100vh-var(--header-height,82px))] sm:h-[calc(100vh-var(--header-height,86px))] lg:h-[calc(100vh-var(--header-height,94px))] overflow-hidden">

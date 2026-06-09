@@ -1,5 +1,8 @@
 import { Metadata } from "next";
 import Blog from "./Blog";
+import Schema from "@/components/Schema";
+
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.indianfoodtech.com";
 
 export const metadata: Metadata = {
   title: "Blog | Indian Foodtech - Peanut Butter Insights & Recipes",
@@ -47,7 +50,37 @@ export const metadata: Metadata = {
 };
 
 const BlogPage = () => {
-  return <Blog />;
+  return (
+    <>
+      <Schema
+        type="BreadcrumbList"
+        data={{
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+            { "@type": "ListItem", position: 2, name: "Blog", item: `${BASE_URL}/blog` },
+          ],
+        }}
+      />
+      <Schema
+        type="WebPage"
+        data={{
+          "@id": `${BASE_URL}/blog#webpage`,
+          name: "Blog | Indian Foodtech - Peanut Butter Insights & Recipes",
+          description:
+            "Explore health tips, industry insights, creative recipes, and everything about peanut butter from Indian Foodtech — your trusted peanut butter manufacturer.",
+          url: `${BASE_URL}/blog`,
+          inLanguage: "en",
+          isPartOf: { "@id": `${BASE_URL}/#website` },
+          about: { "@id": `${BASE_URL}/#organization` },
+          speakable: {
+            "@type": "SpeakableSpecification",
+            cssSelector: [".aeo-speakable-summary"],
+          },
+        }}
+      />
+      <Blog />
+    </>
+  );
 };
 
 export default BlogPage;

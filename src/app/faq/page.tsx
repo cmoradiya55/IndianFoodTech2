@@ -1,5 +1,8 @@
 import { Metadata } from "next";
 import FAQPage from "./FAQPage";
+import Schema from "@/components/Schema";
+
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.indianfoodtech.com";
 
 export const metadata: Metadata = {
   title: "FAQ | Indian Foodtech - Peanut Butter Manufacturer",
@@ -47,5 +50,35 @@ export const metadata: Metadata = {
 };
 
 export default function FAQRoutePage() {
-  return <FAQPage />;
+  return (
+    <>
+      <Schema
+        type="BreadcrumbList"
+        data={{
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+            { "@type": "ListItem", position: 2, name: "FAQ", item: `${BASE_URL}/faq` },
+          ],
+        }}
+      />
+      <Schema
+        type="WebPage"
+        data={{
+          "@id": `${BASE_URL}/faq#webpage`,
+          name: "FAQ | Indian Foodtech - Peanut Butter Manufacturer",
+          description:
+            "Find answers to common questions about Indian Foodtech's peanut butter products, bulk export orders, private label services, certifications, and shipping.",
+          url: `${BASE_URL}/faq`,
+          inLanguage: "en",
+          isPartOf: { "@id": `${BASE_URL}/#website` },
+          about: { "@id": `${BASE_URL}/#organization` },
+          speakable: {
+            "@type": "SpeakableSpecification",
+            cssSelector: [".aeo-speakable-summary"],
+          },
+        }}
+      />
+      <FAQPage />
+    </>
+  );
 }

@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import AllIconComponent from "../../public/AllIconComponent";
 import { Package, ShieldCheck, Factory } from "lucide-react";
@@ -17,7 +16,7 @@ const features = [
     title: "Global Shipping",
     bgColor: "bg-[#8B65FF]",
     Icon: "globalShippingIcon",
-    description: "We export to countries worldwide.",
+    description: "We export to 75+ countries across Europe, the Middle East, Asia, Africa, and the Americas.",
   },
   {
     title: "In-House Production",

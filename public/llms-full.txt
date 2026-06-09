@@ -1,6 +1,6 @@
 # Indian Foodtech — Complete Site Content
 
-> B2B peanut butter manufacturer and exporter based in Surat, Gujarat, India. Daily production: 3,000 kg. Exports to 47 countries. Certifications: FSSAI, Halal, ISO.
+> B2B peanut butter manufacturer and exporter based in Surat, Gujarat, India. Daily production: 5 MT. Exports to 75+ countries. Certifications: FSSAI, Halal, ISO.
 
 Indian Foodtech is a certified peanut butter and nut butter manufacturer serving importers, distributors, retail brands, and supermarket chains worldwide. We offer private label manufacturing, custom formulations, and bulk export from India.
 
@@ -10,8 +10,8 @@ Indian Foodtech is a certified peanut butter and nut butter manufacturer serving
 
 Indian Foodtech is headquartered in Surat, Gujarat, India, with a manufacturing facility at Ground Floor, Plot No. 197-198, Om Industries Estate, Vibhag 1, Village Mankana, Kamrej, Surat - 394190.
 
-- Daily production capacity: 3,000 kg of peanut butter and nut butters
-- Export reach: 47 countries across 6 continents
+- Daily production capacity: 5 MT of peanut butter and nut butters
+- Export reach: 75+ countries across 6 continents
 - Facility: Advanced roasting, grinding, and color-sorting systems
 - Primary shipping ports: Mundra Port and Nhava Sheva (JNPT), India
 - Shipping transit times: UAE 18–22 days, Europe 22–28 days, Americas 25–35 days
@@ -127,14 +127,7 @@ Indian Foodtech is headquartered in Surat, Gujarat, India, with a manufacturing 
 - Sizes: 227g, 250g, 340g, 350g, 400g, 500g, 510g, 1 kg, 20 kg pail
 - URL: https://www.indianfoodtech.com/products/tahini-sesame-paste
 
-### Category 3: Roasted Peanuts
-
-**Roasted Peanut Dices**
-- Ingredients: Roasted Peanuts
-- Use: Bakery, confectionery, snacks, toppings
-- URL: https://www.indianfoodtech.com/products/roasted-peanut-dices
-
-### Category 4: Spreads
+### Category 3: Spread
 
 **Hazelnut Chocolate Spread**
 - Ingredients: Hazelnut (10%), Cocoa Powder (10%), Milk Solid (3%), Palm Oil (35%), Sugar (41.2%), Salt, Emulsifier (INS471), Vanilla, Natural Identical Flavor
@@ -308,16 +301,16 @@ Samples: Standard samples ship within 5–7 business days; custom samples 10–1
 ### General
 
 **What is Indian Foodtech?**
-Indian Foodtech is a B2B peanut butter manufacturer and exporter based in Surat, Gujarat, India. We produce over 3,000 kg of peanut butter daily and export to 47 countries worldwide. We hold FSSAI, Halal, and ISO certifications.
+Indian Foodtech is a B2B peanut butter manufacturer and exporter based in Surat, Gujarat, India. We produce over 5 MT of peanut butter daily and export to 75+ countries worldwide. We hold FSSAI, Halal, and ISO certifications.
 
 **What certifications does Indian Foodtech hold?**
 Indian Foodtech holds FSSAI (Food Safety and Standards Authority of India) license, Jamiyat Halal Certification, Halal Certification, and ISO Certification. Our peanut butters are also Non-GMO Project Verified, Keto Certified, and Gluten Free.
 
 **What is the daily production capacity of Indian Foodtech?**
-Indian Foodtech has a daily production capacity of 3,000 kg of peanut butter and nut butters at our facility in Surat, Gujarat, equipped with advanced roasting, grinding, and color-sorting systems.
+Indian Foodtech has a daily production capacity of 5 MT of peanut butter and nut butters at our facility in Surat, Gujarat, equipped with advanced roasting, grinding, and color-sorting systems.
 
 **Which countries does Indian Foodtech export to?**
-Indian Foodtech exports to 47 countries across Europe, the Middle East, Southeast Asia, Africa, and the Americas. Key markets include Germany, the UAE, Saudi Arabia, the UK, France, Australia, Singapore, and South Africa.
+Indian Foodtech exports to 75+ countries across Europe, the Middle East, Southeast Asia, Africa, and the Americas. Key markets include Germany, the UAE, Saudi Arabia, the UK, France, Australia, Singapore, and South Africa.
 
 **Is Indian Foodtech's peanut butter halal certified?**
 Yes. Indian Foodtech holds both Jamiyat Halal Certification and standard Halal Certification. All products are manufactured in a halal-compliant facility, making them suitable for GCC, Middle East, Southeast Asia, and African markets.
@@ -328,7 +321,7 @@ Call us at +91 97148 99711 or email office@indianfoodtech.in or sales@indianfood
 ### Products
 
 **What types of peanut butter does Indian Foodtech manufacture?**
-We manufacture 10 peanut butter varieties: Natural Creamy, Natural Crunchy, Classic Creamy, Classic Crunchy, Chocolate Creamy, Chocolate Crunchy, Elaichi Creamy, Elaichi Crunchy, Sugar-Free Natural Creamy, and Sugar-Free Natural Crunchy. We also produce Almond Butter, Cashew Butter, Tahini, Roasted Peanut Dices, and Hazelnut Chocolate Spread.
+We manufacture 10 peanut butter varieties: Natural Creamy, Natural Crunchy, Classic Creamy, Classic Crunchy, Chocolate Creamy, Chocolate Crunchy, Elaichi Creamy, Elaichi Crunchy, Sugar-Free Natural Creamy, and Sugar-Free Natural Crunchy. We also produce Almond Butter, Cashew Butter, Tahini, and Hazelnut Chocolate Spread.
 
 **What packaging sizes are available for bulk peanut butter orders?**
 Retail sizes: 227g, 250g, 340g, 350g, 400g, 500g, 510g, and 1 kg. Industrial sizes: 20 kg pails and 235 kg HDPE drums. We optimize container loading for 20-foot and 40-foot shipping containers.

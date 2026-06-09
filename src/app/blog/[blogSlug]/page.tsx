@@ -143,6 +143,25 @@ export default async function BlogPostPage({
 
       {post && (
         <Schema
+          type="WebPage"
+          data={{
+            "@id": `${BASE_URL}/blog/${post.slug}#webpage`,
+            name: post.title,
+            description: post.description,
+            url: `${BASE_URL}/blog/${post.slug}`,
+            inLanguage: "en",
+            isPartOf: { "@id": `${BASE_URL}/#website` },
+            about: { "@id": `${BASE_URL}/#organization` },
+            speakable: {
+              "@type": "SpeakableSpecification",
+              cssSelector: [".aeo-speakable-summary"],
+            },
+          }}
+        />
+      )}
+
+      {post && (
+        <Schema
           type="BlogPosting"
           data={{
             headline: post.title,
@@ -151,22 +170,20 @@ export default async function BlogPostPage({
             datePublished: publishedTime,
             dateModified: publishedTime,
             author: {
-              "@type": "Organization",
+              "@id": `${BASE_URL}/#organization`,
               name: post.author || "Indian Foodtech",
-              url: BASE_URL,
+              description:
+                "In-house food technologists and export compliance specialists who run Indian Foodtech's FSSAI-, Halal-, and ISO-certified peanut butter and nut butter manufacturing facility in Surat, Gujarat, India, producing 5 MT daily and exporting to 75+ countries.",
+              knowsAbout: [
+                "Peanut butter manufacturing",
+                "Nut butter formulation",
+                "Food export compliance",
+                "Aflatoxin testing and food safety",
+                "Private label manufacturing",
+              ],
             },
-            publisher: {
-              "@type": "Organization",
-              name: "Indian Foodtech",
-              logo: {
-                "@type": "ImageObject",
-                url: `${BASE_URL}/logoBlack.webp`,
-              },
-            },
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id": `${BASE_URL}/blog/${post.slug}`,
-            },
+            publisher: { "@id": `${BASE_URL}/#organization` },
+            mainEntityOfPage: { "@id": `${BASE_URL}/blog/${post.slug}#webpage` },
             articleSection: post.category,
             inLanguage: "en-US",
           }}
