@@ -3,7 +3,7 @@ import PeanutButterSupplierBosniaHerzegovina from "./PeanutButterSupplierBosniaH
 import MarketSchema from "@/components/MarketSchema";
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Supplier Bosnia & Herzegovina | Bulk peanut butter Supplier",
+  title: "Peanut Butter Supplier Bosnia & Herzegovina | Indian Foodtech",
   description:
     "Reliable peanut butter supplier in Bosnia and Herzegovina. Indian Foodtech offers premium bulk supply, private label, and solutions for the Bosnian market.",
   keywords: [
