@@ -48,7 +48,10 @@ const PeanutButterImportColombia = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white font-sans text-gray-900 overflow-x-hidden mt-8 sm:mt-6">
+    <div
+      className="min-h-screen bg-white font-sans text-gray-900 overflow-x-hidden mt-8 sm:mt-6"
+      style={{ fontFamily: "NotoSerif-semibold" }}
+    >
       {/* Hero Section */}
       <section className="relative bg-[#e9e8ed] py-10 sm:py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="max-w-7xl mx-auto relative">
@@ -66,7 +69,7 @@ const PeanutButterImportColombia = () => {
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-950 leading-[1.1] tracking-tighter">
                 Peanut Butter Importer in Colombia
                 <br />
-                <span className="text-primary-700 font-black">
+                <span className="text-primary-500 font-black">
                   Importador de Mantequilla de Maní
                 </span>
               </h1>
@@ -539,7 +542,7 @@ const PeanutButterImportColombia = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-10 bg-primary-50 px-4 sm:px-6 lg:px-8">
+      <section className="py-10 bg-[#e9e8ed] px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, scale: 0.96 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -547,7 +550,6 @@ const PeanutButterImportColombia = () => {
           transition={{ type: "spring", stiffness: 100, damping: 15 }}
           className="max-w-4xl mx-auto bg-white rounded-[3rem] p-12 sm:p-16 text-center shadow-strong border border-primary-100 relative overflow-hidden mb-10"
         >
-          <div className="absolute -top-12 -right-12 w-48 h-48 bg-primary-100 rounded-full blur-3xl opacity-30"></div>
           <div className="relative z-10 flex flex-col items-center space-y-4">
             <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center text-white shadow-xl animate-bounce-gentle">
               <Phone className="w-8 h-8" />

@@ -625,21 +625,6 @@ export default function BlogDetails({
         </section>
       )}
 
-      {/* BOTTOM BANNER */}
-      <section className="bg-[#D4DBC4] py-4 sm:py-6 px-3 sm:px-4 md:px-8 lg:px-8">
-        <div className="max-w-7xl mx-auto container-custom">
-          <p
-            className="text-black text-xs sm:text-sm md:text-base font-normal text-center py-2 sm:py-3 px-4 sm:px-0"
-            style={{ fontFamily: "Poppins-regular" }}
-          >
-            Looking for a dependable private label food manufacturer in India?
-            Indian
-            <br className="hidden md:block" />
-            Foodtech is the partner you can trust.
-          </p>
-        </div>
-      </section>
-
       {/* Image Preview Modal */}
       {isPreviewOpen && post && (
         <ImagePreviewModal

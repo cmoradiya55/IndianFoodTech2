@@ -643,9 +643,34 @@ const ProductDetails = () => {
               if (!currentCategory) return null;
 
               // Get other products from the same category (excluding current product)
-              const similarProducts = currentCategory.products
+              let similarProducts = currentCategory.products
                 .filter((p) => p.slug !== productId)
                 .slice(0, 3); // Take only first 3 products
+
+              // If no similar products found, fall back to random/deterministic peanut butter products
+              if (similarProducts.length === 0) {
+                const pbCategory = AllProductsList.find(
+                  (c) => c.categoryName === "Peanut Butter" || c.id === 1
+                );
+                if (pbCategory) {
+                  const availablePb = pbCategory.products.filter((p) => p.slug !== productId);
+                  
+                  // Compute a deterministic hash based on productId to avoid React hydration mismatches
+                  let hash = 0;
+                  for (let i = 0; i < productId.length; i++) {
+                    hash += productId.charCodeAt(i);
+                  }
+                  
+                  const tempAvailable = [...availablePb];
+                  const fallbackProducts = [];
+                  while (fallbackProducts.length < 3 && tempAvailable.length > 0) {
+                    const index = hash % tempAvailable.length;
+                    fallbackProducts.push(tempAvailable.splice(index, 1)[0]);
+                    hash = Math.floor(hash / 2) + 17;
+                  }
+                  similarProducts = fallbackProducts;
+                }
+              }
 
               return similarProducts.map((recProduct) => (
                 <ProductCard

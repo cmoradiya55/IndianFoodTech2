@@ -88,7 +88,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "peanut-butter-import-chile",
     "peanut-butter-import-colombia",
     "peanut-butter-import-china",
-    "peanut-butter-export-india",
     "peanut-butter-import-japan",
     "peanut-butter-import-south-korea",
     "peanut-butter-import-indonesia",

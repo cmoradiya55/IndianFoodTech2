@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Globe } from "lucide-react";
 import AllIconComponent from "../../public/AllIconComponent";
 import FloatingChatMenu from "./FloatingChatMenu";
+import countryLinks from "../data/CountryLinks.json";
 
 const QUICK_LINKS = [
   { href: "/about-us", label: "About Us" },
@@ -9,7 +11,6 @@ const QUICK_LINKS = [
   { href: "/private-labels", label: "Private Labels" },
   { href: "/products", label: "Products" },
   { href: "/faq", label: "FAQ" },
-  // { href: "/international", label: "International Hub" },
 ];
 
 const Footer = () => {
@@ -18,6 +19,38 @@ const Footer = () => {
       className="bg-[#1D2C00] relative text-white"
       style={{ fontFamily: "NotoSerif-semibold" }}
     >
+      {/* Countries Section */}
+      <div className="bg-[#d4dbc4] border-b border-[#1D2C00]/10">
+        <div className="container-custom pt-8 pb-8 px-4 sm:px-6 lg:px-20">
+          <div className="flex flex-col items-center text-center">
+            <div className="inline-flex items-center justify-center p-3 bg-white/40 rounded-full shadow-sm mb-4">
+              <Globe className="w-8 h-8 sm:w-10 sm:h-10 text-primary-700 animate-pulse" />
+            </div>
+            <h4 className="text-[#1D2C00] text-xl sm:text-2xl lg:text-3xl font-extrabold mb-8 tracking-tight">
+              Exporting Premium Peanut Butter to{" "}
+              <span className="text-primary-700">{countryLinks.length}+</span>{" "}
+              Countries Worldwide
+            </h4>
+
+            <div
+              className="flex flex-wrap gap-2 sm:gap-2"
+              style={{ fontFamily: "Poppins-regular" }}
+            >
+              {countryLinks.map((country) => (
+                <Link
+                  key={country.href}
+                  href={country.href}
+                  target="_blank"
+                  className="rounded-full bg-white/60 border border-primary-500/20 px-3 py-1 text-xs sm:text-sm font-medium text-[#1D2C00]/80 shadow-sm backdrop-blur-sm transition-all duration-300 hover:bg-[#1D2C00] hover:text-white hover:border-[#1D2C00]"
+                >
+                  {country.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Main Footer Content */}
       <div className="container-custom mb-6 sm:mb-8 lg:mb-10 pt-16 pb-4 px-4 sm:px-6 lg:px-8">
         {/* Main Content Section */}
@@ -122,7 +155,7 @@ const Footer = () => {
                       <span className="text-primary-500 text-sm">Address:</span>
                     </td>
                     <td className="text-white text-sm sm:text-sm font-medium align-top">
-                      Ground Floor, Plot No. 198, 197, 198
+                      Ground Floor, Plot No. 196, 197, 198
                       <br />
                       Om Industries Estate, Vibhag 1,
                       <br />
