@@ -68,7 +68,7 @@ const PrivateLabels = () => {
                 About Private Label
               </h2>
               <p
-                className="text-gray-600 text-[15px] sm:text-sm lg:text-base leading-relaxed lg:leading-normal mb-4 sm:mb-6 lg:mb-4"
+                className="aeo-speakable-summary text-gray-600 text-[15px] sm:text-sm lg:text-base leading-relaxed lg:leading-normal mb-4 sm:mb-6 lg:mb-4"
                 style={{ fontFamily: "Poppins-regular" }}
               >
                 At Indian Foodtech, we make it simple for you to launch your

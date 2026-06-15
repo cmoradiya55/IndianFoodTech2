@@ -2,6 +2,7 @@
 import React from "react";
 import StoryAboutUs from "../../../Component/StoryAboutUs/StoryAboutUs";
 import { motion, Variants } from "framer-motion";
+import { ChevronRight } from "lucide-react";
 
 const AboutUs = () => {
   const benefits = [
@@ -51,7 +52,7 @@ const AboutUs = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ type: "spring", stiffness: 120, damping: 15 }}
-                className="bg-[#1D2C00] text-white px-6 sm:px-8 py-2.5 sm:py-3.5 rounded-full text-xs sm:text-sm md:text-base font-normal text-center shadow-md"
+                className="aeo-speakable-summary bg-[#1D2C00] text-white px-6 sm:px-8 py-2.5 sm:py-3.5 rounded-full text-xs sm:text-sm md:text-base font-normal text-center shadow-md"
                 style={{ fontFamily: "Poppins-regular" }}
               >
                 Why Partner with Indian Foodtech?
@@ -121,23 +122,40 @@ const AboutUs = () => {
       </div>
 
       {/* Looking for a Dependable Private Label Food Manufacturer in India? Section */}
-      <div className="py-6 bg-[#e9e8ed]">
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          className="bg-[#D4DBC4] py-6 px-4 sm:px-6 md:px-8 rounded-[24px] max-w-7xl mx-auto container-custom shadow-sm border border-gray-200/10"
-          style={{ fontFamily: "Poppins-regular" }}
-        >
-          <p className="text-black text-xs sm:text-sm md:text-base font-medium text-center px-4 sm:px-0 leading-relaxed">
-            Looking for a dependable private label food manufacturer in India?
-            Indian
-            <br className="hidden md:block" />
-            Foodtech is the partner you can trust.
-          </p>
-        </motion.div>
-      </div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="my-12 px-4 sm:px-6 md:px-8 max-w-5xl mx-auto w-full"
+        style={{ fontFamily: "Poppins-regular" }}
+      >
+        <div className="relative overflow-hidden bg-white/80 backdrop-blur-md rounded-2xl border border-gray-100 p-6 sm:p-8 md:p-10 shadow-xs hover:shadow-md transition-all duration-300 group">
+          {/* Subtle vertical theme-accent bar on the left */}
+          <div className="absolute top-0 left-0 w-1.5 h-full bg-[#6F9E12]" />
+
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 relative z-10">
+            <div className="text-left max-w-3xl">
+              <h3 className="text-[#23420e] text-base sm:text-lg md:text-xl font-semibold mb-2">
+                Looking for a dependable private label food manufacturer in India?
+              </h3>
+              <p className="text-gray-600 text-xs sm:text-sm md:text-base leading-relaxed">
+                Indian Foodtech is the partner you can trust for high-quality, customized, and cost-effective bulk nut spread solutions.
+              </p>
+            </div>
+
+            <motion.a
+              href="/contact-us"
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.98 }}
+              className="inline-flex items-center justify-center bg-[#1D2C00] hover:bg-[#2e4501] text-white px-6 py-3 rounded-full text-xs sm:text-sm font-medium tracking-wide shadow-xs hover:shadow-sm transition-all duration-200 whitespace-nowrap self-start md:self-auto"
+            >
+              Get in Touch
+              <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
+            </motion.a>
+          </div>
+        </div>
+      </motion.div>
     </>
   );
 };

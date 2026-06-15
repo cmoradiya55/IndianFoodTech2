@@ -4,12 +4,17 @@ interface SchemaProps {
   type:
     | "Organization"
     | "WebSite"
+    | "WebPage"
+    | "AboutPage"
+    | "ContactPage"
+    | "Service"
     | "LocalBusiness"
     | "Product"
     | "BlogPosting"
     | "FAQPage"
     | "BreadcrumbList"
-    | "HowTo";
+    | "HowTo"
+    | "Person";
   data: Record<string, unknown>;
 }
 

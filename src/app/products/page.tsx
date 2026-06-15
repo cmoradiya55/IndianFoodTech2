@@ -1,6 +1,9 @@
 import { Metadata } from "next";
 import React, { Suspense } from 'react'
 import Products from "./Products";
+import Schema from "@/components/Schema";
+
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.indianfoodtech.com";
 
 export const metadata: Metadata = {
   title: "Our Products | Indian Foodtech - Nut Spreads",
@@ -58,8 +61,36 @@ function ProductsLoading() {
 
 export default function ProductsPage() {
   return (
-    <Suspense fallback={<ProductsLoading />}>
-      <Products />
-    </Suspense>
+    <>
+      <Schema
+        type="BreadcrumbList"
+        data={{
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+            { "@type": "ListItem", position: 2, name: "Products", item: `${BASE_URL}/products` },
+          ],
+        }}
+      />
+      <Schema
+        type="WebPage"
+        data={{
+          "@id": `${BASE_URL}/products#webpage`,
+          name: "Our Products | Indian Foodtech - Nut Spreads",
+          description:
+            "Explore Indian Food Tech's range of creamy, crunchy, natural, and flavored peanut butters and nut spreads available in jars, pouches, and bulk packs.",
+          url: `${BASE_URL}/products`,
+          inLanguage: "en",
+          isPartOf: { "@id": `${BASE_URL}/#website` },
+          about: { "@id": `${BASE_URL}/#organization` },
+          speakable: {
+            "@type": "SpeakableSpecification",
+            cssSelector: [".aeo-speakable-summary"],
+          },
+        }}
+      />
+      <Suspense fallback={<ProductsLoading />}>
+        <Products />
+      </Suspense>
+    </>
   );
 }

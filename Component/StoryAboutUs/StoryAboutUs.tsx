@@ -191,10 +191,10 @@ const StoryAboutUs = ({ isPageHeader }: { isPageHeader?: boolean }) => {
           {/* Introduction Text */}
           <motion.p
             variants={itemVariants}
-            className="text-gray-800 text-sm sm:text-base mb-6 leading-relaxed font-medium"
+            className="aeo-speakable-summary text-gray-800 text-sm sm:text-base mb-6 leading-relaxed font-medium "
             style={{ fontFamily: "Poppins-medium" }}
           >
-            At Indian Foodtech, we make high-quality peanut butter, premium tahini paste, nut butter,
+            At Indian Foodtech, we are a leading B2B manufacturer of high-quality peanut butter, premium tahini paste, nut butter,
             and spreads for brands everywhere.
           </motion.p>
 
@@ -213,7 +213,7 @@ const StoryAboutUs = ({ isPageHeader }: { isPageHeader?: boolean }) => {
                 style={{ fontFamily: "Poppins-medium" }}
               >
                 You can choose from creamy, crunchy, natural, or flavored peanut
-                butter. We offer flexible packaging like jars, pouches, and bulk
+                butter, all crafted to be delicious and wholesome. We offer flexible packaging like jars, pouches, and bulk
                 packs.
               </p>
             </motion.div>
@@ -225,13 +225,13 @@ const StoryAboutUs = ({ isPageHeader }: { isPageHeader?: boolean }) => {
             >
               <h3 className="text-base sm:text-lg font-bold text-primary-500 mb-1.5 flex items-center gap-2 group-hover/item:text-primary-600 transition-colors">
                 <span className="h-1.5 w-1.5 rounded-full bg-primary-500 group-hover/item:scale-150 transition-transform"></span>
-                Large-Scale Supply
+                Large-Scale Supply & OEM Expertise
               </h3>
               <p
                 className="text-gray-600 text-xs sm:text-sm leading-relaxed pl-3.5 border-l border-gray-200"
                 style={{ fontFamily: "Poppins-medium" }}
               >
-                We handle bulk production and private labeling while meeting all
+                We handle bulk production and private labeling with professional expertise, while meeting all
                 food safety standards.
               </p>
             </motion.div>

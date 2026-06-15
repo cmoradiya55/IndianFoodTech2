@@ -391,7 +391,7 @@ export default function BlogDetails({
               className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-6 shadow-sm border border-[#D2D1D6] mb-6 sm:mb-6"
             >
               <p
-                className="text-gray-600 text-sm sm:text-base md:text-base leading-relaxed font-medium"
+                className="aeo-speakable-summary text-gray-600 text-sm sm:text-base md:text-base leading-relaxed font-medium"
                 style={{ fontFamily: "Poppins-medium" }}
               >
                 {post.description}
@@ -624,21 +624,6 @@ export default function BlogDetails({
           </div>
         </section>
       )}
-
-      {/* BOTTOM BANNER */}
-      <section className="bg-[#D4DBC4] py-4 sm:py-6 px-3 sm:px-4 md:px-8 lg:px-8">
-        <div className="max-w-7xl mx-auto container-custom">
-          <p
-            className="text-black text-xs sm:text-sm md:text-base font-normal text-center py-2 sm:py-3 px-4 sm:px-0"
-            style={{ fontFamily: "Poppins-regular" }}
-          >
-            Looking for a dependable private label food manufacturer in India?
-            Indian
-            <br className="hidden md:block" />
-            Foodtech is the partner you can trust.
-          </p>
-        </div>
-      </section>
 
       {/* Image Preview Modal */}
       {isPreviewOpen && post && (

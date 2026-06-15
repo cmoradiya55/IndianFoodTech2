@@ -185,7 +185,7 @@ const ContactUsComponent = ({ isPageHeader }: { isPageHeader?: boolean }) => {
     >
       <PageHeader
         title="Contact Us"
-        description="Have questions or want to know more? We’re here to help! Reach out to us anytime, and we’ll make sure you get a quick and friendly response."
+        description="Have questions or want to know more? We're here to help! Reach out to us anytime, and we'll make sure you get a quick and friendly response."
         className="mb-8 sm:mb-10 md:mb-12"
         titleClassName="text-base sm:text-base md:text-lg lg:text-2xl font-bold mb-2 sm:mb-2"
         descriptionClassName="text-sm sm:text-sm md:text-sm lg:text-base max-w-2xl"

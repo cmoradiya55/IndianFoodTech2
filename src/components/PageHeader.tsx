@@ -11,6 +11,7 @@ export interface PageHeaderProps {
   descriptionClassName?: string;
   barClassName?: string;
   isPageHeader?: boolean;
+  isSpeakable?: boolean;
 }
 
 const barVariants: Variants = {
@@ -45,6 +46,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
   descriptionClassName = "",
   barClassName = "",
   isPageHeader = false,
+  isSpeakable = false,
 }) => {
   return (
     <motion.div
@@ -75,15 +77,26 @@ const PageHeader: React.FC<PageHeaderProps> = ({
           </h2>
         )}
         {description && (
-          <p
-            className={`text-sm sm:text-lg md:text-base text-primary-500 font-medium leading-relaxed ${descriptionClassName}`}
-            style={{ fontFamily: "Poppins-medium" }}
-          >
-            {description}
-          </p>
+          <>
+            {isSpeakable ? (
+              <p
+                className={`aeo-speakable-summary text-sm sm:text-lg md:text-base text-primary-500 font-medium leading-relaxed ${descriptionClassName}`}
+                style={{ fontFamily: "Poppins-medium" }}
+              >
+                {description}
+              </p>
+            ) : (
+            <p
+              className={`text-sm sm:text-lg md:text-base text-primary-500 font-medium leading-relaxed ${descriptionClassName}`}
+              style={{ fontFamily: "Poppins-medium" }}
+            >
+              {description}
+            </p>
+          )}
+          </>
         )}
       </motion.div>
-    </motion.div>
+    </motion.div >
   );
 };
 

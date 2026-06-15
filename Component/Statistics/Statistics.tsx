@@ -14,8 +14,8 @@ interface StatItem {
 const Statistics = () => {
   const stats: StatItem[] = [
     {
-      title: "30+ Exported",
-      subtitle: "Around the World",
+      title: "75+ Countries",
+      subtitle: "Exported Around the World",
       icon: "globalShippingIcon",
     },
     {
