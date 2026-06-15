@@ -12,12 +12,12 @@
   {
     "id": 3,
     "name": "Argentina",
-    "href": "/peanut-butter-import-argentina"
+    "href": "/peanut-butter-export-to-argentina"
   },
   {
     "id": 4,
     "name": "Australia",
-    "href": "/peanut-butter-import-australia"
+    "href": "/peanut-butter-export-to-australia"
   },
   {
     "id": 5,
@@ -42,12 +42,12 @@
   {
     "id": 9,
     "name": "Botswana",
-    "href": "/peanut-butter-import-botswana"
+    "href": "/peanut-butter-export-to-botswana"
   },
   {
     "id": 10,
     "name": "Brazil",
-    "href": "/peanut-butter-import-brazil"
+    "href": "/peanut-butter-export-to-brazil"
   },
   {
     "id": 11,
@@ -57,22 +57,22 @@
   {
     "id": 12,
     "name": "Canada",
-    "href": "/peanut-butter-import-canada"
+    "href": "/peanut-butter-export-to-canada"
   },
   {
     "id": 13,
     "name": "Chile",
-    "href": "/peanut-butter-import-chile"
+    "href": "/peanut-butter-export-to-chile"
   },
   {
     "id": 14,
     "name": "China",
-    "href": "/peanut-butter-import-china"
+    "href": "/peanut-butter-export-to-china"
   },
   {
     "id": 15,
     "name": "Colombia",
-    "href": "/peanut-butter-import-colombia"
+    "href": "/peanut-butter-export-to-colombia"
   },
   {
     "id": 16,
@@ -87,132 +87,132 @@
   {
     "id": 18,
     "name": "Czech Republic",
-    "href": "/peanut-butter-import-czech-republic"
+    "href": "/peanut-butter-export-to-czech-republic"
   },
   {
     "id": 19,
     "name": "Denmark",
-    "href": "/peanut-butter-import-denmark"
+    "href": "/peanut-butter-export-to-denmark"
   },
   {
     "id": 20,
     "name": "Egypt",
-    "href": "/peanut-butter-import-egypt"
+    "href": "/peanut-butter-export-to-egypt"
   },
   {
     "id": 21,
     "name": "Estonia",
-    "href": "/peanut-butter-import-estonia"
+    "href": "/peanut-butter-export-to-estonia"
   },
   {
     "id": 22,
     "name": "Ethiopia",
-    "href": "/peanut-butter-import-ethiopia"
+    "href": "/peanut-butter-export-to-ethiopia"
   },
   {
     "id": 23,
     "name": "Finland",
-    "href": "/peanut-butter-import-finland"
+    "href": "/peanut-butter-export-to-finland"
   },
   {
     "id": 24,
     "name": "France",
-    "href": "/peanut-butter-import-france"
+    "href": "/peanut-butter-export-to-france"
   },
   {
     "id": 25,
     "name": "Germany",
-    "href": "/peanut-butter-import-germany"
+    "href": "/peanut-butter-export-to-germany"
   },
   {
     "id": 26,
     "name": "Ghana",
-    "href": "/peanut-butter-import-ghana"
+    "href": "/peanut-butter-export-to-ghana"
   },
   {
     "id": 27,
     "name": "Greece",
-    "href": "/peanut-butter-import-greece"
+    "href": "/peanut-butter-export-to-greece"
   },
   {
     "id": 28,
     "name": "Hungary",
-    "href": "/peanut-butter-import-hungary"
+    "href": "/peanut-butter-export-to-hungary"
   },
   {
     "id": 29,
     "name": "Iceland",
-    "href": "/peanut-butter-import-iceland"
+    "href": "/peanut-butter-export-to-iceland"
   },
   {
     "id": 30,
     "name": "Indonesia",
-    "href": "/peanut-butter-import-indonesia"
+    "href": "/peanut-butter-export-to-indonesia"
   },
   {
     "id": 31,
     "name": "Ireland",
-    "href": "/peanut-butter-import-ireland"
+    "href": "/peanut-butter-export-to-ireland"
   },
   {
     "id": 32,
     "name": "Italy",
-    "href": "/peanut-butter-import-italy"
+    "href": "/peanut-butter-export-to-italy"
   },
   {
     "id": 33,
     "name": "Japan",
-    "href": "/peanut-butter-import-japan"
+    "href": "/peanut-butter-export-to-japan"
   },
   {
     "id": 34,
     "name": "Kenya",
-    "href": "/peanut-butter-import-kenya"
+    "href": "/peanut-butter-export-to-kenya"
   },
   {
     "id": 35,
     "name": "Kosovo",
-    "href": "/peanut-butter-import-kosovo"
+    "href": "/peanut-butter-export-to-kosovo"
   },
   {
     "id": 36,
     "name": "Kuwait",
-    "href": "/peanut-butter-import-kuwait"
+    "href": "/peanut-butter-export-to-kuwait"
   },
   {
     "id": 37,
     "name": "Latvia",
-    "href": "/peanut-butter-import-latvia"
+    "href": "/peanut-butter-export-to-latvia"
   },
   {
     "id": 38,
     "name": "Liechtenstein",
-    "href": "/peanut-butter-import-liechtenstein"
+    "href": "/peanut-butter-export-to-liechtenstein"
   },
   {
     "id": 39,
     "name": "Lithuania",
-    "href": "/peanut-butter-import-lithuania"
+    "href": "/peanut-butter-export-to-lithuania"
   },
   {
     "id": 40,
     "name": "Luxembourg",
-    "href": "/peanut-butter-import-luxembourg"
+    "href": "/peanut-butter-export-to-luxembourg"
   },
   {
     "id": 41,
     "name": "Malaysia",
-    "href": "/peanut-butter-import-malaysia"
+    "href": "/peanut-butter-export-to-malaysia"
   },
   {
     "id": 42,
     "name": "Malta",
-    "href": "/peanut-butter-import-malta"
+    "href": "/peanut-butter-export-to-malta"
   },
   {
     "id": 43,
     "name": "Mexico",
-    "href": "/peanut-butter-import-mexico"
+    "href": "/peanut-butter-export-to-mexico"
   },
   {
     "id": 44,
@@ -227,7 +227,7 @@
   {
     "id": 46,
     "name": "Montenegro",
-    "href": "/peanut-butter-import-montenegro"
+    "href": "/peanut-butter-export-to-montenegro"
   },
   {
     "id": 47,
@@ -237,12 +237,12 @@
   {
     "id": 48,
     "name": "New Zealand",
-    "href": "/peanut-butter-import-new-zealand"
+    "href": "/peanut-butter-export-to-new-zealand"
   },
   {
     "id": 49,
     "name": "Nigeria",
-    "href": "/peanut-butter-import-nigeria"
+    "href": "/peanut-butter-export-to-nigeria"
   },
   {
     "id": 50,
@@ -272,7 +272,7 @@
   {
     "id": 55,
     "name": "Qatar",
-    "href": "/peanut-butter-import-qatar"
+    "href": "/peanut-butter-export-to-qatar"
   },
   {
     "id": 56,
@@ -292,7 +292,7 @@
   {
     "id": 59,
     "name": "Saudi Arabia",
-    "href": "/peanut-butter-import-saudi-arabia"
+    "href": "/peanut-butter-export-to-saudi-arabia"
   },
   {
     "id": 60,
@@ -302,7 +302,7 @@
   {
     "id": 61,
     "name": "Singapore",
-    "href": "/peanut-butter-import-singapore"
+    "href": "/peanut-butter-export-to-singapore"
   },
   {
     "id": 62,
@@ -312,71 +312,71 @@
   {
     "id": 63,
     "name": "Slovenia",
-    "href": "/peanut-butter-import-slovenia"
+    "href": "/peanut-butter-export-to-slovenia"
   },
   {
     "id": 64,
     "name": "South Africa",
-    "href": "/peanut-butter-import-south-africa"
+    "href": "/peanut-butter-export-to-south-africa"
   },
   {
     "id": 65,
     "name": "South Korea",
-    "href": "/peanut-butter-import-south-korea"
+    "href": "/peanut-butter-export-to-south-korea"
   },
   {
     "id": 66,
     "name": "Spain",
-    "href": "/peanut-butter-import-spain"
+    "href": "/peanut-butter-export-to-spain"
   },
   {
     "id": 67,
     "name": "Sweden",
-    "href": "/peanut-butter-import-sweden"
+    "href": "/peanut-butter-export-to-sweden"
   },
   {
     "id": 68,
     "name": "Switzerland",
-    "href": "/peanut-butter-import-switzerland"
+    "href": "/peanut-butter-export-to-switzerland"
   },
   {
     "id": 69,
     "name": "Tanzania",
-    "href": "/peanut-butter-import-tanzania"
+    "href": "/peanut-butter-export-to-tanzania"
   },
   {
     "id": 70,
     "name": "Thailand",
-    "href": "/peanut-butter-import-thailand"
+    "href": "/peanut-butter-export-to-thailand"
   },
   {
     "id": 71,
     "name": "Ukraine",
-    "href": "/peanut-butter-import-ukraine"
+    "href": "/peanut-butter-export-to-ukraine"
   },
   {
     "id": 72,
     "name": "United Arab Emirates",
-    "href": "/peanut-butter-import-united-arab-emirates"
+    "href": "/peanut-butter-export-to-united-arab-emirates"
   },
   {
     "id": 73,
     "name": "United Kingdom",
-    "href": "/peanut-butter-import-united-kingdom"
+    "href": "/peanut-butter-export-to-united-kingdom"
   },
   {
     "id": 74,
     "name": "United States",
-    "href": "/peanut-butter-import-united-states"
+    "href": "/peanut-butter-export-to-united-states"
   },
   {
     "id": 75,
     "name": "Vatican City",
-    "href": "/peanut-butter-import-vatican-city"
+    "href": "/peanut-butter-export-to-vatican-city"
   },
   {
     "id": 76,
     "name": "Vietnam",
-    "href": "/peanut-butter-import-vietnam"
+    "href": "/peanut-butter-export-to-vietnam"
   }
 ]
