@@ -67,10 +67,10 @@ const PeanutButterExportToBrazil = () => {
                 Brazil Supply Specialist
               </div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-950 leading-[1.1] tracking-tighter">
-                Peanut Butter Importer in Brazil
+                Peanut Butter Exporter to Brazil
                 <br />
                 <span className="text-primary-500 font-black">
-                  Importador de Manteiga de Amendoim
+                  Exportador de Manteiga de Amendoim
                 </span>
               </h1>
               <p className="aeo-speakable-summary text-base sm:text-base text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium" style={{ fontFamily: "Poppins-medium" }}>

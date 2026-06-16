@@ -67,7 +67,7 @@ const PeanutButterExportToQatar = () => {
                 Qatar Supply Specialist
               </div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-950 leading-[1.1] tracking-tighter">
-                Peanut Butter Importer in Qatar
+                Peanut Butter Exporter to Qatar
                 <br />
                 <span className="text-primary-500 font-black">
                   مستورد زبدة الفول السوداني

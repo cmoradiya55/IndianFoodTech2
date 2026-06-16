@@ -67,7 +67,7 @@ const PeanutButterExportToChina = () => {
                 China Supply Specialist
               </div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-950 leading-[1.1] tracking-tighter">
-                Peanut Butter Importer in China
+                Peanut Butter Exporter to China
                 <br />
                 <span className="text-primary-500 font-black">
                   花生酱进口商

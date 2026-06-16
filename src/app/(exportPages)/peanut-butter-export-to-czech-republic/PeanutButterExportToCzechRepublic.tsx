@@ -67,7 +67,7 @@ const PeanutButterExportToCzechRepublic = () => {
                 Czech Republic Supply Specialist
               </div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-950 leading-[1.1] tracking-tighter">
-                Peanut Butter Importer in Czech Republic
+                Peanut Butter Exporter to Czech Republic
                 <br />
                 <span className="text-primary-500 font-black">
                   Importér Arašídového Másla
