@@ -67,7 +67,7 @@ const PeanutButterExportToSweden = () => {
                 Sweden Supply Specialist
               </div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-950 leading-[1.1] tracking-tighter">
-                Peanut Butter Importer in Sweden
+                Peanut Butter Exporter to Sweden
                 <br />
                 <span className="text-primary-500 font-black">
                   Jordnötssmör importör i Sverige
