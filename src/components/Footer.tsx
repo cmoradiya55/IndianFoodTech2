@@ -40,7 +40,6 @@ const Footer = () => {
                 <Link
                   key={country.href}
                   href={country.href}
-                  target="_blank"
                   className="rounded-full bg-white/60 border border-primary-500/20 px-3 py-1 text-xs sm:text-sm font-medium text-[#1D2C00]/80 shadow-sm backdrop-blur-sm transition-all duration-300 hover:bg-[#1D2C00] hover:text-white hover:border-[#1D2C00]"
                 >
                   {country.name}
