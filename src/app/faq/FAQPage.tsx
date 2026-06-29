@@ -68,6 +68,7 @@ export default function FAQPage() {
             titleClassName="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight"
             descriptionClassName="text-xs sm:text-sm mt-1"
             isSpeakable={true}
+            isPageHeader={true}
           />
 
           {/* Category tabs container with slide-up and micro-hover keys */}
