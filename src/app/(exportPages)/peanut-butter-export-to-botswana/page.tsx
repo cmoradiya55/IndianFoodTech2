@@ -58,6 +58,8 @@ export const metadata: Metadata = {
     "wholesale peanut butter Francistown",
     "bulk peanut butter Botswana distributor",
     "private label peanut butter Gaborone",
+    "Botswana peanut butter market",
+    "Botswana nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Botswana | Indian Foodtech",

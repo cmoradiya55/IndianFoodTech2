@@ -93,6 +93,8 @@ export const metadata: Metadata = {
     "selai kacang tanpa gula",
     "selai kacang vegan",
     "selai kacang organik",
+    "Indonesia peanut butter market",
+    "Indonesia nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Indonesia | Indian Foodtech",

@@ -103,7 +103,9 @@ export const metadata: Metadata = {
     "bulk peanut butter supplier Dubai",
     "food service peanut butter UAE",
     "hotel supply peanut butter UAE",
-    "HORECA peanut butter supplier UAE"
+    "HORECA peanut butter supplier UAE",
+    "United Arab Emirates peanut butter market",
+    "United Arab Emirates nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to UAE | Indian Foodtech",

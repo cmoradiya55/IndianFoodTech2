@@ -315,6 +315,7 @@ const ContactUsComponent = ({ isPageHeader }: { isPageHeader?: boolean }) => {
                       name="countryCode"
                       value={formData.countryCode}
                       onChange={handleChange}
+                      aria-label="Country code"
                       className="w-20 sm:w-[60px] md:w-[60px] px-1 sm:px-2 py-2 sm:py-2.5 bg-gray-50 border border-gray-200 rounded-lg sm:rounded-xl focus:outline-none focus:ring-2 text-[10px] sm:text-xs lg:text-sm text-[#5D6079] focus:ring-primary-500 focus:border-transparent transition-all duration-300"
                       style={{ fontFamily: "Poppins-regular" }}
                     >

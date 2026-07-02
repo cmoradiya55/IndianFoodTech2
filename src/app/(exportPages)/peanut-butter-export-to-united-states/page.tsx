@@ -123,7 +123,9 @@ export const metadata: Metadata = {
     "fitness peanut butter supplier USA",
     "sports nutrition peanut butter USA",
     "healthy snack supplier USA",
-    "high protein spreads USA"
+    "high protein spreads USA",
+    "United States peanut butter market",
+    "United States nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to United States | Indian Foodtech",

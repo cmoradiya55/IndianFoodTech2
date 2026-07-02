@@ -80,6 +80,8 @@ export const metadata: Metadata = {
     "výroba arašídového másla na zakázku",
     "privátní značka arašídové máslo",
     "dodavatel zdravých potravin Česká republika",
+    "Czech Republic peanut butter market",
+    "Czech Republic nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Czech Republic | Indian Foodtech",

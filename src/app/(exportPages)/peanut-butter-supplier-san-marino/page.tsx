@@ -99,6 +99,8 @@ export const metadata: Metadata = {
     "white label peanut butter San Marino",
     "OEM food manufacturer San Marino",
     "custom peanut butter manufacturer San Marino",
+    "San Marino peanut butter market",
+    "San Marino nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Supplier San Marino | Indian Foodtech",

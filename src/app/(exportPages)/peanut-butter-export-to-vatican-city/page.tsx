@@ -82,7 +82,9 @@ export const metadata: Metadata = {
     "burro di arachidi vegano",
     "burro di arachidi proteico",
     "burro di arachidi senza zucchero",
-    "burro di arachidi naturale"
+    "burro di arachidi naturale",
+    "Vatican City peanut butter market",
+    "Vatican City nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Vatican City | Indian Foodtech",

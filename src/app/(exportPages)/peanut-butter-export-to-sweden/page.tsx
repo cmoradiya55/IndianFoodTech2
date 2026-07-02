@@ -95,6 +95,8 @@ export const metadata: Metadata = {
     "proteinrikt jordnötssmör",
     "jordnötssmör utan socker",
     "naturligt jordnötssmör",
+    "Sweden peanut butter market",
+    "Sweden nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Sweden | Indian Foodtech",

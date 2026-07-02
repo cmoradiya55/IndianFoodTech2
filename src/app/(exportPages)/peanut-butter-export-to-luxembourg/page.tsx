@@ -94,7 +94,9 @@ export const metadata: Metadata = {
     "Bio Erdnussbutter",
     "vegane Erdnussbutter",
     "Protein Erdnussbutter",
-    "zuckerfreie Erdnussbutter"
+    "zuckerfreie Erdnussbutter",
+    "Luxembourg peanut butter market",
+    "Luxembourg nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Luxembourg | Indian Foodtech",

@@ -104,6 +104,8 @@ export const metadata: Metadata = {
     "beurre de cacahuète biologique",
     "beurre de cacahuète vegan",
     "beurre de cacahuète sans sucre",
+    "Switzerland peanut butter market",
+    "Switzerland nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Switzerland | Indian Foodtech",

@@ -97,6 +97,8 @@ export const metadata: Metadata = {
     "veganski kikiriki maslac",
     "kikiriki maslac bez šećera",
     "prirodni kikiriki maslac",
+    "Bosnia Herzegovina peanut butter market",
+    "Bosnia Herzegovina nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Supplier Bosnia & Herzegovina | Indian Foodtech",

@@ -103,7 +103,9 @@ export const metadata: Metadata = {
     "restaurant peanut butter supplier Monaco",
     "fournisseur alimentaire hôtel Monaco",
     "beurre de cacahuète gourmet",
-    "distributeur alimentaire premium Monaco"
+    "distributeur alimentaire premium Monaco",
+    "Monaco peanut butter market",
+    "Monaco nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Supplier Monaco | Indian Foodtech",

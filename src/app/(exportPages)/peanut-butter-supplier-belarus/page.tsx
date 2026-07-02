@@ -92,6 +92,8 @@ export const metadata: Metadata = {
     "веганская арахисовая паста",
     "арахисовая паста без сахара",
     "натуральная арахисовая паста",
+    "Belarus peanut butter market",
+    "Belarus nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Supplier Belarus | Indian Foodtech",

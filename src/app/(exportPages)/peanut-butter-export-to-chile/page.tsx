@@ -74,6 +74,8 @@ export const metadata: Metadata = {
     "bulk peanut butter Chile exporter to",
     "peanut butter supplier Chile bulk",
     "bulk peanut butter Chile exporter to",
+    "Chile peanut butter market",
+    "Chile nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Chile | Indian Foodtech",

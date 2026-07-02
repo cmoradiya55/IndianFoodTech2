@@ -94,6 +94,8 @@ export const metadata: Metadata = {
     "cukormentes mogyoróvaj",
     "vegán mogyoróvaj",
     "bio mogyoróvaj",
+    "Hungary peanut butter market",
+    "Hungary nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Hungary | Indian Foodtech",

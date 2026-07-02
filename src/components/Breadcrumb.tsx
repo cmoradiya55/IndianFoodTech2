@@ -55,6 +55,7 @@ export default function Breadcrumb({
                     <Link
                       href={relativeUrl}
                       className="text-xs sm:text-sm text-black px-2 py-1 rounded-lg transition-all duration-200 flex items-center gap-1.5 shrink-0 hover:underline"
+                      aria-label={item.name}
                     >
                       {isFirst && (
                         <Home className="w-3.5 h-3.5 text-black dark:text-zinc-500" />

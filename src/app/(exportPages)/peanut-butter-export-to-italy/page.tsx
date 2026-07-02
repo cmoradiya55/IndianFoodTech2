@@ -96,6 +96,8 @@ export const metadata: Metadata = {
     "burro di arachidi proteico",
     "burro di arachidi senza zucchero",
     "burro di arachidi naturale",
+    "Italy peanut butter market",
+    "Italy nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Italy | Indian Foodtech",

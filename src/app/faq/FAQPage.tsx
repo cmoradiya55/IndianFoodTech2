@@ -136,6 +136,7 @@ export default function FAQPage() {
               href="/contact-us"
               className="inline-block bg-primary-500 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-primary-600 transition-colors duration-200"
               style={{ fontFamily: "Poppins-medium" }}
+              aria-label="Contact Us"
             >
               Contact Us
             </Link>

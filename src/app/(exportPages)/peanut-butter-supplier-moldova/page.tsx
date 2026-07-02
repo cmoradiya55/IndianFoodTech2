@@ -103,6 +103,8 @@ export const metadata: Metadata = {
     "nutriție sportivă unt de arahide",
     "unt de arahide pentru fitness",
     "gustări sănătoase Moldova",
+    "Moldova peanut butter market",
+    "Moldova nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Supplier Moldova | Indian Foodtech",

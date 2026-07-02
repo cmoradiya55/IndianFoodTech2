@@ -89,7 +89,9 @@ export const metadata: Metadata = {
     "เนยถั่วออร์แกนิก",
     "เนยถั่วไม่มีน้ำตาล",
     "เนยถั่ววีแกน",
-    "เนยถั่วเพื่อสุขภาพ"
+    "เนยถั่วเพื่อสุขภาพ",
+    "Thailand peanut butter market",
+    "Thailand nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Thailand | Indian Foodtech",

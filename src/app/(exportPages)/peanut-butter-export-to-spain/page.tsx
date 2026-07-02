@@ -90,6 +90,8 @@ export const metadata: Metadata = {
     "crema de cacahuete alta en proteínas",
     "crema de cacahuete natural",
     "crema de cacahuete para gimnasios",
+    "Spain peanut butter market",
+    "Spain nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Spain | Indian Foodtech",

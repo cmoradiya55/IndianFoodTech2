@@ -99,6 +99,8 @@ export const metadata: Metadata = {
     "프리미엄 땅콩버터",
     "헬스 식품 공급업체",
     "운동 영양 식품",
+    "South Korea peanut butter market",
+    "South Korea nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to South Korea | Indian Foodtech",

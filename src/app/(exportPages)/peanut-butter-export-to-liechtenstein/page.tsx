@@ -93,6 +93,8 @@ export const metadata: Metadata = {
     "vegane Erdnussbutter",
     "Protein Erdnussbutter",
     "zuckerfreie Erdnussbutter",
+    "Liechtenstein peanut butter market",
+    "Liechtenstein nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Liechtenstein | Indian Foodtech",

@@ -91,6 +91,8 @@ export const metadata: Metadata = {
     "white label peanut butter UK",
     "OEM food manufacturer UK",
     "nut butter private label supplier UK",
+    "United Kingdom peanut butter market",
+    "United Kingdom nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to UK | Indian Foodtech",

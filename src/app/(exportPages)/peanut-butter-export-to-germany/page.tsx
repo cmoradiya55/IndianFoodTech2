@@ -96,6 +96,8 @@ export const metadata: Metadata = {
     "zuckerfreie Erdnussbutter",
     "Protein Erdnussbutter",
     "natürliche Erdnussbutter ohne Zusatzstoffe",
+    "Germany peanut butter market",
+    "Germany nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Germany | Indian Foodtech",

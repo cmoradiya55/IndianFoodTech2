@@ -11,11 +11,15 @@ export const metadata: Metadata = {
     "Partner with Indian Food Tech for premium B2B private label peanut butter manufacturing and flexible packaging solutions tailored for your brand.",
   keywords: [
     "private label peanut butter",
-    "peanut butter manufacturer india",
+    "private label peanut butter in india",
+    "peanut butter manufacturer in india",
     "B2B peanut butter supplier",
+    "B2B peanut butter supplier in india",
     "contract packaging peanut butter",
+    "contract packaging peanut butter in india",
     "custom recipe peanut butter",
-    "tahini paste wholesale",
+    "custom recipe peanut butter in india",
+    "tahini paste wholesale in india",
   ],
   alternates: {
     canonical: "/private-labels",

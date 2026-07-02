@@ -67,6 +67,8 @@ export const metadata: Metadata = {
     "private label peanut butter Brazil",
     "fornecedor de pasta de amendoim São Paulo",
     "pasta de amendoim atacado Brasil",
+    "Brazil peanut butter market",
+    "Brazil nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Brazil | Indian Foodtech",

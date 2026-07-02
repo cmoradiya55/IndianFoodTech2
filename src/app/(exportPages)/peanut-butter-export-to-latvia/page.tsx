@@ -94,6 +94,8 @@ export const metadata: Metadata = {
     "proteīna zemesriekstu sviests",
     "zemesriekstu sviests bez cukura",
     "dabīgs zemesriekstu sviests",
+    "Latvia peanut butter market",
+    "Latvia nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Latvia | Indian Foodtech",

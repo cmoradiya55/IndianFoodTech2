@@ -94,6 +94,8 @@ export const metadata: Metadata = {
     "vegaaninen maapähkinävoi",
     "luomu maapähkinävoi",
     "proteiinipitoinen maapähkinävoi",
+    "Finland peanut butter market",
+    "Finland nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Finland | Indian Foodtech",

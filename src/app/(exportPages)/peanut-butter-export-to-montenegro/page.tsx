@@ -93,7 +93,9 @@ export const metadata: Metadata = {
     "organski kikiriki puter",
     "veganski kikiriki puter",
     "kikiriki puter bez šećera",
-    "prirodni kikiriki puter"
+    "prirodni kikiriki puter",
+    "Montenegro peanut butter market",
+    "Montenegro nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Montenegro | Indian Foodtech",

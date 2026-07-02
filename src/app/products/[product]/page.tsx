@@ -189,16 +189,6 @@ export default async function ProductDetailPage({
                 value: "ISO Certified",
               },
             ],
-            offers: {
-              "@type": "AggregateOffer",
-              priceCurrency: "USD",
-              availability: "https://schema.org/InStock",
-              offerCount: product.sizes?.length ?? 1,
-              seller: {
-                "@type": "Organization",
-                name: "Indian Foodtech",
-              },
-            },
             url: `${BASE_URL}/products/${product.slug}`,
           }}
         />

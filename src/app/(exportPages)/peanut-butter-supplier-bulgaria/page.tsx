@@ -99,7 +99,9 @@ export const metadata: Metadata = {
     "high protein spread Bulgaria",
     "спортно хранене фъстъчено масло",
     "фитнес фъстъчено масло",
-    "здравословни закуски България"
+    "здравословни закуски България",
+    "Bulgaria peanut butter market",
+    "Bulgaria nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Supplier Bulgaria | Indian Foodtech",

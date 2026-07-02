@@ -91,7 +91,9 @@ export const metadata: Metadata = {
     "органічна арахісова паста",
     "веганська арахісова паста",
     "арахісова паста без цукру",
-    "натуральна арахісова паста"
+    "натуральна арахісова паста",
+    "Ukraine peanut butter market",
+    "Ukraine nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Ukraine | Indian Foodtech",

@@ -234,6 +234,7 @@ export default function BlogDetails({
           href="/blog"
           className="px-6 sm:px-8 py-2.5 sm:py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-full font-normal text-xs sm:text-sm transition-all duration-300 shadow-md"
           style={{ fontFamily: "Poppins-medium" }}
+          aria-label="Back to Blog"
         >
           Back to Blog
         </Link>
@@ -454,6 +455,7 @@ export default function BlogDetails({
                     rel="noopener noreferrer"
                     className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-emerald-600 hover:bg-primary-50 hover:border-primary-200 transition-all duration-200"
                     title="Share on WhatsApp"
+                    aria-label="Share on WhatsApp"
                   >
                     <AllIconComponent icon="whatsAppIcon" width={20} height={20} className="fill-current" />
                   </Link>
@@ -463,6 +465,7 @@ export default function BlogDetails({
                     rel="noopener noreferrer"
                     className="p-2 rounded-full border border-gray-100 bg-gray-50 text-violet-600 hover:bg-violet-50 hover:border-violet-200 transition-all duration-200"
                     title="Share on Viber"
+                    aria-label="Share on Viber"
                   >
                     <AllIconComponent icon="viberIcon" width={16} height={16} className="fill-current" />
                   </Link>
@@ -472,6 +475,7 @@ export default function BlogDetails({
                     rel="noopener noreferrer"
                     className="p-2 rounded-full border border-gray-100 bg-gray-50 text-primary-600 hover:bg-primary-50 hover:border-primary-200 transition-all duration-200"
                     title="Share on Facebook"
+                    aria-label="Share on Facebook"
                   >
                     <AllIconComponent icon="facebookIcon" width={16} height={16} className="fill-current" />
                   </Link>
@@ -481,6 +485,7 @@ export default function BlogDetails({
                     rel="noopener noreferrer"
                     className="p-2 rounded-full border border-gray-100 bg-gray-50 text-primary-500 hover:bg-primary-50 hover:border-primary-200 transition-all duration-200"
                     title="Share on X"
+                    aria-label="Share on X"
                   >
                     <AllIconComponent icon="xIcon" width={16} height={16} className="fill-current" />
                   </Link>
@@ -490,6 +495,7 @@ export default function BlogDetails({
                     rel="noopener noreferrer"
                     className="p-2 rounded-full border border-gray-100 bg-gray-50 text-blue-700 hover:bg-blue-50 hover:border-blue-200 transition-all duration-200"
                     title="Share on LinkedIn"
+                    aria-label="Share on LinkedIn"
                   >
                     <AllIconComponent icon="linkedinIcon" width={16} height={16} className="fill-current" />
                   </Link>
@@ -540,6 +546,7 @@ export default function BlogDetails({
                   href="/contact-us"
                   className="block w-full sm:w-auto text-center px-6 sm:px-10 py-2.5 sm:py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-full font-normal text-xs sm:text-sm transition-all duration-300 shadow-md"
                   style={{ fontFamily: "Poppins-medium" }}
+                  aria-label="Contact Us"
                 >
                   Contact Us
                 </Link>
@@ -549,6 +556,7 @@ export default function BlogDetails({
                   href="/products"
                   className="block w-full sm:w-auto text-center px-6 sm:px-10 py-2.5 sm:py-3 bg-transparent text-[#D4DBC4] border border-[#D4DBC4]/30 hover:border-primary-500 hover:text-primary-500 rounded-full font-normal text-xs sm:text-sm transition-all duration-300"
                   style={{ fontFamily: "Poppins-medium" }}
+                  aria-label="View Products"
                 >
                   View Products
                 </Link>
@@ -615,6 +623,7 @@ export default function BlogDetails({
                   href="/blog"
                   className="px-6 sm:px-10 py-2.5 sm:py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-full font-normal text-xs sm:text-sm transition-all duration-300 shadow-md flex items-center gap-2"
                   style={{ fontFamily: "Poppins-medium" }}
+                  aria-label="View All Articles"
                 >
                   View All Articles
                   <ArrowRight className="w-3.5 h-3.5" />

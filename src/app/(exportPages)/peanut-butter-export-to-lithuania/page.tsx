@@ -94,6 +94,8 @@ export const metadata: Metadata = {
     "baltyminis žemės riešutų sviestas",
     "žemės riešutų sviestas be cukraus",
     "natūralus žemės riešutų sviestas",
+    "Lithuania peanut butter market",
+    "Lithuania nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Lithuania | Indian Foodtech",

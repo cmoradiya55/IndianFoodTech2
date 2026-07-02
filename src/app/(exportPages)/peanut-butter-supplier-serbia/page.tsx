@@ -105,7 +105,9 @@ export const metadata: Metadata = {
     "contract manufacturing peanut butter Serbia",
     "white label peanut butter Serbia",
     "OEM food manufacturer Serbia",
-    "custom peanut butter manufacturer Serbia"
+    "custom peanut butter manufacturer Serbia",
+    "Serbia peanut butter market",
+    "Serbia nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Supplier Serbia | Indian Foodtech",
