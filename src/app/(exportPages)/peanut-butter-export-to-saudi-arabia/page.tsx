@@ -91,6 +91,8 @@ export const metadata: Metadata = {
     "زبدة فول سوداني عضوية",
     "زبدة فول سوداني بدون سكر",
     "زبدة فول سوداني صحية",
+    "Saudi Arabia peanut butter market",
+    "Saudi Arabia nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Saudi Arabia | Indian Foodtech",

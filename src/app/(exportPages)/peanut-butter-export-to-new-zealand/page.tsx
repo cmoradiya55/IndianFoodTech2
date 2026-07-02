@@ -75,6 +75,8 @@ export const metadata: Metadata = {
     "sugar free peanut butter New Zealand",
     "clean label peanut butter New Zealand",
     "non GMO peanut butter New Zealand",
+    "New Zealand peanut butter market",
+    "New Zealand nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to New Zealand | Indian Foodtech",

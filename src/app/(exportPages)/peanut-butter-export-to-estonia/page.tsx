@@ -83,7 +83,9 @@ export const metadata: Metadata = {
     "OEM maapähklivõi",
     "ODM maapähklivõi",
     "privaatse kaubamärgi maapähklivõi",
-    "tervisliku toidu tarnija Eesti"
+    "tervisliku toidu tarnija Eesti",
+    "Estonia peanut butter market",
+    "Estonia nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Estonia | Indian Foodtech",

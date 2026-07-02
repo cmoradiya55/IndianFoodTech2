@@ -366,6 +366,7 @@ const ProductDetails = () => {
                         rel="noopener noreferrer"
                         className="p-1 rounded-full border border-gray-100 bg-gray-50 text-primary-500 hover:bg-primary-50 hover:border-primary-200 transition-all duration-200"
                         title="Share on WhatsApp"
+                        aria-label="Share on WhatsApp"
                       >
                         <AllIconComponent icon="whatsAppIcon" width={18} height={18} className="fill-current" />
                       </Link>
@@ -375,6 +376,7 @@ const ProductDetails = () => {
                         rel="noopener noreferrer"
                         className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-violet-600 hover:bg-violet-50 hover:border-violet-200 transition-all duration-200"
                         title="Share on Viber"
+                        aria-label="Share on Viber"
                       >
                         <AllIconComponent icon="viberIcon" width={14} height={14} className="fill-current" />
                       </Link>
@@ -384,6 +386,7 @@ const ProductDetails = () => {
                         rel="noopener noreferrer"
                         className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-primary-500 hover:bg-primary-50 hover:border-primary-200 transition-all duration-200"
                         title="Share on Facebook"
+                        aria-label="Share on Facebook"
                       >
                         <AllIconComponent icon="facebookIcon" width={14} height={14} className="fill-current" />
                       </Link>
@@ -393,6 +396,7 @@ const ProductDetails = () => {
                         rel="noopener noreferrer"
                         className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-primary-500 hover:bg-primary-50 hover:border-primary-200 transition-all duration-200"
                         title="Share on X"
+                        aria-label="Share on X"
                       >
                         <AllIconComponent icon="xIcon" width={14} height={14} className="fill-current" />
                       </Link>
@@ -402,6 +406,7 @@ const ProductDetails = () => {
                         rel="noopener noreferrer"
                         className="p-1.5 rounded-full border border-gray-100 bg-gray-50 text-primary-500 hover:bg-primary-50 hover:border-primary-200 transition-all duration-200"
                         title="Share on LinkedIn"
+                        aria-label="Share on LinkedIn"
                       >
                         <AllIconComponent icon="linkedinIcon" width={14} height={14} className="fill-current" />
                       </Link>

@@ -150,7 +150,7 @@ const Header = () => {
           style={{ fontFamily: "NotoSerif-semibold" }}
         >
           {/* Left: Logo */}
-          <Link href="/" className="flex items-center shrink-0">
+          <Link href="/" className="flex items-center shrink-0" aria-label="Indian Food Tech Home">
             <motion.div
               animate={{
                 scale: isScrolled ? 0.92 : 1.0,
@@ -189,6 +189,7 @@ const Header = () => {
                     <Link
                       href={link.href}
                       className={`${navLinkClass(active)} flex items-center space-x-1.5`}
+                      aria-label={link.name}
                     >
                       <span>{link.name}</span>
                       <ChevronDown
@@ -212,6 +213,7 @@ const Header = () => {
                               href={subItem.href}
                               scroll={false}
                               className="group flex items-center justify-between px-4 py-3 text-sm text-gray-700 hover:bg-primary-50/50 hover:text-primary-600 rounded-xl transition-all duration-200"
+                              aria-label={subItem.name}
                             >
                               <span className="font-medium">{subItem.name}</span>
                               <ChevronRight className="w-3.5 h-3.5 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 text-primary-500" />
@@ -229,6 +231,7 @@ const Header = () => {
                   key={link.name}
                   href={link.href}
                   className={navLinkClass(active)}
+                  aria-label={link.name}
                 >
                   {link.name}
                 </Link>
@@ -347,6 +350,7 @@ const Header = () => {
                                     scroll={false}
                                     className="block text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors py-2 px-3 rounded-lg hover:bg-white"
                                     onClick={() => setIsMenuOpen(false)}
+                                    aria-label={subItem.name}
                                   >
                                     {subItem.name}
                                   </Link>
@@ -367,6 +371,7 @@ const Header = () => {
                             : "text-gray-700 hover:bg-gray-50 hover:text-primary-500"
                             }`}
                           onClick={() => setIsMenuOpen(false)}
+                          aria-label={link.name}
                         >
                           {link.name}
                         </Link>

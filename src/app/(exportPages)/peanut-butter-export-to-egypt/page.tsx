@@ -79,7 +79,9 @@ export const metadata: Metadata = {
     "تصنيع زبدة الفول السوداني OEM",
     "تصنيع زبدة الفول السوداني ODM",
     "زبدة الفول السوداني بعلامة تجارية خاصة",
-    "مورد أغذية صحية مصر"
+    "مورد أغذية صحية مصر",
+    "Egypt peanut butter market",
+    "Egypt nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Egypt | Indian Foodtech",

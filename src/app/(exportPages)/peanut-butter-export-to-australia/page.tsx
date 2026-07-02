@@ -56,7 +56,9 @@ export const metadata: Metadata = {
     "natural peanut spread Australia",
     "bulk nut butter supplier Australia",
     "private label spreads Australia",
-    "foodservice peanut butter Australia"
+    "foodservice peanut butter Australia",
+    "Australia peanut butter market",
+    "Australia nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Australia | Indian Foodtech",

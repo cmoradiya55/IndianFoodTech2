@@ -78,6 +78,8 @@ export const metadata: Metadata = {
     "natural groundnut butter",
     "bulk groundnut paste",
     "protein groundnut butter",
+    "Nigeria peanut butter market",
+    "Nigeria nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Nigeria | Indian Foodtech",

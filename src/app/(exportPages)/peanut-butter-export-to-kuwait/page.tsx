@@ -91,6 +91,8 @@ export const metadata: Metadata = {
     "زبدة فول سوداني بدون سكر",
     "زبدة فول سوداني صحية",
     "زبدة فول سوداني نباتية",
+    "Kuwait peanut butter market",
+    "Kuwait nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Kuwait | Indian Foodtech",

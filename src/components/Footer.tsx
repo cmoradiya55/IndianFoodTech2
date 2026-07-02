@@ -41,6 +41,7 @@ const Footer = () => {
                   key={country.href}
                   href={country.href}
                   className="rounded-full bg-white/60 border border-primary-500/20 px-3 py-1 text-xs sm:text-sm font-medium text-[#1D2C00]/80 shadow-sm backdrop-blur-sm transition-all duration-300 hover:bg-[#1D2C00] hover:text-white hover:border-[#1D2C00]"
+                  aria-label={`Peanut butter export to ${country.name}`}
                 >
                   {country.name}
                 </Link>
@@ -75,6 +76,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:scale-110 transition-transform duration-200"
+                aria-label="LinkedIn"
               >
                 {/* LinkedIn */}
                 <AllIconComponent
@@ -89,6 +91,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:scale-110 transition-transform duration-200"
+                aria-label="Facebook"
               >
                 {/* Facebook */}
                 <AllIconComponent
@@ -130,6 +133,7 @@ const Footer = () => {
                     <Link
                       href={link.href}
                       className="text-white hover:text-primary-500 hover:underline transition-colors text-sm sm:text-sm"
+                      aria-label={link.label}
                     >
                       {link.label}
                     </Link>
@@ -171,6 +175,7 @@ const Footer = () => {
                       <Link
                         href="mailto:office@indianfoodtech.in"
                         className="text-white text-sm sm:text-sm font-medium hover:text-primary-500 transition-colors hover:underline"
+                        aria-label="Email us at office@indianfoodtech.in"
                       >
                         office@indianfoodtech.in
                       </Link>
@@ -184,6 +189,7 @@ const Footer = () => {
                       <Link
                         href="tel:+919714899711"
                         className="text-white text-sm sm:text-sm font-medium hover:text-primary-500 transition-colors hover:underline"
+                        aria-label="Call us at +91 97148 99711"
                       >
                         +91 97148 99711
                       </Link>
@@ -206,6 +212,7 @@ const Footer = () => {
               <Link
                 href="/terms"
                 className="underline hover:opacity-100 ml-1 sm:ml-0"
+                aria-label="Terms of use"
               >
                 Terms of use
               </Link>

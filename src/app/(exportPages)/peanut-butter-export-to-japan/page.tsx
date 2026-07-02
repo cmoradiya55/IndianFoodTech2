@@ -92,6 +92,8 @@ export const metadata: Metadata = {
     "プロテイン ピーナッツバター",
     "無糖 ピーナッツバター",
     "ナチュラル ピーナッツバター",
+    "Japan peanut butter market",
+    "Japan nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Japan | Indian Foodtech",

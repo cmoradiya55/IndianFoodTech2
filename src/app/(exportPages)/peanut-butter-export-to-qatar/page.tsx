@@ -89,6 +89,8 @@ export const metadata: Metadata = {
     "زبدة فول سوداني بدون سكر",
     "زبدة فول سوداني صحية",
     "زبدة فول سوداني نباتية",
+    "Qatar peanut butter market",
+    "Qatar nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Qatar | Indian Foodtech",

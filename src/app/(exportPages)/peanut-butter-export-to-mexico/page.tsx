@@ -88,7 +88,9 @@ export const metadata: Metadata = {
     "crema de cacahuate sin azúcar",
     "crema de cacahuate alta en proteína",
     "crema de cacahuate orgánica",
-    "crema de cacahuate para gimnasios"
+    "crema de cacahuate para gimnasios",
+    "Mexico peanut butter market",
+    "Mexico nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Mexico | Indian Foodtech",

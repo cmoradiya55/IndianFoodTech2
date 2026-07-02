@@ -87,7 +87,9 @@ export const metadata: Metadata = {
     "butir tal-karawett vegan",
     "butir tal-karawett b'ħafna proteini",
     "butir tal-karawett mingħajr zokkor",
-    "butir tal-karawett naturali"
+    "butir tal-karawett naturali",
+    "Malta peanut butter market",
+    "Malta nut butter market",
   ],
   robots: {
     index: true,

@@ -102,7 +102,9 @@ export const metadata: Metadata = {
     "high protein spread Croatia",
     "sportska prehrana maslac od kikirikija",
     "fitness maslac od kikirikija",
-    "zdravi međuobroci Hrvatska"
+    "zdravi međuobroci Hrvatska",
+    "Croatia peanut butter market",
+    "Croatia nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Supplier Croatia | Indian Foodtech",

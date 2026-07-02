@@ -93,7 +93,9 @@ export const metadata: Metadata = {
     "vegan hnetusmjör",
     "sukurlaust hnetusmjör",
     "próteinríkt hnetusmjör",
-    "hreint innihald hnetusmjör"
+    "hreint innihald hnetusmjör",
+    "Iceland peanut butter market",
+    "Iceland nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Iceland | Indian Foodtech",

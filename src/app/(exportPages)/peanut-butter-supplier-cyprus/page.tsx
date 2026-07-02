@@ -98,6 +98,8 @@ export const metadata: Metadata = {
     "αθλητική διατροφή φυστικοβούτυρο",
     "fitness φυστικοβούτυρο",
     "υγιεινά σνακ Κύπρος",
+    "Cyprus peanut butter market",
+    "Cyprus nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Supplier Cyprus | Indian Foodtech",

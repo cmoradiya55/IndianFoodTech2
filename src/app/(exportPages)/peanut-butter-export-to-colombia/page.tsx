@@ -80,7 +80,9 @@ export const metadata: Metadata = {
     "healthy food distributor Colombia",
     "marca privada mantequilla de maní",
     "fabricación OEM de mantequilla de maní",
-    "proveedor de alimentos saludables Colombia"
+    "proveedor de alimentos saludables Colombia",
+    "Colombia peanut butter market",
+    "Colombia nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Colombia | Indian Foodtech",

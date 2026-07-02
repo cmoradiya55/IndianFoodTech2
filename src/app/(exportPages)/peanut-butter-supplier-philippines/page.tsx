@@ -103,6 +103,8 @@ export const metadata: Metadata = {
     "white label peanut butter Philippines",
     "custom peanut butter manufacturer Philippines",
     "nut butter private label supplier Philippines",
+    "Philippines peanut butter market",
+    "Philippines nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Supplier Philippines | Indian Foodtech",

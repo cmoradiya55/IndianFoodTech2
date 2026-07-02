@@ -95,6 +95,8 @@ export const metadata: Metadata = {
     "proteinsko arašidovo maslo",
     "arašidovo maslo brez sladkorja",
     "naravno arašidovo maslo",
+    "Slovenia peanut butter market",
+    "Slovenia nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Slovenia | Indian Foodtech",

@@ -99,6 +99,8 @@ export const metadata: Metadata = {
     "спортска исхрана путер од кикирики",
     "фитнес путер од кикирики",
     "здрава ужина Македонија",
+    "North Macedonia peanut butter market",
+    "North Macedonia nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Supplier North Macedonia | Indian Foodtech",

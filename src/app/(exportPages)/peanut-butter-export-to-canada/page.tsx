@@ -70,6 +70,8 @@ export const metadata: Metadata = {
     "beurre d’arachide Montréal",
     "fournisseur beurre d’arachide Québec",
     "bulk peanut butter Canada exporter to",
+    "Canada peanut butter market",
+    "Canada nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Canada | Indian Foodtech",

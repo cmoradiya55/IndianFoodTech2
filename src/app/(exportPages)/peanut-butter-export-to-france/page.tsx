@@ -111,7 +111,9 @@ export const metadata: Metadata = {
     "wholesale healthy food Europe",
     "premium peanut butter France",
     "healthy food exporter France",
-    "French organic food exporter to"
+    "French organic food exporter to",
+    "France peanut butter market",
+    "France nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to France | Indian Foodtech",

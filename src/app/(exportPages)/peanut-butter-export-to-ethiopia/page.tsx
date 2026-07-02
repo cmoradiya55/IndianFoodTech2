@@ -73,7 +73,9 @@ export const metadata: Metadata = {
     "OEM የኦቾሎኒ ቅቤ",
     "ODM የኦቾሎኒ ቅቤ",
     "የግል ብራንድ የኦቾሎኒ ቅቤ",
-    "የጤናማ ምግብ አቅራቢ ኢትዮጵያ"
+    "የጤናማ ምግብ አቅራቢ ኢትዮጵያ",
+    "Ethiopia peanut butter market",
+    "Ethiopia nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Ethiopia | Indian Foodtech",

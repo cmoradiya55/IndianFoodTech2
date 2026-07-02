@@ -98,6 +98,8 @@ export const metadata: Metadata = {
     "crema de cacahuete ecológica",
     "crema de cacahuete sin azúcar",
     "crema de cacahuete alta en proteínas",
+    "Andorra peanut butter market",
+    "Andorra nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Supplier Andorra | Indian Foodtech",

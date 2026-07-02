@@ -104,6 +104,8 @@ export const metadata: Metadata = {
     "organic food distributor Austria",
     "vegan food supplier Austria",
     "high protein spreads Austria",
+    "Austria peanut butter market",
+    "Austria nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Supplier Austria | Indian Foodtech",

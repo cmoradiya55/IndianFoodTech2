@@ -93,6 +93,8 @@ export const metadata: Metadata = {
     "mentega kacang vegan",
     "mentega kacang tinggi protein",
     "mentega kacang tanpa gula",
+    "Malaysia peanut butter market",
+    "Malaysia nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Malaysia | Indian Foodtech",

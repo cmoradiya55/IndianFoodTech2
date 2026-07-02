@@ -91,7 +91,9 @@ export const metadata: Metadata = {
     "groundnut butter South Africa",
     "groundnut paste South Africa",
     "bulk groundnut butter supplier",
-    "healthy nut butter South Africa"
+    "healthy nut butter South Africa",
+    "South Africa peanut butter market",
+    "South Africa nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to South Africa | Indian Foodtech",

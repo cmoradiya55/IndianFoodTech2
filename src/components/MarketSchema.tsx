@@ -61,16 +61,6 @@ const MarketSchema = ({ country, type, description, url }: MarketSchemaProps) =>
             name: "Indian Foodtech",
           },
           manufacturer: { "@id": `${BASE_URL}/#organization` },
-          offers: {
-            "@type": "AggregateOffer",
-            url,
-            priceCurrency: "USD",
-            availability: "https://schema.org/InStock",
-            areaServed: {
-              "@type": "Country",
-              name: country,
-            },
-          },
         }}
       />
     </>

@@ -94,6 +94,8 @@ export const metadata: Metadata = {
     "无糖花生酱",
     "纯素花生酱",
     "健康花生酱",
+    "Singapore peanut butter market",
+    "Singapore nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Singapore | Indian Foodtech",

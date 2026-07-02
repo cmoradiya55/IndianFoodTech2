@@ -84,6 +84,8 @@ export const metadata: Metadata = {
     "produktion af jordnøddesmør under eget mærke",
     "private label jordnøddesmør",
     "leverandør af sundhedsprodukter Danmark",
+    "Denmark peanut butter market",
+    "Denmark nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Denmark | Indian Foodtech",

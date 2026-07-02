@@ -86,7 +86,9 @@ export const metadata: Metadata = {
     "花生酱OEM",
     "花生酱ODM",
     "花生酱贴牌加工",
-    "食品原料供应商"
+    "食品原料供应商",
+    "China peanut butter market",
+    "China nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to China | Indian Foodtech",

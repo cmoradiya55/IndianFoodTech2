@@ -94,7 +94,9 @@ export const metadata: Metadata = {
     "gjalpë kikiriku organik",
     "gjalpë kikiriku vegan",
     "gjalpë kikiriku pa sheqer",
-    "gjalpë kikiriku natyral"
+    "gjalpë kikiriku natyral",
+    "Albania peanut butter market",
+    "Albania nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Supplier Albania | Indian Foodtech",

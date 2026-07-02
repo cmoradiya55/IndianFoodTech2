@@ -20,6 +20,7 @@ const BlogCard = ({ post }: { post: Post }) => {
     <Link
       href={`/blog/${slug}`}
       className="group flex flex-col bg-white rounded-2xl sm:rounded-3xl p-3 sm:p-4 shadow-md transition-all duration-500 border border-[#D2D1D6] hover:shadow-xl hover:-translate-y-1 overflow-hidden h-full"
+      aria-label={`Read blog post: ${title}`}
     >
       {/* Image */}
       <div className="relative bg-[#e9e8ed]/50 aspect-[16/10] rounded-xl sm:rounded-2xl overflow-hidden mb-4 sm:mb-5 border border-gray-100/50 group-hover:border-primary-200/50 transition-colors duration-500">

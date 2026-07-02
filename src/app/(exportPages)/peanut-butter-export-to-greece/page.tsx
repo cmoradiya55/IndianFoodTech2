@@ -88,6 +88,8 @@ export const metadata: Metadata = {
     "φυστικοβούτυρο χωρίς ζάχαρη",
     "vegan φυστικοβούτυρο",
     "βιολογικό φυστικοβούτυρο",
+    "Greece peanut butter market",
+    "Greece nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Greece | Indian Foodtech",

@@ -93,6 +93,8 @@ export const metadata: Metadata = {
     "vegan peanut butter supplier",
     "high protein peanut butter distributor",
     "clean label peanut butter Ireland",
+    "Ireland peanut butter market",
+    "Ireland nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Ireland | Indian Foodtech",

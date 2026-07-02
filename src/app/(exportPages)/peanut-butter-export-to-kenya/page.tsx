@@ -90,6 +90,8 @@ export const metadata: Metadata = {
     "siagi ya karanga bila sukari",
     "siagi ya karanga asilia",
     "siagi ya karanga ya afya",
+    "Kenya peanut butter market",
+    "Kenya nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Kenya | Indian Foodtech",

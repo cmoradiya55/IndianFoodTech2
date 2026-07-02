@@ -112,7 +112,9 @@ export const metadata: Metadata = {
     "suikervrije pindakaas",
     "beurre de cacahuète biologique",
     "beurre de cacahuète vegan",
-    "beurre de cacahuète sans sucre"
+    "beurre de cacahuète sans sucre",
+    "Belgium peanut butter market",
+    "Belgium nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Supplier Belgium | Indian Foodtech",

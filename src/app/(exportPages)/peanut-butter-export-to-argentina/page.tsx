@@ -53,7 +53,9 @@ export const metadata: Metadata = {
     "fabricación por contrato mantequilla de maní",
     "mantequilla de maní rica en proteínas",
     "proveedor de alimentos Argentina",
-    "exportador de alimentos Argentina"
+    "exportador de alimentos Argentina",
+    "Argentina peanut butter market",
+    "Argentina nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Argentina | Indian Foodtech",

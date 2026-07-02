@@ -101,6 +101,8 @@ export const metadata: Metadata = {
     "bơ đậu phộng cao cấp",
     "thực phẩm dinh dưỡng thể thao",
     "thực phẩm ăn kiêng",
+    "Vietnam peanut butter market",
+    "Vietnam nut butter market",
   ],
   openGraph: {
     title: "Peanut Butter Exporter to Vietnam | Indian Foodtech",
